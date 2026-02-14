@@ -56,75 +56,115 @@ fi
 echo "[entrypoint] First run detected. Logging in as ${PROTON_USERNAME}..."
 
 # Generate TOTP code if secret is provided
-TOTP_CMD=""
+TOTP_CODE=""
 if [ -n "${PROTON_TOTP_SECRET:-}" ]; then
     if command -v oathtool &>/dev/null; then
-        TOTP_CMD="oathtool --totp --base32 '${PROTON_TOTP_SECRET}'"
+        TOTP_CODE="$(oathtool --totp --base32 "${PROTON_TOTP_SECRET}")"
+        echo "[entrypoint] Generated TOTP code for 2FA."
     else
         echo "[entrypoint] WARNING: PROTON_TOTP_SECRET set but oathtool not installed."
         echo "[entrypoint] Install oath-toolkit if you need 2FA support."
     fi
 fi
 
-# Use expect to drive the Bridge CLI login
-/usr/bin/expect <<EXPECT_SCRIPT
+# Use expect to drive the Bridge CLI login.
+# Bridge v3 uses a bubbletea TUI with raw terminal mode and escape
+# sequences. Credentials are passed via environment variables to avoid
+# Tcl interpolation issues with special characters in passwords.
+export _BRIDGE_USER="${PROTON_USERNAME}"
+export _BRIDGE_PASS="${PROTON_PASSWORD}"
+export _BRIDGE_TOTP="${TOTP_CODE}"
+export _BRIDGE_BIN="${BRIDGE_BIN}"
+
+/usr/bin/expect <<'EXPECT_SCRIPT'
 set timeout 120
+log_user 1
 
-spawn ${BRIDGE_BIN} --cli
+# Read credentials from env vars (avoids Tcl special char issues)
+set bridge_bin $env(_BRIDGE_BIN)
+set username $env(_BRIDGE_USER)
+set password $env(_BRIDGE_PASS)
+set totp_code $env(_BRIDGE_TOTP)
 
-# Wait for the CLI prompt
+# Force a simple terminal to reduce escape sequence noise
+set env(TERM) dumb
+
+spawn $bridge_bin --cli
+
+# Wait for the initial CLI prompt (>>> appears after the banner)
 expect {
     ">>>" { }
     timeout { puts "ERROR: Bridge CLI did not start"; exit 1 }
 }
 
-# Send login command
-send "login\r"
+# Small delay for the TUI to settle
+sleep 1
 
+# Send login command
+send -- "login\r"
+
+# Wait for username prompt
 expect {
-    -re "(?i)username|email" { }
+    -re {[Uu]sername} { }
     timeout { puts "ERROR: No username prompt"; exit 1 }
 }
-send "${PROTON_USERNAME}\r"
 
+sleep 0.5
+send -- "$username\r"
+
+# Wait for password prompt (bridge verifies username with Proton first)
 expect {
-    -re "(?i)password" { }
-    timeout { puts "ERROR: No password prompt"; exit 1 }
+    -re {[Pp]assword} { }
+    timeout { puts "ERROR: No password prompt (may be a network issue)"; exit 1 }
 }
-send "${PROTON_PASSWORD}\r"
 
-# Handle optional 2FA prompt
+sleep 0.5
+send -- "$password\r"
+
+# Handle 2FA or success
 expect {
-    -re "(?i)two.factor|2fa|totp|code" {
-        if { "${TOTP_CMD}" ne "" } {
-            set totp_code [exec sh -c "${TOTP_CMD}"]
-            send "\$totp_code\r"
+    -re {[Tt]wo.[Ff]actor|2[Ff][Aa]|TOTP|[Cc]ode} {
+        if { $totp_code ne "" } {
+            sleep 0.5
+            send -- "$totp_code\r"
         } else {
             puts "ERROR: 2FA required but no PROTON_TOTP_SECRET provided"
             exit 1
         }
         exp_continue
     }
-    -re "(?i)account.*added|logged.in|successfully" {
-        puts "Login successful."
+    -re {[Aa]ccount.*added|[Ll]ogged.in|[Ss]uccessfully} {
+        puts "\n\[entrypoint\] Login successful."
     }
-    -re "(?i)invalid|incorrect|failed|error" {
-        puts "ERROR: Login failed. Check credentials."
+    -re {[Ii]nvalid|[Ii]ncorrect|[Ff]ailed|[Bb]ad password} {
+        puts "\n\[entrypoint\] ERROR: Login failed. Check credentials."
         exit 1
     }
-    ">>>" { }
-    timeout { puts "ERROR: Login timed out"; exit 1 }
+    ">>>" {
+        puts "\n\[entrypoint\] Got prompt after login (assuming success)."
+    }
+    timeout {
+        puts "\n\[entrypoint\] ERROR: Login timed out."
+        exit 1
+    }
 }
 
-# Wait for the prompt after login
-expect ">>>"
+# Wait for a clean prompt
+sleep 2
+expect {
+    ">>>" { }
+    timeout { }
+}
 
-# Get account info (logs bridge password to container logs for first-run)
-send "info\r"
-expect ">>>"
+# Get account info (logs bridge password for first-run reference)
+send -- "info\r"
+expect {
+    ">>>" { }
+    timeout { }
+}
 
 # Exit the CLI
-send "exit\r"
+send -- "exit\r"
 expect eof
 EXPECT_SCRIPT
 
