@@ -41,7 +41,7 @@ VALID_CONTACT_STATUSES = [
 ]
 
 # Valid interaction channels
-VALID_CHANNELS = ["email", "phone", "social", "in_person", "letter", "other"]
+VALID_CHANNELS = ["email", "signal", "phone", "social", "in_person", "letter", "other"]
 
 # Valid interaction directions
 VALID_DIRECTIONS = ["inbound", "outbound"]

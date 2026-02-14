@@ -1,0 +1,46 @@
+# SEBE Proton Bridge container
+#
+# Builds proton-bridge from source (headless/CLI only).
+# Entrypoint auto-initialises pass/GPG on first run and logs in
+# via PROTON_USERNAME + PROTON_PASSWORD env vars so you never need
+# to exec into the container.
+#
+# Build:
+#   podman build -f Containerfile.proton-bridge -t sebe-proton-bridge .
+#
+# The volume at /root persists GPG keys, pass store, and Bridge config.
+# After first successful login, subsequent starts are non-interactive.
+
+FROM docker.io/library/golang:1.24-bookworm AS build
+
+ARG BRIDGE_VERSION=v3.22.0
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential libsecret-1-dev libfido2-dev libcbor-dev \
+    libssl-dev pkg-config git \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN git clone --depth 1 --branch ${BRIDGE_VERSION} \
+    https://github.com/ProtonMail/proton-bridge.git /build
+
+WORKDIR /build
+RUN make build-nogui
+
+# --- Runtime ---
+FROM docker.io/library/debian:bookworm-slim
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    pass gnupg socat libsecret-1-0 libfido2-1 ca-certificates expect \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY --from=build /build/bridge /usr/local/bin/proton-bridge
+
+COPY proton-bridge-entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+EXPOSE 1143/tcp
+EXPOSE 1025/tcp
+
+VOLUME ["/root"]
+
+ENTRYPOINT ["/entrypoint.sh"]

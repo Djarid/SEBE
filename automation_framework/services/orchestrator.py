@@ -35,6 +35,18 @@ from .channels.base import (
 from .channels.email_channel import EmailChannel
 from .channels.signal_channel import SignalChannel
 
+# Memory system imports (optional — daemon must not crash if unavailable)
+try:
+    from tools.memory.db import (
+        add_contact,
+        list_contacts,
+        log_interaction,
+    )
+    from tools.memory.writer import write_to_memory
+    _MEMORY_AVAILABLE = True
+except ImportError:
+    _MEMORY_AVAILABLE = False
+
 logger = logging.getLogger(__name__)
 
 # System prompt for message classification
@@ -111,6 +123,89 @@ class Orchestrator:
         ch = self.channels.get(ChannelType.SIGNAL)
         return ch if isinstance(ch, SignalChannel) else None
 
+    # ------------------------------------------------------------------
+    # Memory integration helpers
+    # ------------------------------------------------------------------
+
+    def _log_event(self, content: str, importance: int = 5, tags: Optional[list[str]] = None) -> None:
+        """Log an event to the memory system. Fire-and-forget."""
+        if not _MEMORY_AVAILABLE:
+            return
+        try:
+            write_to_memory(
+                content=content,
+                entry_type="event",
+                importance=importance,
+                tags=tags,
+            )
+        except Exception as e:
+            logger.warning("Memory write failed (event): %s", e)
+
+    def _find_or_create_contact(self, sender: str, channel: ChannelType) -> Optional[int]:
+        """
+        Look up a contact by sender address, creating one if not found.
+
+        Returns the contact_id or None if the memory system is unavailable.
+        """
+        if not _MEMORY_AVAILABLE:
+            return None
+
+        try:
+            # Search existing contacts by email or phone
+            existing = list_contacts(limit=500)
+            if existing.get("success"):
+                for contact in existing["contacts"]:
+                    if channel == ChannelType.EMAIL and contact.get("email") == sender:
+                        return contact["id"]
+                    if channel == ChannelType.SIGNAL and contact.get("phone") == sender:
+                        return contact["id"]
+
+            # Not found — create a new contact
+            if channel == ChannelType.EMAIL:
+                # Derive name from email local part
+                name = sender.split("@")[0].replace(".", " ").replace("_", " ").title()
+                result = add_contact(name=name, email=sender, notes=f"Auto-created from inbound {channel.value}")
+            elif channel == ChannelType.SIGNAL:
+                name = f"Signal {sender}"
+                result = add_contact(name=name, phone=sender, notes=f"Auto-created from inbound {channel.value}")
+            else:
+                name = f"Unknown ({sender})"
+                result = add_contact(name=name, notes=f"Auto-created from inbound {channel.value}: {sender}")
+
+            if result.get("success"):
+                contact_id = result["contact"]["id"]
+                logger.info("Created new contact #%d for %s", contact_id, sender)
+                return contact_id
+            else:
+                logger.warning("Failed to create contact for %s: %s", sender, result.get("error"))
+                return None
+
+        except Exception as e:
+            logger.warning("Memory lookup/create failed for %s: %s", sender, e)
+            return None
+
+    def _log_interaction_safe(
+        self,
+        contact_id: int,
+        channel: ChannelType,
+        direction: str,
+        subject: Optional[str] = None,
+        content: Optional[str] = None,
+    ) -> None:
+        """Log an interaction to the memory DB. Fire-and-forget."""
+        if not _MEMORY_AVAILABLE:
+            return
+        try:
+            log_interaction(
+                contact_id=contact_id,
+                channel=channel.value,
+                direction=direction,
+                subject=subject,
+                content=content[:2000] if content else None,
+            )
+        except Exception as e:
+            logger.warning("Memory write failed (interaction): %s", e)
+
     def run(self) -> None:
         """Main daemon loop."""
         self._running = True
@@ -127,6 +222,7 @@ class Orchestrator:
             sys.exit(1)
 
         logger.info("Default model ready, entering poll loop")
+        self._log_event("SEBE daemon started, default model ready", importance=6, tags=["daemon"])
         if self.signal:
             self.signal.send_to_owner("SEBE daemon started. Default model ready.")
 
@@ -142,6 +238,7 @@ class Orchestrator:
             time.sleep(self.config.poll_interval)
 
         logger.info("SEBE daemon stopped")
+        self._log_event("SEBE daemon stopped", importance=6, tags=["daemon"])
         if self.signal:
             self.signal.send_to_owner("SEBE daemon stopped.")
 
@@ -181,6 +278,17 @@ class Orchestrator:
         if classification is None:
             logger.warning("Classification failed for message %s", msg.message_id)
             return
+
+        # Log inbound message to memory DB
+        contact_id = self._find_or_create_contact(msg.sender, msg.channel)
+        if contact_id is not None:
+            self._log_interaction_safe(
+                contact_id=contact_id,
+                channel=msg.channel,
+                direction="inbound",
+                subject=msg.subject,
+                content=f"[{msg.classification or 'unknown'}] {classification.get('summary', '')}\n\n{msg.body[:1000]}",
+            )
 
         # Notify owner via Signal
         if self.signal:
@@ -354,9 +462,32 @@ class Orchestrator:
             action.approved_at = datetime.now()
             self.signal.send_to_owner(f"Action {action_id} sent successfully.")
             logger.info("Action %s approved and sent", action_id)
+
+            # Log outbound interaction to memory
+            contact_id = self._find_or_create_contact(
+                action.outbound.recipient, action.outbound.channel
+            )
+            if contact_id is not None:
+                self._log_interaction_safe(
+                    contact_id=contact_id,
+                    channel=action.outbound.channel,
+                    direction="outbound",
+                    subject=action.outbound.subject,
+                    content=action.outbound.body[:2000],
+                )
+            self._log_event(
+                f"Approved and sent {action.action_type} to {action.outbound.recipient}: {action.outbound.subject}",
+                importance=6,
+                tags=["approval"],
+            )
         else:
             self.signal.send_to_owner(f"Action {action_id} send FAILED.")
             logger.error("Action %s send failed", action_id)
+            self._log_event(
+                f"Send FAILED for {action.action_type} to {action.outbound.recipient}",
+                importance=7,
+                tags=["error"],
+            )
 
     def _deny_action(self, action_id: str) -> None:
         """Deny a pending action."""
@@ -368,6 +499,11 @@ class Orchestrator:
         action.status = "denied"
         self.signal.send_to_owner(f"Action {action_id} denied.")
         logger.info("Action %s denied", action_id)
+        self._log_event(
+            f"Denied {action.action_type} to {action.outbound.recipient}: {action.description}",
+            importance=5,
+            tags=["denial"],
+        )
 
     def _send_status(self) -> None:
         """Send daemon status to owner."""
@@ -417,8 +553,10 @@ class Orchestrator:
         self.signal.send_to_owner(f"Swapping to {model_key}...")
         if self.model_manager.ensure_model(model_key):
             self.signal.send_to_owner(f"Model {model_key} is ready.")
+            self._log_event(f"Model swapped to {model_key}", importance=5, tags=["model"])
         else:
             self.signal.send_to_owner(f"FAILED to start {model_key}.")
+            self._log_event(f"Model swap to {model_key} FAILED", importance=7, tags=["model", "error"])
 
     def _expire_actions(self) -> None:
         """Expire pending actions that have timed out."""
@@ -427,6 +565,11 @@ class Orchestrator:
             if action.status == "pending" and action.created_at < cutoff:
                 action.status = "expired"
                 logger.info("Action %s expired", action.action_id)
+                self._log_event(
+                    f"Action {action.action_id} expired: {action.description}",
+                    importance=4,
+                    tags=["expiry"],
+                )
                 if self.signal:
                     self.signal.send_to_owner(
                         f"Action {action.action_id} expired: {action.description}"

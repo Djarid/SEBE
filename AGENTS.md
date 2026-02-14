@@ -74,7 +74,9 @@ SEBE/
     │   ├── llm_client.py                  # LLM client + model swap manager
     │   ├── orchestrator.py                # Main polling loop + approval queue
     │   ├── Containerfile                  # Orchestrator container image
-    │   ├── podman-compose.yml             # Full pod (orchestrator + bridge + signal)
+    │   ├── compose.yaml                   # Full pod (orchestrator + bridge + signal)
+    │   ├── Containerfile.proton-bridge    # Proton Bridge image (auto-init, env-var login)
+    │   ├── proton-bridge-entrypoint.sh    # Bridge entrypoint (pass/GPG + expect login)
     │   ├── .env.template                  # Credential template (safe to commit)
     │   └── channels/                      # Channel adapters
     │       ├── __init__.py

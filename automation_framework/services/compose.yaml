@@ -1,0 +1,84 @@
+# SEBE Daemon Pod
+#
+# Runs the orchestrator alongside Proton Bridge and signal-cli.
+# LLM inference stays on bare metal (llama-server needs GPU access).
+#
+# Usage:
+#   podman compose up -d
+#   podman compose logs -f sebe-orchestrator
+#   podman compose down
+#
+# First-run setup:
+#
+#   signal-cli (one-time):
+#     podman compose up -d signal-cli
+#     Open http://localhost:8082/v1/qrcodelink?device_name=sebe-daemon
+#     Scan QR code from Signal on your phone (Settings > Linked Devices).
+#
+# Dev mode:
+#   On the dev box you can skip the proton-bridge container and run
+#   protonmail-bridge-core bare metal (uses system keychain). The
+#   orchestrator handles missing channels gracefully.
+
+services:
+
+  # --- Proton Mail Bridge ---
+  # Exposes IMAP and SMTP for email access.
+  # Uses our own Containerfile that auto-inits pass/GPG on first run
+  # and logs in via env vars (PROTON_USERNAME, PROTON_PASSWORD).
+  proton-bridge:
+    build:
+      context: .
+      dockerfile: Containerfile.proton-bridge
+    container_name: sebe-proton-bridge
+    restart: unless-stopped
+    env_file:
+      - ../../.env
+    volumes:
+      - proton-bridge-data:/root
+    ports:
+      - "1143:1143"
+      - "1025:1025"
+
+  # --- signal-cli REST API ---
+  # Exposes a REST API for sending/receiving Signal messages.
+  # Persistent volume stores Signal account keys and session.
+  signal-cli:
+    image: docker.io/bbernhard/signal-cli-rest-api:latest
+    container_name: sebe-signal-cli
+    restart: unless-stopped
+    volumes:
+      - signal-cli-data:/home/.local/share/signal-cli
+    ports:
+      - "8082:8080"
+    environment:
+      MODE: json-rpc
+
+  # --- SEBE Orchestrator ---
+  # The daemon that polls channels and routes to LLMs.
+  sebe-orchestrator:
+    build:
+      context: .
+      dockerfile: Containerfile
+    container_name: sebe-orchestrator
+    restart: unless-stopped
+    depends_on:
+      proton-bridge:
+        condition: service_started
+      signal-cli:
+        condition: service_started
+    env_file:
+      - ../../.env
+    environment:
+      PROTON_IMAP_HOST: proton-bridge
+      PROTON_SMTP_HOST: proton-bridge
+      SIGNAL_API_URL: http://signal-cli:8080
+      LLM_BASE_URL: http://host.containers.internal:8080/v1
+    volumes:
+      - ../../automation_framework/data:/app/data:z
+      - ../../automation_framework/memory:/app/memory:z
+      - ../../automation_framework/tools:/app/tools:ro
+
+volumes:
+  proton-bridge-data:
+  signal-cli-data:

@@ -35,6 +35,10 @@
     "tester": {
       "mode": "subagent",
       "model": "anthropic/claude-sonnet-4-5"
+    },
+    "reviewer": {
+      "mode": "subagent",
+      "model": "anthropic/claude-sonnet-4-5"
     }
   }
 }
