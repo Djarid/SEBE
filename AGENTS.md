@@ -149,6 +149,11 @@ No other build/lint/test tools. Policy documents are Markdown only.
 - **Separators:** `---` between major sections
 - **British English:** labour, defence, realise, colour
 
+### Punctuation
+- **No em dashes** in prose. Do not use `—` or ` - ` as parenthetical separators.
+- Use **parentheses** (like this) or **commas** for asides and interjections.
+- Hyphens only for compound modifiers (e.g. "post-employment") and list markers.
+
 ### Document Metadata
 Every formal document: Title, Author, Date, Version, Target audience.
 Every formal document ends with CC-BY 4.0 copyright notice.
