@@ -44,6 +44,7 @@ SEBE is the major component of a broader progressive tax package (alongside weal
 | Green Party Policy Submission | Policy Development Committee, Economy Working Group | [green_party_submission.md](docs/green_party_submission.md) |
 | Academic/Think Tank Brief | IPPR, NEF, economics researchers | [academic_brief.md](docs/academic_brief.md) |
 | Public Explainer | General public, media, campaign use | [public_explainer.md](docs/public_explainer.md) |
+| Glossary | Term definitions and technical context | [glossary.md](docs/glossary.md) |
 
 ## Repository Structure
 
