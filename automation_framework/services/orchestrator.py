@@ -264,13 +264,15 @@ class Orchestrator:
             msg.channel.value, msg.sender, msg.subject or "(none)"
         )
 
-        # Signal messages from the owner are commands, not content
+        # Signal messages from the owner with the /sebe prefix are commands
         if (
             msg.channel == ChannelType.SIGNAL
             and self.signal
             and self.signal.is_owner_message(msg)
         ):
-            self._handle_owner_command(msg)
+            if self.signal.is_command(msg):
+                self._handle_owner_command(msg)
+            # Non-prefixed owner messages are silently ignored (other bots)
             return
 
         # Classify the message via LLM
@@ -421,18 +423,20 @@ class Orchestrator:
         elif command == "SWAP" and args:
             self._swap_model(args[0])
         elif command == "HELP":
+            pfx = self.signal.COMMAND_PREFIX
             self.signal.send_to_owner(
-                "Commands:\n"
-                "APPROVE <id> - approve pending action\n"
-                "DENY <id> - deny pending action\n"
-                "STATUS - daemon and model status\n"
-                "TASKS - list pending actions\n"
-                "SWAP <model> - swap LLM (qwen3|oss120)\n"
-                "HELP - this message"
+                f"Commands (prefix: {pfx}):\n"
+                f"{pfx} APPROVE <id> - approve pending action\n"
+                f"{pfx} DENY <id> - deny pending action\n"
+                f"{pfx} STATUS - daemon and model status\n"
+                f"{pfx} TASKS - list pending actions\n"
+                f"{pfx} SWAP <model> - swap LLM (qwen3|oss120)\n"
+                f"{pfx} HELP - this message"
             )
         else:
             self.signal.send_to_owner(
-                f"Unknown command: {command}\nSend HELP for available commands."
+                f"Unknown command: {command}\n"
+                f"Send {self.signal.COMMAND_PREFIX} HELP for available commands."
             )
 
     def _approve_action(self, action_id: str) -> None:

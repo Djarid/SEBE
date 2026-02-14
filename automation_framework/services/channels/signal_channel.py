@@ -136,13 +136,34 @@ class SignalChannel(BaseChannel):
         return messages
 
     def _parse_message(self, data: dict) -> Optional[InboundMessage]:
-        """Parse a signal-cli REST API message envelope."""
+        """Parse a signal-cli REST API message envelope.
+
+        Handles two message types:
+        - dataMessage: regular incoming message from another device/user
+        - syncMessage.sentMessage: message sent from the primary device
+          (phone) that is synced to this linked device. This is how owner
+          commands arrive when the daemon and phone share the same number.
+        """
         envelope = data.get("envelope", {})
         if not envelope:
             return None
 
-        # Only process data messages (not receipts, typing indicators, etc.)
+        sender = envelope.get("source", "")
+        timestamp_ms = envelope.get("timestamp", 0)
+
+        # Try dataMessage first (normal incoming messages)
         data_msg = envelope.get("dataMessage")
+
+        # Fall back to syncMessage.sentMessage (owner sending from phone).
+        # When the phone (primary device) sends a message, signal-cli
+        # (linked device) receives it as a sync message. The sender is
+        # the account owner (envelope.source), which is already correct.
+        if not data_msg:
+            sync_msg = envelope.get("syncMessage", {})
+            sent_msg = sync_msg.get("sentMessage")
+            if sent_msg and sent_msg.get("message"):
+                data_msg = sent_msg
+
         if not data_msg:
             return None
 
@@ -150,8 +171,6 @@ class SignalChannel(BaseChannel):
         if not body:
             return None
 
-        sender = envelope.get("source", "")
-        timestamp_ms = envelope.get("timestamp", 0)
         timestamp = (
             datetime.fromtimestamp(timestamp_ms / 1000)
             if timestamp_ms
@@ -208,7 +227,8 @@ class SignalChannel(BaseChannel):
         text = summary
         if action_id:
             text += (
-                f"\n\nReply APPROVE {action_id} or DENY {action_id}"
+                f"\n\nReply {self.COMMAND_PREFIX} APPROVE {action_id}"
+                f" or {self.COMMAND_PREFIX} DENY {action_id}"
             )
         return self.send_to_owner(text)
 
@@ -220,18 +240,33 @@ class SignalChannel(BaseChannel):
         result = self._get("/v1/about", timeout=5)
         return result is not None
 
+    # Command prefix — only messages starting with this are treated as
+    # daemon commands. Everything else is ignored (avoids clashing with
+    # other bots on the same Signal number).
+    COMMAND_PREFIX = "/sebe"
+
     def is_owner_message(self, msg: InboundMessage) -> bool:
         """Check if a message is from the daemon owner."""
         return msg.sender == self.config.owner_number
+
+    def is_command(self, msg: InboundMessage) -> bool:
+        """Check if a message is a daemon command (has the /sebe prefix)."""
+        return msg.body.strip().lower().startswith(self.COMMAND_PREFIX)
 
     def parse_command(self, body: str) -> tuple[str, list[str]]:
         """
         Parse a command from the owner.
 
-        Returns (command, args) tuple. Command is uppercased.
-        E.g. "APPROVE abc123" -> ("APPROVE", ["abc123"])
+        Strips the /sebe prefix, then returns (command, args).
+        Command is uppercased.
+        E.g. "/sebe APPROVE abc123" -> ("APPROVE", ["abc123"])
+             "/sebe status" -> ("STATUS", [])
         """
-        parts = body.strip().split()
+        text = body.strip()
+        # Strip prefix (case-insensitive)
+        if text.lower().startswith(self.COMMAND_PREFIX):
+            text = text[len(self.COMMAND_PREFIX):].strip()
+        parts = text.split()
         if not parts:
             return ("", [])
         return (parts[0].upper(), parts[1:])

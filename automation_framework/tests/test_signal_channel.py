@@ -409,13 +409,96 @@ def test_is_owner_message(signal_config):
 
 
 def test_parse_command(signal_config):
-    """Test command parsing."""
+    """Test command parsing with /sebe prefix."""
     channel = SignalChannel(signal_config)
 
-    # Test various command formats
+    # With prefix
+    assert channel.parse_command("/sebe APPROVE abc123") == ("APPROVE", ["abc123"])
+    assert channel.parse_command("/sebe status") == ("STATUS", [])
+    assert channel.parse_command("  /sebe  deny  xyz  ") == ("DENY", ["xyz"])
+    assert channel.parse_command("/sebe SWAP qwen3") == ("SWAP", ["qwen3"])
+    assert channel.parse_command("/sebe HELP") == ("HELP", [])
+    assert channel.parse_command("/SEBE STATUS") == ("STATUS", [])
+
+    # Without prefix (still works, prefix is stripped if present)
     assert channel.parse_command("APPROVE abc123") == ("APPROVE", ["abc123"])
     assert channel.parse_command("status") == ("STATUS", [])
-    assert channel.parse_command("  deny  xyz  ") == ("DENY", ["xyz"])
     assert channel.parse_command("") == ("", [])
-    assert channel.parse_command("SWAP qwen3") == ("SWAP", ["qwen3"])
-    assert channel.parse_command("HELP") == ("HELP", [])
+
+
+def test_is_command(signal_config):
+    """Test is_command checks for /sebe prefix."""
+    channel = SignalChannel(signal_config)
+
+    def _msg(body):
+        return InboundMessage(
+            channel=ChannelType.SIGNAL,
+            sender="+447000000001",
+            subject="",
+            body=body,
+            timestamp=datetime.now(),
+            message_id="test",
+        )
+
+    assert channel.is_command(_msg("/sebe STATUS")) is True
+    assert channel.is_command(_msg("/SEBE status")) is True
+    assert channel.is_command(_msg("  /sebe HELP  ")) is True
+    assert channel.is_command(_msg("STATUS")) is False
+    assert channel.is_command(_msg("hello there")) is False
+    assert channel.is_command(_msg("")) is False
+
+
+def test_poll_sync_message(signal_config):
+    """Test poll handles syncMessage.sentMessage (owner commands from phone)."""
+    api_response = [
+        {
+            "envelope": {
+                "source": "+447000000001",
+                "timestamp": 1708000000000,
+                "syncMessage": {
+                    "sentMessage": {
+                        "message": "/sebe STATUS",
+                        "destination": "+447000000001",
+                        "timestamp": 1708000000000,
+                    }
+                },
+            }
+        }
+    ]
+    mock_resp = _mock_response(api_response)
+
+    with patch("services.channels.signal_channel.urlopen", return_value=mock_resp):
+        channel = SignalChannel(signal_config)
+        messages = channel.poll()
+
+    assert len(messages) == 1
+    assert messages[0].body == "/sebe STATUS"
+    assert messages[0].sender == "+447000000001"
+    assert messages[0].channel == ChannelType.SIGNAL
+
+
+def test_poll_sync_read_receipt_ignored(signal_config):
+    """Test poll ignores syncMessage with only readMessages (no sentMessage)."""
+    api_response = [
+        {
+            "envelope": {
+                "source": "+447000000001",
+                "timestamp": 1708000000000,
+                "syncMessage": {
+                    "readMessages": [
+                        {
+                            "sender": "+447000000001",
+                            "timestamp": 1708000000000,
+                        }
+                    ]
+                },
+            }
+        }
+    ]
+    mock_resp = _mock_response(api_response)
+
+    with patch("services.channels.signal_channel.urlopen", return_value=mock_resp):
+        channel = SignalChannel(signal_config)
+        messages = channel.poll()
+
+    assert messages == []

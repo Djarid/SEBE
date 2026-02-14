@@ -438,13 +438,14 @@ def test_expire_actions_leaves_recent(daemon_config, sample_pending_action):
 
 
 def test_handle_message_signal_owner(daemon_config):
-    """Test signal messages from owner are treated as commands."""
+    """Test signal messages from owner with /sebe prefix are treated as commands."""
     with patch("signal.signal"):
         orch = Orchestrator(daemon_config)
     
     from services.channels.signal_channel import SignalChannel
     mock_signal = Mock(spec=SignalChannel)
     mock_signal.is_owner_message.return_value = True
+    mock_signal.is_command.return_value = True
     mock_signal.parse_command.return_value = ("STATUS", [])
     orch.channels[ChannelType.SIGNAL] = mock_signal
     
@@ -455,7 +456,7 @@ def test_handle_message_signal_owner(daemon_config):
         channel=ChannelType.SIGNAL,
         sender=daemon_config.signal.owner_number,
         subject="",
-        body="STATUS",
+        body="/sebe STATUS",
         timestamp=datetime.now(),
         message_id="signal-123",
     )
@@ -463,6 +464,35 @@ def test_handle_message_signal_owner(daemon_config):
     orch._handle_message(msg)
     
     orch._handle_owner_command.assert_called_once()
+    orch._classify_message.assert_not_called()
+
+
+def test_handle_message_signal_owner_no_prefix_ignored(daemon_config):
+    """Test owner messages without /sebe prefix are silently ignored."""
+    with patch("signal.signal"):
+        orch = Orchestrator(daemon_config)
+    
+    from services.channels.signal_channel import SignalChannel
+    mock_signal = Mock(spec=SignalChannel)
+    mock_signal.is_owner_message.return_value = True
+    mock_signal.is_command.return_value = False
+    orch.channels[ChannelType.SIGNAL] = mock_signal
+    
+    orch._handle_owner_command = Mock()
+    orch._classify_message = Mock()
+    
+    msg = InboundMessage(
+        channel=ChannelType.SIGNAL,
+        sender=daemon_config.signal.owner_number,
+        subject="",
+        body="hello other bot",
+        timestamp=datetime.now(),
+        message_id="signal-124",
+    )
+    
+    orch._handle_message(msg)
+    
+    orch._handle_owner_command.assert_not_called()
     orch._classify_message.assert_not_called()
 
 
