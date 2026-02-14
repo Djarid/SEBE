@@ -125,37 +125,39 @@ def append_to_memory_file(content: str, section: str = "key_facts") -> Dict[str,
     full_content = MEMORY_FILE.read_text(encoding="utf-8")
     section_header = f"## {section.replace('_', ' ').title()}"
     lines = full_content.split("\n")
-    new_lines = []
-    found_section = False
-    inserted = False
-
+    
+    # Find the section
+    section_start = None
     for i, line in enumerate(lines):
-        new_lines.append(line)
-
         if line.strip().lower() == section_header.lower():
-            found_section = True
-            continue
-
-        if found_section and not inserted:
-            # Insert before next section, horizontal rule, or end of file
-            if line.startswith("## ") or line.strip() == "---":
-                new_lines.insert(-1, f"- {content}")
-                inserted = True
-
-    if found_section and not inserted:
-        new_lines.append(f"- {content}")
-        inserted = True
-
-    if not found_section:
+            section_start = i
+            break
+    
+    if section_start is None:
         return {"success": False, "error": f"Section '{section}' not found in MEMORY.md"}
-
+    
+    # Find where to insert (before next section, separator, or end of file)
+    insert_pos = len(lines)
+    for i in range(section_start + 1, len(lines)):
+        line = lines[i]
+        if line.startswith("## ") or line.strip() == "---":
+            # Insert before this line, but after any blank lines before it
+            insert_pos = i
+            # Back up over blank lines
+            while insert_pos > section_start + 1 and lines[insert_pos - 1].strip() == "":
+                insert_pos -= 1
+            break
+    
+    # Insert the new content
+    lines.insert(insert_pos, f"- {content}")
+    
     # Update last-modified line if present
-    for i, line in enumerate(new_lines):
+    for i, line in enumerate(lines):
         if line.startswith("*Last updated:"):
-            new_lines[i] = f"*Last updated: {datetime.now().strftime('%Y-%m-%d')}*"
+            lines[i] = f"*Last updated: {datetime.now().strftime('%Y-%m-%d')}*"
             break
 
-    MEMORY_FILE.write_text("\n".join(new_lines), encoding="utf-8")
+    MEMORY_FILE.write_text("\n".join(lines), encoding="utf-8")
     return {
         "success": True,
         "section": section,

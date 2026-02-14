@@ -492,7 +492,7 @@ for coalition negotiations.
 - Fiscal + environmental benefits
 - Bandwidth component captures digital activity carbon tax misses
 
-**Complementary:** Carbon tax on emissions + SEBE on energy = comprehensive
+**Complementary:** Carbon tax on emissions + SEBE on energy = good coverage
 
 ---
 

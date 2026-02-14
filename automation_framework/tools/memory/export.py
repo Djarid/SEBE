@@ -110,7 +110,8 @@ def export_as_markdown(output_path: Optional[Path] = None) -> Dict[str, Any]:
         for c in contacts:
             org = f" — {c['organisation']}" if c.get("organisation") else ""
             role = f" ({c['role']})" if c.get("role") else ""
-            parts.append(f"- **{c['name']}**{role}{org} [{c['status']}]")
+            status = f" [{c['status']}]" if c.get("status") else ""
+            parts.append(f"- **{c['name']}**{role}{org}{status}")
             if c.get("email"):
                 parts.append(f"  Email: {c['email']}")
             if c.get("notes"):

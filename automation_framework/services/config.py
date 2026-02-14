@@ -119,7 +119,7 @@ class EmailConfig:
     smtp_port: int = 1025
     username: str = ""
     password: str = ""
-    sender_address: str = "jason@horizons-call.com"
+    sender_address: str = ""
     watch_folders: list[str] = field(default_factory=lambda: ["INBOX"])
     poll_interval: int = 30
 
@@ -158,13 +158,9 @@ class DaemonConfig:
         cfg.signal.owner_number = os.environ.get("SIGNAL_OWNER_NUMBER", "")
 
         # Email (Proton Bridge)
-        cfg.email.username = os.environ.get(
-            "PROTON_USERNAME", "jason@horizons-call.com"
-        )
+        cfg.email.username = os.environ.get("PROTON_USERNAME", "")
         cfg.email.password = os.environ.get("PROTON_PASSWORD", "")
-        cfg.email.sender_address = os.environ.get(
-            "EMAIL_SENDER", "jason@horizons-call.com"
-        )
+        cfg.email.sender_address = os.environ.get("EMAIL_SENDER", "")
 
         # LLM overrides
         if url := os.environ.get("LLM_BASE_URL"):

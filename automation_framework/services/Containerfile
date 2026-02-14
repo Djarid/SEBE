@@ -1,6 +1,6 @@
 FROM python:3.13-slim
 
-LABEL maintainer="Jason Huxley <jason@horizons-call.com>"
+LABEL maintainer="Jason Huxley"
 LABEL description="SEBE daemon orchestrator"
 
 WORKDIR /app

@@ -53,7 +53,7 @@ Classify the following message. Respond with ONLY a JSON object:
 
 Context: Messages may come from Green Party members, think tanks (IPPR, NEF),
 local party chairs, the Policy Development Committee, Reddit users, or
-general public. Campaign emails were sent from jason@horizons-call.com."""
+general public. Campaign emails were sent from the address configured in EMAIL_SENDER."""
 
 # System prompt for drafting responses
 DRAFT_PROMPT = """You are a drafting assistant for Jason Huxley, who runs the
