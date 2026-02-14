@@ -60,6 +60,7 @@ SEBE/
     ├── tools/                             # Deterministic scripts
     │   ├── git_remote.py                  # Git remote ops (push/pull/status)
     │   ├── pdf_reader.py                  # PDF text extraction (local/URL)
+    │   ├── fiscal_calc.py                 # Fiscal calculator (tax/distribution/offsets)
     │   └── memory/                        # Memory system (Python)
     │       ├── config.py, db.py, reader.py, writer.py, export.py
     │       └── __init__.py
@@ -136,6 +137,34 @@ python -m tools.git_remote --action sync
 
 Credentials read from `.env` at repo root (GITHUB_TOKEN, GITHUB_USER, GITHUB_REPO).
 Tokens are never displayed in output.
+
+**Fiscal calculator (run from `automation_framework/`):**
+
+```bash
+# Full model summary with current defaults (Stage 1)
+python -m tools.fiscal_calc
+
+# Tax burden on a specific income
+python -m tools.fiscal_calc --action tax --gross 45000
+
+# Distribution cost for a specific adult rate
+python -m tools.fiscal_calc --action distribute --adult-rate 10000
+
+# What-if: UBI at £5,000 with 2% population growth
+python -m tools.fiscal_calc --action distribute --adult-rate 5000 --pop-growth 2
+
+# Full Stage 2 model
+python -m tools.fiscal_calc --action full --adult-rate 29000
+
+# Derive ULI from median earnings
+python -m tools.fiscal_calc --action uli
+
+# JSON output for piping
+python -m tools.fiscal_calc --action full --json
+```
+
+LLMs are language models, not calculators. **Always verify fiscal
+arithmetic with this tool before committing figures to documents.**
 
 **PDF reader (run from `automation_framework/`):**
 
