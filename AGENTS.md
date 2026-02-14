@@ -55,6 +55,7 @@ SEBE/
     │   └── manifest.md                    # Index of goals
     ├── tools/                             # Deterministic scripts
     │   ├── git_remote.py                  # Git remote ops (push/pull/status)
+    │   ├── pdf_reader.py                  # PDF text extraction (local/URL)
     │   └── memory/                        # Memory system (Python)
     │       ├── config.py, db.py, reader.py, writer.py, export.py
     │       └── __init__.py
@@ -131,6 +132,30 @@ python -m tools.git_remote --action sync
 
 Credentials read from `.env` at repo root (GITHUB_TOKEN, GITHUB_USER, GITHUB_REPO).
 Tokens are never displayed in output.
+
+**PDF reader (run from `automation_framework/`):**
+
+```bash
+# Show PDF metadata and page count
+python -m tools.pdf_reader --file report.pdf --action info
+
+# Extract all text
+python -m tools.pdf_reader --file report.pdf --action text
+
+# Extract specific pages
+python -m tools.pdf_reader --file report.pdf --action pages --page-nums 1 3 5
+
+# Search within PDF
+python -m tools.pdf_reader --file report.pdf --action search --query "revenue"
+
+# Works with URLs
+python -m tools.pdf_reader --file https://example.com/report.pdf --action text
+
+# Raw text output (no JSON wrapper)
+python -m tools.pdf_reader --file report.pdf --action text --raw
+```
+
+Requires pymupdf (`pip install pymupdf`). Handles local files and URLs.
 
 No other build/lint/test tools. Policy documents are Markdown only.
 

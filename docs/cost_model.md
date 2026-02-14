@@ -149,6 +149,67 @@ The net new cost of making rail free is the fares revenue replacement
 **UBS does not replace** housing costs, food, or clothing. These are funded
 from UBI/ULI cash payments.
 
+### 5.3 Rail Rent Extraction: Where the Money Currently Goes
+
+Public ownership of rail infrastructure would eliminate significant private
+rent extraction, reducing the effective cost of free rail. The following data
+is from ORR's Rail Industry Finance report (April 2024 to March 2025).
+
+**Rolling Stock Companies (ROSCOs):**
+
+Six companies (Angel Trains, Beacon Rail Finance, Eversholt Rail Leasing,
+Porterbrook Leasing Company, VTG Rail UK, Corelink Rail Infrastructure) own
+virtually all UK rolling stock and lease it to operators.
+
+| Metric (2024/25) | Value | 5-year change |
+|---|---|---|
+| Total ROSCO income | £1.3B | Down 29.2% |
+| Total ROSCO expenditure | £1.0B | Down 36.7% |
+| Net profit margin | 18.5% | **Up 10 percentage points** |
+| Dividends to shareholders | £275M | **Up 59.1%** |
+
+The pattern is clear: income down, expenditure down further, but profit
+margins and dividends both increasing sharply. Less service, more extraction.
+
+Of the £4.1B spent on rolling stock by train operators, £2.7B (66.3%) goes
+to ROSCO lease payments. These are rents on assets that were publicly owned
+before the 1990s privatisation, sold off cheaply, and now leased back to
+the public railway at enormous margins.
+
+**Train Operator Dividends:**
+
+| Metric (2024/25) | Value |
+|---|---|
+| Franchised operator dividends | £164M |
+| Of which: publicly owned operators (returned to govt) | ~£20M |
+| Private operator dividend extraction | ~£144M |
+
+**Network Rail Executive Costs:**
+
+| Metric (2024/25) | Value |
+|---|---|
+| NR staff "allowances, bonuses and overtime" | £500M |
+
+**Total visible private extraction: ~£920M/year**
+
+This figure understates the true extraction because it excludes parent
+company management fees, intercompany loans, and other profit-shifting
+mechanisms commonly used by multinational rail operators.
+
+**Policy implication:** Public ownership of rolling stock alone would
+eliminate £275M/year in ROSCO dividends and redirect the £2.7B in lease
+payments toward actual rolling stock investment. Combined with ending
+private operator dividends (£144M), public ownership recovers over
+**£400M/year** in pure rent extraction before any operational efficiencies.
+
+This does not fund free rail by itself (that requires SEBE), but it
+significantly reduces the cost and eliminates the perverse incentive
+structure where operators profit from underinvestment.
+
+Source: ORR, Rail Industry Finance (UK), April 2024 to March 2025.
+Published 25 November 2025.
+dataportal.orr.gov.uk/statistics/finance/rail-industry-finance/
+
 ---
 
 ## 6. Two-Stage Distribution Model
