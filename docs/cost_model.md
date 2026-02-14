@@ -262,8 +262,8 @@ heating, and most infrastructure with their parent(s).
 | Children 3-11 | 6M | £3,500 | £21B |
 | Children 12-17 | 4M | £4,000 | £16B |
 | **UBI subtotal** | | | **£184.5B** |
-| UBS provision | 67M | £2,500 | £168B |
-| **Stage 1 total** | | | **£352.5B** |
+| UBS provision | 67M | £2,500 | £167.5B |
+| **Stage 1 total** | | | **£352B** |
 
 **SEBE revenue (estimated): £200-500 billion/year**
 
@@ -275,7 +275,7 @@ scales up progressively.
 
 1. SEBE generates £200-500B from automation infrastructure
 2. £184.5B distributed as UBI (55M adults + 12M children)
-3. £168B funds UBS (free energy, transport, broadband, mobile)
+3. £167.5B funds UBS (free energy, transport, broadband, mobile)
 4. £2,500 per adult hits 55 million bank accounts
 5. Consumer spending surges (especially in deprived areas)
 6. High street, hospitality, local services recover
@@ -310,7 +310,7 @@ This matches the take-home pay of the current full-time median earner.
 | Children 3-11 | 6M | £3,500 | £21B |
 | Children 12-17 | 4M | £4,000 | £16B |
 | **ULI subtotal** | | | **£1.642T** |
-| UBS provision | 67M | £2,500 | £168B |
+| UBS provision | 67M | £2,500 | £167.5B |
 | **Stage 2 total** | | | **£1.810T** |
 
 Stage 2 requires SEBE plus additional progressive taxation (wealth tax, LVT,
@@ -417,10 +417,10 @@ just pensioners.
 
 | Component | Amount |
 |---|---|
-| Gross Stage 1 cost | £352.5B |
+| Gross Stage 1 cost | £352B |
 | Child Benefit offset | -£12.5B |
 | Winter Fuel Payment offset | -£2B |
-| **Net Stage 1 cost** | **~£338B** |
+| **Net Stage 1 cost** | **~£337.5B** |
 
 ### 7.4 Stage 2 Offsets (ULI at £29,000/adult)
 
@@ -493,9 +493,9 @@ disability support on top of ULI.
 | Neurological (13%) | ~10% | Genuine additional costs (MS, Parkinson's, epilepsy) |
 | Respiratory (4%) | ~10% | Equipment and medication costs |
 | Other (13%) | ~20% | Mixed |
-| **Weighted total** | **~30-40%** | |
+| **Weighted total** | **~34-41%** | |
 
-Applied to ~£28B total PIP/DLA spend: **£8-11B offset**
+Applied to ~£28B total PIP/DLA spend: **£9.5-11.5B offset**
 
 **Caveat:** This estimate uses caseload proportions, not condition-level
 spend data (which is not publicly available at the required granularity).
@@ -585,19 +585,19 @@ supplements which are more generous at every age band.
 | Winter Fuel Payment | ~£2B | High (replaced by UBS energy) |
 | UC/legacy income replacement | ~£40-50B | High (ULI exceeds UC rates) |
 | UC/legacy + pensioner housing | ~£20-23B | Medium (requires companion housing policy) |
-| PIP/DLA partial | ~£8-11B | Medium (needs condition-level spend research) |
+| PIP/DLA partial | ~£9.5-11.5B | Medium (needs condition-level spend research) |
 | Child Benefit | ~£12.5B | High (direct replacement, more generous) |
 | Statutory Maternity/Paternity | ~£3B | High (ULI + child supplement covers it) |
 | CMS administrative | ~£0.5B | Medium |
 | Administrative savings | ~£5-7B | Medium (DWP means-testing apparatus) |
-| **Total Stage 2 offset** | **~£221-239B** | |
+| **Total Stage 2 offset** | **~£222-240B** | |
 
 **Net Stage 2 cost:**
 
 | Component | Amount |
 |---|---|
 | Gross Stage 2 cost | £1.810T |
-| Existing welfare offset | -£221-239B |
+| Existing welfare offset | -£222-240B |
 | **Net Stage 2 cost** | **~£1.57-1.59T** |
 
 ### 7.6 Benefits NOT Offset
@@ -620,18 +620,19 @@ Some benefits are not displaced by UBI/ULI:
 
 ### 7.7 What This Means
 
-The offset is approximately **£230B/year** at Stage 2. That is real money
-that the government currently spends and would no longer need to.
+The offset is approximately **£222-240B/year** at Stage 2. That is real
+money that the government currently spends and would no longer need to.
 
 For context:
-- £230B is larger than National Insurance revenue (~£170B)
+- ~£230B is larger than National Insurance revenue (~£170B)
 - It is larger than VAT revenue (~£160B)
-- It reduces the Stage 2 funding gap from £1.810T to ~£1.58T
-- **Nearly half of the current welfare bill (~£290B) is absorbed by ULI**
+- It reduces the Stage 2 funding gap from £1.810T to ~£1.57-1.59T
+- **Over three quarters of the current welfare bill (~£290B) is absorbed
+  or displaced by ULI**
 
 At Stage 1, the offset is modest (~£14.5B), because Stage 1 preserves
-existing benefits. But it still reduces the net cost from £352B to ~£338B,
-improving SEBE coverage further.
+existing benefits. But it still reduces the net cost from £352B to
+~£337.5B, improving SEBE coverage further.
 
 ### 7.8 Dynamic Effects (Not Quantified)
 
@@ -669,7 +670,7 @@ conservative.
 | Children's rate | Not specified | Banded: £3,500-5,000 by age |
 | Gross total requirement | £2.144 trillion | Stage 1: £352B, Stage 2: £1.810T |
 | Existing welfare offset | Not considered | Stage 1: ~£14.5B, Stage 2: ~£230B |
-| **Net total requirement** | £2.144 trillion | **Stage 1: ~£338B, Stage 2: ~£1.58T** |
+| **Net total requirement** | £2.144 trillion | **Stage 1: ~£337.5B, Stage 2: ~£1.57-1.59T** |
 | SEBE coverage (net) | 9-23% | **Stage 1: 59-148%** |
 | Fundable from SEBE alone | No | **Yes (Stage 1)** |
 | Median basis | £32,890 (outdated, gross) | £39,039 (ASHE 2025, take-home adjusted) |
