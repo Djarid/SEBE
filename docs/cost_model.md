@@ -1,0 +1,349 @@
+# SEBE Cost Model
+
+## Revenue, Distribution, and Transition Framework
+
+**Author:** Jason Huxley
+**Version:** 1.0
+**Date:** February 2026
+**Status:** Working document (figures subject to revision as data updates)
+
+---
+
+## 1. Overview
+
+This document shows the working behind SEBE's revenue estimates, distribution
+costs, and the two-stage transition from Universal Basic Income (UBI) to
+Universal Living Income (ULI). All sources are cited. All assumptions are
+stated explicitly.
+
+---
+
+## 2. Data Sources
+
+| Source | Data | Date | Staleness |
+|---|---|---|---|
+| ONS ASHE 2025 | Median gross annual earnings (full-time): £39,039 | April 2025 (provisional) | Stale after Oct 2026 |
+| ONS Mid-Year Population Estimates | UK population: 68.3 million | Mid-2023 | Stale after mid-2024 release |
+| Ofgem Price Cap | Typical household energy: £1,758/year | Q1 2026 | Reviewed quarterly |
+| HMRC | Income tax and NI rates | 2025/26 tax year | Stale after April 2026 |
+| ONS AWE | Average weekly earnings (total pay): £741 | November 2025 | Monthly updates |
+
+**ONS ASHE reference:**
+ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/annualsurveyofhoursandearnings/2025
+
+**ONS Population reference:**
+ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/bulletins/annualmidyearpopulationestimates/mid2023
+
+---
+
+## 3. Population Breakdown
+
+UK population (mid-2023 estimate): **68.3 million**
+
+| Group | Estimated count | Notes |
+|---|---|---|
+| Adults (18+) | ~55 million | ONS age structure |
+| Children 0-2 | ~2 million | ~650k births/year × 3 cohorts |
+| Children 3-11 | ~6 million | ~650k/year × 9 cohorts |
+| Children 12-17 | ~4 million | ~650k/year × 6 cohorts |
+| **Total children** | **~12 million** | |
+| **Total population** | **~67 million** | Rounded for modelling |
+
+Note: The 68.3M ONS figure includes the entire usually resident population.
+For modelling, 67M is used (rounding, and excluding non-eligible residents).
+Exact eligibility criteria are a policy design question.
+
+---
+
+## 4. Median Income and Tax Burden
+
+### 4.1 Gross Median Earnings
+
+**ONS ASHE April 2025 (full-time employees):**
+- Median gross annual: **£39,039**
+- Median gross weekly: **£766.60**
+
+Full-time median is used as the reference point because it represents the
+earnings of a person in sustained employment. This is the standard of living
+that ULI (Stage 2) aims to match on a tax-free basis.
+
+### 4.2 Tax and National Insurance on Median Earnings
+
+Calculated using 2025/26 HMRC rates:
+
+| Component | Calculation | Amount |
+|---|---|---|
+| Gross salary | | £39,039 |
+| Personal allowance | First £12,570 tax-free | £0 |
+| Income tax (basic rate 20%) | (£39,039 - £12,570) × 0.20 | £5,294 |
+| Employee NI (8%) | (£39,039 - £12,570) × 0.08 | £2,118 |
+| **Total deductions** | | **£7,412** |
+| **Take-home pay** | | **£31,627** |
+
+### 4.3 Effective Living Standard Target
+
+ULI is tax-free. To match the spending power of a median earner:
+
+| Component | Amount |
+|---|---|
+| Median take-home pay | £31,627 |
+| Rounded for modelling | **£31,500** |
+
+This is the **Stage 2 target**: ULI + UBS = £31,500 effective.
+
+---
+
+## 5. Universal Basic Services (UBS)
+
+UBS provides essential services free at point of use, up to a reasonable
+threshold. Costs are estimated per person (averaged across household sizes).
+
+### 5.1 UBS Component Costs
+
+| Component | Per person/year | Source/basis |
+|---|---|---|
+| Energy (gas + electricity) | £1,200 | Ofgem cap £1,758/household, averaged across household sizes |
+| Local transport (bus pass) | £600 | Regional average annual bus pass |
+| Broadband (basic) | £330 | ~£27.50/month, shared household basis |
+| Mobile + basic device | £200 | SIM-only ~£10/month + handset amortised over 3 years |
+| Margin/contingency | £170 | Rounding buffer |
+| **UBS total** | **£2,500** | |
+
+### 5.2 Notes on UBS Costing
+
+- Energy cost is the largest component. Single-person households pay the full
+  Ofgem cap (~£1,758). Multi-person households share. £1,200 averaged is
+  conservative.
+- Transport covers local bus travel only. Rail, intercity, and private
+  transport are not included.
+- Broadband and mobile are basic tiers, not unlimited premium services.
+- UBS does not replace housing costs, food, or clothing.
+
+---
+
+## 6. Two-Stage Distribution Model
+
+### 6.1 Rationale
+
+SEBE's estimated revenue (£200-500B/year) cannot fund full ULI (£29,000/adult)
+from day one. However, it can fund a meaningful universal supplement
+immediately, which grows as automation (and therefore SEBE revenue) increases.
+
+This two-stage approach:
+- Makes Stage 1 **fully fundable from SEBE alone**
+- Removes the "people will stop working" objection (Stage 1 is a supplement)
+- Creates a **self-reinforcing feedback loop** (more spending, more tax revenue)
+- Allows organic transition as the economy shifts
+
+### 6.2 Stage 1: Universal Basic Income (UBI)
+
+**UBI at £2,500/adult/year (£208/month)**
+
+A universal supplement to existing income. Not a replacement.
+
+- Existing benefits (JSA, UC, PIP, etc.) continue unchanged
+- Unemployed receive existing benefits PLUS UBI
+- Employed receive wages PLUS UBI
+- Pensioners receive state pension PLUS UBI
+- UBI is tax-free and unconditional
+
+**Children's supplement (paid to parent/guardian in child's name):**
+
+| Age band | Annual supplement | Rationale |
+|---|---|---|
+| 0-2 (infant) | £5,000 | Equipment, nappies, formula/food, high parental demand |
+| 3-11 | £3,500 | Food, clothing, school costs, activities |
+| 12-17 | £4,000 | Higher food costs, social participation, technology |
+
+Children's rates reflect actual incremental costs of a child in an existing
+household. They are not a percentage of adult UBI. Children share housing,
+heating, and most infrastructure with their parent(s).
+
+### 6.3 Stage 1 Cost
+
+| Component | Count | Rate | Annual cost |
+|---|---|---|---|
+| Adult UBI | 55M | £2,500 | £137.5B |
+| Children 0-2 | 2M | £5,000 | £10B |
+| Children 3-11 | 6M | £3,500 | £21B |
+| Children 12-17 | 4M | £4,000 | £16B |
+| **UBI subtotal** | | | **£184.5B** |
+| UBS provision | 67M | £2,500 | £168B |
+| **Stage 1 total** | | | **£352.5B** |
+
+**SEBE revenue (estimated): £200-500 billion/year**
+
+At the midpoint of SEBE estimates (~£350B), Stage 1 is fully funded.
+At the lower bound (£200B), UBI can begin at a reduced rate while UBS
+scales up progressively.
+
+### 6.4 Stage 1 Economic Feedback Loop
+
+1. SEBE generates £200-500B from automation infrastructure
+2. £184.5B distributed as UBI (55M adults + 12M children)
+3. £168B funds UBS (free energy, transport, broadband, mobile)
+4. £2,500 per adult hits 55 million bank accounts
+5. Consumer spending surges (especially in deprived areas)
+6. High street, hospitality, local services recover
+7. Increased economic activity generates additional conventional tax revenue
+   (income tax, VAT, corporation tax, business rates all rise)
+8. Combined revenue (SEBE + conventional) allows UBI to increase
+9. As automation displaces more jobs, SEBE revenue grows further
+10. UBI ratchets upward toward ULI
+
+### 6.5 Stage 2: Universal Living Income (ULI)
+
+**ULI target: £29,000/adult/year (tax-free)**
+
+Stage 2 is the endgame, reached when automation has displaced enough
+employment that UBI must transition from supplement to primary income.
+
+| Component | Amount |
+|---|---|
+| ULI payment (adult) | £29,000 |
+| UBS value | £2,500 |
+| **Effective living standard** | **£31,500** |
+| Equivalent gross salary | ~£39,000 |
+
+This matches the take-home pay of the current full-time median earner.
+
+**Stage 2 full cost:**
+
+| Component | Count | Rate | Annual cost |
+|---|---|---|---|
+| Adult ULI | 55M | £29,000 | £1.595T |
+| Children 0-2 | 2M | £5,000 | £10B |
+| Children 3-11 | 6M | £3,500 | £21B |
+| Children 12-17 | 4M | £4,000 | £16B |
+| **ULI subtotal** | | | **£1.642T** |
+| UBS provision | 67M | £2,500 | £168B |
+| **Stage 2 total** | | | **£1.810T** |
+
+Stage 2 requires SEBE plus additional progressive taxation (wealth tax, LVT,
+FTT) and expanded fiscal space under MMT as automation increases productive
+capacity. The exact transition trajectory is a macroeconomic question for
+specialist modelling.
+
+### 6.6 Transition Timeline
+
+The transition from Stage 1 to Stage 2 is not a fixed date. It is driven by:
+
+- Growth in automation (and therefore SEBE revenue)
+- Decline in employment (and therefore need for higher UBI)
+- Conventional tax revenue from the UBI stimulus effect
+- Inflation dynamics and productive capacity
+
+The two stages are endpoints. In practice, UBI increases incrementally as
+revenue allows. A plausible (illustrative, not predictive) trajectory:
+
+| Year | Adult UBI | Approximate cost | Notes |
+|---|---|---|---|
+| Year 1 | £2,500 | £185B | Stage 1 launch, SEBE funded |
+| Year 3 | £5,000 | £275B + children | Stimulus revenue reinvested |
+| Year 5 | £10,000 | £550B + children | Automation displacement accelerating |
+| Year 10 | £20,000 | £1.1T + children | Significant employment decline |
+| Year 15+ | £29,000 | £1.6T + children | Stage 2 (ULI), full transition |
+
+These figures are illustrative only. Actual trajectory depends on automation
+adoption rates, SEBE revenue growth, and macroeconomic conditions.
+
+---
+
+## 7. Defence Ring-Fence (Optional)
+
+20% of SEBE revenue reserved for strategic defence autonomy.
+
+| SEBE revenue | 20% ring-fence | Remaining for UBI/UBS |
+|---|---|---|
+| £200B | £40B | £160B |
+| £350B | £70B | £280B |
+| £500B | £100B | £400B |
+
+At £350B SEBE, the ring-fence provides £70B for defence while leaving £280B
+for Stage 1 distribution (covers UBI at £2,500 plus partial UBS).
+
+Current UK defence spending: ~£60-70B (2.5% GDP). The ring-fence at the
+midpoint would exceed current spending, funding complete strategic autonomy
+independent of alliance dependencies.
+
+**Impact on Stage 1:** With ring-fence active, Stage 1 requires the upper
+range of SEBE estimates to be fully funded. Without it, the midpoint suffices.
+
+---
+
+## 8. Comparison to Previous Model
+
+| Parameter | Previous model | Revised model |
+|---|---|---|
+| UBI/ULI rate | £30,000 (single stage) | £2,500 rising to £29,000 (two stage) |
+| UBS value | £2,000 | £2,500 |
+| Children's rate | Not specified | Banded: £3,500-5,000 by age |
+| Total requirement | £2.144 trillion | Stage 1: £352B, Stage 2: £1.810T |
+| SEBE coverage | 9-23% | Stage 1: 57-142% |
+| Fundable from SEBE alone | No | **Yes (Stage 1)** |
+| Median basis | £32,890 (outdated, gross) | £39,039 (ASHE 2025, take-home adjusted) |
+| Tax treatment | Compared to gross salary | Correctly compared to take-home pay |
+
+Key improvement: Stage 1 is credibly fundable from SEBE alone, without
+requiring wealth tax, LVT, or other revenue sources. This makes the
+immediate proposal politically achievable.
+
+---
+
+## 9. Sensitivity Analysis
+
+### 9.1 SEBE Revenue Uncertainty
+
+The £200-500B range reflects uncertainty in:
+- Actual commercial energy consumption subject to SEBE
+- Behavioural response (energy efficiency investment)
+- Bandwidth growth rates
+- Enforcement effectiveness
+- Rate-setting decisions
+
+### 9.2 Population Changes
+
+UK population is growing (~0.5-1% per year, driven by net migration).
+Each additional million adults at Stage 1 adds ~£2.5B to costs. This is
+self-limiting: more people also means more economic activity and more
+SEBE-taxable automation serving them.
+
+### 9.3 Inflation Risk
+
+UBI is anti-inflationary at Stage 1 because:
+- SEBE withdraws revenue from corporations (deflationary)
+- UBI is small relative to existing incomes (minimal demand shock)
+- UBS directly reduces household costs (deflationary for recipients)
+
+At Stage 2 (full ULI), inflation risk is real and requires MMT-informed
+fiscal management. This is acknowledged as an area requiring specialist
+economic modelling.
+
+---
+
+## 10. Outstanding Questions
+
+These are acknowledged gaps, not hidden weaknesses:
+
+1. **Precise SEBE revenue modelling:** Current estimates are range-based.
+   Bottom-up modelling from actual UK energy/bandwidth data would narrow
+   the range. (Academic research opportunity.)
+
+2. **Transition dynamics:** How fast does UBI ratchet up? What triggers
+   each increase? This requires macroeconomic simulation.
+
+3. **Green Party EC730 alignment:** The children's supplement structure
+   should be checked against the Green Party's existing UBI policy for
+   compatibility.
+
+4. **Regional variation:** UBS costs (especially energy and transport)
+   vary significantly by region. A flat national rate may under-serve
+   rural and northern areas.
+
+5. **Interaction with existing benefits:** How does UBI interact with
+   UC, PIP, pension credit, housing benefit? Preserving existing benefits
+   is the stated approach, but edge cases need detailed policy design.
+
+---
+
+© 2026 Jason Huxley. Licensed under CC-BY 4.0.
