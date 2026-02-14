@@ -37,8 +37,8 @@ services:
     volumes:
       - proton-bridge-data:/root
     ports:
-      - "1143:1143"
-      - "1025:1025"
+      - "1143:11143"
+      - "1025:11025"
 
   # --- signal-cli REST API ---
   # Exposes a REST API for sending/receiving Signal messages.
@@ -71,7 +71,9 @@ services:
       - ../../.env
     environment:
       PROTON_IMAP_HOST: proton-bridge
+      PROTON_IMAP_PORT: "11143"
       PROTON_SMTP_HOST: proton-bridge
+      PROTON_SMTP_PORT: "11025"
       SIGNAL_API_URL: http://signal-cli:8080
       LLM_BASE_URL: http://host.containers.internal:8080/v1
     volumes:

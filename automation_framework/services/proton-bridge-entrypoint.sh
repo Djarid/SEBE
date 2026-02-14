@@ -43,6 +43,10 @@ fi
 # --- 2. Check if Bridge already has an account ---
 if [ -f "${MARKER}" ]; then
     echo "[entrypoint] Bridge already initialised, starting normally."
+    # Proton Bridge binds to 127.0.0.1 only. Forward from 0.0.0.0 for
+    # container-to-container access.
+    socat TCP-LISTEN:11143,fork,reuseaddr,bind=0.0.0.0 TCP:127.0.0.1:1143 &
+    socat TCP-LISTEN:11025,fork,reuseaddr,bind=0.0.0.0 TCP:127.0.0.1:1025 &
     exec "${BRIDGE_BIN}" --noninteractive
 fi
 
@@ -181,6 +185,12 @@ echo "[entrypoint] Copy it to .env as PROTON_BRIDGE_PASSWORD for reference."
 # Mark as initialised so subsequent starts skip login
 touch "${MARKER}"
 
-# --- 4. Start Bridge ---
+# --- 4. Start Bridge with socat forwarders ---
+# Proton Bridge binds IMAP/SMTP to 127.0.0.1 only. For container-to-container
+# communication we need them on 0.0.0.0. Run socat forwarders in background.
+echo "[entrypoint] Starting socat forwarders (0.0.0.0 -> 127.0.0.1)..."
+socat TCP-LISTEN:11143,fork,reuseaddr,bind=0.0.0.0 TCP:127.0.0.1:1143 &
+socat TCP-LISTEN:11025,fork,reuseaddr,bind=0.0.0.0 TCP:127.0.0.1:1025 &
+
 echo "[entrypoint] Starting Bridge..."
 exec "${BRIDGE_BIN}" --noninteractive

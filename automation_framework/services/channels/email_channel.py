@@ -58,7 +58,7 @@ class EmailChannel(BaseChannel):
         ctx.check_hostname = False
         ctx.verify_mode = ssl.CERT_NONE
 
-        imap = imaplib.IMAP4(self.config.imap_host, self.config.imap_port)
+        imap = imaplib.IMAP4(self.config.imap_host, self.config.imap_port, timeout=10)
         imap.starttls(ssl_context=ctx)
         imap.login(self.config.username, self.config.password)
         self._imap = imap

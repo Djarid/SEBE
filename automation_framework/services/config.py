@@ -168,6 +168,15 @@ class DaemonConfig:
             os.environ.get("PROTON_PASSWORD", ""),
         )
         cfg.email.sender_address = os.environ.get("EMAIL_SENDER", "")
+        # Container overrides for IMAP/SMTP host (default: 127.0.0.1)
+        if imap_host := os.environ.get("PROTON_IMAP_HOST"):
+            cfg.email.imap_host = imap_host
+        if smtp_host := os.environ.get("PROTON_SMTP_HOST"):
+            cfg.email.smtp_host = smtp_host
+        if imap_port := os.environ.get("PROTON_IMAP_PORT"):
+            cfg.email.imap_port = int(imap_port)
+        if smtp_port := os.environ.get("PROTON_SMTP_PORT"):
+            cfg.email.smtp_port = int(smtp_port)
 
         # LLM overrides
         if url := os.environ.get("LLM_BASE_URL"):

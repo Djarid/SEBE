@@ -101,6 +101,7 @@ def test_from_env_reads_environ(monkeypatch):
     monkeypatch.setenv("SIGNAL_OWNER_NUMBER", "+447000000001")
     monkeypatch.setenv("PROTON_USERNAME", "test@pm.me")
     monkeypatch.setenv("PROTON_PASSWORD", "secret")
+    monkeypatch.delenv("PROTON_BRIDGE_PASSWORD", raising=False)
     monkeypatch.setenv("EMAIL_SENDER", "test@example.com")
     monkeypatch.setenv("LLM_BASE_URL", "http://remote:9090/v1")
     
