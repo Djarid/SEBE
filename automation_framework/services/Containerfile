@@ -1,0 +1,19 @@
+FROM python:3.13-slim
+
+LABEL maintainer="Jason Huxley <jason@horizons-call.com>"
+LABEL description="SEBE daemon orchestrator"
+
+WORKDIR /app
+
+# No pip dependencies beyond stdlib for now.
+# If we add any later, uncomment:
+# COPY requirements.txt .
+# RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . /app/services/
+
+# The orchestrator runs as a module from the parent package
+ENV PYTHONPATH=/app
+ENV PYTHONUNBUFFERED=1
+
+CMD ["python", "-m", "services.orchestrator"]

@@ -68,6 +68,19 @@ SEBE/
     │   ├── project_context.md             # SEBE policy context (tracked)
     │   ├── author_context.md              # Author context (gitignored)
     │   └── convo_summary.md               # History (gitignored)
+    ├── services/                           # Daemon orchestration (containerised)
+    │   ├── __init__.py
+    │   ├── config.py                      # Daemon config, .env loader
+    │   ├── llm_client.py                  # LLM client + model swap manager
+    │   ├── orchestrator.py                # Main polling loop + approval queue
+    │   ├── Containerfile                  # Orchestrator container image
+    │   ├── podman-compose.yml             # Full pod (orchestrator + bridge + signal)
+    │   ├── .env.template                  # Credential template (safe to commit)
+    │   └── channels/                      # Channel adapters
+    │       ├── __init__.py
+    │       ├── base.py                    # Base channel interface
+    │       ├── email_channel.py           # Proton Bridge IMAP/SMTP
+    │       └── signal_channel.py          # signal-cli REST adapter
     ├── hardprompts/                        # Reusable prompt templates
     ├── args/                              # Behaviour settings
     │   └── defaults.yaml

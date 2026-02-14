@@ -1,0 +1,180 @@
+"""
+Daemon configuration.
+
+Reads from .env at repo root. All secrets come from .env;
+structural config from dataclass defaults.
+
+Architecture constraint: only ONE llama-server runs at a time on port 8080.
+The daemon swaps models by stopping/starting systemd user services.
+Qwen3 (fast MoE, 3B active) is the default always-on triage model.
+gpt-oss-120b is spun up on demand for substantive work, then stopped.
+"""
+
+import os
+from dataclasses import dataclass, field
+from pathlib import Path
+from typing import Optional
+
+
+# Repo root: two levels up from this file
+REPO_ROOT = Path(__file__).resolve().parent.parent.parent
+FRAMEWORK_ROOT = REPO_ROOT / "automation_framework"
+DOTENV_PATH = REPO_ROOT / ".env"
+
+
+def _load_dotenv() -> dict[str, str]:
+    """Minimal .env loader. No dependencies."""
+    env = {}
+    if not DOTENV_PATH.exists():
+        return env
+    with open(DOTENV_PATH) as f:
+        for line in f:
+            line = line.strip()
+            if not line or line.startswith("#"):
+                continue
+            if "=" in line:
+                key, _, value = line.partition("=")
+                key = key.strip()
+                value = value.strip().strip("\"'")
+                env[key] = value
+    return env
+
+
+# Load .env into os.environ (don't overwrite existing vars)
+_dotenv = _load_dotenv()
+for k, v in _dotenv.items():
+    os.environ.setdefault(k, v)
+
+
+@dataclass
+class LLMModel:
+    """A model available via llama-server."""
+    name: str
+    systemd_unit: str  # systemd --user service name
+    role: str  # "triage" or "substance"
+    # Expected startup time (seconds) before the API is ready
+    startup_wait: float = 5.0
+
+
+@dataclass
+class LLMConfig:
+    """
+    Single-endpoint LLM configuration.
+
+    Both models share port 8080. Only one runs at a time.
+    The daemon manages swapping via systemctl --user stop/start.
+
+    Default behaviour: Qwen3 handles all routine work (triage,
+    classification, short drafts, replies). gpt-oss-120b is only
+    swapped in for large batch jobs where quality matters (policy
+    drafts, bulk processing, long-form generation). Swapping is
+    never triggered automatically per-message.
+    """
+    base_url: str = "http://localhost:8080/v1"
+    api_key: str = "sk-local-no-auth"
+    max_context: int = 131072
+
+    # The default (always-on) model — handles everything unless
+    # explicitly swapped via command or batch job
+    default_model: str = "qwen3"
+
+    # Available models
+    models: dict = field(default_factory=lambda: {
+        "qwen3": LLMModel(
+            name="Qwen3-Coder-30B-A3B",
+            systemd_unit="llama-qwen3",
+            role="default",
+            startup_wait=8.0,
+        ),
+        "oss120": LLMModel(
+            name="gpt-oss-120b",
+            systemd_unit="llama-oss120",
+            role="batch",
+            startup_wait=30.0,
+        ),
+    })
+
+    # Maximum time (seconds) to wait for a model to become ready
+    swap_timeout: float = 120.0
+
+
+@dataclass
+class SignalConfig:
+    """signal-cli daemon configuration."""
+    binary: str = "/usr/local/bin/signal-cli"
+    # Phone number (E.164 format)
+    account: str = ""
+    # REST API mode port (signal-cli daemon --http)
+    api_port: int = 8082
+    # Owner's number (for sending notifications to self)
+    owner_number: str = ""
+
+
+@dataclass
+class EmailConfig:
+    """Proton Bridge IMAP/SMTP configuration."""
+    imap_host: str = "127.0.0.1"
+    imap_port: int = 1143
+    smtp_host: str = "127.0.0.1"
+    smtp_port: int = 1025
+    username: str = ""
+    password: str = ""
+    sender_address: str = "jason@horizons-call.com"
+    watch_folders: list[str] = field(default_factory=lambda: ["INBOX"])
+    poll_interval: int = 30
+
+
+@dataclass
+class DaemonConfig:
+    """Top-level daemon configuration."""
+
+    # LLM (single port, model swapping)
+    llm: LLMConfig = field(default_factory=LLMConfig)
+
+    # Channel configs
+    signal: SignalConfig = field(default_factory=SignalConfig)
+    email: EmailConfig = field(default_factory=EmailConfig)
+
+    # Daemon behaviour
+    poll_interval: int = 30  # seconds between channel polls
+    approval_timeout: int = 3600  # seconds before pending action expires
+    log_level: str = "INFO"
+
+    # Paths
+    memory_db: Path = field(
+        default_factory=lambda: FRAMEWORK_ROOT / "data" / "memory.db"
+    )
+    log_dir: Path = field(
+        default_factory=lambda: FRAMEWORK_ROOT / "memory" / "logs"
+    )
+
+    @classmethod
+    def from_env(cls) -> "DaemonConfig":
+        """Build config from environment variables."""
+        cfg = cls()
+
+        # Signal
+        cfg.signal.account = os.environ.get("SIGNAL_ACCOUNT", "")
+        cfg.signal.owner_number = os.environ.get("SIGNAL_OWNER_NUMBER", "")
+
+        # Email (Proton Bridge)
+        cfg.email.username = os.environ.get(
+            "PROTON_USERNAME", "jason@horizons-call.com"
+        )
+        cfg.email.password = os.environ.get("PROTON_PASSWORD", "")
+        cfg.email.sender_address = os.environ.get(
+            "EMAIL_SENDER", "jason@horizons-call.com"
+        )
+
+        # LLM overrides
+        if url := os.environ.get("LLM_BASE_URL"):
+            cfg.llm.base_url = url
+        if key := os.environ.get("LLM_API_KEY"):
+            cfg.llm.api_key = key
+
+        return cfg
+
+
+def get_config() -> DaemonConfig:
+    """Return the daemon configuration."""
+    return DaemonConfig.from_env()
