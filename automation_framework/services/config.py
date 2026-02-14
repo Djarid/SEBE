@@ -100,12 +100,11 @@ class LLMConfig:
 
 @dataclass
 class SignalConfig:
-    """signal-cli daemon configuration."""
-    binary: str = "/usr/local/bin/signal-cli"
+    """signal-cli REST API configuration."""
+    # REST API base URL (signal-cli-rest-api container)
+    api_url: str = "http://localhost:8082"
     # Phone number (E.164 format)
     account: str = ""
-    # REST API mode port (signal-cli daemon --http)
-    api_port: int = 8082
     # Owner's number (for sending notifications to self)
     owner_number: str = ""
 
@@ -154,6 +153,8 @@ class DaemonConfig:
         cfg = cls()
 
         # Signal
+        if api_url := os.environ.get("SIGNAL_API_URL"):
+            cfg.signal.api_url = api_url
         cfg.signal.account = os.environ.get("SIGNAL_ACCOUNT", "")
         cfg.signal.owner_number = os.environ.get("SIGNAL_OWNER_NUMBER", "")
 

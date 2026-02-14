@@ -42,8 +42,8 @@ def test_llm_config_defaults():
 def test_signal_config_defaults():
     """Test SignalConfig default values."""
     config = SignalConfig()
+    assert config.api_url == "http://localhost:8082"
     assert config.account == ""
-    assert config.api_port == 8082
     assert config.owner_number == ""
 
 

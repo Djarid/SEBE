@@ -1,10 +1,16 @@
 """
-Signal channel adapter via signal-cli.
+Signal channel adapter via signal-cli REST API.
 
-signal-cli can run in JSON-RPC daemon mode over a socket or in HTTP
-REST mode. This adapter uses the JSON-RPC stdio mode via subprocess
-for simplicity, with plans to migrate to the daemon mode once
-signal-cli is set up as a systemd service.
+Communicates with the bbernhard/signal-cli-rest-api container over HTTP.
+The container exposes a REST API on port 8080 (mapped to 8082 on the
+host in compose.yaml). Key endpoints:
+
+  GET  /v1/receive/<number>   — fetch queued messages
+  POST /v2/send               — send a message
+  GET  /v1/about              — health check / version info
+
+This replaces the earlier subprocess-based adapter. The REST API is the
+correct integration path when signal-cli runs inside the pod.
 
 Signal serves two purposes:
 1. As a notification/command channel to the owner (human-in-the-loop)
@@ -20,9 +26,10 @@ Commands from the owner:
 
 import json
 import logging
-import subprocess
 from datetime import datetime
 from typing import Optional
+from urllib.error import HTTPError, URLError
+from urllib.request import Request, urlopen
 
 from .base import (
     BaseChannel,
@@ -36,73 +43,100 @@ logger = logging.getLogger(__name__)
 
 
 class SignalChannel(BaseChannel):
-    """Signal adapter using signal-cli."""
+    """Signal adapter using signal-cli REST API."""
 
     channel_type = ChannelType.SIGNAL
 
     def __init__(self, config: SignalConfig):
         self.config = config
+        self._base_url = config.api_url.rstrip("/")
 
-    def _run_signal_cli(self, *args: str, timeout: int = 30) -> Optional[str]:
-        """
-        Run a signal-cli command and return stdout.
+    # ── HTTP helpers ───────────────────────────────────────────────────
 
-        Returns None on failure.
+    def _get(self, path: str, timeout: int = 10) -> Optional[dict | list]:
         """
-        cmd = [
-            self.config.binary,
-            "-u", self.config.account,
-            "--output=json",
-            *args,
-        ]
-        logger.debug("Running: %s", " ".join(cmd))
+        HTTP GET request to the signal-cli REST API.
+
+        Returns parsed JSON on success, None on failure.
+        """
+        url = f"{self._base_url}{path}"
+        logger.debug("GET %s", url)
         try:
-            result = subprocess.run(
-                cmd, capture_output=True, text=True, timeout=timeout
+            req = Request(url, headers={"Accept": "application/json"})
+            with urlopen(req, timeout=timeout) as resp:
+                body = resp.read().decode("utf-8")
+                if not body:
+                    return []
+                return json.loads(body)
+        except HTTPError as exc:
+            logger.error("Signal API HTTP error: %s %s", exc.code, exc.reason)
+            return None
+        except URLError as exc:
+            logger.error("Signal API connection error: %s", exc.reason)
+            return None
+        except (json.JSONDecodeError, OSError) as exc:
+            logger.error("Signal API error: %s", exc)
+            return None
+
+    def _post(self, path: str, payload: dict, timeout: int = 10) -> Optional[dict]:
+        """
+        HTTP POST request to the signal-cli REST API.
+
+        Returns parsed JSON on success, None on failure.
+        """
+        url = f"{self._base_url}{path}"
+        data = json.dumps(payload).encode("utf-8")
+        logger.debug("POST %s %s", url, payload)
+        try:
+            req = Request(
+                url,
+                data=data,
+                headers={
+                    "Content-Type": "application/json",
+                    "Accept": "application/json",
+                },
+                method="POST",
             )
-            if result.returncode != 0:
-                logger.error(
-                    "signal-cli failed (rc=%d): %s",
-                    result.returncode, result.stderr.strip()
-                )
-                return None
-            return result.stdout
-        except FileNotFoundError:
-            logger.error("signal-cli not found at: %s", self.config.binary)
+            with urlopen(req, timeout=timeout) as resp:
+                body = resp.read().decode("utf-8")
+                if not body:
+                    return {}
+                return json.loads(body)
+        except HTTPError as exc:
+            logger.error("Signal API HTTP error: %s %s", exc.code, exc.reason)
             return None
-        except subprocess.TimeoutExpired:
-            logger.error("signal-cli command timed out")
+        except URLError as exc:
+            logger.error("Signal API connection error: %s", exc.reason)
             return None
+        except (json.JSONDecodeError, OSError) as exc:
+            logger.error("Signal API error: %s", exc)
+            return None
+
+    # ── Channel interface ──────────────────────────────────────────────
 
     def poll(self) -> list[InboundMessage]:
         """
         Receive pending messages from Signal.
 
-        Uses `signal-cli receive` which downloads and returns any
+        Uses GET /v1/receive/<number> which downloads and returns any
         queued messages from the Signal server.
         """
-        output = self._run_signal_cli("receive", "--timeout", "1")
-        if not output:
+        result = self._get(f"/v1/receive/{self.config.account}")
+        if not result or not isinstance(result, list):
             return []
 
         messages = []
-        for line in output.strip().split("\n"):
-            if not line:
-                continue
-            try:
-                data = json.loads(line)
-                msg = self._parse_message(data)
-                if msg is not None:
-                    messages.append(msg)
-            except json.JSONDecodeError:
-                logger.warning("Could not parse signal-cli output: %s", line)
+        for envelope_wrapper in result:
+            msg = self._parse_message(envelope_wrapper)
+            if msg is not None:
+                messages.append(msg)
 
         if messages:
             logger.info("Received %d Signal messages", len(messages))
         return messages
 
     def _parse_message(self, data: dict) -> Optional[InboundMessage]:
-        """Parse a signal-cli JSON message envelope."""
+        """Parse a signal-cli REST API message envelope."""
         envelope = data.get("envelope", {})
         if not envelope:
             return None
@@ -118,7 +152,11 @@ class SignalChannel(BaseChannel):
 
         sender = envelope.get("source", "")
         timestamp_ms = envelope.get("timestamp", 0)
-        timestamp = datetime.fromtimestamp(timestamp_ms / 1000) if timestamp_ms else datetime.now()
+        timestamp = (
+            datetime.fromtimestamp(timestamp_ms / 1000)
+            if timestamp_ms
+            else datetime.now()
+        )
 
         # Group messages
         group_info = data_msg.get("groupInfo", {})
@@ -136,10 +174,14 @@ class SignalChannel(BaseChannel):
         )
 
     def send(self, message: OutboundMessage) -> bool:
-        """Send a Signal message."""
-        args = ["send", "-m", message.body, message.recipient]
-        output = self._run_signal_cli(*args)
-        if output is not None:
+        """Send a Signal message via POST /v2/send."""
+        payload = {
+            "message": message.body,
+            "number": self.config.account,
+            "recipients": [message.recipient],
+        }
+        result = self._post("/v2/send", payload)
+        if result is not None:
             logger.info("Signal message sent to %s", message.recipient)
             return True
         return False
@@ -171,12 +213,12 @@ class SignalChannel(BaseChannel):
         return self.send_to_owner(text)
 
     def is_available(self) -> bool:
-        """Check if signal-cli is installed and the account is configured."""
+        """Check if the signal-cli REST API is reachable and account is configured."""
         if not self.config.account:
             return False
-        # Quick check: can we list contacts?
-        output = self._run_signal_cli("listContacts", timeout=10)
-        return output is not None
+        # Hit the about endpoint as a health check
+        result = self._get("/v1/about", timeout=5)
+        return result is not None
 
     def is_owner_message(self, msg: InboundMessage) -> bool:
         """Check if a message is from the daemon owner."""

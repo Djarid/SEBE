@@ -54,9 +54,8 @@ def llm_config():
 def signal_config():
     """Standard Signal config for testing."""
     return SignalConfig(
-        binary="/usr/bin/true",
+        api_url="http://localhost:8082",
         account="+447000000000",
-        api_port=8082,
         owner_number="+447000000001",
     )
 
