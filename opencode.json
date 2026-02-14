@@ -1,0 +1,41 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "anthropic/claude-sonnet-4-5",
+  "small_model": "anthropic/claude-haiku-4-5",
+  "compaction": {
+    "auto": true,
+    "prune": true
+  },
+  "agent": {
+    "build": {
+      "model": "anthropic/claude-opus-4-6",
+      "description": "Default coding agent. Writes recon tools, tests, DB schemas, and parsers."
+    },
+    "plan": {
+      "model": "anthropic/claude-opus-4-6",
+      "description": "Deep reasoning for workflow design, attack surface analysis, and architectural decisions. Use this for complex planning where getting it wrong costs more than tokens."
+    },
+    "explore": {
+      "model": "anthropic/claude-sonnet-4-5",
+      "description": "Codebase and data exploration. Navigates entity relationships across tools, discovers exposure patterns, and understands how recon data connects."
+    },
+    "general": {
+      "model": "anthropic/claude-sonnet-4-5",
+      "description": "Multi-step tasks like running recon pipelines, correlating results, and executing workflows."
+    },
+    "compaction": {
+      "model": "anthropic/claude-haiku-4-5"
+    },
+    "title": {
+      "model": "anthropic/claude-haiku-4-5"
+    },
+    "summary": {
+      "model": "anthropic/claude-haiku-4-5"
+    },
+    "tester": {
+      "mode": "subagent",
+      "model": "anthropic/claude-sonnet-4-5"
+    }
+  }
+}
+
