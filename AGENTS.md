@@ -48,11 +48,9 @@ SEBE/
 ├── docs/
 │   ├── green_party_submission.md          # Green Party policy submission
 │   ├── academic_brief.md                  # Academic/think-tank version
-│   ├── public_explainer.md                # Plain-language public version
-│   └── cc-by.txt                          # License text
+│   └── public_explainer.md                # Plain-language public version
 ├── technical/                             # Future specs/code
 └── automation_framework/
-    ├── atlas/                             # Reference template (do not modify)
     ├── goals/                             # Process definitions
     │   └── manifest.md                    # Index of goals
     ├── tools/                             # Deterministic scripts
