@@ -3,7 +3,7 @@
 ## Revenue, Distribution, and Transition Framework
 
 **Author:** Jason Huxley
-**Version:** 1.0
+**Version:** 1.1
 **Date:** February 2026
 **Status:** Working document (figures subject to revision as data updates)
 
@@ -29,6 +29,7 @@ stated explicitly.
 | ONS AWE | Average weekly earnings (total pay): £741 | November 2025 | Monthly updates |
 | ORR Rail Finance | Rail fares income: £11.5B, govt funding: £11.9B | 2024/25 | Annual (Nov) |
 | OBR EFO | Welfare spending by category (pensioner, UC, disability, child) | Nov 2023 | Stale after Nov 2025 EFO |
+| DWP PIP Statistics | PIP caseload by disabling condition (3.9M claims) | Oct 2025 | Quarterly (next Mar 2026) |
 | DWP Benefit Expenditure Tables | Benefit expenditure and caseload data | 2025 (Jan 2026) | Annual |
 
 **ONS ASHE reference:**
@@ -357,6 +358,12 @@ covers Great Britain (excluding Northern Ireland social security, which
 operates separately but at similar per-capita rates). Figures are for
 2023-24 and will be higher by the time SEBE is implemented due to uprating.
 
+**All UBI/ULI/UBS values and SEBE rates must be pegged to CPI (or a
+comparable index) to maintain real value over time.** Without indexation,
+the same erosion that hollowed out Child Benefit (frozen 2016-2020,
+consistently uprated below earnings growth) would undermine ULI. CPI
+pegging applies to both payments and tax rates.
+
 **Source:** OBR, obr.uk/forecasts-in-depth/tax-by-tax-spend-by-spend/
 
 ### 7.2 Current UK Welfare Spending
@@ -420,96 +427,236 @@ just pensioners.
 At Stage 2, ULI is the primary income for most adults. It replaces almost
 all existing income-replacement benefits. The offsets are transformative.
 
-**Pensioner benefits (£138B):**
+#### 7.4.1 Pensioner Benefits (~£132B offset)
 
 State pension is the largest single welfare item (£125B in 2023-24). ULI
 at £29,000/year is approximately 2.8x the full new state pension
 (£10,600/year in 2023-24). ULI fully replaces:
 
-- State pension (basic and new): ~£125B
-- Pension Credit: ~£5B
-- Pensioner Housing Benefit: ~£5B (housing element, debatable)
-- Winter Fuel Payment: ~£2B (already offset at Stage 1 via UBS)
+| Benefit | Offset | Notes |
+|---|---|---|
+| State pension (basic and new) | ~£125B | Fully replaced by ULI |
+| Pension Credit | ~£5B | Means-tested top-up, redundant at ULI level |
+| Winter Fuel Payment | ~£2B | Already offset at Stage 1 via UBS energy |
+| **Pensioner subtotal** | **~£132B** | |
 
-**Note on pensioner Housing Benefit:** This may not be fully offset if
-housing costs remain separate from ULI. Conservative approach: include
-only pension Credit and state pension as firm offsets.
-
-**UC and legacy benefits (£81B):**
+#### 7.4.2 UC and Legacy Benefits (~£55-65B offset)
 
 ULI at £29,000/year exceeds UC maximum awards for most household types.
-However, some UC elements (housing, disability, childcare) address specific
-costs that ULI does not cover directly. Conservative approach: offset only
-the income-replacement elements, not housing or disability elements.
 
-Estimated income-replacement offset from UC/legacy: ~£40-50B (roughly half
-of UC spending covers standard allowance and child elements, the rest is
-housing and disability-related).
+| Component | Offset | Notes |
+|---|---|---|
+| UC standard allowance + child elements | ~£40-50B | Income replacement, fully displaced by ULI |
+| UC housing element (see 7.4.4) | ~£15B | Partial offset (see housing analysis below) |
+| Legacy JSA/IS (residual) | ~£2B | Fully displaced |
+| **UC subtotal** | **~£55-65B** | |
 
-**Child Benefit (£12.5B):** Already offset at Stage 1.
+#### 7.4.3 PIP/DLA (~£8-11B partial offset)
 
-**Summary of Stage 2 offsets:**
+Total PIP/DLA spending: ~£28B (OBR 2023-24, growing rapidly).
 
-| Benefit Displaced | Offset |
-|---|---|
-| State pension (basic + new) | ~£125B |
-| Pension Credit | ~£5B |
-| Winter Fuel Payment | ~£2B |
-| Child Benefit | ~£12.5B |
-| UC/legacy income-replacement elements | ~£40-50B |
-| **Total Stage 2 offset** | **~£185-195B** |
+PIP is not a monolithic category. DWP PIP Statistics (October 2025) show
+3.9 million claims in England and Wales, broken down by primary disabling
+condition:
+
+| Condition Category | % of Caseload | ULI Impact |
+|---|---|---|
+| Psychiatric disorder | 39% | High |
+| Musculoskeletal disease (general) | 19% | Moderate |
+| Neurological disease | 13% | Low |
+| Musculoskeletal disease (regional) | 12% | Moderate |
+| Respiratory disease | 4% | Low |
+| Other | 13% | Mixed |
+
+**Source:** DWP, Personal Independence Payment Official Statistics to
+October 2025
+
+**Analysis:** Many PIP claims (particularly psychiatric disorders such as
+depression, social anxiety, and chronic stress-related conditions) exist
+because the claimant cannot sustain employment and cannot afford to exist
+without disability support. The primary barrier is financial, not a need
+for specialist equipment or care. ULI at £29,000/year removes the financial
+pressure entirely, enabling recovery, therapy access, and time to manage
+the condition without the stress of poverty.
+
+Conditions with genuine additional costs (neurological conditions requiring
+specialist equipment, physical disabilities requiring adapted environments,
+conditions requiring personal care) are NOT offset. These claimants need
+disability support on top of ULI.
+
+**Estimated offset by condition type:**
+
+| Category | ULI offset estimate | Rationale |
+|---|---|---|
+| Psychiatric (39%) | ~60-70% | Financial stress is primary barrier for many |
+| Musculoskeletal (31%) | ~20-30% | Recovery time helps, but many have ongoing costs |
+| Neurological (13%) | ~10% | Genuine additional costs (MS, Parkinson's, epilepsy) |
+| Respiratory (4%) | ~10% | Equipment and medication costs |
+| Other (13%) | ~20% | Mixed |
+| **Weighted total** | **~30-40%** | |
+
+Applied to ~£28B total PIP/DLA spend: **£8-11B offset**
+
+**Caveat:** This estimate uses caseload proportions, not condition-level
+spend data (which is not publicly available at the required granularity).
+Average awards vary by condition and award level. Further research using
+DWP Stat-Xplore data on award levels by condition is needed to refine
+this estimate. The 30-40% range should be treated as indicative.
+
+#### 7.4.4 Housing Benefit and UC Housing Element (~£20-23B offset)
+
+Total housing-related benefit spending: ~£25B (Housing Benefit including
+pensioner HB plus UC housing element).
+
+Housing Benefit is means-tested. Under ULI, three factors dramatically
+reduce the housing benefit burden:
+
+**1. Means-testing mechanics:** ULI counts as income. At £29,000/year,
+most current Housing Benefit claimants exceed the eligibility threshold.
+The number of qualifying claimants falls sharply without any policy change;
+the existing means-test does the work.
+
+**2. Post-employment migration dispersal:** Employment is the primary
+driver of internal migration to high-cost areas (London, SE England,
+major cities). When ULI removes the employment motive, people disperse.
+COVID-19 demonstrated this effect: when the requirement to physically
+attend a workplace disappeared, significant population movement occurred
+away from expensive urban centres toward lower-cost areas. Under full ULI,
+this effect is permanent and more pronounced. Reduced demand in high-cost
+areas softens housing costs, further reducing Housing Benefit claims.
+
+**3. Lifestyle choice, not necessity:** Once employment is removed from
+the equation, living in an expensive city is a lifestyle choice, not an
+economic necessity. The state has no obligation to subsidise that choice.
+ULI provides £29,000 (plus £2,500 UBS). If a citizen chooses to live in
+central London, they manage their housing costs from that income. The
+rest of the nation should not fund location preference through Housing
+Benefit.
+
+**Residual housing support:** A small number of cases may persist,
+concentrated in extreme-cost areas. This residual (~£2-5B) is a housing
+market problem, not an income problem, and should be addressed through
+structural reform: Land Value Tax (suppresses speculative land prices),
+public housing investment (increases supply), and planning reform. Housing
+Benefit is a symptom of a broken housing market, not a permanent feature
+of the welfare state.
+
+**Estimated offset: £20-23B** (of ~£25B total)
+
+#### 7.4.5 Statutory Maternity and Paternity Pay (~£3B offset)
+
+Current statutory maternity/paternity pay costs ~£3B/year.
+
+Under ULI, the parent already receives £29,000/year (tax-free) plus a
+£5,000 child supplement for a newborn (0-2 age band). Combined: £34,000
+in the year of birth, plus free energy, transport, broadband, and mobile
+via UBS.
+
+The government should not supplement above ULI. Employers may offer
+enhanced maternity/paternity packages as a recruitment and retention tool,
+at their discretion. This is an employer benefit, not a state obligation.
+
+**Offset: £3B**
+
+#### 7.4.6 Child Maintenance Service (~£0.5B administrative offset)
+
+The Child Maintenance Service (CMS) currently costs ~£0.5B/year to
+administer. CMS exists to transfer income from absent parents to the
+parent with care.
+
+Under SEBE, every child has their own supplement (£3,500-5,000/year by
+age). The income-transfer justification for CMS largely evaporates.
+CMS may persist as a punitive enforcement mechanism for parental
+responsibility, but the administrative apparatus shrinks significantly.
+
+**Offset: ~£0.5B** (administrative savings)
+
+#### 7.4.7 Child Benefit (~£12.5B offset)
+
+Already offset at Stage 1 (see 7.3). Fully replaced by SEBE children's
+supplements which are more generous at every age band.
+
+### 7.5 Summary of Stage 2 Offsets
+
+| Benefit Displaced | Offset | Confidence |
+|---|---|---|
+| State pension (basic + new) | ~£125B | High (direct replacement) |
+| Pension Credit | ~£5B | High (means-tested, redundant at ULI) |
+| Winter Fuel Payment | ~£2B | High (replaced by UBS energy) |
+| UC/legacy income replacement | ~£40-50B | High (ULI exceeds UC rates) |
+| UC/legacy + pensioner housing | ~£20-23B | Medium (requires companion housing policy) |
+| PIP/DLA partial | ~£8-11B | Medium (needs condition-level spend research) |
+| Child Benefit | ~£12.5B | High (direct replacement, more generous) |
+| Statutory Maternity/Paternity | ~£3B | High (ULI + child supplement covers it) |
+| CMS administrative | ~£0.5B | Medium |
+| Administrative savings | ~£5-7B | Medium (DWP means-testing apparatus) |
+| **Total Stage 2 offset** | **~£221-239B** | |
 
 **Net Stage 2 cost:**
 
 | Component | Amount |
 |---|---|
 | Gross Stage 2 cost | £1.810T |
-| Existing welfare offset | -£185-195B |
-| **Net Stage 2 cost** | **~£1.615-1.625T** |
+| Existing welfare offset | -£221-239B |
+| **Net Stage 2 cost** | **~£1.57-1.59T** |
 
-### 7.5 What This Means
+### 7.6 Benefits NOT Offset
 
-The offset is approximately **£190B/year** at Stage 2. That is real money
+Some benefits are not displaced by UBI/ULI:
+
+- **PIP/DLA (residual ~£17-20B):** The 60-70% of PIP spending that
+  addresses genuine additional costs (specialist equipment, adapted
+  environments, personal care) continues. Conditions requiring physical
+  adaptations, mobility aids, or care support are not addressed by income
+  alone. This residual PIP is properly functioning disability support.
+- **Carer's Allowance (~£4B, increasing):** Caring is a vocation and
+  should be recognised as state-paid employment. The current Carer's
+  Allowance (£81.90/week, £4,260/year) is inadequate for what is often
+  24/7 skilled work. Under ULI, carers receive ULI as citizens (£29,000)
+  plus a proper state employment salary for the caring work. Carer's
+  Allowance is therefore not an offset but a future cost increase,
+  partially absorbed by declining public sector employment costs from
+  automation elsewhere (see 7.8).
+
+### 7.7 What This Means
+
+The offset is approximately **£230B/year** at Stage 2. That is real money
 that the government currently spends and would no longer need to.
 
-For context, £190B is roughly the size of National Insurance revenue. It
-does not close the Stage 2 funding gap on its own, but it materially
-reduces it: from £1.810T gross to ~£1.62T net.
+For context:
+- £230B is larger than National Insurance revenue (~£170B)
+- It is larger than VAT revenue (~£160B)
+- It reduces the Stage 2 funding gap from £1.810T to ~£1.58T
+- **Nearly half of the current welfare bill (~£290B) is absorbed by ULI**
 
 At Stage 1, the offset is modest (~£14.5B), because Stage 1 preserves
 existing benefits. But it still reduces the net cost from £352B to ~£338B,
 improving SEBE coverage further.
 
-### 7.6 Benefits NOT Offset
+### 7.8 Dynamic Effects (Not Quantified)
 
-Some benefits are not displaced by UBI/ULI because they address specific
-needs that a flat-rate income does not cover:
+Two dynamic effects further improve the fiscal position but cannot be
+quantified without specialist modelling:
 
-- **PIP/DLA (disability):** ~£28B. Disability costs are additional to
-  living costs. ULI does not replace disability support.
-- **Carer's Allowance:** ~£4B. Carers have specific additional needs.
-- **Housing Benefit/UC housing element:** ~£25B. Housing costs vary
-  enormously by region. ULI may reduce but not eliminate housing support
-  needs. This requires separate policy design.
-- **Statutory Maternity/Paternity Pay:** ~£3B. Employment-linked, may
-  persist alongside ULI.
+**1. Automation reduces public sector operating costs.** As automation
+handles administrative, logistical, and routine government functions,
+the total public sector wage bill declines. This creates fiscal space
+for new costs (such as proper carer wages) without increasing overall
+expenditure. Civil service headcount falls; remaining roles (including
+state-employed carers) are funded from the savings.
 
-These benefits continue (potentially reformed) alongside ULI. The offsets
-above are conservative: they only count benefits that ULI clearly and
-fully replaces.
+**2. Post-employment migration rebalances regional demand.** When
+employment no longer drives internal migration, population disperses from
+high-cost urban centres. This reduces housing cost pressure, reduces
+regional inequality, and revitalises currently deprived areas (where ULI
+spending has the highest multiplier effect). COVID-19 provided early
+evidence of this effect. The long-term impact on housing costs, regional
+tax revenue, and public service demand is significant but requires
+detailed modelling.
 
-### 7.7 Administrative Savings
-
-Beyond direct benefit offsets, ULI eliminates the administrative cost of
-means-testing. Current welfare administration (DWP, HMRC benefits, local
-authority housing benefit processing) costs billions per year. A universal,
-unconditional payment requires no means-testing, no sanctions regime, no
-compliance bureaucracy.
-
-DWP's administrative budget is approximately £7-8B/year. Not all of this
-is welfare administration (DWP also handles employment services, child
-maintenance, etc.), but a significant portion would be eliminated or
-redirected. Conservative estimate: £3-5B in administrative savings.
+These effects are noted as directionally positive. They are not included
+in the offset calculations above, which are deliberately static and
+conservative.
 
 ---
 
@@ -521,12 +668,13 @@ redirected. Conservative estimate: £3-5B in administrative savings.
 | UBS value | £2,000 | £2,500 |
 | Children's rate | Not specified | Banded: £3,500-5,000 by age |
 | Gross total requirement | £2.144 trillion | Stage 1: £352B, Stage 2: £1.810T |
-| Existing welfare offset | Not considered | Stage 1: ~£14.5B, Stage 2: ~£190B |
-| **Net total requirement** | £2.144 trillion | **Stage 1: ~£338B, Stage 2: ~£1.62T** |
+| Existing welfare offset | Not considered | Stage 1: ~£14.5B, Stage 2: ~£230B |
+| **Net total requirement** | £2.144 trillion | **Stage 1: ~£338B, Stage 2: ~£1.58T** |
 | SEBE coverage (net) | 9-23% | **Stage 1: 59-148%** |
 | Fundable from SEBE alone | No | **Yes (Stage 1)** |
 | Median basis | £32,890 (outdated, gross) | £39,039 (ASHE 2025, take-home adjusted) |
 | Tax treatment | Compared to gross salary | Correctly compared to take-home pay |
+| CPI indexation | Not specified | All values pegged to CPI |
 
 Key improvement: Stage 1 is credibly fundable from SEBE alone, without
 requiring wealth tax, LVT, or other revenue sources. This makes the
@@ -586,9 +734,10 @@ These are acknowledged gaps, not hidden weaknesses:
    vary significantly by region. A flat national rate may under-serve
    rural and northern areas.
 
-5. **Interaction with existing benefits:** How does UBI interact with
-   UC, PIP, pension credit, housing benefit? Preserving existing benefits
-   is the stated approach, but edge cases need detailed policy design.
+5. **Interaction with existing benefits:** Section 7 addresses the major
+   benefit categories. Remaining edge cases (interaction between ULI and
+   contributory benefits, transitional protection for current claimants,
+   devolved benefits in Scotland/NI) need detailed policy design.
 
 6. **Transport capacity investment:** Free public transport will increase
    demand beyond current levels. The 30% uplift factor used in UBS costing
