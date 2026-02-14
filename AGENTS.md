@@ -9,8 +9,10 @@
 **Status:** Active development, targeting Green Party policy adoption
 
 UK policy proposal for taxing automation infrastructure (energy consumption
-and data throughput) to fund Universal Basic Income at £30,000/year for all
-UK citizens. Revenue estimate: £200-500 billion/year.
+and data throughput) to fund a two-stage transition from Universal Basic
+Income (£2,500/adult/year) to Universal Living Income (£29,000/adult/year).
+Revenue estimate: £200-500 billion/year. Stage 1 is fully fundable from
+SEBE alone.
 
 ## Session Start Protocol
 
@@ -48,7 +50,9 @@ SEBE/
 ├── docs/
 │   ├── green_party_submission.md          # Green Party policy submission
 │   ├── academic_brief.md                  # Academic/think-tank version
-│   └── public_explainer.md                # Plain-language public version
+│   ├── public_explainer.md                # Plain-language public version
+│   ├── cost_model.md                      # Full cost workings, two-stage model
+│   └── glossary.md                        # Terminology definitions
 ├── technical/                             # Future specs/code
 └── automation_framework/
     ├── goals/                             # Process definitions
@@ -191,7 +195,7 @@ Every formal document ends with CC-BY 4.0 copyright notice.
 ## Git Conventions
 
 - **Branch:** `main`
-- **No remote configured** — local-only currently
+- **Remote:** `origin` on GitHub (credentials in `.env`)
 - **Never commit:** `.env`, `author_context.md`, `convo_summary.md`, `data/`, `memory/logs/`, `MEMORY.md`
 - **Do commit:** Policy documents, `project_context.md`, tools code, this file
 
@@ -199,10 +203,13 @@ Every formal document ends with CC-BY 4.0 copyright notice.
 
 | Parameter | Value |
 |---|---|
-| ULI payment | £30,000/person/year |
-| UBS value | £2,000/person/year |
-| Combined living standard | £32,000/person/year |
-| Total requirement (67M) | £2.144 trillion/year |
+| Stage 1 UBI (adult) | £2,500/adult/year |
+| Stage 2 ULI (adult) | £29,000/adult/year |
+| Children's supplements | £3,500-5,000/year (age-banded) |
+| UBS value | £2,500/person/year |
+| Combined living standard (Stage 2) | £31,500/person/year |
+| Stage 1 total cost | ~£352 billion/year |
+| Stage 2 total cost | ~£1.810 trillion/year |
 | SEBE revenue target | £200-500 billion/year |
 | Coverage threshold | Commercial facilities >500kW IT load |
 | Energy rates (SEE) | £0.05-0.30/kWh (tiered) |

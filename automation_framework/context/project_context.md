@@ -1,6 +1,6 @@
 # SEBE Project Context
 
-**Version:** 1.0
+**Version:** 2.0
 **Updated:** February 14, 2026
 
 This file provides agents with full SEBE policy context, technical details,
@@ -37,38 +37,80 @@ instead of human labour. Two components:
 **Estimated: £200-500 billion/year** (20-50% of current UK tax revenue)
 
 Scale comparison:
-- Income Tax: £250B — SEBE comparable
-- National Insurance: £170B — SEBE exceeds
-- VAT: £160B — SEBE exceeds
-- Corporation Tax: £100B — SEBE exceeds
+- Income Tax: £250B (SEBE comparable)
+- National Insurance: £170B (SEBE exceeds)
+- VAT: £160B (SEBE exceeds)
+- Corporation Tax: £100B (SEBE exceeds)
 
 **SEBE becomes UK's largest or second-largest revenue source.**
 
-### Distribution: UBI + UBS
+### Two-Stage Distribution Model
 
-**Universal Living Income (ULI):** £30,000/person/year
-- Based on: Median wage (£32,890) minus personal UBS costs (£2,000)
-- Just below median = "generous but believable"
-- 67 million people: £2.010 trillion/year
+SEBE funds a two-stage transition from Universal Basic Income (UBI) to
+Universal Living Income (ULI). Full working in `docs/cost_model.md`.
 
-**Universal Basic Services (UBS):** £2,000/person/year value
-- Free public transit, utilities (to threshold), communications (to threshold)
-- Infrastructure cost: £134 billion/year
+**Stage 1: Universal Basic Income (UBI)**
+- £2,500/adult/year (£208/month), universal supplement
+- Existing benefits (JSA, UC, PIP) continue unchanged
+- Children's supplements (age-banded by actual incremental costs):
+  - 0-2: £5,000/year (equipment, nappies, formula, high parental demand)
+  - 3-11: £3,500/year (food, clothing, school costs, activities)
+  - 12-17: £4,000/year (higher food costs, social participation, technology)
+- UBI is tax-free and unconditional
+- **Stage 1 cost: ~£352B/year (fundable from SEBE alone at midpoint)**
 
-**Combined living standard: £32,000/year equivalent**
-**Total requirement: £2.144 trillion/year**
+**Stage 2: Universal Living Income (ULI)**
+- £29,000/adult/year (tax-free), matching median take-home pay
+- Derived from ONS ASHE 2025: median gross £39,039, take-home ~£31,627,
+  minus UBS £2,500 = ULI £29,000 (rounded)
+- Children's supplements remain age-banded (same rates as Stage 1)
+- **Stage 2 cost: ~£1.810T/year (requires SEBE plus progressive taxation)**
+
+**Universal Basic Services (UBS):** £2,500/person/year value
+- Energy (gas + electricity): ~£1,200/person
+- All public transport (bus + national rail, free at point of use): ~£280/person
+- Broadband (basic): ~£330/person
+- Mobile + basic device: ~£200/person
+- Margin/contingency: ~£490/person
+
+**Effective living standard (Stage 2):**
+
+| Component | Amount |
+|---|---|
+| ULI payment (adult) | £29,000 |
+| UBS value | £2,500 |
+| **Combined** | **£31,500** |
+| Equivalent gross salary | ~£39,000 |
+
+### Stage 1 Feedback Loop
+
+1. SEBE generates £200-500B from automation infrastructure
+2. £184.5B distributed as UBI (55M adults + 12M children)
+3. £168B funds UBS (free energy, transport, broadband, mobile)
+4. £2,500 per adult hits 55 million bank accounts
+5. Consumer spending surges (especially in deprived areas)
+6. Increased economic activity generates additional conventional tax revenue
+7. Combined revenue (SEBE + conventional) allows UBI to increase
+8. As automation displaces more jobs, SEBE revenue grows further
+9. UBI ratchets upward toward ULI
 
 ### Funding the Full Package
 
-SEBE alone (£200-500B) covers 9-23% of requirement. Full UBI requires:
-- SEBE: £200-500B (major component)
+Stage 1 is fully fundable from SEBE alone (~£352B at midpoint estimates).
+
+Stage 2 (full ULI at £29,000/adult) requires SEBE plus:
 - Wealth tax: £50-80B
 - Land Value Tax: £50-100B
 - Financial Transaction Tax: £20-50B
-- MMT framework: Sovereign currency flexibility as automation increases productivity
+- MMT framework: Sovereign currency flexibility as automation increases
+  productivity
 
-**Optional defence ring-fence:** 20% of SEBE (£40-100B) for strategic autonomy.
-Reduces ULI to £28-29k but funds complete UK defence independence.
+The transition from Stage 1 to Stage 2 is not a fixed date. UBI increases
+incrementally as automation (and therefore SEBE revenue) grows.
+
+**Note on hypothecation:** The Green Party opposes ring-fenced taxation.
+SEBE generates revenue; government allocates it. Do not propose ring-fencing
+SEBE revenue for specific purposes (including defence).
 
 ---
 
@@ -82,7 +124,7 @@ Reduces ULI to £28-29k but funds complete UK defence independence.
 
 **Wealth exit is irrelevant:**
 - SEBE taxes fixed assets (datacenters, infrastructure) that CAN'T leave
-- Rich person leaves → datacenter stays → revenue continues
+- Rich person leaves, datacenter stays, revenue continues
 - Tax the physical layer (immobile) not people (mobile)
 - This is why SEBE works where wealth taxes don't
 
@@ -93,23 +135,27 @@ Reduces ULI to £28-29k but funds complete UK defence independence.
 **"Stifles innovation / companies will flee!"**
 - Physical datacenters can't easily move
 - Offshore compute taxed at 2x (cheaper to stay in UK)
-- UK market access valuable (67M consumers with £30k/year)
-- "Welcome to leave — we'll tax their products when they sell here"
+- UK market access valuable (67M consumers with rising purchasing power)
+- "Welcome to leave. We'll tax their products when they sell here"
 
 **"Economically illiterate / unaffordable!"**
 - £200-500B is real revenue from measurable physical activity
 - Current system (taxing vanishing workers) is the illiterate approach
+- Stage 1 (£352B) is fully fundable from SEBE alone
 - MMT: Constraint is inflation (productivity) not money supply
 
 **"People will stop working!"**
+- Stage 1 is £2,500/year (a supplement, not a replacement)
 - Evidence shows otherwise (Alaska PFD, Finland/Kenya pilots)
 - Meaningful work increases when survival not at stake
 - Job Guarantee alternative = coercive state labour
 
 **"Inflation will destroy it!"**
 - SEBE withdraws £200-500B from corporations (anti-inflationary)
+- Stage 1 UBI is small relative to existing incomes (minimal demand shock)
+- UBS directly reduces household costs (deflationary for recipients)
 - Real constraint is production capacity
-- Automation increases capacity → no inflation if productivity gains realised
+- Automation increases capacity, no inflation if productivity gains realised
 
 **"Technically impossible / will be gamed!"**
 - HRoT metering, physical infrastructure measurement
@@ -128,23 +174,24 @@ Reduces ULI to £28-29k but funds complete UK defence independence.
 - Coalition probability 2029: 20-30%
 
 ### SEBE as Coalition Tool
-- Greens demand UBI in coalition → need credible funding mechanism
+- Greens demand UBI in coalition, need credible funding mechanism
 - SEBE provides it (£200-500B demonstrable revenue)
+- Stage 1 is fully costed and fundable from SEBE alone
 - Positions Greens as serious party with implementable policy
 
 ### UK Strategic Context
-- US dollar collapse likely 60-70% by 2028
-- UK needs 4-5% GDP defence (£120-150B) for independence
-- SEBE with 20% ring-fence = £100B defence + £30k UBI
-- Funds both social security AND national security
+- US instability creates defence funding pressure
+- UK may need 4-5% GDP (£120-150B) for defence independence
+- SEBE revenue contributes to general taxation, not ring-fenced
+- Government can allocate revenue as needed (including defence)
 
 ---
 
 ## Three Publication Versions
 
 **1. Green Party Policy Submission** (`docs/green_party_submission.md`)
-- 16 sections, EC code alignment, coalition strategy
-- Defence ring-fence option, 5-year phased rollout
+- Two-stage UBI→ULI model, EC code alignment, coalition strategy
+- 5-year phased rollout
 - Target: Policy Development Committee, Economy Working Group, Autumn 2026
 
 **2. Academic/Think Tank Brief** (`docs/academic_brief.md`)
@@ -153,12 +200,19 @@ Reduces ULI to £28-29k but funds complete UK defence independence.
 - Target: IPPR, NEF, economics journals
 
 **3. Public Explainer** (`docs/public_explainer.md`)
-- "Tax robots, fund people" — simple language
+- "Tax robots, fund people" (simple language)
 - Real-world examples, common questions, call to action
 - Target: General public, media, campaign literature
 
-All three use: £30k UBI, £32k total with UBS, £200-500B revenue,
-honest framing as major component of progressive tax package.
+**4. Cost Model** (`docs/cost_model.md`)
+- Full working: ONS data sources, population breakdown, tax calculations
+- Two-stage cost breakdown with sensitivity analysis
+- UBS component costing, rail rent extraction analysis
+- Source of truth for all figures used in other documents
+
+All documents use: Two-stage model (£2,500 UBI rising to £29,000 ULI),
+£2,500 UBS, £200-500B revenue, honest framing as major component of
+progressive tax package.
 
 ---
 
@@ -168,9 +222,12 @@ honest framing as major component of progressive tax package.
 - Technical specification (HRoT metering, BGP/SNI enforcement)
 - Green Party aligned version (EC codes, coalition strategy)
 - Three publication versions (party, academic, public)
-- Submission to Bedford party (awaiting response)
+- Cost model with full working and cited sources
+- Earlier version submitted to Bedford Green Party chair and policy working group
+- Git remote configured, repository public on GitHub
 
 ### In Progress
+- Updating all documents to reflect two-stage model
 - Building support within Green Party
 - Academic publication (targeting IPPR, NEF)
 - Public engagement (git repo, social media via proxy)
@@ -220,7 +277,7 @@ security analysis (evasion prevention), scalability assessment.
 ## Output Standards
 
 When producing documents or analysis:
-1. Provide complete, publication-ready output — not drafts or fragments
+1. Provide complete, publication-ready output (not drafts or fragments)
 2. Include specific numbers and mechanisms, not vague generalities
 3. Acknowledge uncertainties honestly
 4. Mark document versions explicitly (v1.0, v1.1, etc.)

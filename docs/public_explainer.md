@@ -4,11 +4,15 @@
 
 **What is SEBE?**
 
-A new way of funding society that taxes the energy and internet bandwidth used by automated systems (AI, datacenters, robots) instead of taxing workers' wages.
+A new way of funding society that taxes the energy and internet bandwidth
+used by automated systems (AI, datacenters, robots) instead of taxing
+workers' wages.
 
 **Why do we need it?**
 
-Because robots and AI are taking jobs, which means fewer people paying income tax, which means the government runs out of money - unless we find a new way to raise revenue.
+Because robots and AI are taking jobs, which means fewer people paying
+income tax, which means the government runs out of money, unless we find
+a new way to raise revenue.
 
 ---
 
@@ -16,11 +20,11 @@ Because robots and AI are taking jobs, which means fewer people paying income ta
 
 ### Right now, the government gets money mainly from:
 
-1. **Income Tax** - taxes on your wages (£250 billion/year)
-2. **National Insurance** - more taxes on wages (£170 billion/year)  
-3. **VAT** - tax when you buy things (£160 billion/year)
+1. **Income Tax** (taxes on your wages): £250 billion/year
+2. **National Insurance** (more taxes on wages): £170 billion/year
+3. **VAT** (tax when you buy things): £160 billion/year
 
-**Total from workers: £420 billion - that's 42% of all government money.**
+**Total from workers: £420 billion. That's 42% of all government money.**
 
 ### But what happens when robots do the work?
 
@@ -29,7 +33,8 @@ Because robots and AI are taking jobs, which means fewer people paying income ta
 - More people need support
 - **Government goes broke**
 
-**Meanwhile, companies making billions using AI and robots pay hardly any tax** (they shift profits to Ireland, claim tax breaks, etc.)
+**Meanwhile, companies making billions using AI and robots pay hardly any
+tax** (they shift profits to Ireland, claim tax breaks, etc.)
 
 ---
 
@@ -42,9 +47,9 @@ Because robots and AI are taking jobs, which means fewer people paying income ta
 - AI training uses as much electricity as small countries
 - **Tax the electricity** instead of the workers
 
-**2. Internet Bandwidth (Mbps)**  
+**2. Internet Bandwidth (Mbps)**
 - Cloud computing, AI services, automated systems all use data
-- Companies pay for bandwidth already - now they pay tax on it too
+- Companies pay for bandwidth already, now they pay tax on it too
 - **Tax the data flow** instead of the workers
 
 ---
@@ -64,19 +69,50 @@ Because robots and AI are taking jobs, which means fewer people paying income ta
 
 ## What Do We Get From It?
 
-### Every UK citizen receives:
+### It works in two stages:
 
-**1. Universal Living Income (ULI): £30,000 per year**
-- Paid to everyone, no conditions
-- No job required
-- Enough to live comfortably (that's above the average wage after costs)
+**Stage 1 (starts immediately): Universal Basic Income**
 
-**2. Universal Basic Services (UBS): Free**
+Every adult gets **£2,500 per year** (about £208/month), on top of
+whatever you already earn or receive. No conditions. No job required.
+
+- If you work, you keep your wages AND get the £2,500
+- If you're on benefits, you keep your benefits AND get the £2,500
+- If you're retired, you keep your pension AND get the £2,500
+
+**Children get more** (paid to parents):
+- Babies and toddlers (0-2): £5,000/year
+- Children (3-11): £3,500/year
+- Teenagers (12-17): £4,000/year
+
+These amounts are based on what it actually costs to raise a child at each
+age, not an arbitrary percentage.
+
+**Plus: Universal Basic Services (free for everyone)**
 - **Free buses and trains** (all public transport)
-- **Free utilities** (electricity, gas, water to reasonable amount)
-- **Free internet and mobile** (to reasonable personal use)
+- **Free energy** (electricity and gas, to a reasonable amount)
+- **Free internet and mobile** (basic service)
 
-**Total value: £32,000 per year** - that's more than most people earn right now.
+**Total value of free services: £2,500 per person per year**
+
+**This is fully fundable from SEBE alone.** No other taxes needed for
+Stage 1.
+
+---
+
+**Stage 2 (as robots take more jobs): Universal Living Income**
+
+As automation grows, SEBE revenue grows with it. The £2,500 payment
+increases over time until it reaches **£29,000 per year** (tax-free).
+
+**Why £29,000?** Because that's what the average full-time worker actually
+takes home after tax. A median earner makes £39,000 gross, but after income
+tax and National Insurance, they take home about £31,500. Take away the
+£2,500 of free services you're already getting, and £29,000 is the right
+number.
+
+**Combined: £29,000 cash + £2,500 free services = £31,500 spending power.**
+That's the same as a median salary, without working.
 
 ---
 
@@ -99,7 +135,8 @@ Because robots and AI are taking jobs, which means fewer people paying income ta
 - Automated systems use data
 - **They pay the tax**
 
-**Small businesses** (under 500kW) are **exempt** - this only affects large-scale automation.
+**Small businesses** (under 500kW) are **exempt**. This only affects
+large-scale automation.
 
 ---
 
@@ -115,17 +152,23 @@ Because robots and AI are taking jobs, which means fewer people paying income ta
 ### "Won't prices just go up?"
 
 **Some prices might, but:**
-- You're getting £30,000/year + free services
-- Even if prices rise 10%, you're still **much better off**
+- You're getting free transport, energy, and internet (saves you thousands)
+- Plus £2,500 cash on top (Stage 1)
+- Even if some prices rise, you're still **much better off**
 - Companies will invest in efficiency to reduce their tax (good for environment)
 
 ### "Will people still work?"
 
-**Yes, if they want to:**
-- £30,000 is comfortable, but most people want **more**
-- Work becomes **optional**, not mandatory for survival
-- People can take risks (start businesses, retrain, care for family)
-- **Better jobs** (no one forced to do rubbish jobs just to survive)
+**Stage 1 is £2,500/year. Nobody quits their job for £208 a month.**
+
+By the time we reach Stage 2 (£29,000/year), robots will have taken most
+of the jobs anyway. That's the whole point: the income replaces the jobs
+that automation destroys.
+
+And evidence from around the world (Alaska, Finland, Kenya) shows that
+when you give people a basic income, they don't stop working. They start
+businesses, retrain, care for their families, and do better work because
+they're not desperate.
 
 ### "Is this socialism/communism?"
 
@@ -137,12 +180,14 @@ Because robots and AI are taking jobs, which means fewer people paying income ta
 
 ### "What about inflation?"
 
-**Won't cause inflation if:**
-- Automation makes things **cheaper** (it does)
-- We're producing **more** with robots (we are)  
+**Stage 1 won't cause inflation because:**
+- £2,500/year is a small supplement (minimal demand shock)
 - The money comes from **taxing companies**, not printing money
+- Free services actually **reduce** your costs (deflationary)
+- SEBE pulls money out of corporations (anti-inflationary)
 
-**It's just shifting money from corporations to people** - total amount in economy stays same.
+**It's just shifting money from corporations to people.** Total amount in
+the economy stays balanced.
 
 ---
 
@@ -152,75 +197,76 @@ Because robots and AI are taking jobs, which means fewer people paying income ta
 
 **Current situation:**
 - Work 40 hours/week for £32,000
-- Pay £1,500/year on buses
+- Pay £1,500/year on buses and trains
 - Pay £1,800/year on electricity and gas
 - Pay £500/year on phone and internet
 - **Take home after costs: ~£28,000**
 
-**With SEBE:**
-- Get £30,000/year unconditionally
-- Buses are free
-- Utilities are free
-- Internet is free
-- **You have £30,000** to spend on everything else
+**With SEBE (Stage 1):**
+- Same job, same £32,000 salary
+- Buses and trains are free (save £1,500)
+- Energy is free (save £1,800)
+- Internet and mobile are free (save £500)
+- Plus £2,500 UBI
+- **You have £36,300** (£8,300 better off)
 
-**And you can still work** if you want more money. The £30,000 is a **floor**, not a ceiling.
+**And you can still work.** The £2,500 is a **top-up**, not a replacement.
 
 ### A single parent:
 
 **Current:**
 - Part-time job £18,000/year
 - Childcare £8,000/year
-- Rent £12,000/year  
+- Rent £12,000/year
 - Bills £3,000/year
 - **Barely surviving**
 
-**With SEBE:**
-- £30,000 ULI
+**With SEBE (Stage 1):**
+- £18,000 wages
+- Plus £2,500 UBI for parent
+- Plus £3,500 for child (age 3-11)
 - Free transport (saves £1,000)
-- Free utilities (saves £2,000)
-- **Can afford childcare, housing, and actually raise kids**
+- Free energy (saves £1,800)
+- Free phone/internet (saves £500)
+- **£27,300 total (nearly £10,000 better off)**
 
-### A student:
+### A pensioner:
 
 **Current:**
-- £9,000/year tuition
-- Student loan for living costs
-- Graduates with £50,000+ debt
-- **Crushed before career starts**
+- State pension £11,500/year
+- Energy bills eating into it
+- Can't afford the bus to see grandchildren
 
-**With SEBE:**
-- £30,000/year ULI
-- Can study without debt
-- Can take internships that don't pay
-- **Actually get educated** instead of working three part-time jobs
+**With SEBE (Stage 1):**
+- State pension £11,500 (unchanged)
+- Plus £2,500 UBI
+- Free energy, free buses, free phone
+- **£14,000 plus free services (thousands better off)**
+
+### When Stage 2 arrives:
+
+All of the above, but the UBI payment has grown to £29,000/year. By then,
+many of the jobs in the examples above won't exist anyway, because
+automation will have replaced them. The income replaces the job.
 
 ---
 
-## The Defense Option
+## How Does It Get From Stage 1 to Stage 2?
 
-### Some people say: "What about defense?"
+Here's the clever bit:
 
-**Fair point.** With US falling apart, UK needs to defend itself.
+1. **SEBE starts** (taxes automation infrastructure)
+2. **Everyone gets £2,500/year** (plus free services)
+3. **People spend that money** (shops, restaurants, local businesses)
+4. **Local economy booms** (especially in poorer areas)
+5. **Government gets more tax** from the extra economic activity
+6. **Combined revenue grows** (SEBE + extra tax from the boom)
+7. **UBI increases** (to £5,000, then £10,000, and so on)
+8. **Meanwhile, automation grows** (more robots = more SEBE revenue)
+9. **Eventually: £29,000/year** (Universal Living Income)
 
-**Currently costs:** £60 billion/year (and we depend on America)
-
-**Full independence needs:** £120-150 billion/year
-
-### Option 1: Pure ULI
-- Everyone gets £30,000/year
-- Defense funded separately (higher income tax on rich people)
-
-### Option 2: ULI + Defense
-- Everyone gets £29,000/year (slightly less)
-- £100 billion goes to defense (we're fully independent)
-
-**The choice:**
-- **£2,000/year less** personally
-- **But** we're not dependent on America
-- **And** we have hypersonic missiles, laser weapons, and cyber supremacy
-
-**Let the public decide** which they prefer (referendum).
+It's a positive spiral. The more automation replaces jobs, the more SEBE
+revenue there is to fund the income that replaces those jobs.
 
 ---
 
@@ -230,7 +276,7 @@ Because robots and AI are taking jobs, which means fewer people paying income ta
 
 **Path 1: Do Nothing**
 - Automation continues
-- Jobs disappear  
+- Jobs disappear
 - Tax revenue collapses
 - Government cuts everything (austerity forever)
 - Social breakdown
@@ -247,16 +293,17 @@ Because robots and AI are taking jobs, which means fewer people paying income ta
 
 ### If Green Party (or any party) adopts SEBE:
 
-**2026-2027:** Put it in the manifesto  
-**2028:** Election - hopefully coalition government  
-**2029:** Pass the law  
-**2030:** Start small (£5,000/year ULI, biggest datacenters only)  
-**2031:** Expand (£15,000/year, more companies)  
-**2032:** Full system (£30,000/year for everyone)
+**2026-2027:** Put it in the manifesto
+**2028:** Election (hopefully coalition government)
+**2029:** Pass the law
+**2030:** Stage 1 begins (£2,500/year UBI, free transport and energy)
+**2031-2035:** UBI increases as automation grows
+**2035+:** Approaching full ULI (£29,000/year)
 
-**By 2032: You're getting £30,000/year plus free transport, utilities, and internet.**
+**From day one: you get £2,500/year plus free transport, energy, and internet.**
 
-Whether you work or not. Whether you're young or old. Whether you're rich or poor.
+Whether you work or not. Whether you're young or old. Whether you're rich
+or poor.
 
 **Everyone gets it.** Because the robots are doing the work.
 
@@ -267,21 +314,21 @@ Whether you work or not. Whether you're young or old. Whether you're rich or poo
 ### Technology should make life better, not worse.
 
 Right now:
-- ✗ Robots take jobs
-- ✗ Workers suffer
-- ✗ Companies get rich
-- ✗ Society gets poor
+- Robots take jobs
+- Workers suffer
+- Companies get rich
+- Society gets poor
 
 **With SEBE:**
-- ✓ Robots take jobs
-- ✓ Workers freed (to do what they want)
-- ✓ Companies still profit (just pay fair share)
-- ✓ Society thrives (everyone shares the wealth)
+- Robots take jobs
+- Workers get income (and free services)
+- Companies still profit (just pay fair share)
+- Society thrives (everyone shares the wealth)
 
-### This isn't science fiction. It's achievable in 5-7 years.
+### This isn't science fiction. Stage 1 is fully fundable today.
 
-**The technology exists.**  
-**The wealth exists.**  
+**The technology exists.**
+**The wealth exists.**
 **We just need the political will to tax robots instead of people.**
 
 ---
@@ -289,36 +336,45 @@ Right now:
 ## Three Things You Can Do Right Now
 
 ### 1. Join a party that supports this
-Green Party has 195,000 members and is growing - they support UBI and need a funding mechanism. **This could be it.**
+Green Party has 195,000 members and is growing. They support UBI and need
+a funding mechanism. **This could be it.**
 
 ### 2. Tell your MP you want automation taxed
-Don't let them say "we can't afford it" - **£200-500 billion says we can.**
+Don't let them say "we can't afford it." £200-500 billion says we can.
 
 ### 3. Share this idea
-The more people understand that **taxing robots is possible**, the harder it is for politicians to ignore.
+The more people understand that **taxing robots is possible**, the harder
+it is for politicians to ignore.
 
 ---
 
 ## Questions?
 
-**"This sounds too good to be true"**  
-It's not magic. It's just: tax the actual productive infrastructure (robots) instead of the human workers they're replacing.
+**"This sounds too good to be true"**
+It's not magic. It's just: tax the actual productive infrastructure (robots)
+instead of the human workers they're replacing. Stage 1 costs £352 billion,
+and SEBE generates £200-500 billion. The numbers work.
 
-**"Why hasn't anyone done this before?"**  
-Automation wasn't advanced enough. Now it is. We're the first generation where this is both **necessary** and **possible**.
+**"Why hasn't anyone done this before?"**
+Automation wasn't advanced enough. Now it is. We're the first generation
+where this is both **necessary** and **possible**.
 
-**"What if it doesn't work?"**  
-Then we tried something and learned. Better than sitting around watching employment collapse and doing nothing.
+**"What if it doesn't work?"**
+Stage 1 is a modest supplement (£2,500/year). If it works, we increase it.
+If something needs adjusting, we adjust it. That's why it's two stages, not
+one big leap.
 
 ---
 
-**The future is automated. The question is: Do the robots work for everyone, or just for the people who own them?**
+**The future is automated. The question is: Do the robots work for
+everyone, or just for the people who own them?**
 
 **SEBE is how we make robots work for everyone.**
 
 ---
 
-*For technical details, see the full policy paper. For economic modeling, see the academic brief. For questions, contact [your details].*
+*For technical details, see the full policy paper. For economic modelling
+and cost workings, see the cost model. For questions, contact [your details].*
 
 *This is a citizen proposal. It needs your support to become reality.*
 

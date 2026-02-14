@@ -2,17 +2,29 @@
 
 ## The Sovereign Energy and Bandwidth Excise (SEBE) Framework
 
-**Author:** Jason Huxley  
-**Date:** February 2026  
+**Author:** Jason Huxley
+**Date:** February 2026
+**Version:** 2.0
 **Status:** Working Paper
 
 ---
 
 ## Abstract
 
-As automation achieves parity with human productive capacity, employment-based tax systems face structural collapse. This paper proposes the Sovereign Energy and Bandwidth Excise (SEBE), a novel fiscal framework that taxes the physical infrastructure of automated production: energy consumption (kWh) and data throughput (Mbps). SEBE could generate £200-500 billion annually (20-50% of current UK tax revenue), providing sustainable funding for Universal Living Income while addressing the fiscal crisis of technological unemployment.
+As automation achieves parity with human productive capacity,
+employment-based tax systems face structural collapse. This paper proposes
+the Sovereign Energy and Bandwidth Excise (SEBE), a novel fiscal framework
+that taxes the physical infrastructure of automated production: energy
+consumption (kWh) and data throughput (Mbps). SEBE could generate £200-500
+billion annually (20-50% of current UK tax revenue), providing sustainable
+funding for a two-stage transition from Universal Basic Income to Universal
+Living Income while addressing the fiscal crisis of technological
+unemployment. A key finding is that Stage 1 (UBI at £2,500/adult/year plus
+Universal Basic Services at £2,500/person/year, total ~£352B) is fully
+fundable from SEBE revenue alone at midpoint estimates.
 
-**Keywords:** Automation, taxation, Universal Basic Income, fiscal policy, energy economics, digital economy
+**Keywords:** Automation, taxation, Universal Basic Income, fiscal policy,
+energy economics, digital economy, post-employment
 
 ---
 
@@ -32,7 +44,7 @@ Advanced economies face a fundamental contradiction:
 UK fiscal model depends critically on employment taxation:
 
 | Tax Source | Revenue (£B) | % of Total | Employment-Linked |
-|------------|--------------|------------|-------------------|
+|---|---|---|---|
 | Income Tax | 250 | 25% | Yes |
 | National Insurance | 170 | 17% | Yes |
 | Corporation Tax | 100 | 10% | Partially |
@@ -43,9 +55,13 @@ As employment decreases, this revenue base erodes.
 
 ### 1.3 Research Question
 
-**Can infrastructure-based taxation replace employment taxation in a post-labor economy?**
+**Can infrastructure-based taxation replace employment taxation in a
+post-labour economy, and what transition mechanism enables a credible path
+from current fiscal arrangements to universal income provision?**
 
-This paper proposes and analyzes one such mechanism: the Sovereign Energy and Bandwidth Excise.
+This paper proposes and analyses one such mechanism: the Sovereign Energy
+and Bandwidth Excise, with a two-stage distribution model that addresses
+the sequencing problem.
 
 ---
 
@@ -53,11 +69,11 @@ This paper proposes and analyzes one such mechanism: the Sovereign Energy and Ba
 
 ### 2.1 Value Creation in Automated Production
 
-**Classical economics:** Value = Labor + Capital  
+**Classical economics:** Value = Labour + Capital
 **Automated economics:** Value = Energy + Capital + Information
 
 **Implications:**
-- Labor becomes marginal input
+- Labour becomes marginal input
 - Energy and computation become primary inputs
 - Tax base must shift accordingly
 
@@ -65,7 +81,7 @@ This paper proposes and analyzes one such mechanism: the Sovereign Energy and Ba
 
 **Advantages of infrastructure taxation:**
 
-1. **Measurable:** Physical infrastructure (power lines, fiber optics) provides objective data
+1. **Measurable:** Physical infrastructure (power lines, fibre optics) provides objective data
 2. **Unavoidable:** Production requires energy and data (can't offshore completely)
 3. **Progressive:** Large-scale operations use more, pay proportionally more
 4. **Future-proof:** Captures automation dividend as technology advances
@@ -73,9 +89,18 @@ This paper proposes and analyzes one such mechanism: the Sovereign Energy and Ba
 ### 2.3 Pigouvian Benefits
 
 SEBE functions as **double dividend tax:**
-- **Revenue** for ULI (primary purpose)
+- **Revenue** for universal income (primary purpose)
 - **Environmental** benefit (energy efficiency incentive)
 - **Industrial policy** (onshore compute investment)
+
+### 2.4 The Sequencing Problem
+
+Previous universal income proposals face a credibility gap: full universal
+income (matching median living standards) requires revenues far exceeding
+any single tax instrument. This paper addresses the sequencing problem
+through a two-stage model where Stage 1 is fully fundable from a single
+new revenue source, creating an economic feedback loop that funds the
+transition to Stage 2.
 
 ---
 
@@ -96,7 +121,7 @@ Three-point metering (Hardware Root of Trust):
 
 **Liability calculation:**
 ```
-SEE = PoL - (PoS_final - PoS_initial) × Efficiency_Allowance
+SEE = PoL - (PoS_final - PoS_initial) x Efficiency_Allowance
 ```
 
 **Prevents evasion:**
@@ -111,7 +136,7 @@ SEE = PoL - (PoS_final - PoS_initial) × Efficiency_Allowance
 
 **Role Margin Protocol:**
 - Baseline quota per Standard Industrial Classification
-- Threshold: 1.5× standard deviation for sector
+- Threshold: 1.5x standard deviation for sector
 - Tax excess throughput
 
 **Technical enforcement:**
@@ -121,7 +146,7 @@ SEE = PoL - (PoS_final - PoS_initial) × Efficiency_Allowance
 
 **Offshore compute penalty:**
 - Domestic datacenter: Base rate
-- Offshore AWS/Azure/GCP: 2× base rate
+- Offshore AWS/Azure/GCP: 2x base rate
 - **Incentive:** Repatriate compute to UK
 
 ### 3.3 Rate Structures
@@ -129,7 +154,7 @@ SEE = PoL - (PoS_final - PoS_initial) × Efficiency_Allowance
 **Energy (preliminary estimates):**
 
 | Bracket | Rate (£/kWh) | Annual Revenue |
-|---------|--------------|----------------|
+|---|---|---|
 | 500kW-5MW | 0.05 | £20-30B |
 | 5MW-50MW | 0.15 | £50-80B |
 | >50MW | 0.30 | £80-140B |
@@ -138,7 +163,7 @@ SEE = PoL - (PoS_final - PoS_initial) × Efficiency_Allowance
 **Bandwidth (preliminary estimates):**
 
 | Type | Rate | Annual Revenue |
-|------|------|----------------|
+|---|---|---|
 | Domestic baseline | Exempt | - |
 | Domestic excess | £25/Mbps | £20-50B |
 | Offshore compute | £50/Mbps | £30-200B |
@@ -153,8 +178,8 @@ SEE = PoL - (PoS_final - PoS_initial) × Efficiency_Allowance
 ### 4.1 Scale Comparison
 
 **SEBE (£200-500B) would be:**
-- **1.6-4× larger** than VAT (£160B)
-- **2-5× larger** than Corporation Tax (£100B)
+- **1.6-4x larger** than VAT (£160B)
+- **2-5x larger** than Corporation Tax (£100B)
 - **Comparable to** Income Tax (£250B)
 
 **SEBE becomes UK's largest or second-largest revenue source.**
@@ -166,71 +191,153 @@ SEE = PoL - (PoS_final - PoS_initial) × Efficiency_Allowance
 **Short-term:** Corporations (direct liability)
 
 **Medium-term:** Mixed incidence
-- **Consumer prices ↑** (some pass-through)
-- **Corporate profits ↓** (some absorbed)
+- **Consumer prices increase** (some pass-through)
+- **Corporate profits decrease** (some absorbed)
 - **Equilibrium:** Depends on market structure, elasticity
 
 **Long-term:** Efficiency gains
 - Companies invest in energy efficiency
-- Datacenters relocate to UK (cheaper than offshore + 2× tax)
+- Datacenters relocate to UK (cheaper than offshore + 2x tax)
 - **Net effect:** Lower energy consumption, higher UK investment
 
 ### 4.3 Economic Efficiency
 
 **Distortions:**
-- ✗ Penalizes energy-intensive industries
-- ✗ May favor labor over automation (if rates too high)
+- Penalises energy-intensive industries
+- May favour labour over automation (if rates too high)
 
 **Efficiencies:**
-- ✓ Corrects automation externality (unemployment)
-- ✓ Pigouvian environmental benefit
-- ✓ Simpler than income/corporate tax (reduces compliance costs)
+- Corrects automation externality (unemployment)
+- Pigouvian environmental benefit
+- Simpler than income/corporate tax (reduces compliance costs)
 
-**Net assessment:** More efficient than current system if rates calibrated correctly
+**Net assessment:** More efficient than current system if rates calibrated
+correctly
 
 ---
 
-## 5. Universal Living Income Distribution
+## 5. Two-Stage Distribution Model
 
-### 5.1 ULI Parameters
+### 5.1 The Sequencing Problem
 
-**Target payment:** £30,000/person/year
+Full Universal Living Income at £29,000/adult/year (matching median
+take-home pay) requires ~£1.810 trillion/year. No single tax instrument
+can fund this. Previous proposals either assume a complete progressive tax
+package (politically implausible in one step) or propose inadequate
+initial rates.
 
-**Rationale:**
-- UK median wage: £32,890
-- Minus personal UBS value: £2,000
-- = £30,000 maintains median living standard
+The two-stage model solves this by making Stage 1 fully fundable from SEBE
+alone, then using the economic feedback loop to fund the transition.
 
-**Universal:** Every UK resident (citizenship-based)
+### 5.2 Stage 1: Universal Basic Income (UBI)
 
-**Unconditional:** No work requirement (key difference from Job Guarantee)
+**Payment: £2,500/adult/year (£208/month)**
 
-### 5.2 UBS (Universal Basic Services)
+A universal, unconditional supplement. Existing benefits (JSA, UC, PIP)
+continue unchanged. No work requirement.
 
-**Free provision:**
-- Public transit (buses, trains, trams)
-- Utilities to household threshold (electricity, gas, water)
-- Communications (broadband, mobile data to personal threshold)
+**Children's supplement (age-banded by actual incremental costs):**
 
-**Annual cost:** £134 billion (£2,000/person infrastructure)
+| Age Band | Annual Supplement | Rationale |
+|---|---|---|
+| 0-2 (infant) | £5,000 | Equipment, nappies, formula/food, high parental demand |
+| 3-11 | £3,500 | Food, clothing, school costs, activities |
+| 12-17 | £4,000 | Higher food costs, social participation, technology |
 
-**Combined effect:** £32,000/year equivalent living standard
+Children's rates are not a percentage of adult UBI. Most UBI models set
+children's rates at 50% of adult, implicitly incentivising population
+growth to sustain a labour-dependent tax base. SEBE does not depend on
+population growth (it taxes automation, not people), so children's
+supplements reflect actual incremental costs instead.
 
-### 5.3 Total Funding Requirement
+**Universal Basic Services (UBS): £2,500/person/year value**
 
-**For 67 million people:**
-- ULI cash: £2.010 trillion
-- UBS infrastructure: £0.134 trillion
-- **Total: £2.211 trillion/year**
+| Component | Per Person/Year | Source |
+|---|---|---|
+| Energy (gas + electricity) | £1,200 | Ofgem cap averaged across household sizes |
+| All public transport (bus + rail) | £280 | ORR 2024/25 fares data + 30% demand elasticity |
+| Broadband (basic) | £330 | ~£27.50/month, shared household basis |
+| Mobile + basic device | £200 | SIM-only + handset amortised |
+| Margin/contingency | £490 | Demand growth, regional variation |
+| **UBS total** | **£2,500** | |
 
-**SEBE contribution:** £200-500B (9-23% of requirement)
+**Stage 1 total cost:**
 
-**Remainder funded by:**
-- Wealth tax (£50-80B)
-- Land Value Tax (£50-100B)
-- Financial Transaction Tax (£20-50B)
-- MMT framework (sovereign currency flexibility)
-- Productivity gains (automation output increases)
+| Component | Count | Rate | Annual Cost |
+|---|---|---|---|
+| Adult UBI | 55M | £2,500 | £137.5B |
+| Children 0-2 | 2M | £5,000 | £10B |
+| Children 3-11 | 6M | £3,500 | £21B |
+| Children 12-17 | 4M | £4,000 | £16B |
+| **UBI subtotal** | | | **£184.5B** |
+| UBS provision | 67M | £2,500 | £168B |
+| **Stage 1 total** | | | **£352.5B** |
+
+**SEBE coverage:** At midpoint estimates (~£350B), Stage 1 is fully funded.
+
+### 5.3 Stage 1 Economic Feedback Loop
+
+The feedback loop is the critical mechanism for the transition:
+
+1. SEBE generates £200-500B from automation infrastructure
+2. £184.5B distributed as UBI (55M adults + 12M children)
+3. £168B funds UBS provision
+4. £2,500 per adult hits 55 million bank accounts
+5. Consumer spending surges (especially in deprived areas with highest
+   marginal propensity to consume)
+6. Increased economic activity generates additional conventional tax
+   revenue (income tax, VAT, corporation tax, business rates)
+7. Combined revenue (SEBE + conventional) allows UBI to increase
+8. As automation displaces more jobs, SEBE revenue grows further
+9. UBI ratchets upward toward ULI
+
+This creates a self-reinforcing cycle where automation displacement
+simultaneously increases SEBE revenue and the need for higher UBI.
+
+### 5.4 Stage 2: Universal Living Income (ULI)
+
+**Target payment: £29,000/adult/year (tax-free)**
+
+**Derivation:**
+- ONS ASHE April 2025 median gross annual earnings (full-time): £39,039
+- Tax/NI on £39,039 (2025/26 rates): ~£7,412
+- Take-home pay: ~£31,627
+- UBS value: £2,500
+- **ULI = take-home minus UBS = £29,000** (rounded)
+
+ULI is tax-free. Comparing it to gross salary (as some previous proposals
+do) is incorrect. The correct comparison is to take-home pay, since that
+is the actual spending power ULI must match.
+
+**Combined living standard (Stage 2):**
+
+| Component | Amount |
+|---|---|
+| ULI payment (adult) | £29,000 |
+| UBS value | £2,500 |
+| **Effective living standard** | **£31,500** |
+| Equivalent gross salary | ~£39,000 |
+
+**Stage 2 full cost: ~£1.810T/year**
+
+Stage 2 requires SEBE plus wealth tax (£50-80B), Land Value Tax
+(£50-100B), Financial Transaction Tax (£20-50B), and MMT-informed fiscal
+expansion as automation increases productive capacity.
+
+### 5.5 Transition Timeline
+
+Illustrative (not predictive):
+
+| Year | Adult UBI | Approximate Cost | Notes |
+|---|---|---|---|
+| Year 1 | £2,500 | £185B | Stage 1, SEBE funded |
+| Year 3 | £5,000 | £275B + children | Stimulus revenue reinvested |
+| Year 5 | £10,000 | £550B + children | Automation displacement accelerating |
+| Year 10 | £20,000 | £1.1T + children | Significant employment decline |
+| Year 15+ | £29,000 | £1.6T + children | Stage 2 (ULI), full transition |
+
+The transition is not time-bound. It is driven by automation adoption
+rates, SEBE revenue growth, and macroeconomic conditions.
 
 ---
 
@@ -238,41 +345,52 @@ SEE = PoL - (PoS_final - PoS_initial) × Efficiency_Allowance
 
 ### 6.1 Aggregate Demand Maintenance
 
-**Problem:** Automation → unemployment → demand collapse → recession
+**Problem:** Automation leads to unemployment, demand collapse, recession
 
-**SEBE + ULI solution:**
+**SEBE + UBI solution:**
 - Corporations pay SEBE (withdraws purchasing power)
-- Population receives ULI (restores purchasing power)
+- Population receives UBI/ULI (restores purchasing power)
 - **Net effect:** Demand maintained despite employment loss
 
 **Prevents:** Technological deflation spiral
 
 ### 6.2 Inflation Management
 
-**Concern:** £2.2T ULI causes hyperinflation
+**Concern:** Universal income payments cause inflation
 
-**Response:**
-- **SEBE withdraws** £200-500B from corporate sector (anti-inflationary)
-- **Other progressive taxes** withdraw additional £200-500B (anti-inflationary)
-- **Real constraint:** Productive capacity, not money supply
-- **If** automation increases output 2-3× (plausible), inflation contained
+**Stage 1 response:**
+- UBI is £2,500/year (minimal relative to existing incomes)
+- SEBE withdraws £200-500B from corporate sector (anti-inflationary)
+- UBS directly reduces household costs (deflationary for recipients)
+- **Stage 1 inflation risk is low**
 
-**Key insight:** ULI + high taxation = balanced (MMT framework)
+**Stage 2 response:**
+- Full ULI at £1.810T is a significant fiscal expansion
+- **Depends critically** on productivity gains from automation
+- If automation increases output 2-3x (plausible): sustainable
+- If productivity gains are modest: inflationary
+- Requires MMT-informed fiscal management
 
-### 6.3 Labor Market Effects
+**Key insight:** The two-stage approach allows inflation dynamics to be
+observed and managed incrementally, rather than requiring a single large
+fiscal expansion.
 
-**Concern:** ULI destroys work incentive
+### 6.3 Labour Market Effects
 
-**Evidence suggests otherwise:**
-- Alaska Permanent Fund: No employment reduction
-- Finland UBI pilot: Slight employment increase
+**Concern:** Universal income destroys work incentive
+
+**Stage 1 response:**
+- £2,500/year is a supplement, not a replacement
+- No rational person leaves employment for £208/month
+- Evidence from existing programmes confirms this:
+  - Alaska Permanent Fund: No employment reduction
+  - Finland UBI pilot: Slight employment increase
+  - Kenya GiveDirectly: Increased entrepreneurship
+
+**Stage 2 response:**
+- By Stage 2, automation has displaced much employment anyway
+- ULI enables voluntary work, entrepreneurship, care work, creative pursuits
 - **Automation** destroys jobs, not ULI
-
-**SEBE + ULI enables:**
-- Voluntary work (people choose meaningful activity)
-- Entrepreneurship (basic security enables risk-taking)
-- Care work (unpaid labor currently)
-- Creative pursuits (human comparative advantage)
 
 ---
 
@@ -285,7 +403,7 @@ SEE = PoL - (PoS_final - PoS_initial) × Efficiency_Allowance
 - Commercial metering: Standard for large consumers
 - **Required:** Hardware Root of Trust upgrade (tamper-proof)
 
-**Cost:** £2-5 billion (metering infrastructure deployment)  
+**Cost:** £2-5 billion (metering infrastructure deployment)
 **Timeline:** 3-5 years
 
 **Precedent:** UK successfully deployed smart meters nationwide (2010-2025)
@@ -302,15 +420,13 @@ SEE = PoL - (PoS_final - PoS_initial) × Efficiency_Allowance
 - Automated quota management systems
 - Tier-1 ISP integration
 
-**Cost:** £500M-1 billion  
+**Cost:** £500M-1 billion
 **Timeline:** 2-3 years
-
-**Precedent:** China's Great Firewall (technical feasibility proven, though politically different purpose)
 
 ### 7.3 Administrative Overhead
 
 **SEBE collection:**
-- Automated (meters → central database)
+- Automated (meters to central database)
 - Monthly corporate invoicing
 - **Simpler** than current tax system (no complex deductions, allowances, exemptions)
 
@@ -331,9 +447,9 @@ SEE = PoL - (PoS_final - PoS_initial) × Efficiency_Allowance
 - "Competitive disadvantage" rhetoric
 
 **Mitigations:**
-- Offshore compute 2× tax (cheaper to stay in UK)
+- Offshore compute 2x tax (cheaper to stay in UK)
 - EU coordination (prevent haven shopping)
-- First-mover advantage (UK becomes global ULI leader)
+- First-mover advantage (UK becomes global leader)
 
 ### 8.2 Digital Sovereignty
 
@@ -410,6 +526,19 @@ SEE = PoL - (PoS_final - PoS_initial) × Efficiency_Allowance
 
 **SEBE advantage:** Taxes real production (energy/compute) not financial transactions
 
+### 9.5 Job Guarantee
+
+**Proposal:** Government guarantees employment for all
+
+**Problems:**
+- Coercive (compels labour in exchange for income)
+- Administratively complex (what jobs? who decides?)
+- Fights automation rather than adapting to it
+- Does not address the fiscal crisis (still depends on employment taxation)
+
+**SEBE advantage:** Adapts fiscal system to automation rather than resisting it.
+UBI/ULI is unconditional, not coerced.
+
 ---
 
 ## 10. Limitations and Further Research
@@ -417,17 +546,23 @@ SEE = PoL - (PoS_final - PoS_initial) × Efficiency_Allowance
 ### 10.1 Acknowledged Gaps
 
 This paper provides:
-- ✓ Technical specification
-- ✓ Order-of-magnitude revenue estimates
-- ✗ Detailed CGE (Computable General Equilibrium) model
-- ✗ Behavioral elasticity measurements
-- ✗ Optimal rate calculations
+- Technical specification for SEBE mechanism
+- Two-stage distribution model with costings
+- Order-of-magnitude revenue estimates
+- Cited data sources with staleness dates
+
+This paper does **not** provide:
+- Detailed CGE (Computable General Equilibrium) model
+- Behavioural elasticity measurements
+- Optimal rate calculations
+- Formal macroeconomic simulation of the feedback loop
 
 **Required next steps:**
-- Econometric modeling of tax incidence
+- Econometric modelling of tax incidence
 - Industry-specific impact studies
-- Pilot program data collection
+- Pilot programme data collection
 - International coordination feasibility analysis
+- Formal modelling of the Stage 1 feedback loop dynamics
 
 ### 10.2 Key Uncertainties
 
@@ -441,22 +576,24 @@ This paper provides:
 - Offshore vs domestic compute split unclear
 - Gaming potential (VPN, encryption, CDN caching)
 
-**ULI macroeconomics:**
-- Inflation impact uncertain (depends on productivity gains)
-- Labor market effects debated (employment elasticity)
-- Political sustainability unknown (future governments might repeal)
+**Distribution model:**
+- Inflation impact at Stage 2 uncertain (depends on productivity gains)
+- Feedback loop magnitude (how much does Stage 1 UBI boost conventional tax?)
+- Transition timeline (how fast does automation displace employment?)
+- Labour market effects debated (employment elasticity)
 
 ### 10.3 Research Agenda
 
 **Phase 1: Data Collection (6 months)**
 - Survey major energy consumers
 - ISP commercial throughput study
-- Estimate current tax base
+- Estimate current SEBE tax base
 
-**Phase 2: Modeling (12 months)**
+**Phase 2: Modelling (12 months)**
 - CGE model of SEBE implementation
-- Behavioral response estimation
+- Behavioural response estimation
 - Optimal rate calculation
+- Feedback loop simulation
 
 **Phase 3: Pilot (24 months)**
 - Voluntary trial with 10-20 companies
@@ -473,7 +610,8 @@ This paper provides:
 
 **If SEBE implemented:**
 - New £200-500B revenue source
-- Enables partial ULI (£5,000-15,000/year initially)
+- Stage 1 UBI (£2,500/adult/year) begins immediately
+- UBS rollout (free transport, energy, communications)
 - Reduces income tax dependency
 - Drives energy efficiency and UK datacenter investment
 
@@ -483,13 +621,13 @@ This paper provides:
 - SEBE revenue grows (more compute = more tax)
 - Income tax revenue shrinks (fewer employed)
 - **SEBE becomes dominant revenue source**
-- Full ULI achievable (£25,000-35,000/year)
+- UBI increases toward ULI (£10,000-20,000/year)
 
 ### 11.3 Long-Term (2035+)
 
 **Post-employment equilibrium:**
 - Employment optional (ULI provides living)
-- Taxation divorced from labor (SEBE + wealth/land taxes)
+- Taxation divorced from labour (SEBE + wealth/land taxes)
 - **New economic model:** Automated production + guaranteed income
 - UK demonstrates feasibility for other nations
 
@@ -515,7 +653,7 @@ This paper provides:
 **New institutional requirements:**
 - National Telemetry Agency (metering oversight)
 - Digital Customs Division (bandwidth enforcement)
-- ULI Payment Authority (distribution)
+- UBI/ULI Payment Authority (distribution)
 
 **Staffing:** 5,000-10,000 civil servants (compare to HMRC's 65,000)
 
@@ -524,7 +662,7 @@ This paper provides:
 ### 12.3 International Coordination
 
 **Bilateral agreements:**
-- EU: Harmonized digital taxation
+- EU: Harmonised digital taxation
 - OECD: Minimum standards (like 15% corporate tax)
 - Commonwealth: Shared SEBE framework
 
@@ -553,132 +691,115 @@ This paper provides:
 - Prices increase (consumer impact)
 - Innovation stifled (high compute costs)
 
-**Mitigation:** Offshore penalty (2× rate), phased implementation, competitive analysis
+**Mitigation:** Offshore penalty (2x rate), phased implementation,
+competitive analysis
 
 **Political:**
 - Opposition from affected industries
 - Public concern over "big government"
 - Coalition instability (policy reversal)
 
-**Mitigation:** Broad coalition building, clear public benefits (ULI), constitutional protection
+**Mitigation:** Broad coalition building, clear public benefits (UBI),
+constitutional protection
 
 ### 13.2 Macroeconomic Risks
 
-**Inflation:**
-- £2.2T ULI could cause demand-pull inflation
+**Inflation (Stage 2):**
+- Full ULI at £1.810T is a significant fiscal expansion
 - **Depends critically** on productivity gains from automation
-- **If productivity 2-3×:** Sustainable
-- **If productivity <1.5×:** Inflationary
+- **If productivity 2-3x:** Sustainable
+- **If productivity <1.5x:** Inflationary
 
-**Recommended:** Gradual phase-in, inflation targeting, adjustable ULI
+**Recommended:** Two-stage approach allows gradual phase-in with
+inflation monitoring at each step
 
 **Competitiveness:**
 - Higher energy costs for UK businesses
-- **But:** Offset by 2× offshore penalty (encourages UK investment)
-- **Net effect:** Unclear, requires modeling
+- **But:** Offset by 2x offshore penalty (encourages UK investment)
+- **Net effect:** Unclear, requires modelling
 
 **Financial markets:**
-- Massive fiscal expansion (£2.2T spending)
-- Gilt market capacity tested
-- **Sterling volatility** possible
+- Stage 1 is modest fiscal expansion (£352B, comparable to existing programmes)
+- Stage 2 requires careful sequencing
+- **Sterling volatility** possible at Stage 2
 
-**Recommended:** Coordinate with Bank of England, gradual rollout, international credibility building
-
----
-
-## 14. Alternative Design Choices
-
-### 14.1 Carbon-Based Rather Than Energy-Based
-
-**Alternative:** Tax carbon emissions instead of total energy
-
-**Pros:**
-- Environmental priority
-- Incentivizes renewables specifically
-
-**Cons:**
-- Misses renewable-powered compute (growing)
-- Smaller tax base (only fossil fuels)
-- Fiscal purpose secondary to environmental
-
-**Verdict:** SEBE superior for revenue generation, carbon tax complementary
-
-### 14.2 Computational Cycles (FLOPS) Rather Than Bandwidth
-
-**Alternative:** Tax computational capacity directly
-
-**Pros:**
-- Directly measures "robot" activity
-
-**Cons:**
-- Efficiency improvements reduce revenue (perverse incentive)
-- Difficult to measure accurately (gaming potential)
-- Doesn't capture data movement (CDN, streaming)
-
-**Verdict:** Bandwidth (Mbps) + Energy (kWh) more robust
-
-### 14.3 Corporate Revenue Rather Than Infrastructure
-
-**Alternative:** Higher corporation tax
-
-**Pros:**
-- Established system
-- Internationally coordinated (OECD 15% minimum)
-
-**Cons:**
-- Profit shifting (Ireland, Luxembourg)
-- Penalizes domestic companies
-- Doesn't capture infrastructure externality
-
-**Verdict:** SEBE complements (not replaces) corporation tax
+**Recommended:** Coordinate with Bank of England, gradual rollout,
+international credibility building
 
 ---
 
-## 15. Conclusion
+## 14. Conclusion
 
-The Sovereign Energy and Bandwidth Excise represents a viable fiscal framework for post-employment economics. By taxing the physical infrastructure of automated production (energy and data), SEBE:
+The Sovereign Energy and Bandwidth Excise represents a viable fiscal
+framework for post-employment economics. By taxing the physical
+infrastructure of automated production (energy and data), SEBE:
 
 - **Generates £200-500 billion annually** (20-50% of current UK tax revenue)
 - **Replaces failing employment taxation** as automation advances
-- **Enables Universal Living Income** (£30,000/year target)
+- **Funds Stage 1 UBI immediately** (£2,500/adult + children's supplements,
+  fully fundable from SEBE alone)
+- **Provides a credible transition path** to full ULI (£29,000/adult,
+  matching median take-home pay)
 - **Drives economic efficiency** (energy conservation, UK datacenter investment)
-- **Provides environmental co-benefits** (energy taxation incentivizes efficiency)
+- **Provides environmental co-benefits** (energy taxation incentivises efficiency)
 
 **Key advantages over alternatives:**
 - Objective measurement (kWh, Mbps)
 - Difficult evasion (physical infrastructure)
 - Future-proof (grows with automation)
 - Progressive incidence (large operations pay more)
+- **Two-stage model solves the sequencing problem**
 
 **Critical uncertainties:**
-- Precise revenue potential (requires detailed modeling)
-- Inflation effects (depends on productivity gains)
+- Precise revenue potential (requires detailed modelling)
+- Inflation effects at Stage 2 (depends on productivity gains)
+- Feedback loop dynamics (Stage 1 stimulus effects)
 - International coordination (prevents tax haven competition)
 
 **Recommended research priorities:**
-1. Detailed econometric modeling (CGE analysis)
+1. Detailed econometric modelling (CGE analysis)
 2. Industry consultation (compliance cost assessment)
-3. Pilot program (voluntary participation, data validation)
-4. International feasibility study (EU/OECD coordination)
+3. Pilot programme (voluntary participation, data validation)
+4. Feedback loop simulation (Stage 1 stimulus multiplier)
+5. International feasibility study (EU/OECD coordination)
 
-**SEBE provides the technical and economic foundation for transitioning to a post-employment economy.** Further research is essential to refine parameters and validate assumptions, but the core mechanism is sound and implementable.
+**SEBE provides the technical and economic foundation for transitioning to
+a post-employment economy.** The two-stage model makes Stage 1 immediately
+achievable while establishing the mechanism for organic transition to full
+Universal Living Income. Further research is essential to refine parameters
+and validate assumptions, but the core mechanism is sound and implementable.
 
 ---
 
 ## References
 
-**To be added:**
+| Source | Data | Date |
+|---|---|---|
+| ONS ASHE 2025 | Median gross annual earnings (full-time): £39,039 | April 2025 (provisional) |
+| ONS Mid-Year Population Estimates | UK population: 68.3 million | Mid-2023 |
+| Ofgem Price Cap | Typical household energy: £1,758/year | Q1 2026 |
+| HMRC | Income tax and NI rates 2025/26 | 2025/26 tax year |
+| ORR Rail Finance | Rail fares income: £11.5B, govt funding: £11.9B | 2024/25 |
+
+Full data sources, staleness dates, and detailed cost workings are
+available in the accompanying cost model document.
+
+**Additional references (to be expanded):**
 - ONS energy consumption statistics
 - Ofcom bandwidth data
 - HMRC tax revenue reports
 - Academic literature on UBI, automation taxation, fiscal policy
-- International examples (Norway sovereign wealth fund, Singapore digital tax)
+- International examples (Norway sovereign wealth fund, Luxembourg free
+  transport, Singapore digital tax)
 
 ---
 
 ## Author Bio
 
-Jason Huxley is an infrastructure and automation engineer with extensive experience in large-scale enterprise systems and network architecture. Background includes defense sector experience and current work in quantitative research infrastructure.
+Jason Huxley is an infrastructure and automation engineer with extensive
+experience in large-scale enterprise systems and network architecture.
+Background includes defence sector experience (Royal Corps of Signals)
+and current work in quantitative research infrastructure.
 
 **Contact:** [To be added]
 
@@ -705,23 +826,39 @@ Jason Huxley is an infrastructure and automation engineer with extensive experie
 - Energy tax rate (£0.05-0.50/kWh)
 - Bandwidth tax rate (£10-100/Mbps)
 - Threshold levels (500kW vs 5MW vs 50MW)
-- Offshore multiplier (1.5× vs 2× vs 3×)
+- Offshore multiplier (1.5x vs 2x vs 3x)
 - Compliance rate (70% vs 85% vs 95%)
 
-**Range:** £100B (pessimistic) to £800B (optimistic)  
+**Range:** £100B (pessimistic) to £800B (optimistic)
 **Central estimate:** £350B
 
-### Appendix C: International Case Studies
+### Appendix C: Cost Model Summary
+
+Full working available in `docs/cost_model.md`, including:
+- Population breakdown and assumptions
+- Tax burden calculations on median earnings
+- UBS component costing with transport demand elasticity
+- Rail rent extraction analysis (ROSCO data from ORR 2024/25)
+- Stage 1 and Stage 2 cost breakdowns
+- Sensitivity analysis
+
+### Appendix D: International Case Studies
 
 **Norway Energy Taxation:**
 - High energy costs
 - Sovereign wealth fund model
 - No emigration crisis (quality of life maintained)
 
+**Luxembourg Free Public Transport (2020):**
+- All public transport free at point of use since March 2020
+- 20-30% increase in ridership
+- Funded from general taxation
+- Demonstrates feasibility of UBS transport component
+
 **Singapore Digital Services Tax:**
 - 7% on digital services
 - Enforced at ISP level
-- £500M revenue (scales to UK)
+- Demonstrates feasibility of digital taxation
 
 **Estonia Digital Infrastructure:**
 - Government digital backbone
@@ -732,7 +869,9 @@ Jason Huxley is an infrastructure and automation engineer with extensive experie
 
 **This is a working paper. Comments and critiques welcome.**
 
-**Suggested citation:** Huxley, J. (2026). Infrastructure-Based Taxation for the Post-Employment Economy: The Sovereign Energy and Bandwidth Excise Framework. Working Paper.
+**Suggested citation:** Huxley, J. (2026). Infrastructure-Based Taxation
+for the Post-Employment Economy: The Sovereign Energy and Bandwidth Excise
+Framework. Working Paper, v2.0.
 
 © 2026 Jason Huxley
 Licensed under CC-BY 4.0

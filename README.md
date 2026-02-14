@@ -19,14 +19,18 @@ Tax the physical infrastructure of automation instead of human labour:
 
 **Estimated revenue: £200-500 billion/year**, comparable to Income Tax, larger than National Insurance or VAT.
 
-This funds:
+## Two-Stage Distribution
 
-| Component | Value |
-|---|---|
-| Universal Living Income (ULI) | £30,000/person/year |
-| Universal Basic Services (UBS) | £2,000/person/year |
-| Combined living standard | £32,000/person/year |
-| Optional defence ring-fence | £40-100 billion/year |
+| Stage | Payment | UBS | Total | Fundable From |
+|---|---|---|---|---|
+| Stage 1: UBI (immediate) | £2,500/adult/year | £2,500/person/year | £352B/year | **SEBE alone** |
+| Stage 2: ULI (transition) | £29,000/adult/year | £2,500/person/year | £1.810T/year | SEBE + progressive taxation |
+
+**Stage 1** is a universal supplement alongside existing benefits. Children receive age-banded supplements (£3,500-5,000/year based on actual costs). Fully fundable from SEBE revenue at midpoint estimates.
+
+**Stage 2** matches the take-home pay of a median full-time earner (ONS ASHE 2025: £39,039 gross = ~£31,500 take-home). UBI ratchets toward ULI as automation grows and SEBE revenue increases.
+
+**Universal Basic Services (UBS)** at £2,500/person/year: free energy, all public transport (bus and national rail), broadband, and mobile.
 
 SEBE is the major component of a broader progressive tax package (alongside wealth tax, land value tax, and financial transaction tax), not the complete solution. Honest framing matters.
 
@@ -50,9 +54,9 @@ SEBE is the major component of a broader progressive tax package (alongside weal
 ## Repository Structure
 
 ```
-docs/               Policy documents (three versions)
+docs/               Policy documents (three versions + cost model + glossary)
 automation_framework/
-  tools/            Memory system, git remote ops
+  tools/            Memory system, git remote ops, PDF reader
   context/          Project and author context
   goals/            Campaign task definitions
   memory/           Session logs and persistent facts

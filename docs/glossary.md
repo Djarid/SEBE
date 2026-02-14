@@ -41,16 +41,22 @@ implemented at Internet Exchange Points. Offshore compute is taxed at 2x the
 domestic rate to incentivise UK datacenter investment. Rates: £25-50/Mbps
 sustained.
 
+**UBI (Universal Basic Income)**
+Stage 1 of the SEBE distribution model. A tax-free, unconditional supplement
+of £2,500/adult/year paid to every UK citizen alongside existing benefits.
+Not a replacement for wages or welfare. Fully fundable from SEBE alone.
+
 **ULI (Universal Living Income)**
-A tax-free stipend paid unconditionally to every UK citizen. Set so that the
-combined value of ULI plus UBS equals the effective take-home pay of the
-current median wage. Preferred over "UBI" (Universal Basic Income) because
-the amount provides a genuine living, not a basic subsistence.
+Stage 2 of the SEBE distribution model. A tax-free stipend of £29,000/adult/year
+paid unconditionally to every UK citizen. Set so that the combined value of
+ULI plus UBS (£31,500) equals the effective take-home pay of the current
+median full-time earner (ONS ASHE 2025: £39,039 gross). UBI ratchets toward
+ULI as automation grows and SEBE revenue increases.
 
 **UBS (Universal Basic Services)**
-Free public services worth approximately £2,000/person/year: public transport,
-utilities (to a reasonable threshold), and communications (to a reasonable
-threshold). UBS value is factored into the ULI calculation so the combined
+Free public services worth approximately £2,500/person/year: energy, all
+public transport (bus and national rail, free at point of use), broadband,
+and mobile. UBS value is factored into the ULI calculation so the combined
 package matches median take-home pay.
 
 ---
