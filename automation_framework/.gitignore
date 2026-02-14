@@ -1,0 +1,13 @@
+# Personal/private context (not for public repo)
+context/convo_summary.md
+context/author_context.md
+
+# Memory system data (session-specific, local-only)
+memory/MEMORY.md
+memory/logs/
+data/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo

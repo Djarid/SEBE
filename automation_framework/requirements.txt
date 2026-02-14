@@ -1,0 +1,6 @@
+# SEBE automation framework dependencies
+# No external deps required for core memory system (stdlib only).
+# Below are optional, for future use:
+
+# pyyaml>=6.0          # If args/ YAML parsing is needed
+# python-dotenv>=1.0   # If .env loading is needed for API keys

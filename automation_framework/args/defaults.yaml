@@ -1,0 +1,22 @@
+# Default behaviour settings for the SEBE automation framework.
+# Modify these to change agent behaviour without editing goals or tools.
+
+# Document defaults
+document:
+  language: en-GB
+  spelling: british
+  license: CC-BY-4.0
+  author: Jason Huxley
+  version_format: "v{major}.{minor}"
+
+# Memory settings
+memory:
+  log_days_to_load: 2
+  min_importance: 5
+  max_db_entries_at_startup: 50
+
+# Output settings
+output:
+  formality: formal
+  include_revenue_estimates: true
+  include_next_steps: true
