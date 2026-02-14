@@ -28,6 +28,8 @@ stated explicitly.
 | HMRC | Income tax and NI rates | 2025/26 tax year | Stale after April 2026 |
 | ONS AWE | Average weekly earnings (total pay): £741 | November 2025 | Monthly updates |
 | ORR Rail Finance | Rail fares income: £11.5B, govt funding: £11.9B | 2024/25 | Annual (Nov) |
+| OBR EFO | Welfare spending by category (pensioner, UC, disability, child) | Nov 2023 | Stale after Nov 2025 EFO |
+| DWP Benefit Expenditure Tables | Benefit expenditure and caseload data | 2025 (Jan 2026) | Annual |
 
 **ONS ASHE reference:**
 ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/annualsurveyofhoursandearnings/2025
@@ -340,15 +342,188 @@ adoption rates, SEBE revenue growth, and macroeconomic conditions.
 
 ---
 
-## 7. Comparison to Previous Model
+## 7. Existing Benefit Offsets
+
+### 7.1 Overview
+
+The gross cost figures in Section 6 represent total UBI/ULI + UBS spending.
+However, SEBE distribution displaces significant existing welfare
+expenditure. The net new cost is substantially lower than the gross figures
+suggest, because benefits that UBI/ULI replaces no longer need to be funded.
+
+This section quantifies the offsets. All figures are from OBR (November
+2023 Economic and Fiscal Outlook) unless otherwise stated. The OBR data
+covers Great Britain (excluding Northern Ireland social security, which
+operates separately but at similar per-capita rates). Figures are for
+2023-24 and will be higher by the time SEBE is implemented due to uprating.
+
+**Source:** OBR, obr.uk/forecasts-in-depth/tax-by-tax-spend-by-spend/
+
+### 7.2 Current UK Welfare Spending
+
+Total welfare spending in 2023-24: approximately **£290 billion** (GB).
+
+| Category | Spending (2023-24) | % of Total | OBR Source |
+|---|---|---|---|
+| Pensioner benefits | £138B | 48% | Pensioner benefits page |
+| UC and legacy benefits | £81B | 28% | Universal credit page |
+| Disability benefits | ~£42B | ~15% | Disability benefits page |
+| Child Benefit | £12.5B | 4% | Child benefit page |
+| Other (Carer's, Maternity, etc.) | ~£17B | ~6% | Supplementary table 3.7 |
+| **Total welfare** | **~£290B** | **100%** | |
+
+Pensioner benefits alone are nearly half the welfare bill. This is the
+single largest offset when ULI replaces state pension.
+
+### 7.3 Stage 1 Offsets (UBI at £2,500/adult)
+
+At Stage 1, UBI is a supplement. Existing benefits continue unchanged.
+The direct welfare offsets are therefore minimal:
+
+| Benefit | Offset at Stage 1 | Rationale |
+|---|---|---|
+| Child Benefit | **£12.5B** | Replaced by SEBE children's supplements (which are more generous at every age band) |
+| Winter Fuel Payment | **~£2B** | Replaced by UBS energy provision (free energy to threshold) |
+| **Stage 1 total offset** | **~£14.5B** | |
+
+**Child Benefit comparison:**
+
+| Age | Current Child Benefit | SEBE Supplement | Difference |
+|---|---|---|---|
+| Eldest child | £1,355/year | £3,500-5,000 | +£2,145 to +£3,645 |
+| Additional child | £897/year | £3,500-5,000 | +£2,603 to +£4,103 |
+
+SEBE children's supplements are 2.6x to 3.7x more generous than current
+Child Benefit. The distinction between eldest and additional children
+(a relic of means-testing) is eliminated: each child receives based on
+age, not birth order.
+
+Note: Child Benefit is currently subject to the High Income Child Benefit
+Charge (clawback above income threshold). SEBE supplements are universal
+and unconditional, with no means-testing or clawback.
+
+**Winter Fuel Payment** (£100-300/year for pensioners) is rendered redundant
+by UBS energy provision, which covers energy costs for all citizens, not
+just pensioners.
+
+**Net Stage 1 cost:**
+
+| Component | Amount |
+|---|---|
+| Gross Stage 1 cost | £352.5B |
+| Child Benefit offset | -£12.5B |
+| Winter Fuel Payment offset | -£2B |
+| **Net Stage 1 cost** | **~£338B** |
+
+### 7.4 Stage 2 Offsets (ULI at £29,000/adult)
+
+At Stage 2, ULI is the primary income for most adults. It replaces almost
+all existing income-replacement benefits. The offsets are transformative.
+
+**Pensioner benefits (£138B):**
+
+State pension is the largest single welfare item (£125B in 2023-24). ULI
+at £29,000/year is approximately 2.8x the full new state pension
+(£10,600/year in 2023-24). ULI fully replaces:
+
+- State pension (basic and new): ~£125B
+- Pension Credit: ~£5B
+- Pensioner Housing Benefit: ~£5B (housing element, debatable)
+- Winter Fuel Payment: ~£2B (already offset at Stage 1 via UBS)
+
+**Note on pensioner Housing Benefit:** This may not be fully offset if
+housing costs remain separate from ULI. Conservative approach: include
+only pension Credit and state pension as firm offsets.
+
+**UC and legacy benefits (£81B):**
+
+ULI at £29,000/year exceeds UC maximum awards for most household types.
+However, some UC elements (housing, disability, childcare) address specific
+costs that ULI does not cover directly. Conservative approach: offset only
+the income-replacement elements, not housing or disability elements.
+
+Estimated income-replacement offset from UC/legacy: ~£40-50B (roughly half
+of UC spending covers standard allowance and child elements, the rest is
+housing and disability-related).
+
+**Child Benefit (£12.5B):** Already offset at Stage 1.
+
+**Summary of Stage 2 offsets:**
+
+| Benefit Displaced | Offset |
+|---|---|
+| State pension (basic + new) | ~£125B |
+| Pension Credit | ~£5B |
+| Winter Fuel Payment | ~£2B |
+| Child Benefit | ~£12.5B |
+| UC/legacy income-replacement elements | ~£40-50B |
+| **Total Stage 2 offset** | **~£185-195B** |
+
+**Net Stage 2 cost:**
+
+| Component | Amount |
+|---|---|
+| Gross Stage 2 cost | £1.810T |
+| Existing welfare offset | -£185-195B |
+| **Net Stage 2 cost** | **~£1.615-1.625T** |
+
+### 7.5 What This Means
+
+The offset is approximately **£190B/year** at Stage 2. That is real money
+that the government currently spends and would no longer need to.
+
+For context, £190B is roughly the size of National Insurance revenue. It
+does not close the Stage 2 funding gap on its own, but it materially
+reduces it: from £1.810T gross to ~£1.62T net.
+
+At Stage 1, the offset is modest (~£14.5B), because Stage 1 preserves
+existing benefits. But it still reduces the net cost from £352B to ~£338B,
+improving SEBE coverage further.
+
+### 7.6 Benefits NOT Offset
+
+Some benefits are not displaced by UBI/ULI because they address specific
+needs that a flat-rate income does not cover:
+
+- **PIP/DLA (disability):** ~£28B. Disability costs are additional to
+  living costs. ULI does not replace disability support.
+- **Carer's Allowance:** ~£4B. Carers have specific additional needs.
+- **Housing Benefit/UC housing element:** ~£25B. Housing costs vary
+  enormously by region. ULI may reduce but not eliminate housing support
+  needs. This requires separate policy design.
+- **Statutory Maternity/Paternity Pay:** ~£3B. Employment-linked, may
+  persist alongside ULI.
+
+These benefits continue (potentially reformed) alongside ULI. The offsets
+above are conservative: they only count benefits that ULI clearly and
+fully replaces.
+
+### 7.7 Administrative Savings
+
+Beyond direct benefit offsets, ULI eliminates the administrative cost of
+means-testing. Current welfare administration (DWP, HMRC benefits, local
+authority housing benefit processing) costs billions per year. A universal,
+unconditional payment requires no means-testing, no sanctions regime, no
+compliance bureaucracy.
+
+DWP's administrative budget is approximately £7-8B/year. Not all of this
+is welfare administration (DWP also handles employment services, child
+maintenance, etc.), but a significant portion would be eliminated or
+redirected. Conservative estimate: £3-5B in administrative savings.
+
+---
+
+## 8. Comparison to Previous Model
 
 | Parameter | Previous model | Revised model |
 |---|---|---|
 | UBI/ULI rate | £30,000 (single stage) | £2,500 rising to £29,000 (two stage) |
 | UBS value | £2,000 | £2,500 |
 | Children's rate | Not specified | Banded: £3,500-5,000 by age |
-| Total requirement | £2.144 trillion | Stage 1: £352B, Stage 2: £1.810T |
-| SEBE coverage | 9-23% | Stage 1: 57-142% |
+| Gross total requirement | £2.144 trillion | Stage 1: £352B, Stage 2: £1.810T |
+| Existing welfare offset | Not considered | Stage 1: ~£14.5B, Stage 2: ~£190B |
+| **Net total requirement** | £2.144 trillion | **Stage 1: ~£338B, Stage 2: ~£1.62T** |
+| SEBE coverage (net) | 9-23% | **Stage 1: 59-148%** |
 | Fundable from SEBE alone | No | **Yes (Stage 1)** |
 | Median basis | £32,890 (outdated, gross) | £39,039 (ASHE 2025, take-home adjusted) |
 | Tax treatment | Compared to gross salary | Correctly compared to take-home pay |
@@ -359,7 +534,7 @@ immediate proposal politically achievable.
 
 ---
 
-## 8. Sensitivity Analysis
+## 9. Sensitivity Analysis
 
 ### 9.1 SEBE Revenue Uncertainty
 
@@ -390,7 +565,7 @@ economic modelling.
 
 ---
 
-## 9. Outstanding Questions
+## 10. Outstanding Questions
 
 These are acknowledged gaps, not hidden weaknesses:
 
