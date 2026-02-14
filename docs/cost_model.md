@@ -27,6 +27,7 @@ stated explicitly.
 | Ofgem Price Cap | Typical household energy: £1,758/year | Q1 2026 | Reviewed quarterly |
 | HMRC | Income tax and NI rates | 2025/26 tax year | Stale after April 2026 |
 | ONS AWE | Average weekly earnings (total pay): £741 | November 2025 | Monthly updates |
+| ORR Rail Finance | Rail fares income: £11.5B, govt funding: £11.9B | 2024/25 | Annual (Nov) |
 
 **ONS ASHE reference:**
 ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/annualsurveyofhoursandearnings/2025
@@ -103,21 +104,50 @@ threshold. Costs are estimated per person (averaged across household sizes).
 | Component | Per person/year | Source/basis |
 |---|---|---|
 | Energy (gas + electricity) | £1,200 | Ofgem cap £1,758/household, averaged across household sizes |
-| Local transport (bus pass) | £600 | Regional average annual bus pass |
+| All public transport (bus + rail) | £280 | See 5.2 for derivation |
 | Broadband (basic) | £330 | ~£27.50/month, shared household basis |
 | Mobile + basic device | £200 | SIM-only ~£10/month + handset amortised over 3 years |
-| Margin/contingency | £170 | Rounding buffer |
+| Margin/contingency | £490 | Covers demand growth, regional variation |
 | **UBS total** | **£2,500** | |
 
 ### 5.2 Notes on UBS Costing
 
-- Energy cost is the largest component. Single-person households pay the full
-  Ofgem cap (~£1,758). Multi-person households share. £1,200 averaged is
-  conservative.
-- Transport covers local bus travel only. Rail, intercity, and private
-  transport are not included.
-- Broadband and mobile are basic tiers, not unlimited premium services.
-- UBS does not replace housing costs, food, or clothing.
+**Energy** is the largest component. Single-person households pay the full
+Ofgem cap (~£1,758). Multi-person households share. £1,200 averaged is
+conservative.
+
+**Transport** includes all public transport: local bus, regional rail, and
+national rail, free at point of use.
+
+Current fares revenue (ORR 2024/25, orr.gov.uk):
+- National rail fares: £11.5B/year
+- Bus fares (estimated): ~£2.5B/year
+- Total fares to replace: ~£14B
+
+Per capita: £14B ÷ 67M = **£209/person/year**
+
+However, free public transport increases demand. Evidence from Luxembourg
+(free since 2020), Tallinn (free since 2013), and numerous city-level
+schemes consistently shows 20-50% usage increases. Applying a 30% demand
+growth factor:
+
+- Adjusted total: £14B × 1.3 = **£18.2B**
+- Per capita: £18.2B ÷ 67M = **£272/person/year** (rounded to £280)
+
+The marginal cost of additional passengers is low in the short term (trains
+and buses are already running, many services run below capacity off-peak).
+Medium-term costs include additional rolling stock and frequency. These are
+capital investments that create jobs and reduce road congestion and emissions,
+aligning with Green Party transport and climate policy.
+
+Note: government already funds £11.9B/year in rail subsidy (ORR 2024/25).
+The net new cost of making rail free is the fares revenue replacement
+(£11.5B), not the total industry cost.
+
+**Broadband and mobile** are basic tiers, not unlimited premium services.
+
+**UBS does not replace** housing costs, food, or clothing. These are funded
+from UBI/ULI cash payments.
 
 ---
 
@@ -249,29 +279,7 @@ adoption rates, SEBE revenue growth, and macroeconomic conditions.
 
 ---
 
-## 7. Defence Ring-Fence (Optional)
-
-20% of SEBE revenue reserved for strategic defence autonomy.
-
-| SEBE revenue | 20% ring-fence | Remaining for UBI/UBS |
-|---|---|---|
-| £200B | £40B | £160B |
-| £350B | £70B | £280B |
-| £500B | £100B | £400B |
-
-At £350B SEBE, the ring-fence provides £70B for defence while leaving £280B
-for Stage 1 distribution (covers UBI at £2,500 plus partial UBS).
-
-Current UK defence spending: ~£60-70B (2.5% GDP). The ring-fence at the
-midpoint would exceed current spending, funding complete strategic autonomy
-independent of alliance dependencies.
-
-**Impact on Stage 1:** With ring-fence active, Stage 1 requires the upper
-range of SEBE estimates to be fully funded. Without it, the midpoint suffices.
-
----
-
-## 8. Comparison to Previous Model
+## 7. Comparison to Previous Model
 
 | Parameter | Previous model | Revised model |
 |---|---|---|
@@ -290,7 +298,7 @@ immediate proposal politically achievable.
 
 ---
 
-## 9. Sensitivity Analysis
+## 8. Sensitivity Analysis
 
 ### 9.1 SEBE Revenue Uncertainty
 
@@ -321,13 +329,15 @@ economic modelling.
 
 ---
 
-## 10. Outstanding Questions
+## 9. Outstanding Questions
 
 These are acknowledged gaps, not hidden weaknesses:
 
-1. **Precise SEBE revenue modelling:** Current estimates are range-based.
-   Bottom-up modelling from actual UK energy/bandwidth data would narrow
-   the range. (Academic research opportunity.)
+1. **SEBE revenue model:** This document covers distribution costs but not
+   revenue derivation. The £200-500B estimate needs a dedicated revenue
+   model built from BEIS/DESNZ energy consumption data, Ofcom bandwidth
+   statistics, and the proposed SEE/DCD rate schedules. This is a separate
+   document (planned).
 
 2. **Transition dynamics:** How fast does UBI ratchet up? What triggers
    each increase? This requires macroeconomic simulation.
@@ -343,6 +353,12 @@ These are acknowledged gaps, not hidden weaknesses:
 5. **Interaction with existing benefits:** How does UBI interact with
    UC, PIP, pension credit, housing benefit? Preserving existing benefits
    is the stated approach, but edge cases need detailed policy design.
+
+6. **Transport capacity investment:** Free public transport will increase
+   demand beyond current levels. The 30% uplift factor used in UBS costing
+   covers operational costs but not long-term capital investment in rolling
+   stock and infrastructure. This is a net positive (jobs, emissions
+   reduction) but needs explicit modelling.
 
 ---
 
