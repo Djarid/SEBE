@@ -7,6 +7,9 @@ memory/MEMORY.md
 memory/logs/
 data/
 
+# Campaign drafts (operational, not for public repo)
+hardprompts/*.md
+
 # Python
 __pycache__/
 *.pyc
