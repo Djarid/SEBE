@@ -307,6 +307,11 @@ class Orchestrator:
                 draft = self._draft_response(msg)
                 if draft:
                     action_id = self._queue_action(msg, draft)
+
+                    # Save draft to Proton Drafts folder for email messages
+                    if msg.channel == ChannelType.EMAIL:
+                        self._save_email_draft(msg, draft, action_id)
+
                     notify_text += (
                         f"\n\nDraft response queued ({action_id}):\n"
                         f"---\n{draft[:500]}\n---"
@@ -404,6 +409,44 @@ class Orchestrator:
         self.pending[action_id] = action
         logger.info("Queued action %s: %s", action_id, action.description)
         return action_id
+
+    def _save_email_draft(
+        self, original: InboundMessage, draft_body: str, action_id: str
+    ) -> None:
+        """
+        Save a draft reply to the Proton Bridge Drafts folder.
+
+        The draft appears in the Proton client ready for review and manual
+        sending. The action_id is included in an X-SEBE-Action header for
+        traceability. This is fire-and-forget: failure is logged but does
+        not block the notification flow.
+        """
+        email_channel = self.channels.get(ChannelType.EMAIL)
+        if email_channel is None:
+            return
+
+        outbound = OutboundMessage(
+            channel=ChannelType.EMAIL,
+            recipient=original.sender,
+            subject=f"Re: {original.subject}" if original.subject else "",
+            body=draft_body,
+            reply_to=original.message_id,
+            thread_id=original.thread_id,
+        )
+
+        try:
+            saved = email_channel.save_draft(outbound)
+            if saved:
+                logger.info(
+                    "Draft saved to Proton Drafts (%s) for %s",
+                    action_id, original.sender,
+                )
+            else:
+                logger.warning(
+                    "Failed to save draft to Proton Drafts (%s)", action_id
+                )
+        except Exception as e:
+            logger.warning("Draft save error (%s): %s", action_id, e)
 
     def _handle_owner_command(self, msg: InboundMessage) -> None:
         """Process a command from the daemon owner via Signal."""

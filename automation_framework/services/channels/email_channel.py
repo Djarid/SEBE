@@ -215,6 +215,54 @@ class EmailChannel(BaseChannel):
             logger.error("Failed to send email to %s: %s", message.recipient, e)
             return False
 
+    def save_draft(self, message: OutboundMessage) -> bool:
+        """
+        Save a draft reply into the Proton Bridge Drafts folder via IMAP APPEND.
+
+        The draft appears in the Proton client (desktop/mobile) ready for
+        review, editing, and manual sending. Uses the \\Draft flag so the
+        mail client treats it as an unsent draft.
+        """
+        try:
+            imap = self._connect_imap()
+
+            msg = MIMEMultipart("alternative")
+            msg["From"] = self.config.sender_address
+            msg["To"] = message.recipient
+            msg["Subject"] = message.subject
+            msg["Date"] = email.utils.formatdate(localtime=True)
+            msg["X-SEBE-Draft"] = "true"
+
+            if message.reply_to:
+                msg["In-Reply-To"] = message.reply_to
+                msg["References"] = message.reply_to
+
+            msg.attach(MIMEText(message.body, "plain", "utf-8"))
+
+            raw_msg = msg.as_bytes()
+            status, _ = imap.append(
+                "Drafts",
+                "\\Draft \\Seen",
+                imaplib.Time2Internaldate(datetime.now().astimezone()),
+                raw_msg,
+            )
+
+            if status == "OK":
+                logger.info(
+                    "Draft saved for %s: %s",
+                    message.recipient, message.subject,
+                )
+                return True
+            else:
+                logger.error(
+                    "IMAP APPEND to Drafts failed (status=%s)", status
+                )
+                return False
+
+        except Exception as e:
+            logger.error("Failed to save draft for %s: %s", message.recipient, e)
+            return False
+
     def is_available(self) -> bool:
         """Check if Proton Bridge IMAP is reachable."""
         try:

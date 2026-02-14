@@ -249,3 +249,103 @@ def test_is_available_false(email_config):
     with patch("imaplib.IMAP4", side_effect=Exception("Connection failed")):
         channel = EmailChannel(email_config)
         assert channel.is_available() is False
+
+
+# ── save_draft tests ──────────────────────────────────────────────────────
+
+
+def test_save_draft_success(email_config):
+    """Test save_draft APPENDs to Drafts folder."""
+    mock_imap = MagicMock()
+    mock_imap.append.return_value = ("OK", [b"APPEND completed"])
+
+    outbound = OutboundMessage(
+        channel=ChannelType.EMAIL,
+        recipient="recipient@example.com",
+        subject="Re: Test",
+        body="Draft reply body",
+        reply_to="<original-msg-id>",
+    )
+
+    with patch("imaplib.IMAP4", return_value=mock_imap), \
+         patch("ssl.create_default_context"):
+        channel = EmailChannel(email_config)
+        result = channel.save_draft(outbound)
+
+    assert result is True
+    mock_imap.append.assert_called_once()
+    call_args = mock_imap.append.call_args
+    assert call_args[0][0] == "Drafts"
+    assert "\\Draft" in call_args[0][1]
+    assert "\\Seen" in call_args[0][1]
+    # Parse the appended MIME message and verify content
+    raw_msg = call_args[0][3]
+    parsed = email.message_from_bytes(raw_msg)
+    assert parsed["To"] == "recipient@example.com"
+    assert parsed["Subject"] == "Re: Test"
+    assert parsed["In-Reply-To"] == "<original-msg-id>"
+    assert parsed["X-SEBE-Draft"] == "true"
+    # Extract plain text body from MIME
+    body = ""
+    for part in parsed.walk():
+        if part.get_content_type() == "text/plain":
+            body = part.get_payload(decode=True).decode()
+            break
+    assert body == "Draft reply body"
+
+
+def test_save_draft_failure(email_config):
+    """Test save_draft returns False on IMAP APPEND failure."""
+    mock_imap = MagicMock()
+    mock_imap.append.return_value = ("NO", [b"APPEND failed"])
+
+    outbound = OutboundMessage(
+        channel=ChannelType.EMAIL,
+        recipient="recipient@example.com",
+        subject="Re: Test",
+        body="Draft body",
+    )
+
+    with patch("imaplib.IMAP4", return_value=mock_imap), \
+         patch("ssl.create_default_context"):
+        channel = EmailChannel(email_config)
+        result = channel.save_draft(outbound)
+
+    assert result is False
+
+
+def test_save_draft_connection_error(email_config):
+    """Test save_draft handles connection errors gracefully."""
+    with patch("imaplib.IMAP4", side_effect=Exception("Connection failed")):
+        channel = EmailChannel(email_config)
+        outbound = OutboundMessage(
+            channel=ChannelType.EMAIL,
+            recipient="recipient@example.com",
+            subject="Re: Test",
+            body="Draft body",
+        )
+        result = channel.save_draft(outbound)
+
+    assert result is False
+
+
+def test_save_draft_no_reply_to(email_config):
+    """Test save_draft works without reply_to header."""
+    mock_imap = MagicMock()
+    mock_imap.append.return_value = ("OK", [b"APPEND completed"])
+
+    outbound = OutboundMessage(
+        channel=ChannelType.EMAIL,
+        recipient="recipient@example.com",
+        subject="New message",
+        body="Draft body",
+    )
+
+    with patch("imaplib.IMAP4", return_value=mock_imap), \
+         patch("ssl.create_default_context"):
+        channel = EmailChannel(email_config)
+        result = channel.save_draft(outbound)
+
+    assert result is True
+    raw_msg = mock_imap.append.call_args[0][3]
+    assert b"In-Reply-To" not in raw_msg

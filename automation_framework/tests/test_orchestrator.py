@@ -497,7 +497,7 @@ def test_handle_message_signal_owner_no_prefix_ignored(daemon_config):
 
 
 def test_handle_message_email_needs_response(daemon_config, sample_inbound_email):
-    """Test email needing response queues action."""
+    """Test email needing response queues action and saves draft."""
     with patch("signal.signal"):
         orch = Orchestrator(daemon_config)
     
@@ -514,10 +514,20 @@ def test_handle_message_email_needs_response(daemon_config, sample_inbound_email
     mock_signal = Mock(spec=SignalChannel)
     orch.channels[ChannelType.SIGNAL] = mock_signal
     
+    # Mock email channel so save_draft is available
+    mock_email = Mock()
+    mock_email.is_available.return_value = True
+    mock_email.poll.return_value = []
+    mock_email.save_draft.return_value = True
+    orch.channels[ChannelType.EMAIL] = mock_email
+    
     orch._handle_message(sample_inbound_email)
     
     # Should queue an action
     assert len(orch.pending) == 1
+    
+    # Should save draft to Proton Drafts
+    mock_email.save_draft.assert_called_once()
     
     # Should notify with action_id
     mock_signal.notify.assert_called_once()
