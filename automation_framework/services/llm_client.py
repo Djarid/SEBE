@@ -143,12 +143,29 @@ class ModelManager:
 
         with model_manager.use("oss120"):
             response = client.chat_simple("draft a policy response")
+
+    In container environments where systemctl is unavailable, the manager
+    operates in passthrough mode: it skips systemd commands and just
+    checks whether the external LLM API is reachable. Model swapping is
+    not supported in passthrough mode (the host manages the model).
     """
 
     def __init__(self, config: LLMConfig, client: LLMClient):
         self.config = config
         self.client = client
         self._active_model: Optional[str] = None
+        self._has_systemctl = self._check_systemctl()
+        if not self._has_systemctl:
+            logger.info(
+                "systemctl not available; model manager running in "
+                "passthrough mode (LLM managed externally)"
+            )
+
+    @staticmethod
+    def _check_systemctl() -> bool:
+        """Return True if systemctl is available on this system."""
+        import shutil
+        return shutil.which("systemctl") is not None
 
     @property
     def active_model(self) -> Optional[str]:
@@ -157,6 +174,11 @@ class ModelManager:
 
     def _systemctl(self, action: str, unit: str) -> bool:
         """Run systemctl --user <action> <unit>. Returns True on success."""
+        if not self._has_systemctl:
+            logger.debug(
+                "Skipping systemctl %s %s (passthrough mode)", action, unit
+            )
+            return True
         cmd = ["systemctl", "--user", action, unit]
         logger.info("Running: %s", " ".join(cmd))
         try:
@@ -200,12 +222,31 @@ class ModelManager:
         If it's already the active model and the API is responding, no-op.
         Otherwise, stop whatever is running and start the requested model.
 
+        In passthrough mode (no systemctl), just verify the API is reachable.
+        Model swapping is not supported in passthrough mode.
+
         Returns True if the model is ready, False on failure.
         """
         model = self.config.models.get(model_key)
         if model is None:
             logger.error("Unknown model key: %s", model_key)
             return False
+
+        # Passthrough mode: skip systemd, just check API
+        if not self._has_systemctl:
+            if self.client.is_available():
+                self._active_model = model_key
+                logger.info(
+                    "Model %s assumed active (passthrough mode, API reachable)",
+                    model_key,
+                )
+                return True
+            else:
+                logger.warning(
+                    "LLM API not reachable at %s (passthrough mode)",
+                    self.config.base_url,
+                )
+                return False
 
         # Already running the right model?
         if self._active_model == model_key and self.client.is_available():
