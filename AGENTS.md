@@ -54,6 +54,7 @@ SEBE/
     ├── goals/                             # Process definitions
     │   └── manifest.md                    # Index of goals
     ├── tools/                             # Deterministic scripts
+    │   ├── git_remote.py                  # Git remote ops (push/pull/status)
     │   └── memory/                        # Memory system (Python)
     │       ├── config.py, db.py, reader.py, writer.py, export.py
     │       └── __init__.py
@@ -108,6 +109,28 @@ python -m tools.memory.export --format markdown
 # Stats
 python -m tools.memory.db --action stats
 ```
+
+**Git remote (run from `automation_framework/`):**
+
+```bash
+# Check remote config and sync state
+python -m tools.git_remote --action status
+
+# Configure origin from .env credentials
+python -m tools.git_remote --action add-remote
+
+# Push current branch to origin
+python -m tools.git_remote --action push
+
+# Pull from origin
+python -m tools.git_remote --action pull
+
+# Push then pull (convenience)
+python -m tools.git_remote --action sync
+```
+
+Credentials read from `.env` at repo root (GITHUB_TOKEN, GITHUB_USER, GITHUB_REPO).
+Tokens are never displayed in output.
 
 No other build/lint/test tools. Policy documents are Markdown only.
 
