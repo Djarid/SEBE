@@ -172,6 +172,24 @@ when you give people a basic income, they don't stop working. They start
 businesses, retrain, care for their families, and do better work because
 they're not desperate.
 
+### "Why not tax the AI computations directly?"
+
+Some people suggest taxing "FLOPS" (the calculations AI does). This
+sounds logical but doesn't work in practice:
+
+- There's no standard "calculation" to count. Different chips measure
+  it differently. A company can switch hardware and their count changes
+  even though the work is identical.
+- There's no meter for calculations. Energy has physical meters that
+  can't be faked. Calculation counts come from software that companies
+  control.
+- It punishes efficient technology. A newer chip that does the same
+  job in fewer calculations would pay less tax. You'd incentivise
+  keeping old, wasteful hardware running.
+
+**Energy is the honest measure.** Every computer, every AI, every robot
+uses electricity. You can't fake a power meter. Tax the electricity.
+
 ### "Is this socialism/communism?"
 
 **No, it's capitalism adapted for automation:**
@@ -193,63 +211,36 @@ the economy stays balanced.
 
 ---
 
-## Real-World Examples
+## What Does This Mean For You?
 
-### You personally:
+### If you're working:
 
-**Current situation:**
-- Work 40 hours/week for £32,000
-- Pay £1,500/year on buses and trains
-- Pay £1,800/year on electricity and gas
-- Pay £500/year on phone and internet
-- **Take home after costs: ~£28,000**
+You keep your job and your wages. On top of that, you get a cash payment
+(starting small, growing over time) and free public services as they roll
+out. Transport, energy, broadband. Every year, as automation grows, the
+payment grows too. You are strictly better off than today.
 
-**With SEBE (Stage 1, as it ramps up):**
-- Same job, same £32,000 salary
-- Buses and trains become free (save £1,500)
-- Energy becomes free (save £1,800)
-- Internet and mobile become free (save £500)
-- Plus UBI (starts at £400, grows to £2,500, then higher)
-- **Eventually: £36,300+** (£8,300+ better off as it fully phases in)
+### If you're a parent:
 
-**And you can still work.** The UBI is a **top-up**, not a replacement.
+Your children get their own supplement (paid to you), on top of your own
+payment. Children's rates are set by what it actually costs to raise a
+child at each age, not an arbitrary percentage. Free transport means
+getting to school costs nothing. Free energy means heating the house
+isn't a choice between that and food.
 
-### A single parent:
+### If you're retired:
 
-**Current:**
-- Part-time job £18,000/year
-- Childcare £8,000/year
-- Rent £12,000/year
-- Bills £3,000/year
-- **Barely surviving**
-
-**With SEBE (Stage 1, as it ramps up):**
-- £18,000 wages
-- Plus UBI for parent (starts £400, grows over time)
-- Plus £3,500 for child (age 3-11)
-- Free transport as it phases in (saves £1,000)
-- Free energy as it phases in (saves £1,800)
-- Free phone/internet as it phases in (saves £500)
-- **Eventually £27,300+ total (nearly £10,000+ better off when fully rolled out)**
-
-### A pensioner:
-
-**Current:**
-- State pension £11,500/year
-- Energy bills eating into it
-- Can't afford the bus to see grandchildren
-
-**With SEBE (Stage 1, as it ramps up):**
-- State pension £11,500 (unchanged)
-- Plus UBI (starts £400, grows over time)
-- Free energy, free buses, free phone (as they phase in)
-- **Eventually £14,000+ plus free services (thousands better off when fully rolled out)**
+Your state pension stays exactly the same. The UBI is on top of it, not
+instead of it. Free buses mean you can visit family. Free energy means
+you don't have to choose between heating and eating.
 
 ### When Stage 2 arrives:
 
-All of the above, but the UBI payment has grown to £29,000/year. By then,
-many of the jobs in the examples above won't exist anyway, because
-automation will have replaced them. The income replaces the job.
+As automation grows, so does the payment, eventually reaching
+£29,000/year (matching what a median earner takes home today). By then,
+many of today's jobs won't exist anyway, because automation will have
+replaced them. The income replaces the job. See the full distribution
+model for detailed workings.
 
 ---
 
@@ -327,7 +318,7 @@ Right now:
 - Companies still profit (just pay fair share)
 - Society thrives (everyone shares the wealth)
 
-### This isn't science fiction. Stage 1 is fully fundable today.
+### This isn't science fiction. The revenue starts from day one.
 
 **The technology exists.**
 **The wealth exists.**
@@ -378,8 +369,10 @@ everyone, or just for the people who own them?**
 
 ---
 
-*For technical details, see the full policy paper. For economic modelling
-and cost workings, see the cost model. For questions, contact [your details].*
+*For technical details, see the full policy paper (`green_party_submission.md`
+or `academic_brief.md`). For revenue derivation, see `revenue_model.md`. For
+distribution workings, see `distribution_model.md`. For questions, contact
+[your details].*
 
 *This is a citizen proposal. It needs your support to become reality.*
 

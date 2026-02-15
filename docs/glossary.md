@@ -1,6 +1,6 @@
 # SEBE Glossary
 
-**Version:** 1.0
+**Version:** 1.1
 **Updated:** February 2026
 
 Terms and definitions used across SEBE documentation. This glossary exists
@@ -32,7 +32,7 @@ infrastructure of automation rather than human labour.
 
 **SEE (Sovereign Energy Excise)**
 The energy component of SEBE. A tiered tax on commercial electricity
-consumption for facilities exceeding 500kW IT load. Rates: £0.05-0.30/kWh
+consumption for facilities exceeding 500kW IT load. Rates: £0.08-0.45/kWh
 depending on consumption bracket.
 
 **DCD (Digital Customs Duty)**
@@ -45,18 +45,20 @@ than domestic operation, incentivising UK datacenter investment. Rates:
 (see `revenue_model.md` for derivation).
 
 **UBI (Universal Basic Income)**
-Stage 1 of the SEBE distribution model. A tax-free, unconditional supplement
-paid to every UK citizen alongside existing benefits. Starts at approximately
-£400/adult/year at SEBE launch and ramps upward as automation (and therefore
-SEBE revenue) grows. Not a replacement for wages or welfare. Target rate of
-£2,500/adult/year reached as SEBE revenue scales (see `revenue_model.md`).
+Stage 1 of the illustrative SEBE distribution model. A tax-free, unconditional
+supplement paid to every UK citizen alongside existing benefits. Starts at
+approximately £400/adult/year at SEBE launch and ramps upward as automation
+(and therefore SEBE revenue) grows. Not a replacement for wages or welfare.
+Target rate of £2,500/adult/year reached as SEBE revenue scales. See
+`distribution_model.md` for full workings.
 
 **ULI (Universal Living Income)**
-Stage 2 of the SEBE distribution model. A tax-free stipend of £29,000/adult/year
-paid unconditionally to every UK citizen. Set so that the combined value of
-ULI plus UBS (£31,500) equals the effective take-home pay of the current
-median full-time earner (ONS ASHE 2025: £39,039 gross). UBI ratchets toward
-ULI as automation grows and SEBE revenue increases.
+Stage 2 of the illustrative SEBE distribution model. A tax-free stipend of
+£29,000/adult/year paid unconditionally to every UK citizen. Set so that
+the combined value of ULI plus UBS (£31,500) equals the effective take-home
+pay of the current median full-time earner (ONS ASHE 2025: £39,039 gross).
+UBI ratchets toward ULI as automation grows and SEBE revenue increases. See
+`distribution_model.md` for full workings.
 
 **UBS (Universal Basic Services)**
 Free public services worth approximately £2,500/person/year: energy, all
@@ -148,10 +150,10 @@ constrained by inflation (productive capacity), not by revenue. Relevant
 to SEBE because automation increases productive capacity, which expands
 the fiscal space available to a sovereign government.
 
-**Defence Ring-Fence**
-An optional allocation of SEBE revenue for UK strategic defence autonomy.
-At launch (~£31B total SEBE), this would be modest; as SEBE grows with
-automation, a percentage allocation becomes increasingly significant.
+**Hypothecation**
+Ring-fencing tax revenue for specific purposes. The Green Party opposes
+hypothecation. SEBE generates general revenue; government allocates it
+through normal democratic processes.
 
 ---
 

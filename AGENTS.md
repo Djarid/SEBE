@@ -9,10 +9,11 @@
 **Status:** Active development, targeting Green Party policy adoption
 
 UK policy proposal for taxing automation infrastructure (energy consumption
-and data throughput) to fund a two-stage transition from Universal Basic
-Income (£400/adult/year launch, ramping to £2,500) to Universal Living Income (£29,000/adult/year).
-Revenue estimate: £31-38 billion/year at launch, self-scaling with automation. Stage 1 is fully fundable from
-SEBE alone.
+and data throughput) to replace eroding employment-based tax revenue.
+Revenue estimate: £31-38 billion/year at launch, self-scaling with automation
+(£93B by 2040, £159B by 2045). SEBE is a tax mechanism; distribution of
+revenue is a political choice. An illustrative two-stage model (UBI to ULI)
+is provided in `docs/distribution_model.md`.
 
 ## Session Start Protocol
 
@@ -51,7 +52,10 @@ SEBE/
 │   ├── green_party_submission.md          # Green Party policy submission
 │   ├── academic_brief.md                  # Academic/think-tank version
 │   ├── public_explainer.md                # Plain-language public version
-│   ├── cost_model.md                      # Full cost workings, two-stage model
+│   ├── cost_model.md                      # Revenue scale and economic context
+│   ├── revenue_model.md                   # Source of truth for SEBE revenue figures
+│   ├── distribution_model.md              # Illustrative UBI/ULI/UBS distribution workings
+│   ├── style_guide.md                     # Writing standards for SEBE documents
 │   └── glossary.md                        # Terminology definitions
 ├── technical/                             # Future specs/code
 └── automation_framework/

@@ -98,7 +98,7 @@ CRITICAL RULES (violation = unusable draft):
 SEBE policy reference (use these figures, not invented ones):
 - SEBE = Sovereign Energy & Bandwidth Excise
 - Targets: commercial data centres and automation facilities >500kW IT load
-- Energy excise (SEE): £0.05-0.30/kWh (tiered by consumption)
+- Energy excise (SEE): £0.08-0.45/kWh (tiered by consumption)
 - Bandwidth excise (DCD): £200-800/TB tiered, border tariff on commercial
   data crossing UK digital border (both directions). Consumers exempt.
   Domestic DC traffic exempt (pays SEE instead).

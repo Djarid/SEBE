@@ -1,7 +1,7 @@
 # SEBE Project Context
 
-**Version:** 2.0
-**Updated:** February 14, 2026
+**Version:** 3.0
+**Updated:** February 15, 2026
 
 This file provides agents with full SEBE policy context, technical details,
 strategic positioning, arguments/rebuttals, and current project status.
@@ -22,7 +22,7 @@ instead of human labour. Two components:
   - Point of Storage (PoS): Battery systems (prevents temporal arbitrage)
   - Point of Load (PoL): Actual consumption at infrastructure
 - Reconciliation prevents "dark compute"
-- Rates: £0.05-0.30/kWh (tiered by consumption)
+- Rates: £0.08-0.45/kWh (tiered by consumption)
 
 **2. Digital Customs Duty (DCD):** Border tariff on commercial cross-border data
 - Implementation at Internet Exchange Points (IXP level)
@@ -48,10 +48,11 @@ Scale comparison (year 1):
 
 **SEBE becomes a major revenue source within 10-15 years, tracking automation growth.**
 
-### Two-Stage Distribution Model
+### Two-Stage Distribution Model (Illustrative)
 
 SEBE funds a two-stage transition from Universal Basic Income (UBI) to
-Universal Living Income (ULI). Full working in `docs/cost_model.md`.
+Universal Living Income (ULI). Full working in `docs/distribution_model.md`.
+Cost model context in `docs/cost_model.md`.
 
 **Stage 1: Universal Basic Income (UBI) - Ramp Model**
 - Starts at ~£400/adult/year (£33/month) at launch (2027)
@@ -196,11 +197,13 @@ SEBE revenue for specific purposes (including defence).
 
 ---
 
-## Three Publication Versions
+## Documents
+
+### Public-Facing (tax mechanism focus, distribution is illustrative)
 
 **1. Green Party Policy Submission** (`docs/green_party_submission.md`)
-- Two-stage UBI→ULI model, EC code alignment, coalition strategy
-- 5-year phased rollout
+- SEBE mechanism, EC code alignment, coalition strategy
+- Distribution referenced as illustrative, not prescriptive
 - Target: Policy Development Committee, Economy Working Group, Autumn 2026
 
 **2. Academic/Think Tank Brief** (`docs/academic_brief.md`)
@@ -210,19 +213,36 @@ SEBE revenue for specific purposes (including defence).
 
 **3. Public Explainer** (`docs/public_explainer.md`)
 - "Tax robots, fund people" (simple language)
-- Real-world examples, common questions, call to action
+- Common questions, call to action
 - Target: General public, media, campaign literature
 
-**4. Cost Model** (`docs/cost_model.md`)
-- Full working: ONS data sources, population breakdown, tax calculations
-- Two-stage cost breakdown with sensitivity analysis
-- UBS component costing, rail rent extraction analysis
-- Source of truth for all figures used in other documents
+### Reference Documents
 
-All documents use: Two-stage ramp model (£400 UBI at launch rising to
-£29,000 ULI by 2045+), £2,500 UBS phased over 8 years, SEBE revenue
-£31-38B year 1 growing to £93-159B by 2040-2045, honest framing as
-self-scaling component of progressive tax package.
+**4. Revenue Model** (`docs/revenue_model.md`)
+- Source of truth for all SEBE revenue figures
+- First-principles derivation from DESNZ/Ofcom data
+- Growth projections and sensitivity analysis
+
+**5. Cost Model** (`docs/cost_model.md`)
+- Lightweight bridge: SEBE revenue scale in context of existing taxes
+- Not a distribution cost model (that's in distribution_model.md)
+
+**6. Distribution Model** (`docs/distribution_model.md`)
+- Illustrative two-stage UBI-to-ULI model
+- Full costing: UBI/ULI/UBS, children's supplements, welfare offsets
+- Sensitivity analysis, outstanding questions
+- Referenced by public documents as "one possible use of SEBE revenue"
+
+**7. Style Guide** (`docs/style_guide.md`)
+- Writing standards for all SEBE documents
+- AI writing tell avoidance, revenue figure enforcement
+
+**8. Glossary** (`docs/glossary.md`)
+- Term definitions used across all SEBE documentation
+
+All public documents focus on the tax mechanism. Distribution detail is
+in `distribution_model.md` and referenced as illustrative. Revenue
+figures: £31-38B year 1 growing to £93-159B by 2040-2045.
 
 ---
 

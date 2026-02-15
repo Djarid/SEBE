@@ -208,7 +208,7 @@ document must be clear that ordinary people do not pay SEBE.
 
 - Cite sources inline: "(ONS ASHE 2025)" or "(OBR Nov 2023 EFO)"
 - For revenue figures, reference `revenue_model.md` with section numbers
-- For cost/distribution figures, reference `cost_model.md`
+- For cost/distribution figures, reference `distribution_model.md` or `cost_model.md`
 - Never invent statistics. If a figure is not sourced, flag it as
   "[source needed]" rather than fabricating a citation
 - Stale data should be noted: "Stale after [date] when [new release]
