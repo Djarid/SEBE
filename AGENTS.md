@@ -9,10 +9,11 @@
 **Status:** Active development, targeting Green Party policy adoption
 
 UK policy proposal for taxing automation infrastructure (energy consumption
-and data throughput) to fund a two-stage transition from Universal Basic
-Income (£400/adult/year launch, ramping to £2,500) to Universal Living Income (£29,000/adult/year).
-Revenue estimate: £31-38 billion/year at launch, self-scaling with automation. Stage 1 is fully fundable from
-SEBE alone.
+and data throughput) to replace eroding employment-based tax revenue.
+Revenue estimate: £34-46 billion/year at 2030 launch (2026 prices),
+self-scaling with automation (£93B by 2040, £159B by 2045). SEBE is a tax mechanism; distribution of
+revenue is a political choice. An illustrative two-stage model (UBI to ULI)
+is provided in `docs/distribution_model.md`.
 
 ## Session Start Protocol
 
@@ -51,7 +52,10 @@ SEBE/
 │   ├── green_party_submission.md          # Green Party policy submission
 │   ├── academic_brief.md                  # Academic/think-tank version
 │   ├── public_explainer.md                # Plain-language public version
-│   ├── cost_model.md                      # Full cost workings, two-stage model
+│   ├── cost_model.md                      # Revenue scale and economic context
+│   ├── revenue_model.md                   # Source of truth for SEBE revenue figures
+│   ├── distribution_model.md              # Illustrative UBI/ULI/UBS distribution workings
+│   ├── style_guide.md                     # Writing standards for SEBE documents
 │   └── glossary.md                        # Terminology definitions
 ├── technical/                             # Future specs/code
 └── automation_framework/
@@ -247,15 +251,15 @@ Every formal document ends with CC-BY 4.0 copyright notice.
 
 | Parameter | Value |
 |---|---|
-| Stage 1 UBI (adult) | £400/adult/year (launch), ramps with SEBE revenue |
+| Stage 1 UBI (adult) | ~£650/adult/year (2030 launch, 58.8M adults), ramps with SEBE revenue |
 | Stage 1 UBI target | £2,500/adult/year (reached as SEBE revenue grows) |
 | Stage 2 ULI (adult) | £29,000/adult/year |
 | Children's supplements | £3,500-5,000/year (age-banded) |
 | UBS value | £2,500/person/year |
 | Combined living standard (Stage 2) | £31,500/person/year |
-| Stage 1 total cost | Ramps from £22B/year (2027) to £352B+ (target, as SEBE grows) |
-| Stage 2 total cost | ~£1.810 trillion/year |
-| SEBE revenue target | £31-38 billion/year (launch), self-scaling with automation |
+| Stage 1 total cost | Ramps from ~£38B/year (2030 launch) to ~£384B (target at 2040 projected population) |
+| Stage 2 total cost | ~£2.041 trillion/year (at 2045 projected population) |
+| SEBE revenue target | £34-46 billion/year (2030 launch, 2026 prices), self-scaling with automation |
 | Coverage threshold | Commercial facilities >500kW IT load; DCD applies to cross-border commercial data only |
 | Energy rates (SEE) | £0.08-0.45/kWh (tiered, adjusted rates) |
 | Bandwidth rates (DCD) | £200-800/TB tiered (border tariff on cross-border commercial data) |

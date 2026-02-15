@@ -4,45 +4,40 @@
 
 **Author:** Jason Huxley
 **Date:** February 2026
-**Version:** 3.0
+**Version:** 4.0
 **Target:** Policy Development Committee / Economy Working Group
 
 ---
 
 ## Executive Summary
 
-The Sovereign Energy and Bandwidth Excise (SEBE) represents a fundamental
-restructuring of the UK fiscal model for the post-employment economy. As
-automation achieves parity with human capability, the tax base must pivot
-from taxing human labour to taxing the physical infrastructure of automated
-production: **energy consumption (kWh)** and **data throughput (Mbps)**.
+Automation is eroding the UK income tax base. Income Tax (£250B) and
+National Insurance (£170B) together provide 42% of government revenue,
+and both depend on employment. As automation displaces workers, this
+revenue shrinks while welfare costs grow. No existing tax replaces it.
 
-**SEBE generates £26-33 billion at launch, growing to approximately £93 billion
-by 2040** as automation infrastructure expands. Revenue automatically scales with
-automation deployment, making SEBE the first self-scaling fiscal mechanism
-aligned with the post-employment transition.
+The Sovereign Energy and Bandwidth Excise (SEBE) does. SEBE taxes the
+physical infrastructure of automated production: **energy consumption
+(kWh)** and **cross-border commercial data (TB)**. It is the only UK tax
+that grows with the thing causing the employment crisis.
 
-This paper proposes a **two-stage distribution model**:
+**SEBE generates £34-46 billion at launch (2030, in 2026 real prices),
+growing to £93 billion by 2040 and £159 billion by 2045.** Revenue is
+self-scaling: every new data centre, automated warehouse, or AI cluster
+increases the tax base. All rates are CPI-indexed annually.
 
-- **Stage 1 (immediate): Universal Basic Income at £2,500/adult/year**,
-  a universal supplement alongside existing benefits. UBI and UBS ramp together
-  as SEBE revenue grows (~£352B/year full Stage 1 cost, reached as automation
-  increases). Children receive age-banded supplements of £3,500-5,000/year.
-
-- **Stage 2 (transition): Universal Living Income at £29,000/adult/year**
-  (tax-free), matching the take-home pay of a median full-time earner. UBI
-  ratchets upward as automation grows and SEBE revenue increases.
-
-Both stages include **Universal Basic Services (UBS) at £2,500/person/year**:
-free energy, all public transport (bus and national rail), broadband, and
-mobile, free at point of use.
+The revenue is general-purpose. It could fund UBI (as proposed in EC730),
+reduce the deficit, replace National Insurance, expand the NHS, or any
+combination. An illustrative distribution model (UBI starting at
+~£650/adult/year at 2030 launch, ramping with automation) is included as an appendix,
+but SEBE's value is the revenue mechanism itself.
 
 SEBE directly supports:
-- **EC730** (Universal Basic Income funding)
-- **EC100/EC310** (moving beyond GDP/labour indicators)
+- **EC730** (Universal Basic Income funding mechanism)
+- **EC100/EC310** (moving beyond GDP/labour-dependent indicators)
 - **EC200** (ecological sustainability through energy taxation)
-- **EC650** (corporate accountability)
-- **EC661** (money as common resource)
+- **EC650** (corporate accountability for automation externalities)
+- **EC661** (money as common resource, MMT-compatible fiscal expansion)
 
 ---
 
@@ -147,13 +142,13 @@ industrial operations, and automated warehouses.
 | Consumption Bracket | Rate | Rationale |
 |---|---|---|
 | 0-500 kW | Exempt | Small business protection |
-| 500 kW - 5 MW | £0.05/kWh | Progressive ramp |
-| 5 MW - 50 MW | £0.15/kWh | Standard commercial |
-| >50 MW | £0.30/kWh | Datacenter/heavy industrial |
+| 500 kW - 5 MW | £0.08/kWh | Progressive ramp |
+| 5 MW - 50 MW | £0.20/kWh | Standard commercial |
+| >50 MW | £0.45/kWh | Datacenter/heavy industrial |
 
-**Year 1 revenue estimate:** £19-23 billion/year at launch, growing to £83
+**Year 1 revenue estimate:** £24-28 billion/year at launch, growing to £83
 billion by 2040 as automation infrastructure expands (data centres, automated
-warehouses, robotic manufacturing).
+warehouses, robotic manufacturing). Full derivation in `revenue_model.md`.
 
 **Notes:**
 - Drives energy efficiency (EC200)
@@ -193,7 +188,7 @@ drives compute back to UK facilities where SEE applies.
 
 ### 3.3 Total SEBE Revenue
 
-**Year 1 (launch):** **£26-33 billion/year**
+**Year 1 (2030 launch):** **£34-46 billion/year** (2026 prices)
 
 **Growth trajectory:**
 - 2030: £38 billion
@@ -201,7 +196,7 @@ drives compute back to UK facilities where SEE applies.
 - 2040: £93 billion
 - 2045: £159 billion (mid scenario)
 
-**As proportion of current tax revenue (£1 trillion):** 2.6-3.3% at launch,
+**As proportion of current tax revenue (£1 trillion):** 3.4-4.6% at launch,
 growing to approximately 9% by 2040.
 
 **Comparison to existing taxes at launch:**
@@ -216,153 +211,43 @@ that grows with the thing that causes the employment crisis it addresses.
 
 ---
 
-## 4. Distribution Framework: Two-Stage Model
+## 4. What SEBE Revenue Could Fund
 
-### 4.1 Rationale
+SEBE revenue is general-purpose. How it is spent is a political decision.
+The following illustrates scale, not prescriptive policy.
 
-SEBE's launch revenue (£26-33B/year) cannot fund full Stage 1 (£352B/year
-for UBI at £2,500 + UBS) from day one. However, SEBE provides a foundation
-that grows automatically with automation. As automation infrastructure expands,
-SEBE revenue increases, allowing UBI and UBS to ramp together.
+### 4.1 At Launch (£34-46B, 2030)
 
-This two-stage approach:
-- Starts immediately at a modest level (UBI £400/adult/year from SEBE alone)
-- Removes the "people will stop working" objection (Stage 1 is a supplement)
-- Creates a **self-reinforcing feedback loop** (more spending, more tax revenue)
-- Allows organic transition as the economy shifts
-- Reaches full Stage 1 funding as automation grows over 10-15 years
-
-### 4.2 Stage 1: Universal Basic Income (UBI)
-
-**UBI at £2,500/adult/year (£208/month)**
-
-A universal supplement to existing income. Not a replacement.
-
-- Existing benefits (JSA, UC, PIP, etc.) continue unchanged
-- Unemployed receive existing benefits PLUS UBI
-- Employed receive wages PLUS UBI
-- Pensioners receive state pension PLUS UBI
-- UBI is tax-free and unconditional
-
-**Children's supplement (paid to parent/guardian in child's name):**
-
-| Age Band | Annual Supplement | Rationale |
+| Use | Cost | Notes |
 |---|---|---|
-| 0-2 (infant) | £5,000 | Equipment, nappies, formula/food, high parental demand |
-| 3-11 | £3,500 | Food, clothing, school costs, activities |
-| 12-17 | £4,000 | Higher food costs, social participation, technology |
+| Modest UBI (~£650/adult/year) | ~£38B | Universal supplement (EC730) |
+| Free public transport | ~£14B | Fares replacement (ORR 2024/25) |
+| NHS waiting list reduction | ~£10-15B | Capital + staffing |
+| National Insurance cut | £38B = ~2p off NI | Pro-employment option |
 
-Children's rates reflect actual incremental costs of a child in an existing
-household. They are not a percentage of adult UBI. Children share housing,
-heating, and most infrastructure with their parent(s).
+### 4.2 At Maturity (£93B by 2040)
 
-### 4.3 Stage 1 Cost
+| Use | Cost | Notes |
+|---|---|---|
+| UBI at £1,000/adult/year | ~£55B | Meaningful supplement |
+| Full NI replacement | £170B | Achievable by ~2043 |
+| Deficit elimination | £93B | More than covers current borrowing |
 
-| Component | Count | Rate | Annual Cost |
-|---|---|---|---|
-| Adult UBI | 55M | £2,500 | £137.5B |
-| Children 0-2 | 2M | £5,000 | £10B |
-| Children 3-11 | 6M | £3,500 | £21B |
-| Children 12-17 | 4M | £4,000 | £16B |
-| **UBI subtotal** | | | **£184.5B** |
-| UBS provision | 67M | £2,500 | £168B |
-| **Stage 1 total** | | | **£352.5B** |
+### 4.3 Illustrative Distribution Model
 
-**SEBE revenue:** £26-33 billion/year at launch, growing to £93 billion by 2040.
+One detailed scenario is worked through in the accompanying
+`distribution_model.md`. In summary:
 
-**Ramp model:** UBI and UBS phase in together as SEBE revenue grows. At launch
-(2027), SEBE funds UBI at approximately £400/adult/year. As automation expands
-and SEBE revenue increases, UBI ratchets upward (£400 → £2,500 over 10-15 years)
-while UBS components phase in (free public transport first, then energy, then
-broadband/mobile). Full Stage 1 (UBI £2,500 + UBS) is reached as SEBE grows
-with automation.
+- **Stage 1:** UBI starting at ~£650/adult/year (2030 launch), ramping with SEBE
+  growth. Universal Basic Services (free transport, energy, broadband)
+  phase in over years. Children's supplements at £3,500-5,000/year.
+- **Stage 2:** UBI ratchets toward Universal Living Income
+  (£29,000/adult/year, matching median take-home pay) as automation
+  displaces employment.
+
+This is one option. SEBE works regardless of distribution model.
 
 **Alignment:** EC730 (UBI as right), EC201 (zero/negative growth compatible)
-
-### 4.4 Universal Basic Services (UBS)
-
-**Free at point of use:**
-- Energy (gas + electricity, to household threshold)
-- All public transport (buses, trains, trams, free at point of use)
-- Broadband (basic tier)
-- Mobile + basic device
-
-**Annual cost:** £168 billion (£2,500/person)
-
-UBS does not replace housing, food, or clothing. These are funded from
-UBI/ULI cash payments.
-
-### 4.5 Stage 1 Feedback Loop
-
-1. SEBE generates £26-33B from automation infrastructure at launch
-2. Initial UBI distributed at £400/adult/year (55M adults)
-3. UBS phases in (free public transport first, then energy, then broadband/mobile)
-4. UBI payments hit millions of bank accounts
-5. Consumer spending surges (especially in deprived areas)
-6. High street, hospitality, local services recover
-7. Increased economic activity generates additional conventional tax revenue
-   (income tax, VAT, corporation tax, business rates all rise)
-8. As automation displaces more jobs, SEBE revenue grows (more data centres,
-   automated warehouses, robotic manufacturing all increase SEE base)
-9. Combined revenue (SEBE + conventional + feedback) allows UBI to increase
-10. UBI ratchets upward from £400 toward £2,500, then toward ULI
-
-### 4.6 Stage 2: Universal Living Income (ULI)
-
-**ULI target: £29,000/adult/year (tax-free)**
-
-Stage 2 is the endgame, reached when automation has displaced enough
-employment that UBI must transition from supplement to primary income.
-
-**Derivation:**
-- ONS ASHE 2025 median gross annual earnings (full-time): £39,039
-- Tax and NI on £39,039 (2025/26 rates): ~£7,412
-- Take-home pay: ~£31,627
-- UBS value: £2,500
-- ULI = take-home minus UBS = **£29,000** (rounded)
-
-This matches the spending power of a current median full-time earner.
-
-| Component | Amount |
-|---|---|
-| ULI payment (adult) | £29,000 |
-| UBS value | £2,500 |
-| **Effective living standard** | **£31,500** |
-| Equivalent gross salary | ~£39,000 |
-
-**Stage 2 full cost:**
-
-| Component | Count | Rate | Annual Cost |
-|---|---|---|---|
-| Adult ULI | 55M | £29,000 | £1.595T |
-| Children 0-2 | 2M | £5,000 | £10B |
-| Children 3-11 | 6M | £3,500 | £21B |
-| Children 12-17 | 4M | £4,000 | £16B |
-| **ULI subtotal** | | | **£1.642T** |
-| UBS provision | 67M | £2,500 | £168B |
-| **Stage 2 total** | | | **£1.810T** |
-
-Stage 2 requires SEBE plus additional progressive taxation (wealth tax, LVT,
-FTT) and expanded fiscal space under MMT as automation increases productive
-capacity.
-
-### 4.7 Transition Timeline
-
-The transition from Stage 1 to Stage 2 is not a fixed date. It is driven by:
-- Growth in automation (and therefore SEBE revenue)
-- Decline in employment (and therefore need for higher UBI)
-- Conventional tax revenue from the UBI stimulus effect
-- Inflation dynamics and productive capacity
-
-A plausible (illustrative, not predictive) trajectory:
-
-| Year | Adult UBI | Approximate Cost | Notes |
-|---|---|---|---|
-| Year 1 | £2,500 | £185B | Stage 1 launch, SEBE funded |
-| Year 3 | £5,000 | £275B + children | Stimulus revenue reinvested |
-| Year 5 | £10,000 | £550B + children | Automation displacement accelerating |
-| Year 10 | £20,000 | £1.1T + children | Significant employment decline |
-| Year 15+ | £29,000 | £1.6T + children | Stage 2 (ULI), full transition |
 
 ---
 
@@ -404,33 +289,30 @@ A plausible (illustrative, not predictive) trajectory:
 
 ## 6. Implementation Roadmap
 
-### Phase 1: Infrastructure (2027-2028)
+### Phase 1: Legislation and Infrastructure (2029-2030)
+- SEBE legislation enacted following election
 - National Telemetry API development
 - Sovereign Metering Standard (open-source, TPM-secured)
 - Pilot with 10-20 largest datacenters
-- Legal framework enacted
 
-### Phase 2: Rollout (2028-2029)
+### Phase 2: Rollout (2030-2031)
 - Mandatory installation for >50MW facilities
 - Digital border infrastructure at major IXPs
-- Initial UBI payments at Stage 1 rate (£2,500/adult/year)
-- UBS rollout begins (free public transport first)
-- Revenue validation
+- Revenue collection begins (£34-46B at launch, 2026 prices)
+- Revenue allocation decision (UBI, NI reduction, or combination)
 
-### Phase 3: Expansion (2029-2030)
+### Phase 3: Expansion (2031-2032)
 - Extension to >5MW facilities
-- Full UBS implementation
-- UBI increased as revenue allows (target £5,000-10,000/year)
 - International coordination (EU alignment)
+- Revenue growing with automation deployment
 
-### Phase 4: Maturity (2030+)
+### Phase 4: Maturity (2033+)
 - >500kW facilities included
 - Full SEBE coverage operational
-- UBI continuing to ratchet toward ULI as automation grows
-- Complete UBS coverage
+- Revenue at £57B+ by 2035, £93B+ by 2040 (2026 prices)
 
 **Total timeline:** 3-5 years from legislation to full SEBE coverage.
-UBI-to-ULI transition is ongoing, driven by automation growth.
+Revenue grows automatically thereafter.
 
 ---
 
@@ -446,222 +328,11 @@ UBI-to-ULI transition is ongoing, driven by automation growth.
 **Current problem:** UBI unfunded (no viable mechanism)
 
 **SEBE solution:**
-- £26-33B revenue at launch, growing to £93B by 2040 (proven mechanism)
-- Stage 1 ramps with SEBE growth, fully costed
+- £34-46B revenue at launch (2030, 2026 prices), growing to £93B by 2040
+- Revenue funds EC730 UBI from day one (modest start, grows with automation)
 - Politically viable (taxes corporations not workers)
 - Technically feasible (infrastructure exists)
-- Self-scaling (revenue tracks automation)
-
-### 7.2 Cross-Party Appeal
-
-**Greens:** Environmental + social justice + UBI
-**Labour left:** Post-neoliberal economics + worker protection
-**Lib Dems:** Evidence-based, technocratic implementation
-
-**SEBE bridges:**
-- Environmental sustainability (EC200)
-- Economic justice (EC730)
-- Fiscal sustainability (replaces failing employment tax)
-
-### 7.3 Political Timing
-
-**Green Party membership:** 195,000 (Feb 2026)
-**Polling:** 14% (potentially 9+ seats)
-**Coalition probability:** 20-30% by 2029
-
-**If Greens in coalition:**
-- Need **deliverable** UBI policy (not aspiration)
-- Need **costed** mechanism (not theory)
-- **SEBE provides both** (Stage 1 ramps with automation, reaching full funding
-  as SEBE grows)
-
-**This paper positions Green Party** with implementable flagship policy
-for coalition negotiations.
-
----
-
-## 8. Comparison to Alternative Revenue Sources
-
-### 8.1 Why Not Just Wealth Tax?
-
-**Wealth tax potential:** £50-80B/year (on top 1%)
-
-**Problems:**
-- Capital flight (wealthy relocate)
-- Valuation disputes (illiquid assets)
-- One-time gain (wealth depletes)
-- Political opposition (property owners)
-
-**SEBE advantages:**
-- Infrastructure can't relocate (datacenters are physical)
-- Objective measurement (kWh/Mbps are quantifiable)
-- Recurring revenue (ongoing consumption)
-- Taxes corporate activity not personal wealth
-
-**Both needed:** Wealth tax + SEBE = complementary
-
-### 8.2 Why Not Just Corporation Tax?
-
-**Current corp tax:** £100B at 25% rate
-
-**Problems:**
-- Profit shifting (Ireland, Luxembourg)
-- Gaming via transfer pricing
-- Penalises domestic companies
-- Race to bottom (international competition)
-
-**SEBE advantages:**
-- Can't offshore physical energy consumption
-- Bandwidth tax captures offshore compute
-- Based on real activity not accounting profits
-- 2x rate on offshore = competitive advantage to UK datacenters
-
-### 8.3 Why Not Just Carbon Tax?
-
-**Carbon tax:** Captures emissions, not full energy
-
-**Problems:**
-- Only covers fossil fuels
-- Misses renewable-powered compute
-- Environmental focus not fiscal
-
-**SEBE advantages:**
-- Captures ALL energy (renewable or fossil)
-- Fiscal + environmental benefits
-- Bandwidth component captures digital activity carbon tax misses
-
-**Complementary:** Carbon tax on emissions + SEBE on energy = good coverage
-
----
-
-## 9. Fiscal Sustainability Analysis
-
-### 9.1 Stage 1 Requirement
-
-**Stage 1 (ramps with SEBE growth):**
-- UBI: £184.5B (55M adults at £2,500 + 12M children age-banded)
-- UBS: £168B (67M people at £2,500)
-- **Total: £352.5B/year**
-
-**SEBE revenue:** £26-33B/year at launch, growing to £93B by 2040.
-**Coverage:** 7-9% of full Stage 1 costs at launch. UBI and UBS ramp together
-as SEBE revenue grows, reaching full Stage 1 funding within 10-15 years as
-automation expands.
-
-### 9.2 Stage 2 Requirement
-
-**Stage 2 (SEBE plus progressive taxation):**
-- ULI: £1.642T (55M adults at £29,000 + 12M children)
-- UBS: £168B (67M people at £2,500)
-- **Total: £1.810T/year**
-
-**Revenue sources (combined):**
-- SEBE: £26-93B (launch to 2040, continuing to grow)
-- Wealth tax: £50-80B
-- Land Value Tax: £50-100B
-- Financial Transaction Tax: £20-50B
-- Conventional tax (boosted by UBI stimulus): growing
-- MMT framework: Sovereign currency flexibility
-
-### 9.3 MMT Framework
-
-**Key insight (EC661):** Sovereign currency issuer (UK has pound) faces
-**inflation constraint** not **financing constraint**
-
-**As automation increases productivity:**
-- Real output increases (goods/services produced)
-- Labour costs fall (automation)
-- **Productive capacity** expands
-
-**SEBE's role in MMT:**
-- **Withdraws purchasing power** from corporations (anti-inflationary)
-- **Distributes to population** as UBI/ULI (maintains demand)
-- **Balance** prevents inflation while ensuring full use of productive capacity
-
----
-
-## 10. International Coordination
-
-### 10.1 Preventing Tax Havens
-
-**Problem:** Ireland/Luxembourg offer low corporate rates
-
-**SEBE prevents:**
-- **Energy consumption** physically located in UK (can't offshore datacenters completely)
-- **Bandwidth tax** at 2x rate for offshore compute (penalises relocation)
-- **Digital border** enforcement (BGP tagging at IXPs)
-
-### 10.2 EU Coordination Opportunity
-
-**Propose SEBE as EU-wide framework:**
-- Harmonised energy tax (prevents race to bottom)
-- Coordinated digital borders (prevents haven shopping)
-- **EU SEBE revenue:** £600B-1.5T (EU-wide UBI)
-
-**UK leadership:** First mover advantage in post-employment fiscal policy
-
-### 10.3 OECD Minimum Standards
-
-**Similar to:** OECD minimum corporate tax (15%)
-
-**Propose:** OECD minimum energy/bandwidth tax
-- Prevents international competition undermining UBI/ULI
-- Establishes UK as policy leader
-- Protects domestic revenue base
-
----
-
-## 11. Transition from Current System
-
-### 11.1 Phase-In Without Economic Shock
-
-**Year 1-2 (2027-2028):**
-- Pilot with largest 50 datacenters
-- UBI payments begin: £400/adult/year from SEBE
-- Free public transport phased in
-- Revenue: £26-33B at launch
-
-**Year 3-4 (2028-2030):**
-- Expand to all >5MW facilities
-- UBI increased as revenue grows (from £400 toward £2,500)
-- UBS expansion continues
-- Revenue: £38-45B
-
-**Year 5+ (2030+):**
-- Full coverage >500kW
-- UBI continuing toward ULI
-- Revenue: £57B (2035), £93B (2040), £159B (2045)
-- Transition pace set by automation growth
-
-### 11.2 Interaction with Existing Taxes
-
-**SEBE does NOT replace immediately:**
-- Income tax (remains for high earners)
-- VAT (consumption tax)
-- Council tax (local funding)
-
-**SEBE reduces over time:**
-- National Insurance (employment-linked)
-- Means-tested benefits (ULI eventually replaces)
-- Unemployment support (ULI eventually provides)
-
-**Net effect:** Simpler, more efficient tax system aligned with
-post-employment reality
-
----
-
-## 12. Political Viability and Coalition Strategy
-
-### 12.1 Green Party Positioning
-
-**Current challenge:** UBI in manifesto but unfunded
-
-**SEBE provides:**
-- £26-33B/year at launch, growing to £93B by 2040
-- Stage 1 fully costed (£352B, reached as SEBE grows with automation)
-- Technically feasible
-- Environmentally beneficial
-- Self-scaling revenue mechanism
+- Self-scaling: the only tax that grows with the thing replacing workers
 
 **Coalition negotiation strength:**
 - "We have UBI funding mechanism ready to implement"
@@ -706,13 +377,42 @@ post-employment reality
 ### 13.3 "Inflation will eat UBI"
 
 **Response:**
-- Stage 1 UBI is £2,500/year (minimal demand shock)
-- SEBE is inflation-indexed (kWh/Mbps rates adjust)
+- Any initial UBI is modest (~£650/year at launch, minimal demand shock)
+- SEBE rates are CPI-indexed annually (like alcohol and tobacco duty)
 - SEBE withdraws purchasing power from corporations (anti-inflationary)
 - UBS directly reduces household costs (deflationary for recipients)
-- Real constraint is productive capacity not money supply
+- Real constraint is productive capacity, not money supply
+- **Crucially:** the automation SEBE taxes simultaneously reduces the real
+  cost of producing goods and services. Unit costs of manufacturing,
+  logistics, energy, and service delivery all fall as automation scales.
+  The tax captures a share of productivity gains that are themselves
+  deflationary
 
-### 13.4 "Creates surveillance state"
+### 13.4 "Why not tax FLOPS (compute operations) directly?"
+
+**Response:**
+- **FLOPS is not a standard unit.** FP64, FP32, FP16, INT8, INT4 all
+  count differently. A GPU rated at 1,000 TFLOPS in FP16 gives a
+  completely different number in FP32. There is no "one FLOP" that maps
+  to a unit of economic work.
+- **No physical measurement point.** Energy has meters. FLOPS has nothing
+  except software-readable hardware counters (trivially spoofable) or
+  self-declaration (obvious gaming incentive).
+- **Evasion is architectural.** Switch from GPU to ASIC, use lower
+  precision, use neuromorphic compute, run I/O-bound workloads. All
+  legitimate engineering choices that reduce FLOPS without reducing
+  economic output.
+- **Punishes efficiency.** A newer GPU that finishes a task in fewer
+  FLOPS pays less than an older, power-hungry GPU. This incentivises
+  keeping wasteful hardware running.
+- **Can't meter offshore.** You cannot count FLOPS in a Virginia data
+  centre from London. SEBE's DCD taxes the data crossing the border
+  instead (measurable at IXPs).
+- **Energy is the correct proxy.** Every computation (GPU, TPU, ASIC,
+  quantum, neuromorphic) consumes energy. Energy metering is deployed,
+  tamper-resistant, architecture-neutral, and rewards efficiency.
+
+### 13.5 "Creates surveillance state"
 
 **Response:**
 - Meters measure total consumption only (not individual behaviour)
@@ -743,30 +443,31 @@ post-employment reality
 ### 14.3 Timeline to Implementation
 
 **2026:** Policy adoption, economic modelling
-**2027:** Manifesto inclusion, public campaign
+**2027-2028:** Manifesto inclusion, public campaign
 **2028-2029:** Election, coalition negotiation
-**2029:** Legislation passed
-**2030-2032:** Phased implementation (Stage 1 UBI from day one of SEBE revenue)
-**2032+:** UBI ratchets toward ULI as automation grows
+**2029-2030:** Legislation passed, metering infrastructure deployed
+**2030-2033:** Phased implementation (Stage 1 UBI from day one of SEBE revenue)
+**2033+:** UBI ratchets toward ULI as automation grows
 
 ---
 
 ## 15. Conclusion
 
-The Sovereign Energy and Bandwidth Excise represents the fiscal foundation
-for a post-employment society. By taxing the physical infrastructure of
-automated production rather than human labour, SEBE:
+The Sovereign Energy and Bandwidth Excise solves the income tax
+replacement problem. By taxing the physical infrastructure of automated
+production rather than human labour, SEBE:
 
-- Generates £26-33 billion/year at launch, growing to £93 billion by 2040
-- Funds Stage 1 UBI launch at £400/adult/year, ramping to £2,500 as automation grows
-- Provides a clear transition path to full ULI (£29,000/adult, matching median take-home pay)
-- Enables Universal Basic Services (free energy, transport, broadband, mobile)
-- Aligns with Green values (environmental, social justice, democracy)
-- Provides implementable policy for coalition government
-- **Self-scales:** Revenue automatically tracks automation deployment
+- **Replaces eroding employment tax revenue** (£34-46B at launch, £93B by 2040, £159B by 2045, CPI-indexed, 2026 prices)
+- **Self-scales:** the only UK tax that grows with the thing replacing workers
+- **Funds EC730 UBI** from day one of revenue collection
+- **Drives energy efficiency** and UK datacenter investment (EC200)
+- **Prevents offshore profit shifting** (can't move physical energy consumption)
+- **Aligns with Green values** (environmental, social justice, fiscal sovereignty)
 
-**SEBE transforms Green Party from protest movement to government-ready**
-with detailed, costed, technically feasible flagship policy.
+**SEBE gives the Green Party a costed, implementable, self-scaling revenue
+mechanism** for the post-employment transition. The distribution question
+(UBI rate, UBS scope, transition speed) is a separate political decision.
+The revenue mechanism is the hard part, and this paper provides it.
 
 As automation eliminates employment, the state must choose:
 - **Neoliberal path:** Tax base collapses, austerity, social breakdown
@@ -790,15 +491,10 @@ This paper provides the technical and political framework for the SEBE path.
 ### Appendix B: EC Policy Concordance
 [Full mapping of SEBE to existing Green Party policy codes EC100-EC1053]
 
-### Appendix C: Cost Model
-Full working for all figures used in this submission is available in the
-accompanying cost model document (`docs/cost_model.md`), including:
-- ONS data sources and staleness dates
-- Population breakdown and assumptions
-- Median income and tax burden calculations
-- UBS component costing (including transport demand elasticity)
-- Rail rent extraction analysis (ROSCO data)
-- Two-stage cost breakdown with sensitivity analysis
+### Appendix C: Revenue and Distribution Models
+- `docs/revenue_model.md`: Full SEBE revenue derivation from first principles
+- `docs/cost_model.md`: Revenue scale comparisons and economic context
+- `docs/distribution_model.md`: Illustrative UBI/ULI/UBS distribution workings
 
 ### Appendix D: International Examples
 - Norway: Energy-based sovereign wealth fund

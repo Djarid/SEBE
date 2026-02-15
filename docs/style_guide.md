@@ -180,11 +180,12 @@ Every formal document must end with:
 
 **Always use the corrected figures from `docs/revenue_model.md`:**
 
-- SEBE year 1: **£31-38 billion** (not £200-500B, which was the old placeholder)
-- SEE component: £24-28B
-- DCD component: £7-10B
-- Growth: £93B by 2040, £159B by 2045
-- Stage 1 UBI launch: **£400/adult/year** (not £2,500 from day one)
+- SEBE launch (2030): **£34-46 billion** (2026 prices, CPI-indexed rates)
+- SEE component: £26-34B
+- DCD component: £8-12B
+- Growth: £93B by 2040, £159B by 2045 (2026 prices)
+- All projections in **2026 real prices**; nominal will be higher
+- Stage 1 UBI launch: **~£650/adult/year** (not £2,500 from day one)
 - Stage 1 UBI target: **£2,500/adult/year** (reached as revenue grows)
 - Stage 2 ULI: **£29,000/adult/year**
 
@@ -208,7 +209,7 @@ document must be clear that ordinary people do not pay SEBE.
 
 - Cite sources inline: "(ONS ASHE 2025)" or "(OBR Nov 2023 EFO)"
 - For revenue figures, reference `revenue_model.md` with section numbers
-- For cost/distribution figures, reference `cost_model.md`
+- For cost/distribution figures, reference `distribution_model.md` or `cost_model.md`
 - Never invent statistics. If a figure is not sourced, flag it as
   "[source needed]" rather than fabricating a citation
 - Stale data should be noted: "Stale after [date] when [new release]

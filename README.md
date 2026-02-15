@@ -1,6 +1,6 @@
 # SEBE — Sovereign Energy & Bandwidth Excise
 
-**A UK policy proposal to tax automation infrastructure and fund Universal Living Income.**
+**A UK policy proposal to tax automation infrastructure and replace eroding employment-based tax revenue.**
 
 Author: Jason Huxley | Licence: [CC-BY 4.0](LICENCE) | Status: Active, targeting Green Party Autumn 2026 conference
 
@@ -14,25 +14,18 @@ The UK raises £420 billion/year from taxing workers' wages. As automation repla
 
 Tax the physical infrastructure of automation instead of human labour:
 
-- **Sovereign Energy Excise (SEE):** £0.05-0.30/kWh on commercial facilities over 500kW IT load
-- **Digital Customs Duty (DCD):** £25-50/Mbps sustained commercial bandwidth, with a 2x offshore penalty
+- **Sovereign Energy Excise (SEE):** £0.08-0.45/kWh (tiered) on commercial facilities over 500kW IT load
+- **Digital Customs Duty (DCD):** £200-800/TB tiered border tariff on commercial data crossing the UK digital border. Consumers exempt. Domestic traffic exempt.
 
-**Estimated revenue: £200-500 billion/year**, comparable to Income Tax, larger than National Insurance or VAT.
+**Revenue at launch (2030): £34-46 billion/year** (2026 prices, CPI-indexed rates), larger than Inheritance Tax + Stamp Duty + CCL + Tobacco combined. Self-scaling with automation: £93B by 2040, £159B by 2045.
 
-## Two-Stage Distribution
+## What The Revenue Is For
 
-| Stage | Payment | UBS | Total | Fundable From |
-|---|---|---|---|---|
-| Stage 1: UBI (immediate) | £2,500/adult/year | £2,500/person/year | £352B/year | **SEBE alone** |
-| Stage 2: ULI (transition) | £29,000/adult/year | £2,500/person/year | £1.810T/year | SEBE + progressive taxation |
+SEBE is a tax mechanism. Distribution of revenue is a political choice.
 
-**Stage 1** is a universal supplement alongside existing benefits. Children receive age-banded supplements (£3,500-5,000/year based on actual costs). Fully fundable from SEBE revenue at midpoint estimates.
+The same revenue could fund universal income, NI reductions, NHS expansion, deficit reduction, or a combination. An illustrative two-stage distribution model (UBI ramping to Universal Living Income) is provided in [`distribution_model.md`](docs/distribution_model.md).
 
-**Stage 2** matches the take-home pay of a median full-time earner (ONS ASHE 2025: £39,039 gross = ~£31,500 take-home). UBI ratchets toward ULI as automation grows and SEBE revenue increases.
-
-**Universal Basic Services (UBS)** at £2,500/person/year: free energy, all public transport (bus and national rail), broadband, and mobile.
-
-SEBE is the major component of a broader progressive tax package (alongside wealth tax, land value tax, and financial transaction tax), not the complete solution. Honest framing matters.
+SEBE is the major new revenue component of a broader progressive tax package, not the complete solution. Honest framing matters.
 
 ## Why It Works
 
@@ -40,6 +33,7 @@ SEBE is the major component of a broader progressive tax package (alongside weal
 - **VPNs don't help.** ISPs see total throughput regardless of encryption.
 - **Hardware Root of Trust metering** at point of generation, storage, and load prevents evasion.
 - **Offshore compute taxed at 2x.** Cheaper to build in the UK than route around it.
+- **Revenue grows automatically.** More automation = more energy + bandwidth = more tax.
 
 ## Documents
 
@@ -48,17 +42,21 @@ SEBE is the major component of a broader progressive tax package (alongside weal
 | Green Party Policy Submission | Policy Development Committee, Economy Working Group | [green_party_submission.md](docs/green_party_submission.md) |
 | Academic/Think Tank Brief | IPPR, NEF, economics researchers | [academic_brief.md](docs/academic_brief.md) |
 | Public Explainer | General public, media, campaign use | [public_explainer.md](docs/public_explainer.md) |
-| Cost Model | Revenue, distribution, and transition working | [cost_model.md](docs/cost_model.md) |
+| Revenue Model | Source of truth for all SEBE revenue figures | [revenue_model.md](docs/revenue_model.md) |
+| Cost Model | Revenue scale and economic context | [cost_model.md](docs/cost_model.md) |
+| Distribution Model | Illustrative UBI/ULI/UBS workings | [distribution_model.md](docs/distribution_model.md) |
+| Style Guide | Writing standards for SEBE documents | [style_guide.md](docs/style_guide.md) |
 | Glossary | Term definitions and technical context | [glossary.md](docs/glossary.md) |
 
 ## Repository Structure
 
 ```
-docs/               Policy documents (three versions + cost model + glossary)
+docs/               Policy documents, reference models, style guide, glossary
 automation_framework/
-  tools/            Memory system, git remote ops, PDF reader
+  tools/            Memory system, git remote ops, fiscal calculator, PDF reader
   context/          Project and author context
   goals/            Campaign task definitions
+  services/         Daemon orchestration (Podman pod)
   memory/           Session logs and persistent facts
 ```
 

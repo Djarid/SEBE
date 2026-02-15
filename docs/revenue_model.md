@@ -3,7 +3,7 @@
 ## Derivation from First Principles
 
 **Author:** Jason Huxley
-**Version:** 1.0
+**Version:** 2.0
 **Date:** February 2026
 **Status:** Working document (replaces placeholder estimates in prior documents)
 
@@ -126,7 +126,8 @@ and the DCD ensures offshoring is more expensive (see Section 4).
 
 Non-compute commercial energy (manufacturing, logistics, automated
 warehouses) adds a further ~60 TWh at lower weighted rates, contributing
-approximately £8-12B. **Total SEE at launch: approximately £24-28B.**
+approximately £8-12B. **Total SEE at launch: approximately £24-28B**
+(2026 prices, see Section 3.6).
 
 ### 3.5 Context: Existing Energy Taxes
 
@@ -140,6 +141,22 @@ approximately £8-12B. **Total SEE at launch: approximately £24-28B.**
 SEE at £24-28B would be the largest single energy tax, approximately 3x
 the CCL but comparable to fuel duty. It is a step change, not without
 precedent in UK fiscal policy.
+
+### 3.6 CPI-Indexation
+
+All SEBE rates (SEE and DCD) are CPI-indexed annually, rising
+automatically with inflation. This follows the precedent of alcohol
+duty, tobacco duty, and air passenger duty escalators.
+
+Without indexation, SEBE rates erode in real value over time: at 3%
+annual inflation, the £0.45/kWh top rate would be worth £0.33/kWh
+in 2040 real terms. CPI-indexation prevents this.
+
+**All revenue projections in this document are stated in 2026 real
+prices.** Nominal revenue will be higher due to CPI adjustment of
+rates. For example, at 3% annual CPI, the nominal £93B mid-scenario
+for 2040 would be approximately £136B in nominal terms. The real
+purchasing power is what matters for policy analysis.
 
 ---
 
@@ -311,11 +328,11 @@ approximately 38% (2025). As DCD incentivises domestic location:
 
 | Year | Offshore share | DCD Revenue | Notes |
 |---|---|---|---|
-| Year 1 (launch) | 38% | £7-10B | Initial, before repatriation |
-| Year 3 | 32% | £7-9B | Early movers repatriate |
-| Year 5 | 26% | £7-8B | Significant shift domestic |
-| Year 10 | 14% | £6-7B | Most compute domestic |
-| Year 15 | 10% | £8-10B | Floor (some always offshore), offset by volume growth |
+| 2030 (launch) | 35% | £8-12B | Initial, before repatriation |
+| 2033 | 29% | £7-10B | Early movers repatriate |
+| 2035 | 23% | £7-9B | Significant shift domestic |
+| 2040 | 14% | £8-10B | Most compute domestic |
+| 2045 | 10% | £10-19B | Floor (some always offshore), offset by volume growth |
 
 DCD revenue is roughly stable in the early years (repatriation offsets
 volume growth) then slowly grows as total compute demand overwhelms the
@@ -325,13 +342,17 @@ declining offshore share. But it is always secondary to SEE.
 
 ## 5. Combined SEBE Revenue
 
-### 5.1 Year 1 (Launch)
+### 5.1 Year 1 (Launch, 2030)
 
-| Component | Revenue |
+| Component | Revenue (2026 prices) |
 |---|---|
-| SEE (70 TWh taxable, adjusted rates) | £24-28B |
-| DCD (cross-border, £300/TB avg) | £7-10B |
-| **Total SEBE** | **£31-38B** |
+| SEE (~90 TWh taxable by 2030, adjusted rates) | £26-34B |
+| DCD (cross-border, £300/TB avg) | £8-12B |
+| **Total SEBE** | **£34-46B** |
+
+The tax base is larger than the 2026 baseline (70 TWh) because 3-4
+years of compute growth adds approximately 20 TWh of new taxable
+capacity by 2030 (IEA projections). The mid-scenario estimate is £38B.
 
 ### 5.2 Growth Trajectory
 
@@ -359,12 +380,12 @@ be built in the UK if the sovereign compute incentive works.
 | Taxable share of total | Rising 2pp/year | More facilities cross 500kW threshold |
 | Offshore share | Declining 3pp/year | DCD deterrent effect, floor 10% |
 
-**Projected SEBE revenue:**
+**Projected SEBE revenue (2026 real prices, CPI-indexed rates):**
 
 | Year | Total Compute (GW) | SEE Revenue | DCD Revenue | Total SEBE |
 |---|---|---|---|---|
-| 2027 (launch) | 4.9 | £24B | £7B | £31B |
-| 2030 | 6.9 | £30B | £8B | £38B |
+| 2030 (launch) | 6.9 | £30B | £8B | £38B |
+| 2033 | 9.5 | £40B | £8B | £48B |
 | 2035 | 12.1 | £50B | £7B | £57B |
 | 2040 | 21.3 | £83B | £10B | £93B |
 | 2045 | 37.6 | £140B | £19B | £159B |
@@ -393,9 +414,9 @@ impactful and cost-effective:
 
 | Phase | Component | Net New Cost | Start Year |
 |---|---|---|---|
-| 1 | Free public transport | £14B (fares replacement) | Year 2 (2028) |
-| 2 | Free energy (to threshold) | £8-40B (phased over 5 years) | Year 6 (2032) |
-| 3 | Free broadband + mobile | £5B | Year 9 (2035) |
+| 1 | Free public transport | £14B (fares replacement) | Year 2 (2032) |
+| 2 | Free energy (to threshold) | £8-40B (phased over 5 years) | Year 6 (2036) |
+| 3 | Free broadband + mobile | £5B | Year 9 (2039) |
 
 Existing government spending on transport subsidy (~£12B rail), energy
 support (~£5B), and broadband programmes (~£1-2B) partially offsets these
@@ -406,35 +427,41 @@ costs. Net new spending is lower than gross UBS cost.
 Revenue is allocated first to UBS commitments, then the remainder funds
 UBI. UBI grows automatically as revenue exceeds UBS costs.
 
-| Year | SEE | DCD | Feedback | Total | UBS Cost | Available | Adult UBI | Monthly |
-|---|---|---|---|---|---|---|---|---|
-| 2027 | £24B | £7B | £0B | £31B | £0B | £31B | £400/yr | £33/mo |
-| 2028 | £26B | £7B | £8B | £40B | £14B | £26B | £350/yr | £29/mo |
-| 2030 | £30B | £8B | £7B | £45B | £14B | £31B | £400/yr | £33/mo |
-| 2032 | £37B | £8B | £8B | £53B | £22B | £31B | £400/yr | £33/mo |
-| 2035 | £50B | £7B | £5B | £62B | £51B | £11B | £150/yr | £12/mo |
-| 2038 | £68B | £8B | £2B | £78B | £59B | £19B | £250/yr | £21/mo |
-| 2040 | £83B | £10B | £8B | £101B | £59B | £42B | £550/yr | £46/mo |
-| 2045 | £140B | £19B | £27B | £187B | £59B | £128B | £1,750/yr | £146/mo |
+All figures in 2026 real prices. Adult populations from ONS 2022-based
+projections (see `distribution_model.md` Section 3.2).
+
+| Year | Adults | SEE | DCD | Feedback | Total | UBS Cost | Available | Adult UBI | Monthly |
+|---|---|---|---|---|---|---|---|---|---|
+| 2030 | 58.8M | £30B | £8B | £0B | £38B | £0B | £38B | £650/yr | £54/mo |
+| 2032 | 59.5M | £37B | £8B | £8B | £53B | £14B | £39B | £660/yr | £55/mo |
+| 2035 | 60.1M | £50B | £7B | £5B | £62B | £14B | £48B | £800/yr | £67/mo |
+| 2036 | 60.4M | £55B | £7B | £5B | £67B | £22B | £45B | £740/yr | £62/mo |
+| 2039 | 61.0M | £75B | £9B | £7B | £91B | £51B | £40B | £660/yr | £55/mo |
+| 2040 | 61.3M | £83B | £10B | £8B | £101B | £59B | £42B | £690/yr | £57/mo |
+| 2045 | 62.3M | £140B | £19B | £27B | £187B | £59B | £128B | £2,050/yr | £171/mo |
 
 "Feedback" is the additional conventional tax revenue generated by UBI
 spending (multiplier 0.8, marginal tax rate 33%).
 
-Note: UBI dips in 2032-2035 as free energy phases in. The family is
-still better off because UBS has direct cash-equivalent value (free
-energy, transport, broadband worth ~£2,500/person/year at full rollout).
+Note: UBI dips in 2036 and 2039 as free energy and broadband phase in.
+The family is still better off because UBS has direct cash-equivalent
+value (free energy, transport, broadband worth ~£2,500/person/year at
+full rollout).
 
 ### 6.4 Family Impact
 
 Combined UBI + UBS value for a family of 4 (2 adults + 2 children):
 
+All figures in 2026 real prices. UBI per adult uses ONS-projected
+population for each year.
+
 | Year | UBI (family) | UBS Value | Combined | Monthly |
 |---|---|---|---|---|
-| 2027 | £1,900 | £0 | £1,900 | £158 |
-| 2030 | £1,900 | £836 | £2,736 | £228 |
-| 2035 | £720 | £3,045 | £3,745 | £312 |
-| 2040 | £2,620 | £3,522 | £6,122 | £510 |
-| 2045 | £8,400 | £3,522 | £11,922 | £994 |
+| 2030 | £2,600 | £0 | £2,600 | £217 |
+| 2032 | £2,620 | £836 | £3,456 | £288 |
+| 2035 | £3,100 | £836 | £3,936 | £328 |
+| 2040 | £2,880 | £3,522 | £6,402 | £534 |
+| 2045 | £8,600 | £3,522 | £12,122 | £1,010 |
 
 UBS value is the per-person cost of active UBS components multiplied
 by family size. It represents the actual services received (free
@@ -443,12 +470,12 @@ that amount.
 
 ### 6.5 Comparison to Option 1 (Broader Tax Package)
 
-SEBE alone reaches £31-38B at launch. If combined with other progressive
-taxes that the Green Party already supports:
+SEBE alone reaches £34-46B at launch (2030). If combined with other
+progressive taxes that the Green Party already supports:
 
-| Source | Estimated Revenue |
+| Source | Estimated Revenue (2026 prices) |
 |---|---|
-| SEBE (SEE + DCD) | £31-38B |
+| SEBE (SEE + DCD) | £34-46B |
 | Land Value Tax | £40-70B |
 | Wealth tax (2% on >£10M) | £20-40B |
 | Financial Transaction Tax | £10-30B |
@@ -461,7 +488,8 @@ taxes that the Green Party already supports:
 
 With the UBI economic feedback loop (£30-95B in additional conventional
 tax revenue), total available revenue reaches **£164-358B**. At the
-upper end, this fully funds Stage 1 (net cost £337.5B) from year one.
+upper end, this approaches Stage 1 (net cost ~£370B at 2040 projected
+population) from year one.
 
 SEBE's distinctive contribution is that it is the only component that
 grows automatically with automation. The other taxes are largely
@@ -498,7 +526,7 @@ operator, but the revenue flows back to the exchequer.
 ### 7.3 Ramp-Up Period
 
 New data centre capacity takes 2-4 years to build. During the ramp-up
-period (2027-2031), UK compute supply may not meet demand from
+period (2030-2034), UK compute supply may not meet demand from
 repatriating workloads. The DCD should include a transitional allowance:
 
 - Year 1-2: DCD at 50% rate (reduced, acknowledging supply constraints)
@@ -532,7 +560,9 @@ the direction of travel.
 
 ### 8.3 Growth Sensitivity
 
-| Scenario | 2030 | 2035 | 2040 | 2045 |
+All figures in 2026 real prices.
+
+| Scenario | 2030 (launch) | 2035 | 2040 | 2045 |
 |---|---|---|---|---|
 | Conservative (10% compute growth) | £34B | £47B | £70B | £108B |
 | Mid (12% compute growth) | £38B | £57B | £93B | £159B |
@@ -574,21 +604,22 @@ costs at every scale.
 
 ## 10. What This Means
 
-SEBE at launch generates approximately **£31-38B/year**. This is
-comparable to Inheritance Tax (£7B) plus Stamp Duty (£15B) plus
-Climate Change Levy (£2B) plus Tobacco Duty (£10B) combined. It is
-a significant new revenue source, but it does not fund full Stage 1
-from day one.
+SEBE at launch (2030) generates approximately **£34-46B/year** (2026
+real prices, mid-scenario £38B). This is larger than Inheritance Tax
+(£7B) plus Stamp Duty (£15B) plus Climate Change Levy (£2B) plus
+Tobacco Duty (£10B) combined. It is a significant new revenue source,
+but it does not fund full Stage 1 from day one.
 
 What SEBE does that no other tax does: **it grows automatically with
 the thing that replaces human employment.** Every new data centre,
 every automated warehouse, every AI inference cluster increases the
 SEE base. The revenue tracks the problem.
 
-By 2040, SEBE is projected at **£93-135B/year** (mid-to-high scenario).
-By 2045, **£159-260B/year**. Combined with the broader progressive tax
-package and the UBI economic feedback loop, Stage 1 is fully funded
-within 10-15 years of launch, with UBI growing every year.
+By 2040, SEBE is projected at **£93-135B/year** (mid-to-high scenario,
+2026 prices). By 2045, **£159-260B/year**. Combined with the broader
+progressive tax package and the UBI economic feedback loop, Stage 1 is
+fully funded within 10-15 years of launch, with UBI growing every year.
+Nominal revenue will be higher due to CPI-indexed rates (see Section 3.6).
 
 The honest pitch: **SEBE starts modest and grows with automation. As
 machines replace workers, the tax on machines funds the workers'
