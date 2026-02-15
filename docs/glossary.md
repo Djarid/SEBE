@@ -36,15 +36,20 @@ consumption for facilities exceeding 500kW IT load. Rates: £0.05-0.30/kWh
 depending on consumption bracket.
 
 **DCD (Digital Customs Duty)**
-The bandwidth component of SEBE. A tax on sustained commercial data throughput,
-implemented at Internet Exchange Points. Offshore compute is taxed at 2x the
-domestic rate to incentivise UK datacenter investment. Rates: £25-50/Mbps
-sustained.
+The bandwidth component of SEBE. A border tariff on commercial data crossing
+the UK digital border, in either direction. Implemented at Internet Exchange
+Points. Consumers are exempt. Domestic DC traffic is exempt (pays SEE on
+energy instead). DCD rate is set to make offshoring compute more expensive
+than domestic operation, incentivising UK datacenter investment. Rates:
+£200-800/TB tiered by annual border traffic volume
+(see `revenue_model.md` for derivation).
 
 **UBI (Universal Basic Income)**
 Stage 1 of the SEBE distribution model. A tax-free, unconditional supplement
-of £2,500/adult/year paid to every UK citizen alongside existing benefits.
-Not a replacement for wages or welfare. Fully fundable from SEBE alone.
+paid to every UK citizen alongside existing benefits. Starts at approximately
+£400/adult/year at SEBE launch and ramps upward as automation (and therefore
+SEBE revenue) grows. Not a replacement for wages or welfare. Target rate of
+£2,500/adult/year reached as SEBE revenue scales (see `revenue_model.md`).
 
 **ULI (Universal Living Income)**
 Stage 2 of the SEBE distribution model. A tax-free stipend of £29,000/adult/year
@@ -91,9 +96,11 @@ cannot be spoofed by software. The three measurement points:
 - **PoL (Point of Load):** Actual consumption at the computing infrastructure
 
 **Offshore Compute**
-Computing performed outside the UK but serving the UK market. Taxed at 2x
-the domestic DCD rate. This makes it cheaper for companies to build UK
-datacenters than to route around the tax from abroad.
+Computing performed outside the UK but serving the UK market. Subject to
+DCD on all data crossing the UK digital border (both directions). DCD rate
+is set at or above the SEE-equivalent cost, making it cheaper for companies
+to build UK datacenters (and pay SEE) than to route compute from abroad
+(and pay DCD).
 
 **Temporal Arbitrage**
 Storing energy during low-rate periods and consuming it during high-rate
@@ -142,9 +149,9 @@ to SEBE because automation increases productive capacity, which expands
 the fiscal space available to a sovereign government.
 
 **Defence Ring-Fence**
-An optional allocation of 20% of SEBE revenue (£40-100 billion/year) for
-UK strategic defence autonomy. Reduces ULI slightly but funds complete
-independence from alliance dependencies.
+An optional allocation of SEBE revenue for UK strategic defence autonomy.
+At launch (~£31B total SEBE), this would be modest; as SEBE grows with
+automation, a percentage allocation becomes increasingly significant.
 
 ---
 

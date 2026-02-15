@@ -10,8 +10,8 @@
 
 UK policy proposal for taxing automation infrastructure (energy consumption
 and data throughput) to fund a two-stage transition from Universal Basic
-Income (£2,500/adult/year) to Universal Living Income (£29,000/adult/year).
-Revenue estimate: £200-500 billion/year. Stage 1 is fully fundable from
+Income (£400/adult/year launch, ramping to £2,500) to Universal Living Income (£29,000/adult/year).
+Revenue estimate: £31-38 billion/year at launch, self-scaling with automation. Stage 1 is fully fundable from
 SEBE alone.
 
 ## Session Start Protocol
@@ -247,17 +247,18 @@ Every formal document ends with CC-BY 4.0 copyright notice.
 
 | Parameter | Value |
 |---|---|
-| Stage 1 UBI (adult) | £2,500/adult/year |
+| Stage 1 UBI (adult) | £400/adult/year (launch), ramps with SEBE revenue |
+| Stage 1 UBI target | £2,500/adult/year (reached as SEBE revenue grows) |
 | Stage 2 ULI (adult) | £29,000/adult/year |
 | Children's supplements | £3,500-5,000/year (age-banded) |
 | UBS value | £2,500/person/year |
 | Combined living standard (Stage 2) | £31,500/person/year |
-| Stage 1 total cost | ~£352 billion/year |
+| Stage 1 total cost | Ramps from £22B/year (2027) to £352B+ (target, as SEBE grows) |
 | Stage 2 total cost | ~£1.810 trillion/year |
-| SEBE revenue target | £200-500 billion/year |
-| Coverage threshold | Commercial facilities >500kW IT load |
-| Energy rates (SEE) | £0.05-0.30/kWh (tiered) |
-| Bandwidth rates (DCD) | £25-50/Mbps sustained |
+| SEBE revenue target | £31-38 billion/year (launch), self-scaling with automation |
+| Coverage threshold | Commercial facilities >500kW IT load; DCD applies to cross-border commercial data only |
+| Energy rates (SEE) | £0.08-0.45/kWh (tiered, adjusted rates) |
+| Bandwidth rates (DCD) | £200-800/TB tiered (border tariff on cross-border commercial data) |
 | Offshore compute penalty | 2x domestic rate |
 
 ## Working With the Author — Summary

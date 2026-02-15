@@ -553,10 +553,10 @@ Examples:
                         help="UBS rate per person (default: 2500)")
     parser.add_argument("--pop-growth", type=float, default=0,
                         help="Population growth percentage (default: 0)")
-    parser.add_argument("--sebe-low", type=float, default=200,
-                        help="SEBE revenue low estimate in £B (default: 200)")
-    parser.add_argument("--sebe-high", type=float, default=500,
-                        help="SEBE revenue high estimate in £B (default: 500)")
+    parser.add_argument("--sebe-low", type=float, default=31,
+                        help="SEBE revenue low estimate in £B (default: 31)")
+    parser.add_argument("--sebe-high", type=float, default=38,
+                        help="SEBE revenue high estimate in £B (default: 38)")
     parser.add_argument("--stage", type=int, default=None,
                         help="Force stage 1 or 2 for offsets (default: auto)")
     parser.add_argument("--json", action="store_true",

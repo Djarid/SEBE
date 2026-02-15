@@ -56,14 +56,13 @@ tax** (they shift profits to Ireland, claim tax breaks, etc.)
 
 ## How Much Money Does This Raise?
 
-### SEBE could generate: **£200-500 billion per year**
+### SEBE starts at **£31 billion per year** and grows automatically with automation
 
-**That's:**
-- **Bigger than VAT** (currently £160 billion)
-- **As big as Income Tax** (currently £250 billion)
-- **20-50% of all government revenue**
+**By 2040:** £93 billion per year
+**By 2045:** £159 billion per year
 
-**It's massive.** Big enough to change everything.
+As machines replace workers, the tax grows with the scale of automation.
+The more robots do the work, the more revenue comes in to support people.
 
 ---
 
@@ -73,12 +72,13 @@ tax** (they shift profits to Ireland, claim tax breaks, etc.)
 
 **Stage 1 (starts immediately): Universal Basic Income**
 
-Every adult gets **£2,500 per year** (about £208/month), on top of
-whatever you already earn or receive. No conditions. No job required.
+Every adult gets a basic income that **starts at £400 per year** and ramps up
+as SEBE revenue grows. It's on top of whatever you already earn or receive.
+No conditions. No job required.
 
-- If you work, you keep your wages AND get the £2,500
-- If you're on benefits, you keep your benefits AND get the £2,500
-- If you're retired, you keep your pension AND get the £2,500
+- If you work, you keep your wages AND get the UBI
+- If you're on benefits, you keep your benefits AND get the UBI
+- If you're retired, you keep your pension AND get the UBI
 
 **Children get more** (paid to parents):
 - Babies and toddlers (0-2): £5,000/year
@@ -88,22 +88,23 @@ whatever you already earn or receive. No conditions. No job required.
 These amounts are based on what it actually costs to raise a child at each
 age, not an arbitrary percentage.
 
-**Plus: Universal Basic Services (free for everyone)**
-- **Free buses and trains** (all public transport)
+**Plus: Universal Basic Services (phased in over years)**
+- **Free buses and trains** (all public transport, introduced first)
 - **Free energy** (electricity and gas, to a reasonable amount)
 - **Free internet and mobile** (basic service)
 
-**Total value of free services: £2,500 per person per year**
+**Total value of free services when fully rolled out: £2,500 per person per year**
 
-**This is fully fundable from SEBE alone.** No other taxes needed for
-Stage 1.
+The UBI and UBS roll out together as SEBE revenue grows. Transport comes
+first (highest impact, easiest to implement), then energy, then broadband.
 
 ---
 
 **Stage 2 (as robots take more jobs): Universal Living Income**
 
-As automation grows, SEBE revenue grows with it. The £2,500 payment
-increases over time until it reaches **£29,000 per year** (tax-free).
+As automation grows, SEBE revenue grows with it. The UBI payment increases
+over time from its initial £400/year until it reaches **£29,000 per year**
+(tax-free).
 
 **Why £29,000?** Because that's what the average full-time worker actually
 takes home after tax. A median earner makes £39,000 gross, but after income
@@ -152,18 +153,19 @@ large-scale automation.
 ### "Won't prices just go up?"
 
 **Some prices might, but:**
-- You're getting free transport, energy, and internet (saves you thousands)
-- Plus £2,500 cash on top (Stage 1)
+- You're getting free transport, energy, and internet as they phase in (saves you thousands)
+- Plus the UBI cash payment (starts at £400, grows from there)
 - Even if some prices rise, you're still **much better off**
 - Companies will invest in efficiency to reduce their tax (good for environment)
 
 ### "Will people still work?"
 
-**Stage 1 is £2,500/year. Nobody quits their job for £208 a month.**
+**Stage 1 starts at £400/year. Nobody quits their job for £33 a month.**
 
-By the time we reach Stage 2 (£29,000/year), robots will have taken most
-of the jobs anyway. That's the whole point: the income replaces the jobs
-that automation destroys.
+The payment only grows to meaningful levels (£5,000, £10,000, eventually
+£29,000) as automation scales up. By the time we reach full ULI
+(£29,000/year), robots will have taken most of the jobs anyway. That's the
+whole point: the income replaces the jobs that automation destroys.
 
 And evidence from around the world (Alaska, Finland, Kenya) shows that
 when you give people a basic income, they don't stop working. They start
@@ -181,7 +183,7 @@ they're not desperate.
 ### "What about inflation?"
 
 **Stage 1 won't cause inflation because:**
-- £2,500/year is a small supplement (minimal demand shock)
+- Starting at £400/year is a tiny supplement (minimal demand shock)
 - The money comes from **taxing companies**, not printing money
 - Free services actually **reduce** your costs (deflationary)
 - SEBE pulls money out of corporations (anti-inflationary)
@@ -202,15 +204,15 @@ the economy stays balanced.
 - Pay £500/year on phone and internet
 - **Take home after costs: ~£28,000**
 
-**With SEBE (Stage 1):**
+**With SEBE (Stage 1, as it ramps up):**
 - Same job, same £32,000 salary
-- Buses and trains are free (save £1,500)
-- Energy is free (save £1,800)
-- Internet and mobile are free (save £500)
-- Plus £2,500 UBI
-- **You have £36,300** (£8,300 better off)
+- Buses and trains become free (save £1,500)
+- Energy becomes free (save £1,800)
+- Internet and mobile become free (save £500)
+- Plus UBI (starts at £400, grows to £2,500, then higher)
+- **Eventually: £36,300+** (£8,300+ better off as it fully phases in)
 
-**And you can still work.** The £2,500 is a **top-up**, not a replacement.
+**And you can still work.** The UBI is a **top-up**, not a replacement.
 
 ### A single parent:
 
@@ -221,14 +223,14 @@ the economy stays balanced.
 - Bills £3,000/year
 - **Barely surviving**
 
-**With SEBE (Stage 1):**
+**With SEBE (Stage 1, as it ramps up):**
 - £18,000 wages
-- Plus £2,500 UBI for parent
+- Plus UBI for parent (starts £400, grows over time)
 - Plus £3,500 for child (age 3-11)
-- Free transport (saves £1,000)
-- Free energy (saves £1,800)
-- Free phone/internet (saves £500)
-- **£27,300 total (nearly £10,000 better off)**
+- Free transport as it phases in (saves £1,000)
+- Free energy as it phases in (saves £1,800)
+- Free phone/internet as it phases in (saves £500)
+- **Eventually £27,300+ total (nearly £10,000+ better off when fully rolled out)**
 
 ### A pensioner:
 
@@ -237,11 +239,11 @@ the economy stays balanced.
 - Energy bills eating into it
 - Can't afford the bus to see grandchildren
 
-**With SEBE (Stage 1):**
+**With SEBE (Stage 1, as it ramps up):**
 - State pension £11,500 (unchanged)
-- Plus £2,500 UBI
-- Free energy, free buses, free phone
-- **£14,000 plus free services (thousands better off)**
+- Plus UBI (starts £400, grows over time)
+- Free energy, free buses, free phone (as they phase in)
+- **Eventually £14,000+ plus free services (thousands better off when fully rolled out)**
 
 ### When Stage 2 arrives:
 
@@ -256,12 +258,12 @@ automation will have replaced them. The income replaces the job.
 Here's the clever bit:
 
 1. **SEBE starts** (taxes automation infrastructure)
-2. **Everyone gets £2,500/year** (plus free services)
+2. **Everyone gets £400/year** (plus free transport phases in first)
 3. **People spend that money** (shops, restaurants, local businesses)
 4. **Local economy booms** (especially in poorer areas)
 5. **Government gets more tax** from the extra economic activity
 6. **Combined revenue grows** (SEBE + extra tax from the boom)
-7. **UBI increases** (to £5,000, then £10,000, and so on)
+7. **UBI increases** (to £1,000, then £2,500, then £5,000, £10,000, and so on)
 8. **Meanwhile, automation grows** (more robots = more SEBE revenue)
 9. **Eventually: £29,000/year** (Universal Living Income)
 
@@ -296,11 +298,11 @@ revenue there is to fund the income that replaces those jobs.
 **2026-2027:** Put it in the manifesto
 **2028:** Election (hopefully coalition government)
 **2029:** Pass the law
-**2030:** Stage 1 begins (£2,500/year UBI, free transport and energy)
-**2031-2035:** UBI increases as automation grows
-**2035+:** Approaching full ULI (£29,000/year)
+**2030:** Stage 1 begins (£400/year UBI, free transport phases in)
+**2031-2040:** UBI increases as automation and SEBE revenue grow
+**2040+:** Approaching full ULI (£29,000/year)
 
-**From day one: you get £2,500/year plus free transport, energy, and internet.**
+**From day one: you get £400/year plus free transport starting to roll out.**
 
 Whether you work or not. Whether you're young or old. Whether you're rich
 or poor.
@@ -340,7 +342,8 @@ Green Party has 195,000 members and is growing. They support UBI and need
 a funding mechanism. **This could be it.**
 
 ### 2. Tell your MP you want automation taxed
-Don't let them say "we can't afford it." £200-500 billion says we can.
+Don't let them say "we can't afford it." £31 billion at launch (growing to
+£159 billion) says we can.
 
 ### 3. Share this idea
 The more people understand that **taxing robots is possible**, the harder
@@ -352,16 +355,18 @@ it is for politicians to ignore.
 
 **"This sounds too good to be true"**
 It's not magic. It's just: tax the actual productive infrastructure (robots)
-instead of the human workers they're replacing. Stage 1 costs £352 billion,
-and SEBE generates £200-500 billion. The numbers work.
+instead of the human workers they're replacing. SEBE starts at £31 billion
+and grows automatically with automation. It starts modest and scales up as
+the economy transforms. The numbers work.
 
 **"Why hasn't anyone done this before?"**
 Automation wasn't advanced enough. Now it is. We're the first generation
 where this is both **necessary** and **possible**.
 
 **"What if it doesn't work?"**
-Stage 1 is a modest supplement (£2,500/year). If it works, we increase it.
-If something needs adjusting, we adjust it. That's why it's two stages, not
+Stage 1 starts very modestly (£400/year) and ramps up gradually. If it
+works, it increases naturally with automation growth. If something needs
+adjusting, we adjust it. That's why it's two stages with a gradual ramp, not
 one big leap.
 
 ---

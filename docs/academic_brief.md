@@ -130,46 +130,75 @@ SEE = PoL - (PoS_final - PoS_initial) x Efficiency_Allowance
 
 ### 3.2 Component 2: Digital Customs Duty (DCD)
 
-**Tax base:** Corporate data throughput
+**Tax base:** Commercial data crossing the UK digital border (both directions)
 
 **Implementation:** Internet Exchange Point (IXP) level enforcement
 
-**Role Margin Protocol:**
-- Baseline quota per Standard Industrial Classification
-- Threshold: 1.5x standard deviation for sector
-- Tax excess throughput
+**Who pays DCD:**
+- UK businesses using offshore cloud (AWS Ireland, Azure Netherlands, GCP Belgium)
+- UK businesses calling offshore APIs (OpenAI US, Anthropic US)
+- UK financial firms with offshore compute facilities
+- Any UK commercial entity whose data crosses the UK digital border
+
+**Who does not pay DCD:**
+- UK consumers (exempt)
+- UK businesses using UK-based data centres (pay SEE instead)
+- Educational and research institutions (JANET, exempt)
+- NHS and emergency services (exempt)
 
 **Technical enforcement:**
 - **BGP Community Tagging:** Identifies commercial traffic at Tier-1 gateways
 - **SNI analysis:** Distinguishes commercial API calls from personal use
 - **Flow symmetry:** Detects compute workload patterns
 
-**Offshore compute penalty:**
-- Domestic datacenter: Base rate
-- Offshore AWS/Azure/GCP: 2x base rate
-- **Incentive:** Repatriate compute to UK
+**DCD rate rationale:**
+DCD is set so that offshoring compute is always more expensive than
+operating domestically (where the operator pays SEE). This incentivises
+building UK data centres. The rate is derived from the SEE-equivalent
+cost per unit of border-crossing data (see `revenue_model.md` Section 4
+for full derivation).
 
 ### 3.3 Rate Structures
 
-**Energy (preliminary estimates):**
+**Energy (derived from DESNZ consumption data, see `revenue_model.md`):**
 
-| Bracket | Rate (£/kWh) | Annual Revenue |
-|---|---|---|
-| 500kW-5MW | 0.05 | £20-30B |
-| 5MW-50MW | 0.15 | £50-80B |
-| >50MW | 0.30 | £80-140B |
-| **Total SEE** | | **£150-250B** |
+| Bracket | Rate (£/kWh) | Taxable TWh | Annual Revenue |
+|---|---|---|---|
+| 500kW-5MW | 0.05 | ~25 | £1.2B |
+| 5MW-50MW | 0.15 | ~25 | £3.8B |
+| >50MW | 0.30 | ~20 | £6.0B |
+| Non-compute commercial | weighted | ~60 | £8-12B |
+| **Total SEE** | | **~130** | **£19-23B** |
 
-**Bandwidth (preliminary estimates):**
+Note: Total UK commercial/industrial electricity is ~150 TWh, but only
+~70 TWh is consumed in facilities above the 500kW threshold. The
+remainder falls below the exemption. Revenue grows with automation
+(see growth projections below).
+
+**Bandwidth (derived from data centre economics, see `revenue_model.md`):**
 
 | Type | Rate | Annual Revenue |
 |---|---|---|
-| Domestic baseline | Exempt | - |
-| Domestic excess | £25/Mbps | £20-50B |
-| Offshore compute | £50/Mbps | £30-200B |
-| **Total DCD** | | **£50-250B** |
+| Domestic traffic | Exempt | £0 (pays SEE instead) |
+| Cross-border (< 10 PB/yr) | £200/TB | |
+| Cross-border (10-100 PB/yr) | £400/TB | |
+| Cross-border (> 100 PB/yr) | £800/TB | |
+| **Total DCD** | | **£7-10B** |
 
-**Combined SEBE:** **£200-500 billion/year**
+**Combined SEBE at launch: £26-33 billion/year**
+
+**Growth trajectory (automation-driven):**
+
+| Year | SEE | DCD | Total SEBE |
+|---|---|---|---|
+| 2027 (launch) | £24B | £7B | £31B |
+| 2030 | £30B | £8B | £38B |
+| 2035 | £50B | £7B | £57B |
+| 2040 | £83B | £10B | £93B |
+| 2045 | £140B | £19B | £159B |
+
+SEBE revenue is self-scaling: as automation replaces human labour,
+the tax on automation infrastructure grows automatically.
 
 ---
 

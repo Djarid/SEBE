@@ -219,15 +219,18 @@ dataportal.orr.gov.uk/statistics/finance/rail-industry-finance/
 
 ### 6.1 Rationale
 
-SEBE's estimated revenue (£200-500B/year) cannot fund full ULI (£29,000/adult)
-from day one. However, it can fund a meaningful universal supplement
-immediately, which grows as automation (and therefore SEBE revenue) increases.
+SEBE's estimated revenue at launch (~£31-38B/year, see `revenue_model.md`
+for full derivation) cannot fund full Stage 1 from day one. However, SEBE
+revenue grows automatically with automation, reaching £93-159B/year by 2040
+and £159-260B/year by 2045 (mid-to-high scenarios). UBI and UBS therefore
+ramp up together as revenue allows.
 
-This two-stage approach:
-- Makes Stage 1 **fully fundable from SEBE alone**
+This approach:
+- Starts Stage 1 **immediately** at a level SEBE can fund
 - Removes the "people will stop working" objection (Stage 1 is a supplement)
 - Creates a **self-reinforcing feedback loop** (more spending, more tax revenue)
 - Allows organic transition as the economy shifts
+- Is **self-scaling**: the tax grows with the thing that replaces workers
 
 ### 6.2 Stage 1: Universal Basic Income (UBI)
 
@@ -265,25 +268,48 @@ heating, and most infrastructure with their parent(s).
 | UBS provision | 67M | £2,500 | £167.5B |
 | **Stage 1 total** | | | **£352B** |
 
-**SEBE revenue (estimated): £200-500 billion/year**
+**SEBE revenue at launch (derived): £31-38 billion/year**
+(See `revenue_model.md` for full derivation from first principles.)
 
-At the midpoint of SEBE estimates (~£350B), Stage 1 is fully funded.
-At the lower bound (£200B), UBI can begin at a reduced rate while UBS
-scales up progressively.
+SEBE does not fund full Stage 1 from day one. Instead, UBI starts at
+approximately £400/adult/year and ramps upward as automation (and
+therefore SEBE revenue) grows. UBS phases in component by component:
+free public transport (2028), free energy to threshold (2032), free
+broadband and mobile (2035).
 
-### 6.4 Stage 1 Economic Feedback Loop
+By 2040, SEBE revenue is projected at £93-135B/year. By 2045,
+£159-260B/year. Stage 1 at full rate (£352B) is reached through
+SEBE growth combined with the broader progressive tax package and
+the UBI economic feedback loop.
 
-1. SEBE generates £200-500B from automation infrastructure
-2. £184.5B distributed as UBI (55M adults + 12M children)
-3. £167.5B funds UBS (free energy, transport, broadband, mobile)
-4. £2,500 per adult hits 55 million bank accounts
-5. Consumer spending surges (especially in deprived areas)
-6. High street, hospitality, local services recover
-7. Increased economic activity generates additional conventional tax revenue
+### 6.4 Stage 1 Ramp and Economic Feedback Loop
+
+**Year-by-year projection (see `revenue_model.md` Section 6 for detail):**
+
+| Year | Total SEBE | UBS Active | Adult UBI | Family of 4 (combined) |
+|---|---|---|---|---|
+| 2027 (launch) | £31B | None | £400/yr | £1,900/yr |
+| 2030 | £45B | Transport | £400/yr | £2,736/yr |
+| 2035 | £62B | Transport + Energy + Broadband | £150/yr | £3,745/yr |
+| 2040 | £101B | Full UBS | £550/yr | £6,122/yr |
+| 2045 | £187B | Full UBS | £1,750/yr | £11,922/yr |
+
+Note: UBI dips when new UBS components launch (they compete for the
+same revenue), but the family is better off overall because UBS provides
+direct cash-equivalent value (free transport, energy, broadband).
+
+**Feedback loop:**
+
+1. SEBE generates £31-38B from automation infrastructure (year 1)
+2. UBI distributed at ~£400/adult/year (55M adults)
+3. Consumer spending increases (especially in deprived areas)
+4. High street, hospitality, local services recover
+5. Increased economic activity generates additional conventional tax revenue
    (income tax, VAT, corporation tax, business rates all rise)
-8. Combined revenue (SEBE + conventional) allows UBI to increase
-9. As automation displaces more jobs, SEBE revenue grows further
-10. UBI ratchets upward toward ULI
+6. Combined revenue (SEBE + conventional) allows UBI to increase
+7. As automation displaces more jobs, SEBE revenue grows further
+8. UBI ratchets upward; UBS components phase in
+9. By 2040, SEBE alone reaches £93-135B; with broader taxes, Stage 1 is funded
 
 ### 6.5 Stage 2: Universal Living Income (ULI)
 
@@ -325,21 +351,29 @@ The transition from Stage 1 to Stage 2 is not a fixed date. It is driven by:
 - Growth in automation (and therefore SEBE revenue)
 - Decline in employment (and therefore need for higher UBI)
 - Conventional tax revenue from the UBI stimulus effect
+- Complementary progressive taxes (LVT, wealth tax, FTT)
 - Inflation dynamics and productive capacity
 
 The two stages are endpoints. In practice, UBI increases incrementally as
-revenue allows. A plausible (illustrative, not predictive) trajectory:
+revenue allows. The trajectory is derived from compute growth projections
+(see `revenue_model.md` Section 5):
 
-| Year | Adult UBI | Approximate cost | Notes |
-|---|---|---|---|
-| Year 1 | £2,500 | £185B | Stage 1 launch, SEBE funded |
-| Year 3 | £5,000 | £275B + children | Stimulus revenue reinvested |
-| Year 5 | £10,000 | £550B + children | Automation displacement accelerating |
-| Year 10 | £20,000 | £1.1T + children | Significant employment decline |
-| Year 15+ | £29,000 | £1.6T + children | Stage 2 (ULI), full transition |
+| Year | SEBE Revenue | Adult UBI | UBS Status | Notes |
+|---|---|---|---|---|
+| 2027 | ~£31B | ~£400/yr | Launching | SEBE funds UBI immediately |
+| 2030 | ~£45B | ~£400/yr | Transport free | Revenue absorbed by UBS expansion |
+| 2035 | ~£62B | ~£150/yr | Full UBS | UBI dips as energy provision phases in |
+| 2040 | ~£101B | ~£550/yr | Full UBS | UBI recovering, automation scaling |
+| 2045 | ~£187B | ~£1,750/yr | Full UBS | Significant supplementary income |
+| 2050+ | ~£350B+ | ~£5,000+/yr | Full UBS | Approaching original Stage 1 target |
 
-These figures are illustrative only. Actual trajectory depends on automation
-adoption rates, SEBE revenue growth, and macroeconomic conditions.
+The original Stage 1 rate (£2,500/adult/year) is reached when SEBE revenue
+grows sufficiently, estimated around 2050 in the mid-growth scenario. With
+the broader progressive tax package, this could be accelerated to 2040-2045.
+
+These figures are derived from automation growth projections, not arbitrary.
+Actual trajectory depends on automation adoption rates, AI scaling, sovereign
+compute investment, and macroeconomic conditions.
 
 ---
 
@@ -671,15 +705,16 @@ conservative.
 | Gross total requirement | £2.144 trillion | Stage 1: £352B, Stage 2: £1.810T |
 | Existing welfare offset | Not considered | Stage 1: ~£14.5B, Stage 2: ~£230B |
 | **Net total requirement** | £2.144 trillion | **Stage 1: ~£337.5B, Stage 2: ~£1.57-1.59T** |
-| SEBE coverage (net) | 9-23% | **Stage 1: 59-148%** |
-| Fundable from SEBE alone | No | **Yes (Stage 1)** |
+| SEBE coverage (net, year 1) | 9-23% | **Stage 1: 9-11% (year 1), growing to 28-77% by 2040** |
+| Fundable from SEBE alone | No | **Stage 1 ramps with SEBE growth (see revenue_model.md)** |
 | Median basis | £32,890 (outdated, gross) | £39,039 (ASHE 2025, take-home adjusted) |
 | Tax treatment | Compared to gross salary | Correctly compared to take-home pay |
 | CPI indexation | Not specified | All values pegged to CPI |
 
-Key improvement: Stage 1 is credibly fundable from SEBE alone, without
-requiring wealth tax, LVT, or other revenue sources. This makes the
-immediate proposal politically achievable.
+Key improvement: The revenue model is now derived from first principles
+(see `revenue_model.md`). SEBE starts at £31-38B/year and grows
+automatically with automation. Combined with complementary progressive
+taxes, Stage 1 is achievable within 10-15 years of launch.
 
 ---
 
@@ -687,12 +722,17 @@ immediate proposal politically achievable.
 
 ### 9.1 SEBE Revenue Uncertainty
 
-The £200-500B range reflects uncertainty in:
-- Actual commercial energy consumption subject to SEBE
+SEBE revenue at launch is estimated at £31-38B/year, growing to
+£93-260B/year by 2040 depending on automation growth rates. The
+range reflects uncertainty in:
+- Actual commercial energy consumption subject to SEE (~60-85 TWh)
+- Automation growth rate (10-15% per annum compute capacity growth)
+- Offshore compute share (30-45% of UK-serving compute currently offshore)
 - Behavioural response (energy efficiency investment)
-- Bandwidth growth rates
 - Enforcement effectiveness
 - Rate-setting decisions
+
+See `revenue_model.md` Sections 8.1-8.3 for full sensitivity analysis.
 
 ### 9.2 Population Changes
 
@@ -718,11 +758,10 @@ economic modelling.
 
 These are acknowledged gaps, not hidden weaknesses:
 
-1. **SEBE revenue model:** This document covers distribution costs but not
-   revenue derivation. The £200-500B estimate needs a dedicated revenue
-   model built from BEIS/DESNZ energy consumption data, Ofcom bandwidth
-   statistics, and the proposed SEE/DCD rate schedules. This is a separate
-   document (planned).
+1. **SEBE revenue model:** ~~This document covers distribution costs but not
+   revenue derivation.~~ **RESOLVED.** See `revenue_model.md` for full
+   derivation from DESNZ energy consumption data, data centre capacity
+   figures, wholesale/retail bandwidth pricing, and LLM token economics.
 
 2. **Transition dynamics:** How fast does UBI ratchet up? What triggers
    each increase? This requires macroeconomic simulation.

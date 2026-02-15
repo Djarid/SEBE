@@ -84,17 +84,19 @@ SEBE policy reference (use these figures, not invented ones):
 - SEBE = Sovereign Energy & Bandwidth Excise
 - Targets: commercial data centres and automation facilities >500kW IT load
 - Energy excise (SEE): £0.05-0.30/kWh (tiered by consumption)
-- Bandwidth excise (DCD): £25-50/Mbps sustained throughput
-- Offshore compute penalty: 2x domestic rate
-- Revenue target: £200-500 billion/year
-- Stage 1: Universal Basic Income at £2,500/adult/year (supplement, not
-  replacement; existing benefits continue). Children's supplements
-  £3,500-5,000/year (age-banded). UBS worth £2,500/person/year.
-  Total cost ~£352B, fundable from SEBE alone.
+- Bandwidth excise (DCD): £200-800/TB tiered, border tariff on commercial
+  data crossing UK digital border (both directions). Consumers exempt.
+  Domestic DC traffic exempt (pays SEE instead).
+- Revenue at launch: £31-38 billion/year, self-scaling with automation
+  (grows to ~£93B by 2040, ~£159B by 2045)
+- Stage 1: UBI starts at ~£400/adult/year and ramps with SEBE revenue.
+  Target rate £2,500/adult/year reached as automation scales. UBS phases
+  in (free transport 2028, free energy 2032, free broadband 2035).
+  Children's supplements £3,500-5,000/year (age-banded).
 - Stage 2: UBI ratchets toward Universal Living Income (£29,000/adult/year)
   as automation displaces employment. Total cost ~£1.81T.
 - Domestic consumers and SMEs are NOT taxed. Only large-scale automation
-  infrastructure pays.
+  infrastructure pays. DCD only on cross-border commercial data.
 - GitHub repository: https://github.com/Djarid/SEBE (the ONLY valid link)
 
 Style guidelines:
