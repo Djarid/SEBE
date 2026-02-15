@@ -251,14 +251,14 @@ Every formal document ends with CC-BY 4.0 copyright notice.
 
 | Parameter | Value |
 |---|---|
-| Stage 1 UBI (adult) | ~£690/adult/year (2030 launch), ramps with SEBE revenue |
+| Stage 1 UBI (adult) | ~£650/adult/year (2030 launch, 58.8M adults), ramps with SEBE revenue |
 | Stage 1 UBI target | £2,500/adult/year (reached as SEBE revenue grows) |
 | Stage 2 ULI (adult) | £29,000/adult/year |
 | Children's supplements | £3,500-5,000/year (age-banded) |
 | UBS value | £2,500/person/year |
 | Combined living standard (Stage 2) | £31,500/person/year |
-| Stage 1 total cost | Ramps from ~£38B/year (2030 launch) to £352B+ (target, as SEBE grows) |
-| Stage 2 total cost | ~£1.810 trillion/year |
+| Stage 1 total cost | Ramps from ~£38B/year (2030 launch) to ~£384B (target at 2040 projected population) |
+| Stage 2 total cost | ~£2.041 trillion/year (at 2045 projected population) |
 | SEBE revenue target | £34-46 billion/year (2030 launch, 2026 prices), self-scaling with automation |
 | Coverage threshold | Commercial facilities >500kW IT load; DCD applies to cross-border commercial data only |
 | Energy rates (SEE) | £0.08-0.45/kWh (tiered, adjusted rates) |

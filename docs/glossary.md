@@ -47,7 +47,7 @@ than domestic operation, incentivising UK datacenter investment. Rates:
 **UBI (Universal Basic Income)**
 Stage 1 of the illustrative SEBE distribution model. A tax-free, unconditional
 supplement paid to every UK citizen alongside existing benefits. Starts at
-approximately £690/adult/year at SEBE launch (2030) and ramps upward as automation
+approximately £650/adult/year at SEBE launch (2030) and ramps upward as automation
 (and therefore SEBE revenue) grows. Not a replacement for wages or welfare.
 Target rate of £2,500/adult/year reached as SEBE revenue scales. See
 `distribution_model.md` for full workings.

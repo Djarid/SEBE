@@ -29,7 +29,7 @@ increases the tax base. All rates are CPI-indexed annually.
 The revenue is general-purpose. It could fund UBI (as proposed in EC730),
 reduce the deficit, replace National Insurance, expand the NHS, or any
 combination. An illustrative distribution model (UBI starting at
-~£690/adult/year at 2030 launch, ramping with automation) is included as an appendix,
+~£650/adult/year at 2030 launch, ramping with automation) is included as an appendix,
 but SEBE's value is the revenue mechanism itself.
 
 SEBE directly supports:
@@ -220,7 +220,7 @@ The following illustrates scale, not prescriptive policy.
 
 | Use | Cost | Notes |
 |---|---|---|
-| Modest UBI (~£690/adult/year) | ~£38B | Universal supplement (EC730) |
+| Modest UBI (~£650/adult/year) | ~£38B | Universal supplement (EC730) |
 | Free public transport | ~£14B | Fares replacement (ORR 2024/25) |
 | NHS waiting list reduction | ~£10-15B | Capital + staffing |
 | National Insurance cut | £38B = ~2p off NI | Pro-employment option |
@@ -238,7 +238,7 @@ The following illustrates scale, not prescriptive policy.
 One detailed scenario is worked through in the accompanying
 `distribution_model.md`. In summary:
 
-- **Stage 1:** UBI starting at ~£690/adult/year (2030 launch), ramping with SEBE
+- **Stage 1:** UBI starting at ~£650/adult/year (2030 launch), ramping with SEBE
   growth. Universal Basic Services (free transport, energy, broadband)
   phase in over years. Children's supplements at £3,500-5,000/year.
 - **Stage 2:** UBI ratchets toward Universal Living Income
@@ -377,7 +377,7 @@ Revenue grows automatically thereafter.
 ### 13.3 "Inflation will eat UBI"
 
 **Response:**
-- Any initial UBI is modest (~£690/year at launch, minimal demand shock)
+- Any initial UBI is modest (~£650/year at launch, minimal demand shock)
 - SEBE rates are CPI-indexed annually (like alcohol and tobacco duty)
 - SEBE withdraws purchasing power from corporations (anti-inflationary)
 - UBS directly reduces household costs (deflationary for recipients)

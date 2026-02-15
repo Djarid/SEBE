@@ -275,14 +275,14 @@ One possible use of SEBE revenue is universal income provision. An
 accompanying working paper (`distribution_model.md`) details a two-stage
 model:
 
-- **Stage 1:** UBI starting at ~£690/adult/year from launch revenue (2030),
+- **Stage 1:** UBI starting at ~£650/adult/year from launch revenue (2030),
   ramping with SEBE growth. Universal Basic Services (free transport,
   energy, broadband) phase in as revenue permits. Target rate
   £2,500/adult/year.
 - **Stage 2:** UBI ratchets toward Universal Living Income
   (£29,000/adult/year, matching median take-home pay of £31,627 minus
   £2,500 UBS value). Requires SEBE plus complementary progressive
-  taxation. Total Stage 2 cost ~£1.810T/year.
+  taxation. Total Stage 2 cost ~£2.041T/year (at 2045 projected population).
 
 This is illustrative. SEBE revenue could equally fund NI reductions,
 deficit reduction, NHS expansion, or a combination. The mechanism is
@@ -317,13 +317,13 @@ formal macroeconomic modelling.
 **Concern:** Universal income payments cause inflation
 
 **Stage 1 response:**
-- UBI starts at ~£690/year (minimal relative to existing incomes)
+- UBI starts at ~£650/year (minimal relative to existing incomes)
 - SEBE withdraws £34-46B from corporate sector (anti-inflationary)
 - UBS directly reduces household costs (deflationary for recipients)
 - **Stage 1 inflation risk is low**
 
 **Stage 2 response:**
-- Full ULI at £1.810T is a significant fiscal expansion
+- Full ULI at ~£2.041T is a significant fiscal expansion
 - **Depends critically** on productivity gains from automation
 - If automation increases output 2-3x (plausible): sustainable
 - If productivity gains are modest: inflationary
@@ -380,6 +380,103 @@ unit costs). The fiscal space widens from both sides.
 - By Stage 2, automation has displaced much employment anyway
 - ULI enables voluntary work, entrepreneurship, care work, creative pursuits
 - **Automation** destroys jobs, not ULI
+
+### 6.4 Wage Restructuring and the Future of Work
+
+Under full ULI, wage dynamics invert. Three categories of future
+employment emerge:
+
+**1. Essential but unpleasant work (care, sanitation, construction):**
+wages rise. With ULI providing a comfortable floor (£31,500 combined),
+employers must offer genuine premiums to attract voluntary workers to
+physically or emotionally demanding roles. The human care worker's role
+evolves from physical drudge work (increasingly handled by robotic
+aids) to emotional labour and companionship. Demand is permanent and
+near-universal (humans crave human contact, particularly the aged and
+infirm), but the willing labour supply shrinks because ULI removes
+the coerced majority. Result: high wages for a smaller, genuinely
+motivated workforce.
+
+**2. Specialist roles (surgery, diagnostics, engineering):** largely
+automated. AI diagnostic models already exceed human performance in
+pattern recognition (radiology, pathology). Robotic surgery eliminates
+fatigue, distraction, and bias. Once automated systems demonstrably
+outperform humans, there is a moral obligation to transition: the
+alternative is knowingly subjecting patients to inferior human
+performance. The residual human role is supervisory: review findings,
+authorise procedures, abort if necessary. Fewer specialists, in an
+oversight capacity, not operational.
+
+**3. Human interface work (hospitality, teaching, therapy, creative):**
+the dominant category of future voluntary employment. The product is
+the human relationship itself. "Served by a human" becomes the service
+equivalent of "handmade" for goods: a premium marker of authenticity.
+This creates an artisanal/vocational economy with real wages,
+voluntarily entered.
+
+**Fiscal implications:** Total business salary overhead shrinks (fewer
+employees, automation handles production and specialist functions),
+even though some individual wages rise. Lower costs plus same or
+higher output equals wider profit margins. More taxable profit
+generates additional conventional tax revenue (corporation tax,
+business rates), creating a second fiscal feedback loop distinct
+from the consumer spending multiplier.
+
+**Inequality under ULI is intentional.** The floor (£31,500) is high
+enough that nobody suffers. Above the floor, market dynamics allocate
+rewards: premiums for scarce essential work, artisanal pricing for
+human-interface services, voluntary exchange between people whose
+basic needs are met. This is closer to a genuine free market than the
+current system, where most accept employment terms under implicit
+threat of destitution.
+
+### 6.5 CPI Behaviour Under Automation
+
+Traditional CPI may become a poor measure of cost-of-living in a
+substantially automated economy. Several dynamics interact:
+
+**Deflationary pressure from automation:** Manufacturing, logistics,
+energy generation, and service delivery all see falling unit costs as
+automation scales. Computing costs already fall ~30% annually.
+Renewable energy costs have dropped ~90% in a decade. If these trends
+generalise across the economy, CPI growth slows substantially or turns
+negative for goods and standard services.
+
+**Inflationary pressure from scarce human services:** As argued in
+Section 6.4, essential human work (care, hospitality, artisanal
+services) commands wage premiums under ULI. These services become
+relatively more expensive. The CPI basket shifts: automated goods
+approach zero cost while human-delivered services inflate.
+
+**Net effect:** Uncertain, but the composition of CPI changes
+fundamentally. A basket dominated by manufactured goods shows
+deflation. A basket weighted toward human services shows inflation.
+The overall index depends on weighting, which itself becomes a
+political question.
+
+**Implications for SEBE fiscal dynamics:**
+
+1. SEBE revenue growth is driven by *base expansion* (more TWh
+   consumed, more TB crossing borders), not by CPI adjustment of
+   rates. Even in a deflationary environment, revenue grows because
+   automation grows.
+2. ULI costs grow with CPI. If CPI is low or negative, ULI costs
+   grow slowly or not at all in nominal terms, while purchasing
+   power increases.
+3. The gap between revenue growth (compute-driven) and cost growth
+   (CPI-driven) widens in the exchequer's favour under deflation.
+
+This is a structural advantage of SEBE over employment-linked taxes:
+SEBE tracks the physical expansion of automation infrastructure
+(energy, bandwidth), not the monetary value of output. It is
+inflation-agnostic at the revenue level and inflation-beneficial at
+the cost level.
+
+**ULI definition:** For this reason, ULI is defined as the median
+full-time take-home pay at the point of implementation (currently
+£31,627, ASHE 2025), CPI-adjusted annually thereafter. It is not a
+permanently fixed nominal figure. See `distribution_model.md`
+Section 4.4 for derivation and rationale.
 
 ---
 
@@ -770,7 +867,7 @@ constitutional protection
 ### 13.2 Macroeconomic Risks
 
 **Inflation (Stage 2):**
-- Full ULI at £1.810T is a significant fiscal expansion
+- Full ULI at ~£2.041T is a significant fiscal expansion
 - **Depends critically** on productivity gains from automation
 - **If productivity 2-3x:** Sustainable
 - **If productivity <1.5x:** Inflationary

@@ -84,7 +84,7 @@ are illustrative uses, not prescriptive policy:
 
 | Use | Cost | Notes |
 |---|---|---|
-| Modest UBI (~£690/adult/year) | ~£38B | 55M adults |
+| Modest UBI (~£650/adult/year) | ~£38B | 58.8M adults (ONS 2030 projection) |
 | Free public transport | ~£14B | Fares replacement |
 | NHS waiting list reduction | ~£10-15B | Capital + staffing |
 | Corporation Tax reduction | £38B = ~10p cut | Pro-business option |
@@ -98,7 +98,7 @@ money at a scale that moves the fiscal needle.
 | Use | Cost | Notes |
 |---|---|---|
 | UBI at £1,000/adult/year | ~£55B | Meaningful supplement |
-| UBI at £2,500/adult/year + UBS | ~£352B | Requires complementary taxes |
+| UBI at £2,500/adult/year + UBS | ~£384B | Requires complementary taxes (at 2040 projected population) |
 | Full income tax replacement | £250B | SEBE alone insufficient; needs growth |
 | Full NI replacement | £170B | Achievable by ~2043 at projected rates |
 
@@ -107,12 +107,12 @@ money at a scale that moves the fiscal needle.
 The accompanying `distribution_model.md` works through a specific
 scenario in detail:
 
-- **Stage 1:** UBI starting at ~£690/adult/year (2030 launch), ramping with SEBE growth.
+- **Stage 1:** UBI starting at ~£650/adult/year (2030 launch, 58.8M adults), ramping with SEBE growth.
   UBS (free transport, energy, broadband) phases in. Children's supplements
-  at £3,500-5,000/year age-banded. Total Stage 1 target: £352B.
+  at £3,500-5,000/year age-banded. Total Stage 1 target: ~£384B (at 2040 projected population).
 - **Stage 2:** UBI ratchets toward Universal Living Income (£29,000/adult,
-  matching median take-home pay). Total: £1.810T, requiring SEBE plus
-  complementary progressive taxes.
+  matching median take-home pay). Total: ~£2.041T at 2045 projected population,
+  requiring SEBE plus complementary progressive taxes.
 
 This is illustrative. SEBE works regardless of distribution model chosen.
 

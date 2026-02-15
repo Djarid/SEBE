@@ -185,7 +185,7 @@ Every formal document must end with:
 - DCD component: £8-12B
 - Growth: £93B by 2040, £159B by 2045 (2026 prices)
 - All projections in **2026 real prices**; nominal will be higher
-- Stage 1 UBI launch: **~£690/adult/year** (not £2,500 from day one)
+- Stage 1 UBI launch: **~£650/adult/year** (not £2,500 from day one)
 - Stage 1 UBI target: **£2,500/adult/year** (reached as revenue grows)
 - Stage 2 ULI: **£29,000/adult/year**
 
