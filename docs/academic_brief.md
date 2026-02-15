@@ -15,9 +15,9 @@ As automation achieves parity with human productive capacity,
 employment-based tax systems face structural collapse. This paper proposes
 the Sovereign Energy and Bandwidth Excise (SEBE), a novel fiscal framework
 that taxes the physical infrastructure of automated production: energy
-consumption (kWh) and data throughput (Mbps). SEBE generates £31-38
-billion at launch (comparable to Inheritance Tax + Stamp Duty + CCL +
-Tobacco combined), growing automatically with automation to £93 billion
+consumption (kWh) and data throughput (Mbps). SEBE generates £34-46
+billion at launch in 2030 (2026 prices, larger than Inheritance Tax +
+Stamp Duty + CCL + Tobacco combined), growing automatically with automation to £93 billion
 by 2040 and £159 billion by 2045. This paper presents SEBE as a
 general-purpose revenue mechanism that addresses the fiscal crisis of
 technological unemployment; an accompanying working paper details one
@@ -187,20 +187,21 @@ growth projections below).
 | Cross-border (> 100 PB/yr) | £800/TB | |
 | **Total DCD** | | **£7-10B** |
 
-**Combined SEBE at launch: £31-38 billion/year**
+**Combined SEBE at launch (2030): £34-46 billion/year** (2026 prices, CPI-indexed)
 
 **Growth trajectory (automation-driven):**
 
 | Year | SEE | DCD | Total SEBE |
 |---|---|---|---|
-| 2027 (launch) | £24B | £7B | £31B |
-| 2030 | £30B | £8B | £38B |
+| 2030 (launch) | £30B | £8B | £38B |
+| 2033 | £40B | £8B | £48B |
 | 2035 | £50B | £7B | £57B |
 | 2040 | £83B | £10B | £93B |
 | 2045 | £140B | £19B | £159B |
 
 SEBE revenue is self-scaling: as automation replaces human labour,
-the tax on automation infrastructure grows automatically.
+the tax on automation infrastructure grows automatically. All rates are
+CPI-indexed; all projections are in 2026 real prices.
 
 ---
 
@@ -208,7 +209,7 @@ the tax on automation infrastructure grows automatically.
 
 ### 4.1 Scale Comparison
 
-**SEBE at launch (£31-38B) is comparable to:**
+**SEBE at launch (£34-46B, 2026 prices) is larger than:**
 - Inheritance Tax + Stamp Duty + CCL + Tobacco combined (~£34B)
 - One-third of Corporation Tax (£100B)
 - Growing to Corporation Tax scale (~£100B) by ~2038
@@ -257,9 +258,9 @@ SEBE's primary function is replacing the employment-linked tax revenue
 that automation erodes. This is not a welfare proposal; it is a fiscal
 sustainability mechanism.
 
-| Year | SEBE Revenue | As % of Income Tax (£250B) |
+| Year | SEBE Revenue (2026 prices) | As % of Income Tax (£250B) |
 |---|---|---|
-| 2027 | £31-38B | 12-15% |
+| 2030 (launch) | £34-46B | 14-18% |
 | 2035 | £57-80B | 23-32% |
 | 2040 | £93-135B | 37-54% |
 | 2045 | £159B+ | 64%+ |
@@ -274,7 +275,7 @@ One possible use of SEBE revenue is universal income provision. An
 accompanying working paper (`distribution_model.md`) details a two-stage
 model:
 
-- **Stage 1:** UBI starting at ~£400/adult/year from launch revenue,
+- **Stage 1:** UBI starting at ~£690/adult/year from launch revenue (2030),
   ramping with SEBE growth. Universal Basic Services (free transport,
   energy, broadband) phase in as revenue permits. Target rate
   £2,500/adult/year.
@@ -316,8 +317,8 @@ formal macroeconomic modelling.
 **Concern:** Universal income payments cause inflation
 
 **Stage 1 response:**
-- UBI starts at £400/year (minimal relative to existing incomes)
-- SEBE withdraws £31-38B from corporate sector (anti-inflationary)
+- UBI starts at ~£690/year (minimal relative to existing incomes)
+- SEBE withdraws £34-46B from corporate sector (anti-inflationary)
 - UBS directly reduces household costs (deflationary for recipients)
 - **Stage 1 inflation risk is low**
 
@@ -332,13 +333,44 @@ formal macroeconomic modelling.
 observed and managed incrementally, rather than requiring a single large
 fiscal expansion.
 
+### 6.2.1 Automation Reduces Production Costs
+
+A critical and under-discussed dynamic: the same automation that SEBE
+taxes simultaneously reduces the real cost of producing goods and
+services. Automated manufacturing, logistics, energy management, and
+service delivery all drive unit costs down over time. This has three
+consequences for SEBE:
+
+1. **The inflationary concern is weaker than it appears.** SEBE adds a
+   cost to energy consumption, but automation reduces the total energy
+   (and labour, and materials) required per unit of output. The net
+   effect on consumer prices is ambiguous and may well be deflationary.
+
+2. **UBS becomes cheaper to deliver over time.** Free public transport
+   costs less to operate when vehicles are autonomous. Free energy
+   costs less to generate when renewable infrastructure is automated.
+   Free broadband costs less when network operations are AI-managed.
+   The fiscal burden of UBS declines in real terms even as the service
+   improves.
+
+3. **The tax is self-limiting in a virtuous sense.** SEBE taxes the
+   infrastructure of a process that makes everything cheaper. It does
+   not tax the productivity gains themselves (a FLOPS tax would).
+   Companies that invest in energy efficiency pay less SEE for the
+   same output, preserving the incentive to innovate.
+
+This dynamic strengthens the long-term fiscal case for SEBE: the
+revenue grows (more automation = more energy consumption at the macro
+level), while the costs of public provision shrink (automation reduces
+unit costs). The fiscal space widens from both sides.
+
 ### 6.3 Labour Market Effects
 
 **Concern:** Universal income destroys work incentive
 
 **Stage 1 response:**
-- £2,500/year is a supplement, not a replacement
-- No rational person leaves employment for £208/month
+- At target rate (£2,500/year) it is a supplement, not a replacement
+- No rational person leaves employment for £208/month or less
 - Evidence from existing programmes confirms this:
   - Alaska Permanent Fund: No employment reduction
   - Finland UBI pilot: Slight employment increase
@@ -637,15 +669,15 @@ This paper does **not** provide:
 
 ## 11. Policy Implications
 
-### 11.1 Short-Term (2027-2030)
+### 11.1 Short-Term (2030-2033)
 
 **If SEBE implemented:**
-- New £31-38B revenue source at launch, self-scaling with automation
+- New £34-46B revenue source at launch (2026 prices), self-scaling with automation
 - Immediate fiscal headroom for redistribution (general revenue, not ring-fenced)
 - Reduces income tax dependency from year one
 - Drives energy efficiency and UK datacenter investment
 
-### 11.2 Medium-Term (2030-2035)
+### 11.2 Medium-Term (2033-2038)
 
 **As automation accelerates:**
 - SEBE revenue grows (more compute = more tax)
@@ -653,7 +685,7 @@ This paper does **not** provide:
 - **SEBE becomes a dominant revenue source**
 - Government gains fiscal flexibility to expand redistribution as revenue permits
 
-### 11.3 Long-Term (2035+)
+### 11.3 Long-Term (2038+)
 
 **Post-employment transition:**
 - SEBE revenue approaches National Insurance scale (£159B by 2045)
@@ -752,7 +784,7 @@ inflation monitoring at each step
 - **Net effect:** Unclear, requires modelling
 
 **Financial markets:**
-- Stage 1 launch is modest (£31-38B, comparable to existing small taxes)
+- Stage 1 launch is modest (£34-46B, comparable to existing small taxes)
 - Stage 2 requires careful sequencing
 - **Sterling volatility** possible at Stage 2
 
@@ -767,8 +799,8 @@ The Sovereign Energy and Bandwidth Excise represents a viable fiscal
 framework for post-employment economics. By taxing the physical
 infrastructure of automated production (energy and data), SEBE:
 
-- **Generates £31-38 billion at launch**, growing to £93B by 2040 and £159B
-  by 2045 (self-scaling with automation)
+- **Generates £34-46 billion at launch** (2030, 2026 prices), growing to
+  £93B by 2040 and £159B by 2045 (self-scaling with automation, CPI-indexed)
 - **Progressively replaces failing employment taxation** as automation advances
 - **Creates immediate fiscal headroom** for redistribution from year one
 - **Scales organically** with the problem it addresses (more automation =
@@ -865,9 +897,9 @@ and current work in quantitative research infrastructure.
 - Offshore multiplier (1.5x vs 2x vs 3x)
 - Compliance rate (70% vs 85% vs 95%)
 
-**Year 1 range:** £26B (pessimistic) to £45B (optimistic)
-**Central estimate:** £31-38B
-**2040 range:** £60B (low growth) to £135B (high growth)
+**Launch range (2030):** £34B (pessimistic) to £46B (optimistic)
+**Central estimate:** £38B (2026 prices, CPI-indexed rates)
+**2040 range:** £70B (low growth) to £135B (high growth)
 
 Full derivation in `revenue_model.md`.
 

@@ -35,8 +35,9 @@ instead of human labour. Two components:
 
 ### Revenue Model
 
-**Year 1 (2027): £31-38 billion** (SEE £24-28B, DCD £7-10B)
-**Growth trajectory:** £93B by 2040, £159B by 2045 (mid-scenario)
+**Year 1 (2030 launch): £34-46 billion** (2026 prices, SEE £26-34B, DCD £8-12B)
+**Growth trajectory:** £93B by 2040, £159B by 2045 (mid-scenario, 2026 prices)
+All SEBE rates are CPI-indexed annually.
 
 Revenue grows automatically with automation deployment. Every new data centre,
 automated warehouse, or AI inference cluster increases the tax base.
@@ -55,7 +56,7 @@ Universal Living Income (ULI). Full working in `docs/distribution_model.md`.
 Cost model context in `docs/cost_model.md`.
 
 **Stage 1: Universal Basic Income (UBI) - Ramp Model**
-- Starts at ~£400/adult/year (£33/month) at launch (2027)
+- Starts at ~£690/adult/year (~£58/month) at launch (2030)
 - Grows automatically as SEBE revenue increases with automation deployment
 - Existing benefits (JSA, UC, PIP) continue unchanged
 - Children's supplements phase in alongside UBI growth (age-banded):
@@ -63,7 +64,7 @@ Cost model context in `docs/cost_model.md`.
   - 3-11: £3,500/year (food, clothing, school costs, activities)
   - 12-17: £4,000/year (higher food costs, social participation, technology)
 - UBI is tax-free and unconditional
-- **Stage 1 ramps with SEBE growth: £400/yr (2027) rising to £1,750/yr (2045)**
+- **Stage 1 ramps with SEBE growth: ~£690/yr (2030) rising to ~£2,330/yr (2045)**
 
 **Stage 2: Universal Living Income (ULI)**
 - £29,000/adult/year (tax-free), matching median take-home pay
@@ -90,9 +91,9 @@ Cost model context in `docs/cost_model.md`.
 
 ### Stage 1 Ramp and Feedback Loop
 
-1. SEBE launches at £31-38B from automation infrastructure (year 1)
-2. UBI starts at £400/adult/year (55M adults = £22B)
-3. UBS phases in over 8 years (transport 2028, energy 2032, broadband 2035)
+1. SEBE launches at £34-46B from automation infrastructure (2030)
+2. UBI starts at ~£690/adult/year (55M adults = ~£38B)
+3. UBS phases in over 9 years (transport 2032, energy 2036, broadband 2039)
 4. Consumer spending increases (especially in deprived areas)
 5. Economic activity generates additional conventional tax revenue
 6. SEBE base grows as automation deployment increases
@@ -102,9 +103,10 @@ Cost model context in `docs/cost_model.md`.
 
 ### Funding the Full Package
 
-Stage 1 ramps with SEBE growth. At launch (£31-38B), SEBE funds modest UBI
-(£400/adult/year) plus initial UBS rollout. By 2040 (£93B), combined with
-conventional tax feedback, SEBE supports significantly higher UBI.
+Stage 1 ramps with SEBE growth. At launch (£34-46B, 2030), SEBE funds
+modest UBI (~£690/adult/year) plus initial UBS rollout. By 2040 (£93B),
+combined with conventional tax feedback, SEBE supports significantly
+higher UBI. All figures in 2026 real prices; rates CPI-indexed annually.
 
 Stage 2 (full ULI at £29,000/adult) requires mature SEBE (£150B+) plus:
 - Wealth tax: £50-80B
@@ -147,22 +149,22 @@ SEBE revenue for specific purposes (including defence).
 - "Welcome to leave. We'll tax their products when they sell here"
 
 **"Economically illiterate / unaffordable!"**
-- £31-38B year 1, growing to £93-159B by 2040-2045
+- £34-46B at 2030 launch (2026 prices), growing to £93-159B by 2040-2045
 - Real revenue from measurable physical activity (energy, data throughput)
 - Current system (taxing vanishing workers) is the illiterate approach
 - SEBE is self-scaling: revenue grows with the problem (automation)
 - MMT: Constraint is inflation (productivity) not money supply
 
 **"People will stop working!"**
-- Stage 1 starts at £400/year, ramps gradually (supplement, not replacement)
-- Even at full Stage 1 (£2,500/yr), this is £208/month
+- Stage 1 starts at ~£690/year (2030), ramps gradually (supplement, not replacement)
+- Even at full Stage 1 target (£2,500/yr), this is £208/month
 - Evidence shows otherwise (Alaska PFD, Finland/Kenya pilots)
 - Meaningful work increases when survival not at stake
 - Job Guarantee alternative = coercive state labour
 
 **"Inflation will destroy it!"**
-- SEBE withdraws £31B+ from corporations (anti-inflationary)
-- Stage 1 UBI starts small (£400/yr) and ramps gradually (minimal demand shock)
+- SEBE withdraws £34-46B from corporations (anti-inflationary)
+- Stage 1 UBI starts small (~£690/yr) and ramps gradually (minimal demand shock)
 - UBS directly reduces household costs (deflationary for recipients)
 - Real constraint is production capacity
 - Automation increases capacity, no inflation if productivity gains realised
@@ -185,7 +187,7 @@ SEBE revenue for specific purposes (including defence).
 
 ### SEBE as Coalition Tool
 - Greens demand UBI in coalition, need credible funding mechanism
-- SEBE provides it (£31-38B launch, self-scaling to £93-159B by 2040-2045)
+- SEBE provides it (£34-46B at 2030 launch, self-scaling to £93-159B by 2040-2045)
 - Stage 1 ramp model is fully costed with realistic growth projections
 - Positions Greens as serious party with implementable, honest policy
 
@@ -242,7 +244,8 @@ SEBE revenue for specific purposes (including defence).
 
 All public documents focus on the tax mechanism. Distribution detail is
 in `distribution_model.md` and referenced as illustrative. Revenue
-figures: £31-38B year 1 growing to £93-159B by 2040-2045.
+figures: £34-46B at 2030 launch (2026 prices) growing to £93-159B by
+2040-2045. All rates CPI-indexed annually.
 
 ---
 

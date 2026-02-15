@@ -17,7 +17,7 @@ Tax the physical infrastructure of automation instead of human labour:
 - **Sovereign Energy Excise (SEE):** £0.08-0.45/kWh (tiered) on commercial facilities over 500kW IT load
 - **Digital Customs Duty (DCD):** £200-800/TB tiered border tariff on commercial data crossing the UK digital border. Consumers exempt. Domestic traffic exempt.
 
-**Revenue at launch: £31-38 billion/year**, comparable to Inheritance Tax + Stamp Duty + CCL + Tobacco combined. Self-scaling with automation: £93B by 2040, £159B by 2045.
+**Revenue at launch (2030): £34-46 billion/year** (2026 prices, CPI-indexed rates), larger than Inheritance Tax + Stamp Duty + CCL + Tobacco combined. Self-scaling with automation: £93B by 2040, £159B by 2045.
 
 ## What The Revenue Is For
 

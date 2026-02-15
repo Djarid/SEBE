@@ -25,10 +25,12 @@ model (one illustrative use of the revenue).
 
 From `revenue_model.md` (derived from first principles):
 
+All figures in 2026 real prices. All rates CPI-indexed annually.
+
 | Year | SEE | DCD | Total SEBE |
 |---|---|---|---|
-| 2027 (launch) | £24B | £7B | **£31B** |
-| 2030 | £30B | £8B | **£38B** |
+| 2030 (launch) | £30B | £8B | **£38B** |
+| 2033 | £40B | £8B | **£48B** |
 | 2035 | £50B | £7B | **£57B** |
 | 2040 | £83B | £10B | **£93B** |
 | 2045 | £140B | £19B | **£159B** |
@@ -78,17 +80,17 @@ the income tax base.**
 SEBE revenue is general revenue. It could fund anything. The following
 are illustrative uses, not prescriptive policy:
 
-### 4.1 At Launch (£31-38B)
+### 4.1 At Launch (£34-46B, 2030)
 
 | Use | Cost | Notes |
 |---|---|---|
-| Modest UBI (~£400/adult/year) | ~£22B | 55M adults |
+| Modest UBI (~£690/adult/year) | ~£38B | 55M adults |
 | Free public transport | ~£14B | Fares replacement |
 | NHS waiting list reduction | ~£10-15B | Capital + staffing |
-| Corporation Tax reduction | £31B = ~8p cut | Pro-business option |
-| Deficit reduction | £31-38B | Directly reduces borrowing |
+| Corporation Tax reduction | £38B = ~10p cut | Pro-business option |
+| Deficit reduction | £34-46B | Directly reduces borrowing |
 
-Any one of these, or a combination. The point is that £31-38B is real
+Any one of these, or a combination. The point is that £34-46B is real
 money at a scale that moves the fiscal needle.
 
 ### 4.2 At Maturity (£93B by 2040, £159B by 2045)
@@ -105,7 +107,7 @@ money at a scale that moves the fiscal needle.
 The accompanying `distribution_model.md` works through a specific
 scenario in detail:
 
-- **Stage 1:** UBI starting at ~£400/adult/year, ramping with SEBE growth.
+- **Stage 1:** UBI starting at ~£690/adult/year (2030 launch), ramping with SEBE growth.
   UBS (free transport, energy, broadband) phases in. Children's supplements
   at £3,500-5,000/year age-banded. Total Stage 1 target: £352B.
 - **Stage 2:** UBI ratchets toward Universal Living Income (£29,000/adult,
@@ -147,10 +149,12 @@ generate SEBE revenue instead.
 
 ### 5.3 Timeline to Income Tax Scale
 
+All figures in 2026 real prices.
+
 | Year | SEBE | As % of Current Income Tax (£250B) |
 |---|---|---|
-| 2027 | £31B | 12% |
-| 2030 | £38B | 15% |
+| 2030 (launch) | £38B | 15% |
+| 2033 | £48B | 19% |
 | 2035 | £57B | 23% |
 | 2040 | £93B | 37% |
 | 2045 | £159B | 64% |

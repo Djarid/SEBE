@@ -171,8 +171,9 @@ Children's rates reflect actual costs, not a percentage of adult UBI.
 | UBS provision | 67M | £2,500 | £167.5B |
 | **Stage 1 total** | | | **£352B** |
 
-**SEBE at launch funds ~£31-38B.** Stage 1 at full rate requires multiple
-revenue sources or years of SEBE growth. See Section 7 for the ramp model.
+**SEBE at launch (2030) funds ~£34-46B (2026 prices).** Stage 1 at full
+rate requires multiple revenue sources or years of SEBE growth. See
+Section 7 for the ramp model.
 
 ### 6.3 Stage 2: Universal Living Income (ULI)
 
@@ -201,13 +202,16 @@ as revenue allows.
 
 ### 7.1 Illustrative Trajectory
 
+All figures in 2026 real prices. All SEBE rates CPI-indexed annually.
+
 | Year | SEBE Revenue | Adult UBI | UBS Status | Notes |
 |---|---|---|---|---|
-| 2027 (launch) | ~£31B | ~£400/yr | Launching | SEBE funds UBI immediately |
-| 2030 | ~£45B | ~£400/yr | Transport free | Revenue absorbed by UBS expansion |
-| 2035 | ~£62B | ~£150/yr | Full UBS | UBI dips as energy provision phases in |
-| 2040 | ~£101B | ~£550/yr | Full UBS | UBI recovering, automation scaling |
-| 2045 | ~£187B | ~£1,750/yr | Full UBS | Significant supplementary income |
+| 2030 (launch) | ~£38B | ~£690/yr | Launching | SEBE funds UBI immediately |
+| 2032 | ~£53B | ~£700/yr | Transport free | Revenue absorbed by UBS expansion |
+| 2035 | ~£62B | ~£870/yr | Transport free | Revenue growing with automation |
+| 2039 | ~£91B | ~£730/yr | Full UBS | UBI dips as broadband provision phases in |
+| 2040 | ~£101B | ~£760/yr | Full UBS | UBI recovering, automation scaling |
+| 2045 | ~£187B | ~£2,330/yr | Full UBS | Significant supplementary income |
 | 2050+ | ~£350B+ | ~£5,000+/yr | Full UBS | Approaching original Stage 1 target |
 
 Note: UBI dips when new UBS components launch (they compete for the
@@ -216,8 +220,8 @@ direct cash-equivalent value.
 
 ### 7.2 The Feedback Loop
 
-1. SEBE generates £31-38B from automation infrastructure (year 1)
-2. UBI distributed at ~£400/adult/year (55M adults)
+1. SEBE generates £34-46B from automation infrastructure (2030 launch)
+2. UBI distributed at ~£690/adult/year (55M adults)
 3. Consumer spending increases (especially in deprived areas)
 4. Increased economic activity generates additional conventional tax
    (income tax, VAT, corporation tax, business rates all rise)
