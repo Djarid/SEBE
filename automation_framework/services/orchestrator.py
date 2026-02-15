@@ -21,11 +21,12 @@ import sys
 import time
 import uuid
 from datetime import datetime, timedelta
-from typing import Optional
+from typing import Any, Optional
 
 from .config import DaemonConfig, get_config
 from .llm_client import LLMClient, ModelManager
 from .channels.base import (
+    BaseChannel,
     ChannelType,
     InboundMessage,
     OutboundMessage,
@@ -46,6 +47,20 @@ try:
     _MEMORY_AVAILABLE = True
 except ImportError:
     _MEMORY_AVAILABLE = False
+
+    # Type stubs so the checker knows these names exist in both branches.
+    # These are never called at runtime (_MEMORY_AVAILABLE guards all usage).
+    def write_to_memory(*args: Any, **kwargs: Any) -> dict[str, Any]:
+        return {}
+
+    def list_contacts(*args: Any, **kwargs: Any) -> dict[str, Any]:
+        return {}
+
+    def add_contact(*args: Any, **kwargs: Any) -> dict[str, Any]:
+        return {}
+
+    def log_interaction(*args: Any, **kwargs: Any) -> dict[str, Any]:
+        return {}
 
 logger = logging.getLogger(__name__)
 
@@ -121,7 +136,7 @@ class Orchestrator:
         self.model_manager = ModelManager(self.config.llm, self.llm_client)
 
         # Channels
-        self.channels: dict[ChannelType, object] = {}
+        self.channels: dict[ChannelType, BaseChannel] = {}
         self._init_channels()
 
         # Pending actions awaiting approval
@@ -447,9 +462,12 @@ class Orchestrator:
         traceability. This is fire-and-forget: failure is logged but does
         not block the notification flow.
         """
-        email_channel = self.channels.get(ChannelType.EMAIL)
-        if email_channel is None:
+        raw_channel = self.channels.get(ChannelType.EMAIL)
+        if raw_channel is None:
             return
+
+        # save_draft is EmailChannel-specific; cast for the type checker
+        email_channel: EmailChannel = raw_channel  # type: ignore[assignment]
 
         outbound = OutboundMessage(
             channel=ChannelType.EMAIL,
@@ -510,6 +528,7 @@ class Orchestrator:
 
     def _approve_action(self, action_id: str) -> None:
         """Approve and execute a pending action."""
+        assert self.signal is not None  # Only called from _handle_owner_command
         action = self.pending.get(action_id)
         if not action:
             self.signal.send_to_owner(f"No pending action with ID: {action_id}")
@@ -564,6 +583,7 @@ class Orchestrator:
 
     def _deny_action(self, action_id: str) -> None:
         """Deny a pending action."""
+        assert self.signal is not None  # Only called from _handle_owner_command
         action = self.pending.get(action_id)
         if not action:
             self.signal.send_to_owner(f"No pending action with ID: {action_id}")
@@ -580,6 +600,7 @@ class Orchestrator:
 
     def _send_status(self) -> None:
         """Send daemon status to owner."""
+        assert self.signal is not None  # Only called from _handle_owner_command
         model_status = self.model_manager.status()
         channels_status = {
             ct.value: ch.is_available()
@@ -599,6 +620,7 @@ class Orchestrator:
 
     def _send_pending(self) -> None:
         """Send list of pending actions to owner."""
+        assert self.signal is not None  # Only called from _handle_owner_command
         pending = [
             a for a in self.pending.values() if a.status == "pending"
         ]
@@ -616,6 +638,7 @@ class Orchestrator:
 
     def _swap_model(self, model_key: str) -> None:
         """Swap to a different model (owner command)."""
+        assert self.signal is not None  # Only called from _handle_owner_command
         if model_key not in self.config.llm.models:
             self.signal.send_to_owner(
                 f"Unknown model: {model_key}. "

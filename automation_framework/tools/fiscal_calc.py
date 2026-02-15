@@ -165,7 +165,7 @@ class WelfareOffsets:
 # Calculator functions
 # =====================================================================
 
-def calc_tax(gross: float, tax: TaxParams = None) -> dict:
+def calc_tax(gross: float, tax: Optional[TaxParams] = None) -> dict:
     """Calculate UK income tax and NI on a given gross income."""
     if tax is None:
         tax = TaxParams()
@@ -212,8 +212,8 @@ def calc_tax(gross: float, tax: TaxParams = None) -> dict:
 
 
 def calc_distribution(
-    dist: DistributionParams = None,
-    pop: PopulationParams = None,
+    dist: Optional[DistributionParams] = None,
+    pop: Optional[PopulationParams] = None,
 ) -> dict:
     """Calculate total distribution cost for given rates and population."""
     if dist is None:
@@ -250,7 +250,7 @@ def calc_distribution(
     }
 
 
-def calc_pip_offset(offsets: WelfareOffsets = None) -> dict:
+def calc_pip_offset(offsets: Optional[WelfareOffsets] = None) -> dict:
     """Calculate PIP/DLA offset using condition-weighted methodology."""
     if offsets is None:
         offsets = WelfareOffsets()
@@ -281,7 +281,7 @@ def calc_pip_offset(offsets: WelfareOffsets = None) -> dict:
 
 def calc_offsets(
     stage: int = 2,
-    offsets: WelfareOffsets = None,
+    offsets: Optional[WelfareOffsets] = None,
 ) -> dict:
     """Calculate welfare offsets for Stage 1 or Stage 2."""
     if offsets is None:
@@ -364,7 +364,7 @@ def calc_coverage(
 def calc_uli_derivation(
     gross: float = 39_039,
     ubs_rate: float = 2_500,
-    tax: TaxParams = None,
+    tax: Optional[TaxParams] = None,
 ) -> dict:
     """Derive ULI rate from median gross earnings."""
     t = calc_tax(gross, tax)
