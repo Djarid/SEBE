@@ -48,20 +48,6 @@ SEBE is the major new revenue component of a broader progressive tax package, no
 | Style Guide | Writing standards for SEBE documents | [style_guide.md](docs/style_guide.md) |
 | Glossary | Term definitions and technical context | [glossary.md](docs/glossary.md) |
 
-## Repository Structure
-
-```
-docs/               Policy documents, reference models, style guide, glossary
-automation_framework/
-  tools/            Memory system, git remote ops, fiscal calculator, PDF reader
-  context/          Project and author context
-  goals/            Campaign task definitions
-  services/         Daemon orchestration (Podman pod)
-  memory/           Session logs and persistent facts
-```
-
-The `automation_framework/` directory contains tooling for AI-assisted campaign management: persistent memory across sessions, task tracking, contact management, and git operations. See [AGENTS.md](AGENTS.md) for details.
-
 ## Attribution
 
 This work has been in development since 2019. If you use, adapt, or build upon this framework, please credit the original author as required by the CC-BY 4.0 licence.
