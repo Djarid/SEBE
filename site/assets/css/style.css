@@ -1,8 +1,8 @@
 /* SEBE site — minimal, readable, no frameworks */
 
 :root {
-  --text: #1a1a1a;
-  --bg: #fafafa;
+  --text: #333;
+  --bg: #f0efe9;
   --accent: #2a6e3f;
   --muted: #666;
   --border: #ddd;
