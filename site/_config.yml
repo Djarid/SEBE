@@ -1,0 +1,17 @@
+title: SEBE — Sovereign Energy & Bandwidth Excise
+description: A fiscal framework for the post-employment economy
+author: Jason Huxley
+url: https://djarid.github.io
+baseurl: /SEBE
+timezone: Europe/London
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+permalink: /blog/:year/:month/:day/:title/
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

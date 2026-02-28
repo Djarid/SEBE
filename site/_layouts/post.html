@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<article>
+  <h1>{{ page.title }}</h1>
+  <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%e %B %Y" }}</time>
+
+  {{ content }}
+
+  <p class="author-bio"><em>Jason Huxley is an infrastructure and automation engineer, former Royal Signals soldier, and member of the Green Party of England and Wales. He lives in Bedford.</em></p>
+</article>

@@ -1,0 +1,168 @@
+/* SEBE site — minimal, readable, no frameworks */
+
+:root {
+  --text: #1a1a1a;
+  --bg: #fafafa;
+  --accent: #2a6e3f;
+  --muted: #666;
+  --border: #ddd;
+  --max-width: 42rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #e0e0e0;
+    --bg: #1a1a1a;
+    --accent: #5cb176;
+    --muted: #999;
+    --border: #333;
+  }
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--text);
+  background: var(--bg);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+header {
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+nav a {
+  color: var(--accent);
+  text-decoration: none;
+  margin-right: 1.5rem;
+  font-size: 0.95rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main { margin-bottom: 4rem; }
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+h3 {
+  font-size: 1.15rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+p { margin-bottom: 1.2rem; }
+
+a { color: var(--accent); }
+
+blockquote {
+  border-left: 3px solid var(--accent);
+  padding-left: 1.2rem;
+  margin: 1.5rem 0;
+  color: var(--muted);
+  font-style: italic;
+}
+
+ul, ol {
+  margin: 1rem 0 1.2rem 1.5rem;
+}
+
+li { margin-bottom: 0.4rem; }
+
+strong { font-weight: 700; }
+
+time {
+  display: block;
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.author-bio {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+/* Blog index */
+.post-list {
+  list-style: none;
+  margin-left: 0;
+}
+
+.post-list li {
+  margin-bottom: 2rem;
+}
+
+.post-list time {
+  display: inline;
+  margin-bottom: 0;
+  font-size: 0.85rem;
+}
+
+.post-list a {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.post-list a:hover {
+  text-decoration: underline;
+}
+
+.post-list p {
+  margin-top: 0.3rem;
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+footer {
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+}
+
+th, td {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--border);
+  text-align: left;
+}
+
+th {
+  font-weight: 700;
+  background: rgba(0,0,0,0.03);
+}
+
+@media (prefers-color-scheme: dark) {
+  th { background: rgba(255,255,255,0.05); }
+}

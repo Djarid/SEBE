@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="'Georgia', 'Times New Roman', serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#1a2a4a"/>
+    </linearGradient>
+    <linearGradient id="redFade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#c0392b" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#c0392b" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="greenFade" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#27ae60" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#27ae60" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- Subtle grid -->
+  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="1">
+    <line x1="150" y1="100" x2="150" y2="500"/>
+    <line x1="350" y1="100" x2="350" y2="500"/>
+    <line x1="550" y1="100" x2="550" y2="500"/>
+    <line x1="750" y1="100" x2="750" y2="500"/>
+    <line x1="950" y1="100" x2="950" y2="500"/>
+    <line x1="150" y1="180" x2="950" y2="180"/>
+    <line x1="150" y1="260" x2="950" y2="260"/>
+    <line x1="150" y1="340" x2="950" y2="340"/>
+    <line x1="150" y1="420" x2="950" y2="420"/>
+  </g>
+  
+  <!-- Axis lines -->
+  <line x1="150" y1="500" x2="950" y2="500" stroke="#ffffff" stroke-opacity="0.2" stroke-width="1"/>
+  <line x1="150" y1="100" x2="150" y2="500" stroke="#ffffff" stroke-opacity="0.2" stroke-width="1"/>
+  
+  <!-- Time labels -->
+  <text x="150" y="530" fill="#ffffff" fill-opacity="0.4" font-size="12" text-anchor="middle">2025</text>
+  <text x="350" y="530" fill="#ffffff" fill-opacity="0.4" font-size="12" text-anchor="middle">2030</text>
+  <text x="550" y="530" fill="#ffffff" fill-opacity="0.4" font-size="12" text-anchor="middle">2035</text>
+  <text x="750" y="530" fill="#ffffff" fill-opacity="0.4" font-size="12" text-anchor="middle">2040</text>
+  <text x="950" y="530" fill="#ffffff" fill-opacity="0.4" font-size="12" text-anchor="middle">2045</text>
+  
+  <!-- Area fill under declining line (red zone) -->
+  <path d="M150,220 C350,240 550,300 750,380 Q850,430 950,470 L950,500 L150,500 Z" fill="url(#redFade)"/>
+  
+  <!-- Area fill under rising SEBE line (green zone) -->
+  <path d="M350,460 C450,440 550,400 750,320 Q850,260 950,200 L950,500 L350,500 Z" fill="url(#greenFade)"/>
+  
+  <!-- Employment tax revenue line (declining) -->
+  <path d="M150,220 C250,225 350,240 450,270 C550,300 650,345 750,380 Q850,430 950,470" 
+        fill="none" stroke="#c0392b" stroke-width="3" stroke-opacity="0.9"/>
+  
+  <!-- SEBE revenue line (rising from 2030) -->
+  <path d="M350,460 C400,455 450,440 500,420 C550,400 600,370 650,345 C700,320 750,290 800,260 Q875,225 950,200" 
+        fill="none" stroke="#27ae60" stroke-width="3" stroke-opacity="0.9"/>
+  
+  <!-- Crossover point marker -->
+  <circle cx="648" cy="345" r="6" fill="none" stroke="#f1c40f" stroke-width="2" opacity="0.8"/>
+  <circle cx="648" cy="345" r="12" fill="none" stroke="#f1c40f" stroke-width="1" opacity="0.4"/>
+  
+  <!-- SEBE launch marker -->
+  <line x1="350" y1="460" x2="350" y2="490" stroke="#27ae60" stroke-width="1" stroke-opacity="0.6"/>
+  <circle cx="350" cy="460" r="4" fill="#27ae60" fill-opacity="0.8"/>
+  <text x="355" y="488" fill="#27ae60" fill-opacity="0.7" font-size="11" font-style="italic">SEBE launch</text>
+  
+  <!-- Line labels -->
+  <text x="200" y="210" fill="#c0392b" fill-opacity="0.8" font-size="13">Employment tax revenue</text>
+  <text x="780" y="190" fill="#27ae60" fill-opacity="0.8" font-size="13">SEBE revenue</text>
+  
+  <!-- Revenue markers on right side -->
+  <text x="960" y="475" fill="#c0392b" fill-opacity="0.5" font-size="11" font-style="italic">declining</text>
+  <text x="960" y="205" fill="#27ae60" fill-opacity="0.5" font-size="11">£159B</text>
+  
+  <!-- Crossover label -->
+  <text x="655" y="335" fill="#f1c40f" fill-opacity="0.8" font-size="11" font-style="italic">crossover</text>
+  
+  <!-- Title -->
+  <text x="600" y="62" fill="#ffffff" font-size="28" text-anchor="middle" font-weight="bold" letter-spacing="1">TAX ROBOTS, FUND PEOPLE</text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="88" fill="#ffffff" fill-opacity="0.5" font-size="14" text-anchor="middle" letter-spacing="2">THE FISCAL CRISIS NOBODY IS SOLVING</text>
+  
+  <!-- Bottom caption -->
+  <text x="600" y="580" fill="#ffffff" fill-opacity="0.3" font-size="11" text-anchor="middle">As automation erodes the employment tax base, SEBE revenue grows with the infrastructure that replaces it</text>
+  
+  <!-- Revenue scale labels -->
+  <text x="140" y="225" fill="#ffffff" fill-opacity="0.3" font-size="10" text-anchor="end">£420B</text>
+  <text x="140" y="465" fill="#ffffff" fill-opacity="0.3" font-size="10" text-anchor="end">£0</text>
+  
+  <!-- Subtle kWh symbol watermark -->
+  <text x="1050" y="560" fill="#ffffff" fill-opacity="0.06" font-size="80" text-anchor="middle" font-weight="bold">kWh</text>
+</svg>
