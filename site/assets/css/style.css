@@ -90,7 +90,7 @@ li { margin-bottom: 0.4rem; }
 strong { font-weight: 700; }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   margin: 1.5rem 0;
 }
