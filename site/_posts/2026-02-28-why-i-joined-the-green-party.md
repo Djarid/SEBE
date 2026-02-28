@@ -9,6 +9,8 @@ I am a 55-year-old infrastructure engineer from Bedford. I spent eleven years in
 
 Four months ago I joined the Green Party. That probably needs some explaining.
 
+![Tax Robots, Fund People]({{ site.baseurl }}/assets/images/tax_robots_fund_people.png)
+
 ## Seeing it coming
 
 I have been saying since 2017 that automation would be the defining economic crisis of this generation. Not because I read about it, but because I build the systems that do it. When you spend your career automating processes, you develop a fairly clear picture of what happens when automation stops being a productivity tool and starts being a replacement workforce.
