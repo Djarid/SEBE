@@ -65,6 +65,14 @@ SEBE/
     │   ├── git_remote.py                  # Git remote ops (push/pull/status)
     │   ├── pdf_reader.py                  # PDF text extraction (local/URL)
     │   ├── fiscal_calc.py                 # Fiscal calculator (tax/distribution/offsets)
+    │   ├── web_search.py                  # SearXNG web search client
+    │   ├── social/                        # Sandboxed social network agent
+    │   │   ├── agent.py                   # Entry point (stdin/stdout JSON)
+    │   │   ├── config.py                  # Credential loader (services/.env)
+    │   │   ├── sanitise.py                # Output sanitisation
+    │   │   ├── bluesky.py                 # Bluesky AT Protocol adapter
+    │   │   ├── mastodon.py                # Mastodon API adapter
+    │   │   └── reddit.py                  # Reddit API adapter
     │   └── memory/                        # Memory system (Python)
     │       ├── config.py, db.py, reader.py, writer.py, export.py
     │       └── __init__.py
@@ -80,7 +88,9 @@ SEBE/
     │   ├── Containerfile                  # Orchestrator container image
     │   ├── compose.yaml                   # Full pod (orchestrator + bridge + signal)
     │   ├── Containerfile.proton-bridge    # Proton Bridge image (auto-init, env-var login)
-    │   ├── proton-bridge-entrypoint.sh    # Bridge entrypoint (pass/GPG + expect login)
+    │   ├── proton-bridge-entrypoint.sh    # Bridge entrypoint (pass/GPP + expect login)
+    │   ├── searxng/                       # SearXNG config
+    │   │   └── settings.yml               # Search engine configuration
     │   ├── .env.template                  # Credential template (safe to commit)
     │   └── channels/                      # Channel adapters
     │       ├── __init__.py
@@ -208,6 +218,27 @@ python -m tools.pdf_reader --file report.pdf --action text --raw
 ```
 
 Requires pymupdf (`pip install pymupdf`). Handles local files and URLs.
+
+**Web search (run from `automation_framework/`):**
+
+```bash
+# Basic search
+python -m tools.web_search "Green Party policy working groups"
+
+# Limit results
+python -m tools.web_search "IPPR automation taxation" --limit 5
+
+# Specific engines
+python -m tools.web_search "SEBE tax" --engines google,duckduckgo
+
+# JSON output (for piping)
+python -m tools.web_search "UBI UK" --json
+
+# News category
+python -m tools.web_search "automation jobs UK" --categories news
+```
+
+Requires SearXNG running on localhost:8888 (`podman start sebe-searxng`).
 
 No other build/lint/test tools. Policy documents are Markdown only.
 

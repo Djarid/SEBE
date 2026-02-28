@@ -5,7 +5,7 @@
 
 ## Active Goals
 
-*None yet — add goals as workflows are defined.*
+- **Social agent** (`goals/social_agent.md`) — Sandboxed social network interface for posting, metrics and notifications across Bluesky, Mastodon and Reddit. Runs as subprocess with credential isolation.
 
 ## Planned
 

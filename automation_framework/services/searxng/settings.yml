@@ -1,0 +1,59 @@
+use_default_settings: true
+
+general:
+  instance_name: "SEBE Search"
+  debug: false
+
+search:
+  safe_search: 0
+  default_lang: "en-GB"
+  formats:
+    - html
+    - json
+
+server:
+  port: 8888
+  bind_address: "0.0.0.0"
+  secret_key: "sebe-searxng-local-only"
+  limiter: false
+  image_proxy: false
+
+ui:
+  static_use_hash: true
+  default_theme: simple
+
+engines:
+  - name: google
+    engine: google
+    shortcut: g
+    disabled: false
+
+  - name: duckduckgo
+    engine: duckduckgo
+    shortcut: ddg
+    disabled: false
+
+  - name: bing
+    engine: bing
+    shortcut: bi
+    disabled: false
+
+  - name: wikipedia
+    engine: wikipedia
+    shortcut: wp
+    disabled: false
+
+  - name: arxiv
+    engine: arxiv
+    shortcut: arx
+    disabled: false
+
+  - name: google scholar
+    engine: google_scholar
+    shortcut: gs
+    disabled: false
+
+  - name: google news
+    engine: google_news
+    shortcut: gn
+    disabled: false
