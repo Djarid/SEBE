@@ -6,7 +6,6 @@
   --accent: #2a6e3f;
   --muted: #666;
   --border: #ddd;
-  --max-width: 42rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -27,9 +26,10 @@ body {
   line-height: 1.7;
   color: var(--text);
   background: var(--bg);
-  max-width: var(--max-width);
+  width: 90vw;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 2rem 1.5rem;
+  padding: 2rem 2vw;
 }
 
 header {
@@ -88,6 +88,12 @@ ul, ol {
 li { margin-bottom: 0.4rem; }
 
 strong { font-weight: 700; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 1.5rem 0;
+}
 
 time {
   display: block;
