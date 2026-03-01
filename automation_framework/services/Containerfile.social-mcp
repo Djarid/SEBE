@@ -1,0 +1,24 @@
+FROM python:3.13-slim
+
+LABEL maintainer="Jason Huxley"
+LABEL description="SEBE Social MCP Server — containerised social network tools"
+
+WORKDIR /app
+
+# Install only the MCP SDK (and its deps: uvicorn, starlette, etc.)
+RUN pip install --no-cache-dir "mcp>=1.0"
+
+# Copy the services package structure needed for python -m services.social_mcp
+COPY __init__.py /app/services/__init__.py
+COPY social_mcp/ /app/services/social_mcp/
+
+ENV PYTHONPATH=/app
+ENV PYTHONUNBUFFERED=1
+
+# SSE transport by default (container mode)
+ENV SOCIAL_MCP_TRANSPORT=sse
+ENV SOCIAL_MCP_PORT=8090
+
+EXPOSE 8090
+
+CMD ["python", "-m", "services.social_mcp"]

@@ -6,14 +6,21 @@
     "auto": true,
     "prune": true
   },
+  "mcp": {
+    "social": {
+      "type": "remote",
+      "url": "http://localhost:8090/sse",
+      "enabled": true
+    }
+  },
   "agent": {
     "build": {
       "model": "anthropic/claude-opus-4-6",
-      "description": "Default coding agent. Writes recon tools, tests, DB schemas, and parsers."
+      "description": "Default coding agent. Writes recon tools, tests, DB schemas, and parsers. For ANY social media task (posting, notifications, metrics), delegate to @social instead."
     },
     "plan": {
       "model": "anthropic/claude-opus-4-6",
-      "description": "Deep reasoning for workflow design, attack surface analysis, and architectural decisions. Use this for complex planning where getting it wrong costs more than tokens."
+      "description": "Deep reasoning for workflow design, attack surface analysis, and architectural decisions. For ANY social media task (posting, notifications, metrics), delegate to @social instead."
     },
     "explore": {
       "model": "anthropic/claude-sonnet-4-5",
@@ -40,6 +47,8 @@
       "mode": "subagent",
       "model": "anthropic/claude-sonnet-4-5"
     }
+  },
+  "tools": {
+    "social_*": false
   }
 }
-

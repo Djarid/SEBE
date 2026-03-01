@@ -66,13 +66,6 @@ SEBE/
     │   ├── pdf_reader.py                  # PDF text extraction (local/URL)
     │   ├── fiscal_calc.py                 # Fiscal calculator (tax/distribution/offsets)
     │   ├── web_search.py                  # SearXNG web search client
-    │   ├── social/                        # Sandboxed social network agent
-    │   │   ├── agent.py                   # Entry point (stdin/stdout JSON)
-    │   │   ├── config.py                  # Credential loader (services/.env)
-    │   │   ├── sanitise.py                # Output sanitisation
-    │   │   ├── bluesky.py                 # Bluesky AT Protocol adapter
-    │   │   ├── mastodon.py                # Mastodon API adapter
-    │   │   └── reddit.py                  # Reddit API adapter
     │   └── memory/                        # Memory system (Python)
     │       ├── config.py, db.py, reader.py, writer.py, export.py
     │       └── __init__.py
@@ -92,6 +85,14 @@ SEBE/
     │   ├── searxng/                       # SearXNG config
     │   │   └── settings.yml               # Search engine configuration
     │   ├── .env.template                  # Credential template (safe to commit)
+    │   ├── social_mcp/                    # Containerised social MCP server
+    │   │   ├── server.py                  # FastMCP SSE server (port 8090)
+    │   │   ├── bluesky.py                 # Bluesky AT Protocol adapter
+    │   │   ├── mastodon.py                # Mastodon API adapter
+    │   │   ├── reddit.py                  # Reddit API adapter
+    │   │   ├── config.py                  # Credential loader
+    │   │   ├── validate.py                # Response schema validation
+    │   │   └── sanitise.py                # Output sanitisation
     │   └── channels/                      # Channel adapters
     │       ├── __init__.py
     │       ├── base.py                    # Base channel interface

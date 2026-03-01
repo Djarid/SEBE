@@ -1,9 +1,9 @@
 """
-Bluesky (AT Protocol) adapter for the social agent.
+Bluesky (AT Protocol) adapter for the social MCP server.
 
-Handles authentication, posting, profile retrieval, notifications
-and post metrics via the Bluesky API. Credentials are loaded from
-config.py and never exposed in return values.
+Handles authentication, posting, profile retrieval, feed listing,
+notifications, and post metrics via the Bluesky API. Credentials
+are loaded from config.py and never exposed in return values.
 """
 
 from __future__ import annotations
@@ -39,27 +39,20 @@ def _auth() -> tuple[str, str]:
     return session["accessJwt"], session["did"]
 
 
-def _request(method: str, endpoint: str, token: str, data: dict | None = None) -> dict:
-    """Make an authenticated API request."""
-    url = f"{API}/{endpoint}"
-    body = json.dumps(data).encode() if data else None
+def _authed_get(endpoint: str, token: str) -> dict:
+    """Make an authenticated GET request."""
     req = urllib.request.Request(
-        url,
-        data=body,
-        headers={
-            "Content-Type": "application/json",
-            "Authorization": f"Bearer {token}",
-        },
-        method=method,
+        f"{API}/{endpoint}",
+        headers={"Authorization": f"Bearer {token}"},
     )
     resp = urllib.request.urlopen(req, timeout=15)
-    return json.loads(resp.read()) if resp.read else {}
+    return json.loads(resp.read())
 
 
 def auth_test() -> dict:
     """Test authentication. Returns handle on success."""
     try:
-        token, did = _auth()
+        _auth()
         return {"success": True, "handle": config.get("BSKY_HANDLE")}
     except Exception:
         return {"success": False, "error": "auth_failed"}
@@ -117,7 +110,6 @@ def post(text: str, url: str | None = None, reply_to: str | None = None) -> dict
         )
         resp = urllib.request.urlopen(req, timeout=15)
         result = json.loads(resp.read())
-        # Extract rkey for URL construction
         uri = result.get("uri", "")
         rkey = uri.split("/")[-1] if "/" in uri else ""
         handle = config.get("BSKY_HANDLE")
@@ -128,10 +120,9 @@ def post(text: str, url: str | None = None, reply_to: str | None = None) -> dict
             "url": f"https://bsky.app/profile/{handle}/post/{rkey}",
         }
     except urllib.error.HTTPError as e:
-        body = e.read().decode()
-        # Never echo raw error body (may contain auth details)
+        body_bytes = e.read().decode()
         try:
-            err = json.loads(body)
+            err = json.loads(body_bytes)
             msg = err.get("message", "unknown_error")
         except Exception:
             msg = "unknown_error"
@@ -147,12 +138,10 @@ def get_profile() -> dict:
 
     handle = config.get("BSKY_HANDLE")
     try:
-        req = urllib.request.Request(
-            f"{API}/app.bsky.actor.getProfile?actor={urllib.parse.quote(handle)}",
-            headers={"Authorization": f"Bearer {token}"},
+        data = _authed_get(
+            f"app.bsky.actor.getProfile?actor={urllib.parse.quote(handle)}",
+            token,
         )
-        resp = urllib.request.urlopen(req, timeout=15)
-        data = json.loads(resp.read())
         return {
             "success": True,
             "handle": sanitise.clean_handle(data.get("handle", "")),
@@ -165,6 +154,46 @@ def get_profile() -> dict:
         return {"success": False, "error": "request_failed"}
 
 
+def get_feed(limit: int = 50) -> dict:
+    """Get own posts/feed."""
+    try:
+        token, did = _auth()
+    except Exception:
+        return {"success": False, "error": "auth_failed"}
+
+    handle = config.get("BSKY_HANDLE")
+    try:
+        data = _authed_get(
+            f"app.bsky.feed.getAuthorFeed"
+            f"?actor={urllib.parse.quote(handle)}"
+            f"&limit={min(limit, 100)}",
+            token,
+        )
+
+        posts = []
+        for item in data.get("feed", []):
+            p = item.get("post", {})
+            record = p.get("record", {})
+            uri = p.get("uri", "")
+            rkey = uri.split("/")[-1] if "/" in uri else ""
+
+            post_data = {
+                "post_id": uri,
+                "cid": p.get("cid", ""),
+                "text": sanitise.clean_string(record.get("text", ""), 1000),
+                "created_at": record.get("createdAt", ""),
+                "likes": p.get("likeCount", 0),
+                "reposts": p.get("repostCount", 0),
+                "replies": p.get("replyCount", 0),
+                "url": f"https://bsky.app/profile/{handle}/post/{rkey}",
+            }
+            posts.append(post_data)
+
+        return {"success": True, "posts": posts, "count": len(posts)}
+    except Exception:
+        return {"success": False, "error": "request_failed"}
+
+
 def get_notifications(limit: int = 20) -> dict:
     """Get recent notifications."""
     try:
@@ -173,12 +202,10 @@ def get_notifications(limit: int = 20) -> dict:
         return {"success": False, "error": "auth_failed"}
 
     try:
-        req = urllib.request.Request(
-            f"{API}/app.bsky.notification.listNotifications?limit={min(limit, 50)}",
-            headers={"Authorization": f"Bearer {token}"},
+        data = _authed_get(
+            f"app.bsky.notification.listNotifications?limit={min(limit, 50)}",
+            token,
         )
-        resp = urllib.request.urlopen(req, timeout=15)
-        data = json.loads(resp.read())
 
         items = []
         for n in data.get("notifications", []):
@@ -204,12 +231,10 @@ def get_post_metrics(post_id: str) -> dict:
 
     try:
         encoded = urllib.parse.quote(post_id, safe="")
-        req = urllib.request.Request(
-            f"{API}/app.bsky.feed.getPosts?uris={encoded}",
-            headers={"Authorization": f"Bearer {token}"},
+        data = _authed_get(
+            f"app.bsky.feed.getPosts?uris={encoded}",
+            token,
         )
-        resp = urllib.request.urlopen(req, timeout=15)
-        data = json.loads(resp.read())
 
         posts = data.get("posts", [])
         if not posts:
@@ -233,7 +258,6 @@ def delete_post(post_id: str) -> dict:
     except Exception:
         return {"success": False, "error": "auth_failed"}
 
-    # Extract rkey from URI: at://did/collection/rkey
     parts = post_id.split("/")
     if len(parts) < 5:
         return {"success": False, "error": "invalid_post_id"}

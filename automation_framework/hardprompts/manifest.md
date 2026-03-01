@@ -5,7 +5,7 @@
 
 ## Available Prompts
 
-*None yet — add prompts as document variants and recurring tasks emerge.*
+- **Social engagement reviewer** (`social_review.md`) — Adversarial review gate for social media actions. Scores proposed comments and session plans against 7 criteria (account health, volume, pattern, timing, tone, invitation, risk). Has veto power over SEBE-mentioning content.
 
 ## Planned
 

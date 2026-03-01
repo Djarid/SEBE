@@ -1,9 +1,9 @@
 """
-Output sanitisation for the social agent.
+Output sanitisation for the social MCP server.
 
-All data returned to the orchestrator passes through these functions.
-Purpose: prevent prompt injection, credential leakage, and control
-character attacks in returned social content.
+All data returned to the caller passes through these functions.
+Prevents prompt injection, credential leakage, and control character
+attacks in returned social content.
 """
 
 import re
@@ -48,11 +48,28 @@ def has_injection(text: str) -> bool:
 
 
 def sanitise_notification(item: dict) -> dict:
-    """Sanitise a notification item before returning to orchestrator."""
+    """Sanitise a notification item before returning."""
     return {
         "type": clean_string(item.get("type", ""), 30),
         "author": clean_handle(item.get("author", "")),
         "text_preview": clean_text_preview(item.get("text_preview", "")),
         "post_id": clean_string(item.get("post_id", ""), 200),
         "flagged": has_injection(item.get("text_preview", "")),
+    }
+
+
+def sanitise_feed_item(item: dict) -> dict:
+    """Sanitise a feed/post item before returning."""
+    return {
+        "post_id": clean_string(item.get("post_id", ""), 200),
+        "cid": clean_string(item.get("cid", ""), 200),
+        "text": clean_string(item.get("text", ""), 1000),
+        "title": clean_string(item.get("title", ""), 300),
+        "created_at": clean_string(item.get("created_at", ""), 30),
+        "likes": item.get("likes", 0),
+        "reposts": item.get("reposts", 0),
+        "replies": item.get("replies", 0),
+        "url": clean_string(item.get("url", ""), 300),
+        "subreddit": clean_string(item.get("subreddit", ""), 100),
+        "flagged": has_injection(item.get("text", "")),
     }

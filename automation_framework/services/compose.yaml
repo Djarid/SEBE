@@ -81,6 +81,27 @@ services:
       - ../../automation_framework/memory:/app/memory:z
       - ../../automation_framework/tools:/app/tools:ro
 
+  # --- Social MCP Server ---
+  # Exposes social network tools via MCP over SSE.
+  # Only accessible on localhost. Read-only filesystem.
+  social-mcp:
+    build:
+      context: .
+      dockerfile: Containerfile.social-mcp
+    container_name: sebe-social-mcp
+    restart: unless-stopped
+    env_file:
+      - ../../.env
+    ports:
+      - "127.0.0.1:8090:8090"
+    # Read-only filesystem except /tmp (Python needs __pycache__, SSE needs buffers)
+    read_only: true
+    tmpfs:
+      - /tmp
+    # No Linux capabilities needed
+    cap_drop:
+      - ALL
+
 volumes:
   proton-bridge-data:
   signal-cli-data:

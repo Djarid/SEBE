@@ -1,7 +1,7 @@
 """
-Mastodon API adapter for the social agent.
+Mastodon API adapter for the social MCP server.
 
-Handles posting, profile retrieval, notifications and post metrics.
+Handles posting, profile retrieval, notifications, and post metrics.
 Credentials loaded from config.py, never exposed in return values.
 
 Requires MASTODON_INSTANCE and MASTODON_TOKEN in services/.env.
@@ -38,7 +38,10 @@ def auth_test() -> dict:
         req = urllib.request.Request(url, headers=_headers())
         resp = urllib.request.urlopen(req, timeout=15)
         data = json.loads(resp.read())
-        return {"success": True, "handle": sanitise.clean_handle(data.get("acct", ""))}
+        return {
+            "success": True,
+            "handle": sanitise.clean_handle(data.get("acct", "")),
+        }
     except Exception:
         return {"success": False, "error": "auth_failed"}
 
@@ -63,7 +66,10 @@ def post(text: str, url: str | None = None, reply_to: str | None = None) -> dict
         req = urllib.request.Request(
             f"{base}/api/v1/statuses",
             data=params.encode(),
-            headers={**headers, "Content-Type": "application/x-www-form-urlencoded"},
+            headers={
+                **headers,
+                "Content-Type": "application/x-www-form-urlencoded",
+            },
             method="POST",
         )
         resp = urllib.request.urlopen(req, timeout=15)
@@ -99,6 +105,50 @@ def get_profile() -> dict:
         }
     except Exception:
         return {"success": False, "error": "auth_failed"}
+
+
+def get_feed(limit: int = 50) -> dict:
+    """Get own statuses."""
+    try:
+        base = _base_url()
+        headers = _headers()
+    except Exception:
+        return {"success": False, "error": "auth_failed"}
+
+    try:
+        # First get own account ID
+        req = urllib.request.Request(
+            f"{base}/api/v1/accounts/verify_credentials",
+            headers=headers,
+        )
+        resp = urllib.request.urlopen(req, timeout=15)
+        me = json.loads(resp.read())
+        account_id = me.get("id", "")
+
+        # Then fetch statuses
+        req = urllib.request.Request(
+            f"{base}/api/v1/accounts/{account_id}/statuses?limit={min(limit, 40)}",
+            headers=headers,
+        )
+        resp = urllib.request.urlopen(req, timeout=15)
+        statuses = json.loads(resp.read())
+
+        posts = []
+        for s in statuses:
+            post_data = {
+                "post_id": str(s.get("id", "")),
+                "text": sanitise.clean_string(s.get("content", ""), 1000),
+                "created_at": s.get("created_at", ""),
+                "likes": s.get("favourites_count", 0),
+                "reposts": s.get("reblogs_count", 0),
+                "replies": s.get("replies_count", 0),
+                "url": s.get("url", ""),
+            }
+            posts.append(post_data)
+
+        return {"success": True, "posts": posts, "count": len(posts)}
+    except Exception:
+        return {"success": False, "error": "request_failed"}
 
 
 def get_notifications(limit: int = 20) -> dict:

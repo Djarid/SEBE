@@ -8,48 +8,52 @@ accessing credentials or being exposed to raw untrusted social content.
 
 ## Security Model
 
-The social agent runs as a **separate subprocess**. The orchestrator
-communicates via JSON on stdin/stdout. This provides:
+The social agent runs as a **containerised MCP server** (`services/social_mcp/`).
+The `@social` subagent in opencode connects to it over SSE (port 8090) and
+can ONLY call the defined MCP tools. This provides:
 
-- **Credential isolation:** Credentials are loaded from `services/.env`
-  inside the subprocess. They never appear in stdout, error messages,
-  or any return value.
+- **Credential isolation:** Credentials are loaded from environment variables
+  inside the container. They never appear in tool responses, error messages,
+  or provenance blocks.
 - **Content sanitisation:** All text from external users is truncated,
   stripped of control characters, and flagged if it matches prompt
   injection patterns.
-- **Least privilege:** The agent has network access to social APIs only.
-  No filesystem access beyond `services/.env` (read). No memory DB
-  access. No access to SEBE documents.
-- **No persistent state:** The agent is stateless. Each invocation
-  authenticates fresh and discards the session.
+- **Response validation:** Every tool response is validated against per-command
+  schemas before returning. Invalid data is dropped with a count reported.
+- **Provenance tracking:** Every response includes a `_provenance` block
+  (tool name, platform, timestamp, source, item counts) so consumers can
+  distinguish real API data from LLM fabrication.
+- **Least privilege:** The server has network access to social APIs only.
+  No filesystem access beyond credential environment variables. No memory
+  DB access. No access to SEBE documents.
+- **No persistent state:** Each API call authenticates fresh (Bluesky session
+  tokens are per-request).
 
 ## Invocation
 
 ```bash
-# From CLI
-echo '{"command":"auth_test","platform":"bsky"}' | python -m tools.social
+# Containerised (default, SSE on port 8090)
+python -m services.social_mcp
 
-# From Python (orchestrator/daemon)
-import subprocess, json
-result = subprocess.run(
-    ["python", "-m", "tools.social"],
-    input=json.dumps({"command": "post", "platform": "bsky", "text": "Hello"}),
-    capture_output=True, text=True,
-    cwd="automation_framework/"
-)
-response = json.loads(result.stdout)
+# Dev/test (stdio transport)
+SOCIAL_MCP_TRANSPORT=stdio python -m services.social_mcp
 ```
 
-## Commands
+The `@social` subagent is configured in `opencode.json` under the `mcp`
+section as a remote SSE server. Use `@social` for all social media tasks.
 
-| Command | Platforms | Required Fields | Optional Fields |
-|---------|-----------|----------------|-----------------|
-| `auth_test` | all | | |
-| `post` | all | `text` | `url`, `reply_to`, `subreddit`, `title` (Reddit) |
-| `get_profile` | all | | |
-| `get_notifications` | all | | `limit` |
-| `get_post_metrics` | all | `post_id` | |
-| `delete_post` | all | `post_id` | |
+## MCP Tools
+
+| Tool | Platforms | Required Args | Optional Args |
+|------|-----------|---------------|---------------|
+| `social_auth_test` | all | `platform` | |
+| `social_post` | all | `platform`, `text` | `url`, `reply_to`, `subreddit`, `title` (Reddit) |
+| `social_get_profile` | all | `platform` | |
+| `social_get_feed` | all | `platform` | `limit` |
+| `social_get_notifications` | all | `platform` | `limit` |
+| `social_get_post_metrics` | all | `platform`, `post_id` | |
+| `social_delete_post` | all | `platform`, `post_id` | |
+| `social_verify_url` | n/a | `url` | |
 
 ## Platforms
 
@@ -61,32 +65,23 @@ response = json.loads(result.stdout)
 
 ## Error Handling
 
-All errors return `{"success": false, "error": "error_type"}`. Error
-types: `auth_failed`, `no_credentials`, `unknown_command`,
-`unknown_platform`, `invalid_json`, `empty_input`, `rate_limited`,
-`request_failed`, `internal_error`.
+All errors return `{"success": false, "error": "..."}` with a `_provenance`
+block. Common errors: `Unknown platform`, `No credentials configured`,
+`auth_failed`, `invalid_profile_data`, `invalid_metrics_data`,
+`timeout_or_network_error`.
 
 Credentials are never echoed in error messages. Raw API error bodies
 are sanitised before return.
 
-## Edge Cases
-
-- Empty input → `empty_input`
-- Malformed JSON → `invalid_json`
-- Unknown command → `unknown_command`
-- Unknown platform → `unknown_platform`
-- Missing credentials → `no_credentials`
-- Post text too long → silently truncated to platform limit
-- Notification text contains injection patterns → `flagged: true` in item
-
 ## Files
 
 ```
-tools/social/
+services/social_mcp/
 ├── __init__.py     # Package marker
 ├── __main__.py     # python -m entry point
-├── agent.py        # Command dispatcher
-├── config.py       # Credential loader (services/.env)
+├── server.py       # FastMCP SSE server (tool definitions)
+├── config.py       # Credential loader (env vars)
+├── validate.py     # Response schema validation
 ├── sanitise.py     # Output sanitisation
 ├── bluesky.py      # Bluesky AT Protocol adapter
 ├── mastodon.py     # Mastodon API adapter
