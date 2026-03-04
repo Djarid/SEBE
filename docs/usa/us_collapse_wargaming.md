@@ -1,11 +1,17 @@
 # COMPREHENSIVE INTELLIGENCE ASSESSMENT: US Economic & Geopolitical Outlook
-## Complete Analytical Trace — All Findings, Challenges, and Resolutions
+## Complete Analytical Trace — All Findings, Challenges and Resolutions
 
-**Date:** 17 February 2026
+**Date:** 4 March 2026
 **Methodology:** UK Defence Intelligence Probability Yardstick
 **Analyst Perspective:** UK-based infrastructure engineer
-**Process:** Four rounds of adversarial review with full challenge-response trace
-**Version:** v5 (post Round 4, cleaned)
+**Process:** Five rounds of adversarial review with full challenge-response trace
+**Version:** v6 (post Round 5, restructured)
+**Author:** Jason Huxley
+**Target audience:** Policy analysts, defence professionals, strategic planners
+
+---
+
+*This assessment is the precedent document for the structural analysis in `docs/global_transition.md`, which draws on the fiscal genealogy, confidence variable and trajectory framework developed here. The two documents overlap where the underlying analysis requires it; this document is authoritative where they differ.*
 
 ---
 
@@ -25,7 +31,7 @@
 
 ### Process
 
-The assessment was developed through iterative adversarial dialogue. Initial positions were established, then subjected to four rounds of structured challenge (Rounds 1-3 self-administered via Gemini, Round 4 independently administered via Claude). Each finding records: the initial assessment, challenges raised, counter-arguments, and final position with justification for any movement.
+I developed this assessment through iterative adversarial dialogue. I established initial positions, then subjected them to five rounds of structured challenge (Rounds 1–3 self-administered via Gemini, Round 4 independently administered via Claude, Round 5 independently administered via Claude with empirical research against primary sources). Each finding records: the initial assessment, challenges raised, counter-arguments and final position with justification for any movement.
 
 ### Key Analytical Principles Established During Review
 
@@ -34,6 +40,8 @@ The assessment was developed through iterative adversarial dialogue. Initial pos
 3. **Survivorship bias exists in both directions.** Past doom predictions being wrong doesn't mean future ones will be; past resilience doesn't guarantee future resilience.
 4. **Muddle-through is not stability.** Absence of acute crisis in any given period worsens fundamentals for subsequent periods.
 5. **The assessment must be falsifiable.** Indicators that would cause revision are identified where possible.
+6. **Confidence is a distinct variable from fiscal mechanics.** The perceived institutional stability of the United States as a safe-harbour jurisdiction operates independently from, and is the primary accelerant of, the fiscal trajectory. (Established Round 5.)
+7. **Headline data must be tested against adjusted data.** Exchange-rate-adjusted figures, maturity rollover dynamics and lag effects must be accounted for rather than relying on headline numbers that overstate or understate the pace of change. (Established Round 5.)
 
 ---
 
@@ -51,7 +59,7 @@ The assessment was developed through iterative adversarial dialogue. Initial pos
 - Military-industrial complex as economic policy (600-ship Navy; defence spending as jobs programme)
 - Destruction of shared information environment (Fairness Doctrine repealed 1987; enabled Fox News, talk radio, post-truth ecosystem)
 
-**Challenge (Round 1, Attack 6):** The 1981 date is post-hoc rationalisation. Could equally start at 1945, 1971, 2001, or 2008. Cherry-picks negative consequences while ignoring that Reagan-era policies produced the longest economic expansion in US history (1991-2001).
+**Challenge (Round 1, Attack 6):** The 1981 date is post-hoc rationalisation. Could equally start at 1945, 1971, 2001, or 2008. Cherry-picks negative consequences while ignoring that Reagan-era policies produced the longest economic expansion in US history (1991–2001).
 
 **Counter:** The 1971 unpegging is significant but was a technical monetary event. 1981 was an ideological inflection — the beginning of the Mont Pelerin Society neoliberal project (Thatcher/Reagan simultaneously). Subsequent presidents (Bush, Clinton, Bush, Obama, Trump) are responses to the stimulus, not independent triggers. The "growth" produced was substantially financialised — asset price inflation, not productive economic expansion. Real wages decoupled from productivity at exactly this inflection point.
 
@@ -90,39 +98,124 @@ The assessment was developed through iterative adversarial dialogue. Initial pos
 
 ---
 
-## PART 2: THE EXORBITANT PRIVILEGE
+## PART 2: THE CONFIDENCE VARIABLE
 
-### 2.1 Core Concept
+*This section was added in v6 following Round 5 adversarial review, which identified institutional confidence as the critical accelerant that determines whether fiscal deterioration produces slow grinding decline or a compressed crisis. It is elevated from a subsection of governance to a standalone analytical section because it is the load-bearing variable for the entire assessment.*
+
+### 2.1 The Safe-Harbour Premium
+
+**Finding:** The United States has historically commanded a safe-harbour premium on its sovereign debt — lower yields than fiscal fundamentals alone would justify — because it was perceived as the jurisdiction where the rules did not change on you. Contracts were honoured. Courts were independent. The central bank was autonomous. Sovereign assets held in dollar-denominated instruments were not political tools. This premium is a function of institutional confidence, not fiscal arithmetic.
+
+**The premium is being actively destroyed.** Each of the following events functions as a marginal repricing of institutional risk by foreign holders of US assets:
+
+**Reserve weaponisation (Feb 2022):** Freezing approximately $300 billion of Russian central bank reserves sent a signal every non-allied sovereign received simultaneously: dollar-denominated reserves are political instruments, not neutral stores of value. The Belgian veto has temporarily blocked seizure and transfer to Ukraine, but the trajectory is toward confiscation.
+
+**Judicial circumvention (2025–2026):** The SCOTUS IEEPA ruling (6–3, 20 February 2026) struck down Trump's tariffs as unconstitutional. The executive immediately announced replacement tariffs under alternative statutes. DHS has systematically defied federal court orders on immigration enforcement. Courts have found that DHS "utterly disregarded" orders. The DOJ characterises judicial opposition as the work of "rogue judges." Over 11,100 habeas petitions filed in the first weeks of 2026, surpassing approximately 9,250 filed in all of 2025 (AILA; ProPublica habeas tracker).
+
+**Central bank independence under threat (2025–2026):** When the DOJ opened a criminal investigation of Fed Chair Powell, it crossed a line no previous administration had approached. Treasury Secretary Bessent, asked if Warsh would be sued for not cutting rates, replied "That is up to the President." This is a direct threat to the institutional independence that undergirds dollar confidence.
+
+**Military institutional capture (2025–2026):** The Chairman of the Joint Chiefs, the Chief of Naval Operations, the judge advocates general for Army, Navy and Air Force, the commander of US Cyber Command/director of NSA and multiple other senior officers have been fired. Five former secretaries of defense (Perry, Panetta, Hagel, Austin and Mattis) stated in a joint letter to Congress that "none of this was about warfighting" (27 Feb 2025; reported Reuters, NYT, Washington Post). Replacement criterion is personal loyalty.
+
+**Alliance degradation (2025–2026):** Threatening to annex Greenland (a founding NATO member's sovereign territory) is not a negotiating tactic that inspires confidence in institutional predictability. Tariffs imposed on allies. Explicit conditioning of security guarantees on trade concessions. The cooperative framework that made international dollar management possible (cf. Plaza Accord, 1985) has been actively degraded.
+
+### 2.2 Why This Doesn't Yet Show in the Data
+
+**Finding:** The confidence variable operates on a lag that makes backward-looking data an unreliable indicator of current trajectory.
+
+IMF COFER data (Q2 2025) shows the dollar's exchange-rate-adjusted reserve share declined by only 0.12 percentage points — a pace that, extrapolated, would take decades to reach crisis levels. Treasury auction bid-to-cover ratios remain stable around 2.5. The Federal Reserve's own 2025 assessment found the dollar share "basically unchanged since 2022."
+
+**Why the lag exists:**
+- Pension fund rebalancing occurs quarterly at most
+- Sovereign reserve reallocation occurs over years, not months
+- The most significant confidence shocks (military purges, court defiance, Fed investigation, SCOTUS circumvention) are 2025–2026 events whose effects have not yet fully propagated through institutional decision-making
+- The "quiet rebalancing" pattern identified in Pathway 4 (fund divestment) operates on exactly this lag: decisions are taken months before they appear in reporting
+
+**The critical distinction:** The COFER data captures a period *before* the most significant institutional degradation. Using it to assess the pace of de-dollarisation is like using 2019 economic data to assess the impact of COVID. The data is accurate for the period it measures. It does not measure the period that matters.
+
+**Leading indicators to watch (where the lag will manifest first):**
+- Term premium on long-dated Treasuries (reflects expected future risk, not current demand)
+- CDS spreads on US sovereign debt
+- Foreign central bank net purchases/sales of Treasuries (TIC data, reported with 2-month lag)
+- Gold purchases by central banks that are US allies (not just China/Russia/Turkey — when Poland, Czech Republic and Singapore are buying, the motive is structural)
+- Private fund rebalancing announcements (Nordic/Dutch pension funds most likely first movers)
+- Bid-to-cover ratios on 10-year and 30-year auctions specifically (short-term bills will hold demand longer)
+
+**Assessment:**
+
+| Finding | Probability | Confidence |
+|---------|-------------|------------|
+| Institutional confidence is the primary accelerant of fiscal trajectory | **Almost Certain (>90%)** | High |
+| Confidence erosion is underway but not yet fully captured in market data | **Highly Likely (65–90%)** | High |
+| Backward-looking COFER/auction data understates current trajectory | **Likely (50–65%)** | Moderate — lag duration uncertain |
+| Allied gold buying (Poland, Czech Republic, Singapore) reflects structural shift | **Likely (50–65%)** | Moderate |
+
+### 2.3 The Plaza Accord Precedent and Why It No Longer Applies
+
+**Finding:** The 1985 Plaza Accord is the one historical precedent for managed dollar devaluation at the scale this assessment discusses. It succeeded. Understanding why it succeeded — and why those conditions no longer exist — is essential for assessing whether managed devaluation remains available.
+
+**The Plaza conditions (1985):**
+- The US was the undisputed leader of the Western alliance
+- The Soviet Union provided a shared threat binding cooperation
+- Japan and Germany had profound strategic reasons to cooperate (US security umbrella)
+- No alternative reserve infrastructure existed
+- US institutional credibility was intact (independent judiciary, autonomous Fed, rule of law)
+- The devaluation was cooperative (five nations agreed), orderly (conducted over two years) and achieved approximately 40% depreciation against major currencies
+- By 1991, the US current account had stabilised and achieved a slight surplus
+- The dollar remained the world's reserve currency throughout
+
+**The 2026 conditions:**
+- The US has frozen a major power's sovereign reserves and is moving to confiscate them
+- There is no shared threat binding allied cooperation (climate is diffuse, China is a trading partner not a military adversary for most allies)
+- The US has threatened NATO allies over defence spending and the territorial integrity of a founding member (Greenland)
+- Alternative settlement infrastructure exists and is expanding (CIPS, mBridge, Wero, bilateral swap lines)
+- US institutional credibility is under active assault (court defiance, Fed investigation, military purges, SCOTUS circumvention)
+- The allied trust that enabled cooperation at Plaza has been degraded by the current administration
+
+**Conclusion:** Managed devaluation *can* work — the Plaza Accord proves it. But it requires cooperative partners who trust the devaluing nation. The US is systematically destroying the cooperation that would make it possible. The Plaza precedent does not demonstrate that managed devaluation is currently available. It demonstrates what the US has forfeited.
+
+**Assessment:**
+
+| Finding | Probability | Confidence |
+|---------|-------------|------------|
+| Managed devaluation on Plaza model remains available to the US | **Remote (<5%)** | High |
+| Allied cooperation on dollar management achievable in current environment | **Highly Unlikely (5–15%)** | High |
+| Conditions that enabled Plaza success have been actively destroyed | **Highly Likely (65–90%)** | High |
+
+---
+
+## PART 3: THE EXORBITANT PRIVILEGE
+
+### 3.1 Core Concept
 
 **Finding:** The entire US fiscal model rests on a single assumption: as issuer of the world's reserve currency, there is always a buyer for US debt ("the reserve always sells"). This assumption is failing.
 
 **Mechanism:** If you issue the reserve currency, everyone needs your currency for international trade. They hold dollar-denominated assets (Treasuries) as reserves. Therefore there is always demand for your bonds. Therefore you can always borrow. Therefore deficits "don't matter."
 
-**Evidence of erosion:**
-- USD share of global reserves: 71% (2000) → 62% (2010) → 58% (2026). Direction: down. Acceleration: masked by measurement methodology (see below).
-- Central bank gold purchases replacing Treasury holdings: 863 tonnes in 2025. 15 consecutive months of Chinese buying.
-- China Treasury holdings: $1.3T (2013) → <$800B (2026).
-- BRICS bilateral trade settlement in non-dollar currencies expanding.
-- Saudi Arabia settling some oil trades in yuan.
+**Evidence of erosion — headline vs adjusted (corrected Round 5):**
 
-**Challenge (Round 2, Attack 7):** The rate of decline is 0.52%/year (2000-2010), decelerating to 0.17%/year (2020-2026). At this rate, reaching 50% takes 15+ years. The assessment's timeline of 4 years is unsupported.
+The headline IMF COFER data shows the dollar's share of global allocated reserves at approximately 56.3% (Q2 2025), down from 71% in 2000. However, the IMF's own exchange-rate-adjusted analysis shows that 92% of the Q2 2025 headline decline was driven by currency valuation effects, not active central bank reallocation. The exchange-rate-adjusted decline was 0.12 percentage points for the quarter. The Federal Reserve's 2025 assessment found the dollar share "basically unchanged since 2022."
 
-**Counter:** The headline IMF reserve share data understates actual de-dollarisation because gold purchases (which functionally replace dollar reserves) are not captured in the currency share statistics. Central bank gold buying has accelerated dramatically: 656t (2018) → 1,136t (2022) → 863t (2025). This gold is *replacing* Treasuries but appears as a different asset class in the data. Additionally, the rate of decline reflects a period *before* alternatives matured. BRICS reached critical mass ~2020. Wero launched 2024. CIPS is operational. The S-curve adoption model suggests acceleration at the inflection point, not linear continuation of past rates.
+**Why the adjusted data understates the true picture:**
+- Gold purchases (which functionally replace dollar reserves) sit outside the COFER currency data entirely. Central banks bought 1,136 tonnes (2022), approximately 1,037 tonnes (2023), approximately 1,045 tonnes (2024) and 863 tonnes (2025) — a combined shift of enormous scale that appears nowhere in the currency share statistics
+- Bilateral swap line expansion (China has 40+ central bank swap agreements) creates parallel liquidity that reduces dollar dependency without appearing in reserve data
+- The most significant confidence shocks are 2025–2026 events not yet captured in the data (see Part 2)
+- The COFER data measures a trailing indicator; the leading indicators (term premium, CDS spreads, allied gold buying) are the ones to watch
 
-**Further challenge (Round 3, Attack 15):** Where does the money go? The destination markets (Europe, China, gold, emerging markets) cannot absorb $6.7T in dollar reserves at speed. The plumbing constrains the flow.
+**The honest assessment is:** Active de-dollarisation is proceeding at a pace measured in fractions of a percentage point per quarter on the COFER metric, but this metric does not capture gold substitution, alternative settlement infrastructure, or the lag from recent confidence shocks. Direction is clear. Pace is genuinely uncertain. Acceleration is the central question.
 
-**Counter:** The multipolar replacement model doesn't require a single destination. Euros for European trade, yuan for Asian trade, gold for reserves, bilateral swaps for the rest. Fragmentation is actually *worse* for the dollar than single replacement because there's no orderly transition. And Keynes's bancor concept (supranational settlement currency) is what BRICS is groping toward — the intellectual framework is 80 years old, the political motivation is now present. The capital absorption constraint is a *speed limit*, not a barrier.
+**Central bank gold buying — corrected (Round 5):** The document previously stated gold buying was "price-inelastic because it is driven by strategic allocation." The World Gold Council's 2025 data shows buying fell to 863 tonnes from 1,000+ in each of the preceding three years, with the WGC explicitly attributing the slowdown to price sensitivity at record gold prices. The 2025 WGC survey found that 95% of central banks expect global gold reserves to increase further and 43% plan to increase their own holdings (up from 29% in 2024), with none anticipating a reduction. **Corrected framing:** Central bank gold buying is strategically motivated but operationally responsive to price. The intent is structural and sustained; the pace is price-sensitive. Under crisis conditions, price sensitivity would likely be overridden by urgency — but in the absence of a crisis trigger, buying may continue at the 2025 pace (800–1,000 tonnes) rather than accelerating as previously assumed.
 
 **Assessment:**
 
 | Finding | Probability | Confidence |
 |---------|-------------|------------|
 | Exorbitant privilege actively eroding | **Highly Likely (65–90%)** | High |
-| Erosion rate accelerating (masked by measurement) | **Likely (50–65%)** | Moderate |
-| USD below 50% of reserves by 2030 | **Realistic Possibility (25–50%)** | Moderate |
+| Erosion rate accelerating (masked by measurement lag and gold substitution) | **Realistic Possibility (25–50%)** | Moderate — downgraded from Likely (Round 5) pending data on lag effects |
+| USD below 50% of reserves by 2030 | **Unlikely (15–25%)** | Moderate — downgraded from Realistic Possibility (Round 5) based on exchange-rate-adjusted pace |
 | Privilege consumed by the act of exercising it | **Highly Likely (65–90%)** | High |
+| Confidence variable (Part 2) could compress the timeline significantly | **Likely (50–65%)** | Moderate |
 
-### 2.2 The Privilege Consumption Mechanism
+### 3.2 The Privilege Consumption Mechanism
 
 **Finding:** Each rate cut, each borrowing binge, each deficit ignored draws down the finite credibility that makes the privilege function. Unlike gold, credibility does not replenish.
 
@@ -130,33 +223,41 @@ The assessment was developed through iterative adversarial dialogue. Initial pos
 
 **Key insight:** The privilege is consumed by exercising it. Every dollar borrowed is a withdrawal from a finite credibility account that cannot be replenished under current governance.
 
-### 2.3 The 5% Yield Kill Zone
+### 3.3 The 5% Yield Kill Zone — Corrected Mechanism (Round 5)
 
-**Finding:** The bond market "thermostat" that supposedly stabilises the doom loop actually kills the patient.
+**Finding:** The bond market "thermostat" that supposedly stabilises the doom loop actually kills the patient. However, the mechanism operates through rolling maturity dynamics, not instantaneous repricing.
 
-**Challenge (Round 2, Attack 8):** Rising yields attract capital. A 10-year Treasury at 6% would draw enormous buying from global yield-seekers. Even Greek bonds at 35% found buyers. The doom loop has a built-in stabiliser.
+**Corrected mechanism (Round 5):** The existing US debt stock does not reprice overnight. Much of it is locked in at lower rates on multi-year maturities. However, the US must roll over approximately $7–9 trillion in maturing debt annually plus fund the new deficit (approximately $1.9 trillion in FY2026). Every new issue prices at whatever yield the market demands at that moment. If confidence deteriorates, the blended rate on the total stock rises not because existing bonds reprice but because each new tranche carries a higher risk premium.
 
-**Counter (devastating):** The US cannot survive the yield level that clears the market.
+**The trajectory under different new-issue yield scenarios:**
 
-| Yield | Annual Interest on $38.56T | Context |
-|-------|---------------------------|---------|
-| 3.35% (current) | ~$950B | Approaching defence budget |
-| 5% | ~$1.9T | Half of all federal revenue |
-| 6% | ~$2.3T | Exceeds total income tax revenue |
-| 10% | ~$3.8T | Exceeds total federal revenue |
+| Average new-issue yield | Blended rate in 3 years | Blended rate in 5 years | Blended rate in 8 years | Annual interest at 8-year blended |
+|------------------------|------------------------|------------------------|------------------------|----------------------------------|
+| 4.0% (current approx.) | ~3.5% | ~3.7% | ~3.9% | ~$1.7T |
+| 4.5% | ~3.7% | ~4.0% | ~4.3% | ~$1.9T |
+| 5.0% | ~3.9% | ~4.3% | ~4.7% | ~$2.1T |
+| 5.5% | ~4.1% | ~4.5% | ~5.0% | ~$2.2T |
+| 6.0% | ~4.3% | ~4.8% | ~5.4% | ~$2.4T |
 
-At 5%, the government cannot function. At 6%, it's insolvent. The "thermostat" that clears the bond market is a temperature that kills the patient. This is arithmetic, not opinion.
+*Estimates assume debt stock growing at approximately $2.3T/year and average maturity of approximately 6 years. Figures are illustrative of trajectory, not precise forecasts.*
 
-**The doom loop doesn't need to run to infinity. It just needs to run to 5%.**
+**This is actually more dangerous than the instantaneous repricing the v5 document implied,** because:
+- It is harder to identify a discrete crisis point — the tightening is gradual
+- It narrows fiscal room without ever triggering the acute event that might force corrective action
+- The confidence spiral operates here: higher new-issue yields signal reduced confidence, which drives further reallocation, which reduces demand, which pushes new-issue yields higher
+- At a blended 5%, interest payments reach approximately $2.1 trillion — consuming approximately half of projected federal revenues
+- There is very little fiscal room between "manageable" and "insolvent" once the blended rate passes approximately 4.5%
 
 **Assessment:**
 
 | Finding | Probability | Confidence |
 |---------|-------------|------------|
-| 5% yield = effective US insolvency | **Almost Certain (>90%)** | Arithmetic certainty |
+| Blended 5% yield = effective US insolvency | **Almost Certain (>90%)** | Arithmetic certainty |
+| Kill zone arrives via rolling maturities over 5–8 years at elevated new-issue yields | **Highly Likely (65–90%)** | High |
 | Bond market thermostat saves the system | **Remote (<5%)** | Disproven by arithmetic |
+| Confidence variable (Part 2) determines new-issue yield trajectory | **Almost Certain (>90%)** | High |
 
-### 2.4 Alternative Systems Maturing
+### 3.4 Alternative Systems Maturing
 
 **Finding:** The "nowhere else to go" circuit-breaker for dollar dominance is rusting as alternatives mature across multiple domains.
 
@@ -164,20 +265,17 @@ At 5%, the government cannot function. At 6%, it's insolvent. The "thermostat" t
 
 | System | Domain | Status | Scale |
 |--------|--------|--------|-------|
-| **Wero** | European payments | Live, 47M users, expanding to 130M across 13 countries by 2027. NFC/POS in 2026. | Targeting 20% of €7T European Visa/MC volume by 2030 |
-| **CIPS** | Chinese cross-border settlement | Operational | Growing yuan trade settlement |
+| **Wero** | European payments | Live, 47M users (EPI, Feb 2026). EuroPA-EPI cooperation targets 130M users across 13 countries by 2027 via interoperability hub. NFC/POS in 2026. | Analysts estimate potential capture of 20% of €7T European Visa/MC volume by 2030 (not an official EPI target) |
+| **CIPS** | Chinese cross-border settlement | Operational. Significant proportion still uses SWIFT messaging rails. | Growing yuan trade settlement |
 | **BRICS bilateral agreements** | Trade settlement | Active, oil traded in yuan | Multiple bilateral pairs |
 | **JEF** | Military/security alliance | UK-led, 10 nations, fully operational | Reduces security justification for dollar holdings |
 | **European defence cooperation** | Strategic autonomy | Accelerating (Germany, France, Nordics, UK to 3% GDP) | Norfolk command under British admiral |
 | **Digital Euro** | Central bank digital currency | In development by ECB | Complements Wero |
-
-**Key quote from ECB President Lagarde:** Europe needs its own digital payment system "urgently," warning that virtually all European card and mobile payments run through non-European infrastructure.
-
-**Key insight from analysis:** "Europe is not declaring independence from American finance. It is preparing for a world where trust cannot be assumed indefinitely. Infrastructure reflects confidence. When confidence erodes, redundancy follows."
+| **mBridge** | Multi-CBDC settlement | BIS-backed, linking China, Thailand, UAE, Hong Kong, Saudi Arabia | Experimental but participant list includes world's largest energy exporters |
 
 **Challenge (Round 3, Attack 16):** US technology moat means even countries building alternatives are functionally dependent on US technology stacks (cloud, semiconductors, operating systems).
 
-**Counter:** The technology moat IS the AI bubble. Microsoft, Google, Amazon cloud are the same companies in the circular revenue loop. If the bubble pops, the moat drains. Additionally: ASML (Dutch/JEF nation) controls lithography — the actual moat is European, not American. EU legislation (DGA, DSA, AI Act) deliberately creating regulatory friction for US tech. Linux adoption accelerating. The dependency is real but diminishing and is itself a vulnerability (shared pain when the bubble pops) not a strength.
+**Counter:** The technology moat is real but diminishing. ASML (Dutch/JEF nation) controls lithography — the actual semiconductor moat is European, not American. EU legislation (DGA, DSA, AI Act) is deliberately creating regulatory friction for US tech. The dependency creates shared pain during any transition, which is why US decline drags others down. But it does not prevent the construction of alternative financial infrastructure, which operates at a different layer.
 
 **Assessment:**
 
@@ -186,114 +284,124 @@ At 5%, the government cannot function. At 6%, it's insolvent. The "thermostat" t
 | Alternative systems capture >20% of currently US-intermediated transactions by 2030 | **Realistic Possibility (25–50%)** | Moderate |
 | "Flight to dollar" during next crisis weaker than 2008/2020 | **Likely (50–65%)** | Moderate |
 | Trump's policies accelerate international collaboration away from US | **Highly Likely (65–90%)** | High |
-| US technology dependency provides temporary leverage but IS the AI bubble | **Likely (50–65%)** | Moderate |
 
 ---
 
-## PART 3: THE AI BUBBLE
+## PART 4: MARKET CONCENTRATION AND AI VALUATION RISK
 
-### 3.1 The Circular Revenue Loop
+*This section was substantially rewritten in v6 following Round 5 adversarial review, which identified that the circular revenue framing overstated the case by treating the entire Magnificent Seven market capitalisation as though it rested on circular AI investment, when a substantial majority of revenue derives from legitimate enterprise activity. The vulnerability is real but the mechanism is concentration risk and revenue amplification, not circular fraud.*
 
-**Finding:** The S&P 500 is substantially inflated by circular revenue flows between a small number of AI companies. The same dollars pass between entities and are recorded as "revenue" on multiple balance sheets simultaneously.
+### 4.1 Historically Extreme Market Concentration
+
+**Finding:** The S&P 500 exhibits the most extreme concentration in its modern history, creating systemic fragility regardless of whether the underlying companies are profitable.
+
+**Data (verified Round 5):**
+- The Magnificent Seven represent approximately 32.6% of the S&P 500 as of February 2026 (down from approximately 34.3% in December 2025)
+- The top 10 companies account for approximately 41% of total index weight — more than double the level of 10 years ago and well above the 27% peak during the 1999–2000 tech bubble
+- The cap-weighted S&P 500 outperformed its equal-weight counterpart by the widest margin over any three-year period since 1971
+- In 2022, when the S&P 500 dropped 20.4%, the Magnificent Seven fell 41.3% — demonstrating amplified downside in corrections
+- In early 2026, a rotation is underway: the Mag 7 is down approximately 6.3% YTD while the equal-weight S&P 500 (RSP) is up approximately 7.0%
+
+**The concentration creates fragility because:**
+- Index funds mechanically allocate to these names as market caps inflate, creating a self-reinforcing feedback loop on the way up — and the reverse on the way down
+- A correction in just 7–10 names drags the entire index due to cap-weighting
+- Portfolio allocation across the global financial system is benchmarked to the S&P 500, meaning the concentration risk is embedded in pension funds, sovereign wealth funds and institutional portfolios worldwide
+
+**However (Round 5 correction):** The current concentration differs from the 1999–2000 tech bubble in one important respect: the top 10 companies account for approximately 32% of index earnings (versus below 20% at the peak of the tech bubble). The elevated market capitalisation reflects genuine earnings power, not pure speculation. P/E ratios for the top 10 are approximately 31x versus 21x for the rest of the index — a premium of approximately 50%, compared to over 100% in 2000. This means a correction would likely be a repricing to more normal valuation multiples rather than a collapse of fundamentally unsound companies.
+
+### 4.2 AI Revenue Amplification
+
+**Finding:** A significant and growing component of Magnificent Seven revenue is derived from reciprocal investment and purchase commitments between AI infrastructure participants. This creates a revenue amplification effect where the same capital generates multiple revenue entries across counterparties.
 
 **The traced circuit (all figures from public filings and reporting):**
 
-1. **Microsoft** invests $13B+ in OpenAI. Holds ~27% stake valued at ~$135B.
-2. **OpenAI** contracted to purchase $250B of Azure services from Microsoft. (Source: OpenAI/Microsoft joint announcement, October 2025)
-3. **Microsoft** receives 20% of OpenAI's revenue. Microsoft also pays 20% of Azure OpenAI Service revenue back to OpenAI. Revenue sharing in both directions. (Source: leaked documents reported by TechCrunch/Where's Your Ed At)
-4. **Nvidia** invests $100B in OpenAI for non-voting shares. OpenAI commits to spending on Nvidia chips across 10+ GW of data centres. (Source: Tomasz Tunguz analysis of public commitments)
-5. **AMD** provides OpenAI warrants for 160M shares at $0.01/share. In exchange, OpenAI commits to $90B in AMD GPU purchases. (Source: public announcement) AMD is literally paying OpenAI in equity to become a customer.
-6. **Microsoft** spends ~$25B/quarter on GPUs/CPUs for Azure to host OpenAI. Two-thirds of $37.5B quarterly capex. (Source: Microsoft Q2 FY2026 earnings)
-7. **Microsoft** books $7.6B after-tax gain from OpenAI recapitalisation. Reported as earnings. (Source: Microsoft Q2 FY2026 earnings)
-8. **OpenAI** inference costs ($12.43B through Q3 CY2025) exceed revenue. Cash-flow negative. (Source: leaked documents, Where's Your Ed At)
-9. **Index funds** mechanically buy more of all these companies as market caps inflate, creating self-reinforcing feedback loop.
+1. **Microsoft** invests $13.75B in OpenAI. Following October 2025 recapitalisation, holds approximately 27% stake valued at approximately $130B (Microsoft official blog, 28 Oct 2025).
+2. **OpenAI** contracted to purchase $250B of Azure services from Microsoft.
+3. **Microsoft** receives 20% of OpenAI's revenue. Microsoft also pays 20% of Azure OpenAI Service revenue back to OpenAI. Revenue sharing in both directions.
+4. **Nvidia** announced a $100B MoU for non-voting shares in OpenAI (Sep 2025). As of Feb 2026, no contract has been signed and the deal is reported on ice (WSJ, 30 Jan 2026; CNBC, 3 Feb 2026). OpenAI commits to spending on Nvidia chips across 10+ GW of data centres.
+5. **AMD** provides OpenAI warrants for 160M shares at $0.01/share. In exchange, OpenAI commits to $90B in AMD GPU purchases (AMD 8-K filing, 6 Oct 2025). Only the first 1 GW deployment is contractually binding; remaining milestones are contingent. AMD is literally paying OpenAI in equity to become a customer.
+6. **Microsoft** spends approximately $24B/quarter on capital expenditure, a significant majority on GPU/CPU infrastructure for Azure to host AI workloads.
+7. **Microsoft** books $7.6B after-tax gain from OpenAI recapitalisation in FY26 Q2. Reported as earnings.
+8. **Index funds** mechanically buy more of all these companies as market caps inflate, creating self-reinforcing feedback loop.
 
-**The loop extends beyond the Microsoft/OpenAI/Nvidia triangle (Round 4, Attack 6).** The wider circuit includes all major AI capex spenders: Google (~$75B/year AI infrastructure), Amazon (~$100B/year AWS infrastructure, $4B invested in Anthropic), Meta (~$40B/year AI infrastructure), Oracle (building AI cloud to host the same models), and Tesla (AI valuation dependent on the same GPU infrastructure and narrative). Nvidia's revenue being "diversified across multiple buyers" is actually diversified across multiple participants in the same bubble — concentration dressed as diversification. Every buyer is making the same bet.
+**The loop extends beyond the Microsoft/OpenAI/Nvidia triangle.** The wider circuit includes all major AI capex spenders: Google (approximately $75B/year AI infrastructure), Amazon (approximately $100B/year AWS infrastructure, $4B invested in Anthropic), Meta (approximately $40B/year AI infrastructure), Oracle (building AI cloud to host the same models). Every buyer is making the same bet. Nvidia's revenue being "diversified across multiple buyers" is diversified across multiple participants in the same investment cycle — concentration dressed as diversification.
 
-**The self-consuming market:** AI companies need enterprise customers paying subscription fees. Enterprise customers pay from revenue generated by employees. AI eliminates the employees. Revenue falls. Subscriptions get cut. The product destroys its own market. This is a self-consuming loop operating on top of the circular revenue loop.
+**However (Round 5 correction):** The circular AI component is layered on top of substantial legitimate enterprise revenue. Azure surpassed $75 billion in revenue for FY2025. Microsoft reported that in multiple quarters, "the majority of our outperformance versus where we had expected to be was on the non-AI piece of the business." Nestle migrated 200 SAP instances and 10,000+ servers to Azure. Azure non-AI growth was approximately 20+ percentage points of the total 33–39% growth rate. Nvidia sells into automotive, gaming, scientific computing. Apple's revenue is overwhelmingly hardware and services to hundreds of millions of consumers.
+
+**The correct framing:** The Magnificent Seven are not built on circular AI investment. They are profitable companies with real enterprise revenue, onto which a significant AI revenue amplification layer has been added. A loss of confidence in AI return on investment would produce a correction substantially larger than the AI component alone, because the amplified revenue disappears while the valuation premium it created is priced into the entire stock. The legitimate enterprise business provides a floor — but the floor is substantially below current valuations.
+
+### 4.3 The Self-Consuming Market Dynamic
+
+AI companies need enterprise customers paying subscription fees. Enterprise customers pay from revenue generated by employees. AI eliminates the employees. Revenue falls. Subscriptions get cut. The product destroys its own market.
 
 **The self-consumption operates in two phases:**
 
-**Phase 1: AI as productivity tool (now to ~2028-2030).** Individual firms gain competitive advantage by deploying AI. They cut staff, maintain output, increase margins. AI subscription revenue grows because each adopter sees ROI. The loop appears to work. This is the current phase, and it masks the structural problem.
+**Phase 1: AI as productivity tool (now to approximately 2028–2030).** Individual firms gain competitive advantage by deploying AI. They cut staff, maintain output, increase margins. AI subscription revenue grows because each adopter sees ROI. The loop appears to work. This is the current phase, and it masks the structural problem.
 
-**Phase 2: AI as universal commodity (2028-2030+).** Every firm has AI. The competitive advantage disappears (it becomes table stakes). Margins compress back to pre-AI levels because competitors have the same tool. But the headcount is gone. Across the economy: fewer workers → less income tax → less consumer spending → less enterprise revenue → pressure to cut costs → more AI deployment → fewer workers. The AI subscription revenue that funds the Magnificent Seven comes from enterprises whose revenue ultimately depends on consumers who are being eliminated as earners by the same AI.
+**Phase 2: AI as universal commodity (2028–2030+).** Every firm has AI. The competitive advantage disappears (it becomes table stakes). Margins compress back to pre-AI levels because competitors have the same tool. But the headcount is gone. Across the economy: fewer workers → less income tax → less consumer spending → less enterprise revenue → pressure to cut costs → more AI deployment → fewer workers.
 
-**Two mechanisms prevent the manufacturing automation escape valve from operating:**
+**Two mechanisms limit the "cheaper product expands the market" escape valve:**
 
-1. **Demand elasticity ceiling.** Manufacturing automation produced cheaper *goods*; people bought more stuff. AI automation produces cheaper *services*. Services consumption has natural ceilings: you do not need twice as many legal opinions, medical diagnoses or financial audits because they cost less. The "cheaper product expands the market" escape valve is weaker for cognitive services than for physical goods.
+1. **Demand elasticity ceiling.** Manufacturing automation produced cheaper *goods*; people bought more stuff. AI automation produces cheaper *services*. Services consumption has natural ceilings: you do not need twice as many legal opinions, medical diagnoses or financial audits because they cost less.
 
-2. **Income concentration.** Manufacturing productivity gains were distributed across thousands of firms and millions of workers. AI productivity gains concentrate in the Magnificent Seven (who provide the AI) and the shareholders of deploying firms. The marginal propensity to consume for shareholders is lower than for displaced workers. Aggregate demand falls even without aggregate income falling, because spending shifts from high-MPC workers to low-MPC capital owners.
+2. **Income concentration.** Manufacturing productivity gains were distributed across thousands of firms and millions of workers. AI productivity gains concentrate in the firms providing the AI and the shareholders of deploying firms. The marginal propensity to consume for shareholders is lower than for displaced workers. Aggregate demand falls even without aggregate income falling.
 
-**The self-consuming loop operates on a 3-5 year lag** from initial deployment to demand destruction. Phase 1 masks it. Phase 2 reveals it. The AI companies are currently booking revenue from enterprises that have not yet felt the aggregate demand effects of widespread adoption. By the time Phase 2 becomes visible, the capex has been sunk and the circular revenue loop has no external revenue to sustain it.
+**Challenge (Round 4, Attack 3):** The two-axis cognitive/routine framework is too reductive. Accountability (someone must be liable), legitimacy (judicial authority requires human agency) and physical presence with social context (therapy, teaching, care) represent dimensions the framework doesn't capture. These could sustain 15–20% of the workforce in structurally resistant roles.
 
-**Concentration data:** Magnificent Seven = 37% of S&P 500 ($62T total). Highest sustained concentration in 145 years of data. Historical average for top 10: 24% (1880-2010). Current top 10: 38%.
-
-**Real-time demonstration:** On February 13, 2026, a 2.2% decline in Nvidia single-handedly erased gains across dozens of sectors, dragging the cap-weighted S&P 500 into the red despite stable performance from the average company.
+**Counter and partial concession (Round 5):** These are real constraints on *deployment* that may sustain more employment than the pure capability analysis suggests. The "no fifth quadrant" argument overstates certainty — new categories of economic value have emerged repeatedly in human history in ways invisible from within prior frameworks. The burden of proof argument ("prove a fifth quadrant exists") is rhetorically effective but not how economic history works. Nobody has ever successfully predicted the specific new forms of economic activity that emerge from technological disruption. **The timeline and magnitude of displacement are genuinely uncertain.** The directional trend (AI displacing cognitive workers at a pace faster than previous automation waves) is well-supported. The claim of 20–30% unemployment by 2030 is speculative.
 
 **Assessment:**
 
 | Finding | Probability | Confidence |
 |---------|-------------|------------|
-| AI capex is substantively circular | **Almost Certain (>90%)** | High — contracts traceable |
-| OpenAI is cash-flow negative on operations | **Highly Likely (65–90%)** | High — leaked documents |
-| S&P 500 overstates US corporate health | **Almost Certain (>90%)** | High — equal-weight divergence |
-| Magnificent Seven represent historically extreme concentration risk | **Highly Likely (65–90%)** | High — 145 years of data |
-| AI deployment destroys its own revenue base (Phase 2, 3-5 year lag) | **Likely (50–65%)** | Moderate — mechanism clear, timing uncertain |
-| Break in loop triggers cascading revaluation | **Likely (50–65%)** | Moderate |
+| AI capex includes substantial reciprocal revenue amplification | **Highly Likely (65–90%)** | High — contracts traceable |
+| S&P 500 overstates broad US corporate health due to concentration | **Almost Certain (>90%)** | High — equal-weight divergence |
+| Magnificent Seven represent historically extreme concentration risk | **Highly Likely (65–90%)** | High — verified against 145 years of data |
+| AI revenue amplification component creates disproportionate correction risk | **Likely (50–65%)** | Moderate |
+| Legitimate enterprise revenue provides a floor below current valuations | **Highly Likely (65–90%)** | High — Azure $75B+ verified |
+| AI deployment destroys its own revenue base (Phase 2, timing uncertain) | **Realistic Possibility (25–50%)** | Moderate — downgraded from Likely (Round 5), mechanism clear but timeline and magnitude uncertain |
+| Break in AI investment cycle triggers cascading revaluation | **Realistic Possibility (25–50%)** | Moderate — downgraded from Likely (Round 5) due to legitimate revenue floor |
 
-### 3.2 The Reflexivity Discovery
+### 4.4 The Reflexivity Question
 
-**Finding:** The S&P 500 crash and dollar crisis are not independent events — they are the same event viewed from different angles.
-
-**Initial position (v2):** Treated equity crash and dollar decline as requiring independent triggers. Probability of simultaneous occurrence rated Unlikely (15-25%).
-
-**Challenge to initial position:** In 2022, S&P dropped 20% and dollar strengthened. In 2008, S&P dropped 57% and dollar strengthened. Historical precedent contradicts reflexivity.
-
-**Counter to challenge:** 2008 and 2022 were periods when no alternatives to the dollar existed at scale. No Wero, no mature CIPS, no BRICS settlement, no JEF. The flight-to-safety worked because there was nowhere else to go. In 2026, alternatives exist (even if immature). The conditions that caused previous flight-to-safety are precisely the conditions that are eroding. The question isn't "has the dollar strengthened during past crises" but "have the conditions been replicated."
+**Finding:** The S&P 500 crash and dollar crisis may be reflexively coupled — but this has never been tested in current conditions and historical precedent is mixed.
 
 **The reflexive mechanism:**
 1. Foreign investors buy US equities → must buy dollars → dollar strengthens
-2. 37% of S&P is AI loop → the loop IS the dollar confidence mechanism
-3. AI loop breaks → S&P drops 30-40%
-4. Foreign investors must sell equities AND convert back to home currency
+2. Significant share of S&P is AI-premium valuation → the premium IS part of the dollar confidence mechanism
+3. AI investment cycle breaks → S&P corrects substantially
+4. Foreign investors sell equities AND convert back to home currency
 5. Equity selling and dollar selling are the SAME TRANSACTION through the SAME EXIT
 6. Dollar weakens → remaining foreign holders see further losses → more selling → reflexive spiral
 
-**The S&P 500 is the marketing material for dollar hegemony.** It's the proof that "America is where the growth is." Remove the proof and you remove the case for holding the currency.
+**Challenge (Round 1, Round 5):** In 2022, S&P dropped 20% and dollar strengthened. In 2008, S&P dropped 57% and dollar strengthened. Historical precedent contradicts reflexivity.
 
-**Challenge (Round 2, Attack 2):** Reflexivity is plausible but unproven. No historical precedent in current conditions.
+**Counter:** 2008 and 2022 occurred when no alternatives to the dollar existed at scale and US institutional credibility was intact. In 2026, alternatives exist (even if immature) and institutional credibility is under active assault (Part 2). The conditions that caused previous flight-to-safety are precisely the conditions that are eroding.
 
-**Concession:** The coupling was downgraded from Highly Likely to **Likely (50–65%)**. Structurally supported and logically sound but genuinely novel — never tested in real conditions. This is the assessment's key uncertainty.
+**Concession (Round 1):** The coupling was downgraded from Highly Likely to **Likely (50–65%)**. Structurally supported and logically sound but genuinely novel — never tested in real conditions. This is the assessment's key uncertainty.
+
+**Further concession (Round 5):** Hedging infrastructure, settlement lags and central bank intervention capacity would slow the reflexive exit even if it triggered. The crisis shape is more likely "grinding-fast" (3–6 months) than instantaneous. Speed governors exist but degrade under crisis conditions.
 
 **Assessment:**
 
 | Finding | Probability | Confidence |
 |---------|-------------|------------|
-| S&P crash and dollar decline are reflexively coupled | **Likely (50–65%)** | Moderate — untested but structurally sound |
-| AI bubble pop triggers dollar crisis, not just equity crisis | **Likely (50–65%)** | Moderate |
+| S&P correction and dollar decline are reflexively coupled | **Likely (50–65%)** | Moderate — untested but structurally sound |
 | Foreign equity exit creates self-reinforcing dollar weakness | **Likely (50–65%)** | Moderate |
 
 ---
 
-## PART 4: THE TRUMP/WARSH MONETARY ACCELERATION
+## PART 5: THE TRUMP/WARSH MONETARY ACCELERATION
 
-### 4.1 Warsh Will Cut Rates
+### 5.1 Warsh Will Cut Rates
 
 **Finding:** Kevin Warsh, once confirmed as Fed Chair, will cut rates rapidly — within weeks of taking the chair. The cuts are campaign strategy, not monetary policy.
 
 **Evidence:**
 - Trump nominated Warsh January 30, 2026. Powell's term expires May 2026.
 - Warsh historically hawkish but has pre-positioned intellectual cover: "AI productivity is disinflationary, therefore cuts are justified regardless of headline inflation."
-- Trump needs consumer sentiment boost before November 2026 midterms. 3-6 month lag between rate cut and sentiment improvement requires cuts by May-June.
-- DOJ threat architecture established: investigation of Powell demonstrates willingness to use legal pressure against Fed chairs. Treasury Secretary Bessent, asked if Warsh would be sued for not cutting rates, replied "That is up to the President."
-
-**Initial position:** Warsh cuts at least once in H2 2026 — Realistic Possibility (25-50%).
-
-**Challenge:** Why pick Warsh if Trump wants a puppet? Warsh is historically hawkish.
-
-**Counter:** Trump doesn't need a puppet inside the Fed. He's built an external enforcement mechanism (DOJ probes). Warsh doesn't need to be a dove by instinct — he needs to understand the implicit threat. He does. His "AI productivity" framework is the pre-written justification, not analysis.
-
-**Revision path:** Realistic Possibility → Likely → Highly Likely (for cutting within weeks of confirmation).
+- Trump needs consumer sentiment boost before November 2026 midterms. 3–6 month lag between rate cut and sentiment improvement requires cuts by May–June.
+- DOJ threat architecture established: investigation of Powell demonstrates willingness to use legal pressure against Fed chairs.
 
 **Assessment:**
 
@@ -305,17 +413,13 @@ At 5%, the government cannot function. At 6%, it's insolvent. The "thermostat" t
 | Rate cuts primarily politically motivated | **Highly Likely (65–90%)** | High |
 | Rate cuts accelerate dollar weakness | **Highly Likely (65–90%)** | High |
 
-### 4.2 Rate Cuts → Borrowing Acceleration
+### 5.2 Rate Cuts → Borrowing Acceleration
 
 **Finding:** Rate cuts will cause Trump to borrow more, not reduce the deficit. This is the ratchet mechanism.
 
 **Mechanism:** Lower rates → Trump borrows more (developer psychology: cheaper debt = more leverage) → deficit widens → more issuance → more supply with declining foreign demand → yields rise or Fed absorbs → either outcome damages credibility.
 
-**Historical pattern:** Every administration since Reagan has responded to lower borrowing costs by borrowing more, not by reducing the deficit. The "reserve always sells" assumption enables this. The behaviour is structural, not personal to Trump, though Trump's property developer psychology amplifies it.
-
 **Key distinction:** Trump's borrowing is predominantly unproductive. OBBBA: $5.9T costs against $2.5T offsets. Tax cuts for high earners (low marginal propensity to consume), ICE funding ($75B), military spending. None generates GDP growth proportionate to borrowing cost. Each cycle (borrow → service → borrow more) increases the debt stock, making future interest burdens larger at any given rate.
-
-**The ratchet only turns one way:** Rates drop → borrow more → rates rise → interest explodes on larger base → need to cut rates again → borrow more → repeat. Each cycle the debt is larger.
 
 **Assessment:**
 
@@ -324,101 +428,69 @@ At 5%, the government cannot function. At 6%, it's insolvent. The "thermostat" t
 | Trump increases borrowing in response to cuts | **Almost Certain (>90%)** | High |
 | Borrowing is predominantly unproductive | **Highly Likely (65–90%)** | High |
 | Cut → borrow → issuance → monetisation loop within 18 months | **Likely (50–65%)** | Moderate |
-| Fed completes full QT cycle (sells holdings) | **Remote (<5%)** | High (never accomplished since 2008) |
 
-### 4.3 Timeline
-
-| Period | Event | Probability |
-|--------|-------|-------------|
-| Feb–Mar 2026 | FOMC holds. Warsh blocked. Nvidia earnings (Feb 25). COMEX March delivery stress. | Almost Certain (hold) |
-| Apr–May 2026 | Warsh confirmation battle. Powell exits. Possible Fed governance vacuum. | Realistic Possibility (confirmation) |
-| May–Jun 2026 | First Warsh cut (25 bps). Trump pivots to borrowing. | Highly Likely (if confirmed) |
-| Jun–Sep 2026 | Two more cuts (total 75 bps). Foreign demand deteriorates. Dollar weakens. | Likely |
-| Oct–Dec 2026 | Fed trapped (see below). No viable move on the board. | Highly Likely |
-| Q1–Q2 2027 | Fed resumes net purchases ("technical adjustments"). Soft monetisation. | Likely |
-| 2027–2028 | "Suez moment" window opens. | Realistic Possibility |
-
-### 4.4 The Complete Fed Trap (Round 4, Attack 5)
+### 5.3 The Complete Fed Trap (Round 4, Attack 5)
 
 **Finding:** The Fed's intervention toolkit is structurally self-defeating for a reserve currency confidence crisis. Every available tool destroys the thing it is trying to protect.
 
-Round 4 tested whether Fed improvisation (as demonstrated in 2008 and 2020) could extend the timeline. The conclusion: the Fed can manage domestic liquidity crises unilaterally, but a dollar confidence crisis is a fundamentally different problem.
-
 | Tool | Mechanism | Effect on Dollar Confidence |
 |------|-----------|---------------------------|
-| Capital controls (IEEPA) | Freeze foreign liquidation of US assets | Destroys confidence instantly. Reserve currency's value proposition is free convertibility. Restricting it announces it's no longer safe. |
-| Yield curve control | Cap Treasury yields by buying unlimited quantities | Destroys confidence over months. Admits the government can't sell bonds at market rates. Japan can do this because the yen isn't the reserve currency. |
-| Emergency rate hikes | Raise rates to attract capital | Triggers the 5% yield kill zone. $38.56T at 5% = $1.9T interest = half federal revenue. |
-| Swap lines (offered) | Unlimited dollars to foreign central banks | Requires foreign central banks to cooperate. Trump has systematically destroyed the goodwill that enables coordination. Tariffs, NATO threats, sovereignty insults. Central banks coordinate on mutual interest, not goodwill, but mutual interest now favours *managed* de-dollarisation, not dollar defence. |
-| Coordinated intervention (G7) | Allied central banks buy dollars | Participating nations import US inflation, weaken own currencies, face domestic political backlash. Intervention holds for 6-12 months before participants break ranks. Dollar decline resumes from worse position because intervention capacity is exhausted. |
-| Coerced cooperation | Threaten consequences for non-participation | Every nation publicly complies while privately accelerating alternatives. Coercion is the single most effective possible accelerant for global de-dollarisation. |
+| Capital controls (IEEPA) | Freeze foreign liquidation of US assets | Destroys confidence instantly. Reserve currency's value proposition is free convertibility. |
+| Yield curve control | Cap Treasury yields by buying unlimited quantities | Admits the government can't sell bonds at market rates. Japan can do this because the yen isn't the reserve currency. |
+| Emergency rate hikes | Raise rates to attract capital | Triggers the 5% yield kill zone via rolling maturity mechanism (Part 3.3). |
+| Swap lines (offered) | Unlimited dollars to foreign central banks | Requires foreign central banks to cooperate. Trump has systematically destroyed the goodwill that enables coordination. |
+| Coordinated intervention (G7) | Allied central banks buy dollars | Requires the allied trust destroyed by Part 2. Intervention holds for 6–12 months before participants break ranks. |
+| Coerced cooperation | Threaten consequences for non-participation | Every nation publicly complies while privately accelerating alternatives. Coercion is the single most effective accelerant for de-dollarisation. |
 | Do nothing | Let the crisis run | Crisis runs. |
 
-**Key insight:** Using the tools confirms the thesis. Not using them allows the thesis to play out. The "can't raise, can't cut, can't hold" trap from the original assessment extends to "can't intervene" — a complete closure of the decision space.
-
-**Even if cooperation is obtained,** it delays by 12-18 months at enormous cost to participants, after which the crisis resumes from a worse position (intervention capacity exhausted, credibility further damaged, underlying debt +$2.3T larger). The controls hold things in limbo until they end, then the descent steepens.
+**Key insight:** Using the tools confirms the thesis. Not using them allows the thesis to play out. The decision space is closed.
 
 ---
 
-## PART 5: FIVE CRISIS PATHWAYS — COUPLED ARCHITECTURE
+## PART 6: FIVE CRISIS PATHWAYS — COUPLED ARCHITECTURE
 
-### 5.1 Coupling Discovery
-
-**Initial approach (v2):** Five independent pathways, compound probability calculated using independence assumption.
-
-**Problem identified (Round 2, Attack 10):** Independence assumption invalid for coupled events. The maths was wrong.
-
-**Resolution (v3):** Three of five pathways are aspects of the same systemic event:
+### 6.1 Coupling Discovery
 
 **Cluster A (Reflexively Coupled):**
 - Pathway 1: Trump/Warsh monetary acceleration
-- Pathway 2: AI bubble collapse
+- Pathway 2: AI investment cycle correction / market concentration repricing
 - Pathway 4: Fund divestment cascade
 
-These trigger together because: AI loop inflates S&P → inflates dollar → attracts foreign capital → inflates S&P. Rate cuts weaken dollar → weaken equity case → trigger fund exit → weaken dollar. Any entry point triggers the full cascade.
+These trigger together because: AI premium inflates S&P → inflates dollar → attracts foreign capital → inflates S&P. Rate cuts weaken dollar → weaken equity case → trigger fund exit → weaken dollar. Any entry point triggers the full cascade.
 
 **Cluster B (Semi-Independent, can trigger Cluster A):**
 - Pathway 3: ICE escalation / civil unrest / Insurrection Act
 - Pathway 5: Greenland annexation
 
-### 5.2 Pathway Details
+### 6.2 Pathway Details
 
 #### Pathway 1: Trump/Warsh Monetary Acceleration
-(See Part 4 above for full detail)
+(See Part 5 above for full detail)
 
-**Summary:** Warsh cuts → Trump borrows → issuance floods → foreign demand insufficient → Fed absorbs → monetisation → dollar weakens → doom loop.
-
-#### Pathway 2: AI/Tech Bubble Collapse
+#### Pathway 2: AI Investment Cycle / Market Concentration Correction
 
 **Trigger candidates:**
-- Nvidia Q4 earnings miss or weak guidance (25 February 2026)
-- Big Tech signals AI capex reduction
-- Enterprise AI adoption fails to generate measurable returns
+- Big Tech signals AI capex reduction or write-downs
+- Enterprise AI adoption fails to generate measurable returns at scale
 - Tariffs impact semiconductor supply chains
+- Normal valuation mean-reversion after record concentration
 
-**Consequence chain:** AI loop breaks → S&P drops 30-40% → reflexive dollar decline (same exit) → consumer confidence collapses → recession → Fed forced to ease → accelerates doom loop.
+**Consequence chain:** AI investment cycle cools → revenue amplification layer evaporates → S&P reprices to legitimate enterprise earnings floor (potentially 25–35% below current levels for Mag 7) → reflexive dollar decline (same exit) → consumer confidence weakens → recession → Fed forced to ease → accelerates doom loop.
 
-**Challenge (Round 2, Attack 3):** AI could actually deliver, creating external revenue that validates the loop.
+**Challenge (Round 2, Attack 3):** AI could actually deliver, creating external revenue that validates the investment.
 
-**Counter (devastating):** If AI delivers on productivity promise, it accelerates job displacement (final quadrant of cognition/routine axes). AI working is Pathway 6, not a circuit-breaker. The better the technology works, the faster it destroys employment, the faster civil unrest builds. This "circuit-breaker" was destroyed — it actually reinforces the doom thesis.
+**Counter:** If AI delivers on productivity promise, it enters the self-consuming dynamic (Part 4.3). Phase 1 masks this. Phase 2 reveals it. However (Round 5 concession), the timeline and magnitude of Phase 2 displacement are genuinely uncertain.
 
 | Finding | Probability | Confidence |
 |---------|-------------|------------|
-| S&P >20% correction in 2026 | **Realistic Possibility (25–50%)** | Moderate |
-| Correction triggers simultaneous dollar crisis (reflexive) | **Likely (50–65%)** | Moderate |
-| AI delivering accelerates job displacement, not recovery | **Highly Likely (65–90%)** | High |
+| S&P >20% correction in 2026–2027 | **Realistic Possibility (25–50%)** | Moderate |
+| Correction triggers simultaneous dollar weakness (reflexive) | **Likely (50–65%)** | Moderate |
 
 #### Pathway 3: ICE Escalation / Civil Unrest / Insurrection Act
 
-**Current state:** Two US citizens killed by ICE agents in Minneapolis. ICE funded outside congressional appropriations ($75B OBBBA). Military command staff purged on loyalty basis. SCOTUS 6-3 supermajority enabling executive expansion.
+**Current state:** ICE funded outside congressional appropriations ($75B OBBBA). Military command staff purged on loyalty basis. SCOTUS 6–3 supermajority enabling executive expansion.
 
-**Escalation chain:** ICE enforcement escalates → civilian casualties mount → mass protests → Trump invokes Insurrection Act → federal troops deployed against civilians → blue states resist (CA, MI enact "blue wall") → constitutional crisis → foreign investment flight → Cluster A engages.
-
-**Key finding on institutional capture:** The checks and balances are performing resistance, not executing it. ICE funding outside congressional appropriations circumvents the foundational check (power of the purse). Democrats are complicit — failed to reform during 2021-23 trifecta. Project 2025 / Christian Nationalist agenda advancing through rent extraction model within existing framework.
-
-**Challenge (Round 1):** US institutions are designed with enough friction to resist authoritarian consolidation. Tillis blocking Warsh shows the system working.
-
-**Counter:** Tillis is a procedural delay, not structural reform. ICE is operating outside Congress. Military purged for loyalty. SCOTUS is an enabler not a check. The system is being bypassed, not resisted. "Fascist regime" is a statement of fact based on observable institutional behaviour, not opinion.
+**Escalation chain:** ICE enforcement escalates → civilian casualties mount → mass protests → Trump invokes Insurrection Act → federal troops deployed against civilians → blue states resist → constitutional crisis → foreign investment flight → Cluster A engages.
 
 | Finding | Probability | Confidence |
 |---------|-------------|------------|
@@ -426,186 +498,132 @@ These trigger together because: AI loop inflates S&P → inflates dollar → att
 | Mass civil unrest | **Likely (50–65%)** | Moderate |
 | Trump invokes Insurrection Act | **Realistic Possibility (25–50%)** | Moderate |
 | If invoked, triggers Cluster A via capital flight | **Highly Likely (65–90%)** | High |
-| Blue states enact formal resistance | **Likely (50–65%)** if invoked | Moderate |
 
 #### Pathway 4: Fund Divestment Cascade ("Sell America")
 
 **Mechanism:** A private fund publicly announces US divestment → signals confidence break → copycat behaviour → cascade.
 
-**Why private funds, not central banks:** Central banks move slowly and diplomatically. Private funds (pension, sovereign wealth, institutional) have fiduciary duty to members, not diplomatic obligations. Nordic and Dutch pension funds are particularly relevant:
+**Why private funds, not central banks:** Central banks move slowly and diplomatically. Private funds (pension, sovereign wealth, institutional) have fiduciary duty to members, not diplomatic obligations.
 
-| Fund | Total Assets | Est. US Equity Exposure | ESG Framework | JEF Member |
-|------|-------------|------------------------|---------------|------------|
-| Norway GPFG | ~$1.7T | ~$350-400B | Global benchmark (public exclusion list) | Yes |
-| Dutch ABP | ~$600B | ~$150-180B | Active ESG divestment history | Yes (Netherlands) |
-| Swedish AP funds (combined) | ~$200B | ~$50-60B | Sophisticated, lower diplomatic exposure | Yes |
-| Danish ATP | ~$130B | ~$30-40B | Strong ESG, Greenland sensitivity | Yes |
+| Fund | Total Assets | Est. US Equity Exposure | JEF Member |
+|------|-------------|------------------------|------------|
+| Norway GPFG | ~$1.7T | ~$350–400B | Yes |
+| Dutch ABP | ~$600B | ~$150–180B | Yes (Netherlands) |
+| Swedish AP funds (combined) | ~$200B | ~$50–60B | Yes |
+| Danish ATP | ~$130B | ~$30–40B | Yes |
 
-**The cascade has two stages.** The first move is not a public announcement. It is a quiet rebalancing: a Swedish AP fund reduces US weighting by 5% as part of routine quarterly adjustment, disclosed in reporting, barely makes headlines. Several funds do this simultaneously (fiduciary duty in the same direction, same risk models, same data). The public announcement comes second, after someone (analyst, journalist, competing fund) connects the dots and names the pattern. That naming is the trigger for copycat behaviour. Norway's GPFG is the largest but also the most diplomatically constrained (NATO member, Arctic border with Russia, dependent on US security guarantees). GPFG is more likely to follow than to lead. The Dutch ABP or a Swedish AP fund has lower political cost for early movement.
-
-**Reflexive coupling:** Fund divestment is not independent of Cluster A — it's accelerated by it. Fund managers see both equity AND currency risk simultaneously. Fiduciary duty demands action faster when both legs are moving.
-
-**Additional trigger (Greenland):** If Trump moves on Greenland, it gives every European fund manager the governance justification to divest. Danish funds have direct political motivation. Direct bridge from Pathway 5 into Pathway 4 into Cluster A.
+**The cascade has two stages.** The first move is quiet rebalancing: a Swedish AP fund reduces US weighting by 5% as part of routine quarterly adjustment, disclosed in reporting, barely makes headlines. Several funds do this simultaneously (same fiduciary duty, same risk models, same data). The public announcement comes second, after someone connects the dots and names the pattern. That naming is the trigger for copycat behaviour.
 
 | Finding | Probability | Confidence |
 |---------|-------------|------------|
 | Major fund publicly reduces US exposure within 18 months | **Realistic Possibility (25–50%)** | Moderate |
-| Quiet rebalancing precedes public announcement | **Highly Likely (65–90%)** | High — this is how institutional capital moves |
+| Quiet rebalancing precedes public announcement | **Highly Likely (65–90%)** | High |
 | Nordic/Dutch pension funds most likely first movers | **Likely (50–65%)** | Moderate |
-| Norway GPFG follows rather than leads | **Likely (50–65%)** | Moderate — diplomatic constraints |
 | Copycat behaviour follows public naming | **Highly Likely (65–90%)** if triggered | High |
-| Fund exit accelerated by Cluster A dynamics | **Highly Likely (65–90%)** | High |
 
 #### Pathway 5: Greenland Annexation
 
 **Current state:** Trump has publicly stated intent. Appointed an "ambassador to Greenland."
 
-**Consequence chain:** Formal move → Denmark/EU countermeasures → NATO fracture (Denmark is a founder member; Article 5 cannot coexist with one ally threatening another's territory) → European unity strengthens → JEF activation → alternative system adoption accelerates.
-
 | Finding | Probability | Confidence |
 |---------|-------------|------------|
 | Trump makes formal move | **Realistic Possibility (25–50%)** | Moderate |
 | NATO fracture if attempted | **Likely (50–65%)** | Moderate |
-| Accelerates European independence | **Highly Likely (65–90%)** if attempted | High |
-| Validates "Sell America" for European institutions | **Highly Likely (65–90%)** if attempted | High |
+| Accelerates European independence and validates "Sell America" | **Highly Likely (65–90%)** if attempted | High |
 
-#### Pathway 6: AI Employment Displacement (Identified during adversarial review)
+#### Pathway 6: AI Employment Displacement
 
-**Finding:** AI automation is entering the final quadrant of the cognition/routine axes (non-routine cognitive). Previous automation waves moved workers between quadrants. There is no fifth quadrant.
+**Finding:** AI automation is entering the non-routine cognitive quadrant. Previous automation waves moved workers between quadrants. There may be no equivalent absorptive destination.
 
-**Framework:**
-- Routine manual → automated (manufacturing robots) — Complete
-- Routine cognitive → automated (spreadsheets) — Complete
-- Non-routine manual → partially automated (logistics) — In progress
-- Non-routine cognitive → being automated NOW (legal, financial, creative, engineering)
+**Key insight:** The question is capability, not palatability. Economic pressure to deploy operates against consumer preference, and economic incentives win at scale.
 
-**Key insight:** The question is capability, not palatability. Whether humans *prefer* a human lawyer, doctor, or analyst is irrelevant if the AI *can* perform the function. Economic pressure to deploy operates against consumer preference, and economic incentives win at scale. The care worker doesn't need to be replaced by a robot; they need to be replaced by an AI-supervised lower-skilled worker at half the cost. The lawyer doesn't disappear; the ratio goes from 1 partner : 5 associates to 1 partner : 1 associate : AI. If a task can be automated, the economic case for automation will prevail regardless of whether society wants it to.
-
-**"AI delivers" is not a circuit-breaker — it's an additional crisis pathway.** If an accounting AI enables 10→1 team reduction (90% sector redundancy), compounding across sectors reaches 20-30% unemployment rapidly. Historical threshold for civil unrest: 25-40% (Arab Spring, Weimar).
-
-**Challenge (Round 1):** Every technological transition was accompanied by predictions of mass unemployment that didn't materialise. New jobs emerged.
-
-**Counter:** Previous transitions moved workers from lower to higher cognitive quadrants. This transition automates the highest quadrant. The "new jobs we can't predict" argument requires identifying a fifth quadrant of human economic value beyond non-routine cognition. The burden of proof is on those claiming such a quadrant exists, not on those observing that the known axes are exhausted. The transition speed compounds the problem: previous shifts took decades of absorption; AI displacement is measured in years.
-
-**Challenge (Round 4, Attack 3):** The two-axis framework is too reductive. Accountability (someone must be liable), legitimacy (judicial authority requires human agency), and physical presence with social context (therapy, teaching, care) represent dimensions the framework doesn't capture. These could sustain 15-20% of the workforce in structurally resistant roles.
-
-**Counter:** These are constraints on *deployment*, not constraints on *capability*. The framework describes capability space, not preference space. Accountability layers thin over time (one human judge validates AI output for a thousand cases). Legitimacy requirements erode as automation matures, exactly as they did in the other three quadrants (factory workers had unions, clerical workers had "the human touch" — both were speed bumps, not barriers). All work fits onto the two axes. Reasons you might not *want* to automate are not reasons you *can't* automate.
+**Concession (Round 5):** The "no fifth quadrant" argument overstates certainty. New categories of economic value have emerged repeatedly in human history in ways invisible from prior frameworks. The claim of 20–30% unemployment by 2030 is speculative. The directional trend is supported; the magnitude and timeline are genuinely uncertain.
 
 | Finding | Probability | Confidence |
 |---------|-------------|------------|
-| AI eliminates more jobs than it creates in cognitive sectors by 2028-2030 | **Likely (50–65%)** | Moderate |
-| AI unemployment reaches civil unrest levels (>20%) in G7 by 2030 | **Realistic Possibility (25–50%)** | Moderate |
+| AI eliminates more jobs than it creates in cognitive sectors by 2028–2030 | **Realistic Possibility (25–50%)** | Moderate — downgraded from Likely (Round 5) |
+| AI unemployment reaches civil unrest levels (>20%) in G7 by 2030 | **Unlikely (15–25%)** | Low-Moderate — downgraded from Realistic Possibility (Round 5) |
 | US institutions can manage displacement | **Highly Unlikely (5–15%)** | High |
 
-### 5.3 Compound Probability — Corrected Methodology
+### 6.3 Scenario-Based Assessment (Corrected Round 5)
 
-**v2 error:** Calculated compound probability using independence assumption (1 - 0.625^5 = 90%). Invalid because pathways are coupled.
+*The v5 compound probability tables were removed in v6. Round 5 identified that chaining estimated multipliers through a multiplicative model produces false precision. The specific numbers (55%, 82%, 94%) carried a false authority that the underlying estimates could not support. The following scenario-based framework replaces them.*
 
-**v3 correction:** Modelled as scenarios accounting for coupling.
+**Scenario A: Fiscal deterioration with stable institutional confidence (8–15 year crisis window)**
+The US fiscal trajectory continues to worsen at current pace. Debt grows at approximately $2.3T/year. Blended interest rates rise gradually via maturity rollover. Dollar reserve share declines slowly. No acute trigger event. This is the "slow grind" scenario. The crisis arrives when blended rates approach 4.5–5% and interest payments consume an unsustainable share of federal revenue. **This scenario requires that institutional confidence stabilises or recovers — which requires a change in governance behaviour that is not currently observable.**
 
-| Scenario | Probability |
-|----------|------------|
-| Cluster A triggers autonomously (AI pops, dollar reflexivity, fund exit) | ~40% |
-| Cluster B triggers, cascades into A (ICE/Greenland → confidence break) | ~15% additional |
-| Slow degradation, no acute crisis in 24 months | ~30% |
-| Genuine recovery | ~15% |
+**Scenario B: Fiscal deterioration with accelerating institutional degradation (3–8 year crisis window)**
+The confidence variable (Part 2) compresses the timeline. Each institutional norm violation raises the risk premium on new Treasury issues. Allied de-dollarisation accelerates as trust erodes. Private fund rebalancing begins. The self-reinforcing loop between confidence loss, higher new-issue yields, wider deficits and further confidence loss activates. **This scenario is consistent with current observable trends.**
 
-**Initial v3 result:** ~55% within 24 months = **Likely (50-65%)**
+**Scenario C: Acute trigger event (months)**
+A specific event — failed or severely tailed Treasury auction, Taiwan crisis, Insurrection Act invocation, major fund public divestment announcement, Greenland formal annexation — compresses the timeline beyond institutional adaptation capacity. Cluster A activates.
 
-**Further refinement (Round 3, Attack 10 rebuttal):** The "genuine recovery" scenario was challenged — no credible recovery mechanism identified above Remote (<5%). Revised:
+**Scenario D: Genuine recovery (<5%)**
+Requires fiscal consolidation, institutional restoration and allied trust rebuilding simultaneously. No credible mechanism identified. Both major US parties operate within a framework that forecloses the necessary corrections: tax rises are ideologically toxic, entitlement reform is politically suicidal, defence cuts are geopolitically impossible. An FDR-scale reformer in 2029 would face Fox News, the Federalist Society, a 6–3 SCOTUS and a population conditioned over two generations to reject the remedy. Recovery also requires replacing or fundamentally restructuring the reserve currency architecture (Triffin's Dilemma is structural), which no domestic policy change can achieve.
 
-| Scenario | Probability |
-|----------|------------|
-| Cluster A triggers | ~40% |
-| Cluster B triggers and cascades | ~15% |
-| Slow degradation (worsens fundamentals) | ~40% |
-| Genuine recovery | ~5% |
+**Current trajectory assessment:**
 
-**Critical insight from challenge:** Muddle-through is not stability — it's active deterioration. Each year without acute crisis worsens debt (+$2.3T/year), erodes privilege further, concentrates S&P more, displaces more workers, degrades institutions further. Survival through year 2 makes year 3 *harder*.
+| Scenario | Description | Current indicators |
+|----------|-------------|-------------------|
+| A (slow grind) | 8–15 year window, institutional confidence holds | **Not consistent with observable trends** — confidence is declining, not holding |
+| B (accelerating) | 3–8 year window, confidence erosion compresses timeline | **Consistent with observable trends** — institutional degradation is active and accelerating |
+| C (acute trigger) | Months | **Multiple candidate triggers are active or emerging** — cannot assign precise probability |
+| D (recovery) | Genuine reversal | **No mechanism identified** — Remote (<5%) |
 
-**Cumulative probability (corrected, with worsening conditions per period):**
+**The central question is not whether crisis arrives but whether the US is on Scenario A or Scenario B.** Current indicators — military purges, court defiance, Fed investigation, SCOTUS circumvention, allied trust degradation, politically-motivated rate cut pressure — are consistent with Scenario B. This assessment rates the likelihood that the US is on Scenario B rather than Scenario A as **Likely (50–65%)**.
 
-| Time Horizon | P(no crisis yet) | P(crisis by this point) | Uncertainty Band | Yardstick |
-|-------------|-----------------|------------------------|-----------------|-----------|
-| 0–2 years | 45% | **55%** | ±10% (45–65%) | **Likely** |
-| 0–4 years | 45% × 40% = 18% | **82%** | ±15% (67–97%) | **Highly Likely** |
-| 0–6 years | 18% × 35% = 6.3% | **94%** | ±20% (74–100%) | **Highly Likely to Almost Certain** |
-| 0–8 years | 6.3% × 30% = 1.9% | **98%** | ±20% (78–100%) | **Highly Likely to Almost Certain** |
+**Falsification criteria — specific and measurable (corrected Round 5):**
 
-**Derivation of step-down multipliers (Round 4, Attack 2):** Each subsequent survival probability is lower because conditions measurably deteriorate per period. The step-down is driven by: ~$2.3T/year additional debt (each $2.3T at current average yield adds ~$77B to annual interest, consuming remaining fiscal headroom and reducing distance to the 5% kill zone), continued erosion of dollar reserve share, further S&P concentration, progressive institutional degradation, and exhaustion of intervention capacity (each period's "muddle-through" consumes tools that cannot be reused). The specific multipliers (40%, 35%, 30%) are estimates anchored to debt accumulation arithmetic, not precise derivations. Uncertainty bands widen at longer horizons to reflect compounding imprecision and the possibility of unforeseen events (which add variance in both directions without changing the central estimate).
+The following would constitute genuine evidence that the assessment requires substantial revision — not just that the assessment should be slightly adjusted, but that the core thesis is wrong:
 
-Each subsequent window has lower survival probability because conditions worsen. The only way to break the compounding is the Remote (<5%) recovery scenario.
+1. **Treasury bid-to-cover ratios remain above 2.3 for eight consecutive quarters** while the dollar's exchange-rate-adjusted COFER reserve share stabilises within 0.5 percentage points for two consecutive years. (This would indicate that confidence is holding despite fiscal deterioration.)
+2. **Term premium on 10-year Treasuries declines for four consecutive quarters.** (This would indicate that markets are assigning *less* risk to long-dated US debt.)
+3. **Congressional bipartisan fiscal framework agreement** that credibly reduces projected deficits by at least $500B/year within 3 years. (This would indicate that the political constraint on fiscal correction has been broken.)
+4. **Warsh demonstrates genuine Fed independence** by holding rates against presidential pressure for at least two FOMC meetings while publicly defending the Fed's mandate. (This would indicate that central bank autonomy is being restored.)
+5. **Federal deficit narrows for two consecutive fiscal years.** (This would indicate that the fiscal ratchet has been reversed.)
+6. **Allied nations increase Treasury holdings** (not just maintain) for four consecutive quarters. (This would indicate that confidence is being restored, not just maintained.)
+
+**None of these indicators are currently present. All trends are in the adverse direction.**
 
 ---
 
-## PART 6: US FISCAL POSITION — DETAILED
+## PART 7: US FISCAL POSITION — DETAILED
 
-### 6.1 Current State
+### 7.1 Current State (Verified Round 5)
 
-| Metric | Value | Source |
-|--------|-------|--------|
-| Total gross national debt | $38.56 trillion | JEC, 4 Feb 2026 |
-| Daily growth rate | $6.43 billion | JEC |
-| Projected $39T date | ~12 April 2026 | JEC projection |
-| Average interest rate on marketable debt | 3.348% | JEC, Jan 2026 |
-| Annual interest payments | ~$950 billion | Approaching defence budget |
-| Net interest as % of outlays (CBO forecast) | 13.85% (FY2026), 14.52% (FY2028) | CBO |
-| OBBBA additional deficit impact | $500B (2026), $4.1T (decade) | CRFB |
-| FY2026 cumulative deficit through December | $601 billion | Bipartisan Policy Center |
+| Metric | Value | Source | Verified |
+|--------|-------|--------|----------|
+| Total gross national debt | $38.43 trillion (Jan 7, 2026) | JEC Monthly Debt Update, Jan 2026 | Yes — Round 5 |
+| Daily growth rate | $8.03 billion | JEC (faster than v5 estimate of $6.43B) | Yes — Round 5 |
+| Average interest rate on marketable debt | 3.382% (Nov 2025) | JEC, Dec 2025 update | Yes — Round 5 |
+| Net interest payments FY2025 | $970 billion | PGPF / CBO | Yes — Round 5 |
+| Projected net interest FY2026 | $1.0 trillion | CBO Budget and Economic Outlook, Jan 2026 | Yes — Round 5 |
+| FY2026 deficit projection | $1.9 trillion | CBO | Yes — Round 5 |
+| Debt-to-GDP | ~100% (FY2025) | CBO | Yes — Round 5 |
+| Projected debt-to-GDP 2036 | 120% | CBO | Yes — Round 5 |
+| FY2026 cumulative deficit through January | $600 billion | Bipartisan Policy Center | Yes — Round 5 |
+| Projected net interest 2036 | $2.1 trillion (25.8% of federal revenues) | CBO / PGPF | Yes — Round 5 |
 
-### 6.2 The Ratchet
+### 7.2 The Ratchet
 
 **Finding:** US "adaptive capacity" is a myth. Each crisis response has weakened the system's capacity for the next.
 
 | Crisis | "Adaptation" | Actual Result |
 |--------|-------------|---------------|
-| 2008 | TARP, QE1-3 | Banks saved, 10M foreclosures, zero prosecutions. Wealth transferred up. Fed balance sheet $900B → $4.5T. |
+| 2008 | TARP, QE1–3 | Banks saved, 10M foreclosures, zero prosecutions. Fed balance sheet $900B → $4.5T. |
 | 2020 | PPP, QE4 | Fed balance sheet $4.5T → $8.9T. Deficit exploded. Inflation triggered. |
-| 2025 | OBBBA | $5.9T spending, $2.5T offsets. Tax cuts for wealthy. ICE $75B. Net $3.4T new debt. |
+| 2025 | OBBBA | $5.9T spending, $2.5T offsets. Tax cuts for wealthy. ICE $75B. Net ~$3.4T new debt. |
 
 **Pattern:** Crisis → emergency intervention → socialise losses → privatise gains → larger deficit → deeper inequality → weaker position for next crisis. Ratchet turns one way only.
-
-**Challenge (Round 2, Attack 9):** The US has demonstrated extraordinary adaptive capacity — New Deal, Lend-Lease, TARP.
-
-**Counter:** Every "adaptation" since 1981 has increased debt and inequality while reducing institutional capacity. Pre-1971 adaptations (New Deal, Lend-Lease) occurred under different monetary regime (gold standard constraints forced real restructuring). Post-1971, the ability to print enabled fake adaptations — covering symptoms without treating disease. We are past the point where an Attlee could save this. Recovery would require structured military cuts + social programs + intentional austerity + dollar devaluation. No political will, no institutional capacity, no candidate, no constituency.
 
 **Assessment:**
 
 | Finding | Probability | Confidence |
 |---------|-------------|------------|
-| Debt exceeds $39T by mid-2026 | **Almost Certain (>90%)** | Arithmetic |
-| Interest exceeds defence spending FY2026 | **Highly Likely (65–90%)** | High |
+| Debt exceeds $39T by mid-2026 | **Almost Certain (>90%)** | Arithmetic — JEC projects ~April 2026 |
+| Interest exceeds defence spending FY2026 | **Highly Likely (65–90%)** | High — already surpassed in FY2025 |
 | Each "adaptation" weakens system further | **Highly Likely (65–90%)** | High |
 | Fiscal austerity occurs | **Remote (<5%)** | High |
-
----
-
-## PART 7: GOVERNANCE AND INSTITUTIONAL CAPTURE
-
-**Finding:** The US is experiencing authoritarian capture of federal institutions. This is a statement of observable fact.
-
-**Evidence:**
-- DOJ weaponised against Fed Chair (criminal investigation of Powell)
-- ICE funded outside congressional appropriations ($75B OBBBA, bypassing power of the purse)
-- Military command staff purged based on loyalty to POTUS, not constitution
-- SCOTUS 6-3 supermajority consistently expanding executive power
-- DHS shutdown not affecting ICE because regime appropriated unapproved funds regardless
-- Project 2025 advancing Christian Nationalist governance framework
-- Democrats complicit — failed to shore up controls during 2021-23 trifecta
-
-**Challenge (Round 1):** US system designed with enough friction to resist. Tillis blocking Warsh. Courts issuing injunctions. Midterms in November.
-
-**Counter:** Tillis is procedural delay, not structural reform. ICE operating outside Congress IS the check being bypassed. Courts are being packed/ignored. Midterms cannot reverse structural capture through one election. The machinery is performing resistance while substance is captured.
-
-**Key insight on link to financial assessment:** Institutional capture IS a financial risk factor. Foreign holders assess governance risk as credit risk. Authoritarian capture is a downgrade trigger. The governance crisis and the financial crisis are the same crisis.
-
-| Finding | Probability | Confidence |
-|---------|-------------|------------|
-| Authoritarian institutional capture underway | **Likely (50–65%)** | High |
-| Procedural democracy masks substantive erosion | **Highly Likely (65–90%)** | High |
-| Project 2025 / Christian Nationalist agenda advances | **Likely (50–65%)** | Moderate |
-| 2026 midterms meaningfully reverse capture | **Unlikely (15–25%)** | Moderate |
-| Institutional capture accelerates Cluster A via confidence destruction | **Highly Likely (65–90%)** | High |
 
 ---
 
@@ -613,11 +631,9 @@ Each subsequent window has lower survival probability because conditions worsen.
 
 **Finding:** Tariffs function as a regressive consumption tax driving a stagflationary dynamic.
 
-**Mechanism:** Tariffs raise import prices → falls disproportionately on lower/middle income consumers → inflationary on prices BUT deflationary on demand → textbook stagflation (prices rise while growth stalls).
+**Mechanism:** Tariffs raise import prices → falls disproportionately on lower/middle income consumers → inflationary on prices BUT deflationary on demand → textbook stagflation.
 
 **Data:** Tariff revenue totalled $195 billion in FY2025. Recycled into OBBBA tax cuts for higher earners with lower marginal propensity to consume. Fiscal multiplier is negative: taxing spending, subsidising saving.
-
-**Warsh trap:** If inflation remains sticky because of tariffs, Warsh faces impossible choice: cut rates (Trump demands) into inflationary environment (his instincts reject) or hold rates and watch growth deteriorate while Trump threatens DOJ investigation.
 
 | Finding | Probability | Confidence |
 |---------|-------------|------------|
@@ -628,13 +644,9 @@ Each subsequent window has lower survival probability because conditions worsen.
 
 ## PART 9: ENERGY — IDENTIFIED BLIND SPOT
 
-**Finding (from adversarial review, Round 3, Attack 14):** The assessment initially ignored US energy position. The US is the world's largest oil/gas producer and a net energy exporter.
+**Finding (from adversarial review, Round 3):** The US is the world's largest oil/gas producer and a net energy exporter. Energy provides a floor above complete collapse but does not change the trajectory.
 
-**Challenge:** Energy provides a fiscal backstop, strategic leverage over energy-dependent allies, and a floor above complete collapse.
-
-**Counter:** The energy moat is a *fossil fuel* moat in a world deliberately moving away from fossil fuels. Europe's Green Deal, China's solar dominance, developing nation renewables leapfrogging. No transcontinental export pipelines. Alienated both neighbours. Alberta is competing supply. Total US energy exports ~$300B/year — significant but less than a third of annual deficit. Cannot support $1T+ deficit.
-
-**Final assessment:** Energy raises the floor of decline (US doesn't become Venezuela) but doesn't change the trajectory. The US may become "a very large, well-armed petrostate with a declining currency and enormous internal problems." That's bad but not civilisational collapse.
+**The energy moat is a *fossil fuel* moat in a world deliberately moving away from fossil fuels.** Europe's Green Deal, China's solar dominance, developing nation renewables leapfrogging. Total US energy exports approximately $300B/year — significant but less than a third of the annual deficit.
 
 | Finding | Probability | Confidence |
 |---------|-------------|------------|
@@ -646,19 +658,16 @@ Each subsequent window has lower survival probability because conditions worsen.
 
 ## PART 10: GOLD REVALUATION SCENARIO
 
-**Background:** US Treasury values gold reserves at statutory $42.22/oz (set 1973). 261.5 million ounces (8,133 tonnes). Book value: ~$11 billion. Market value at $4,900/oz: ~$1.28 trillion.
-
-**Revaluation would:** Acknowledge 99.1% dollar purchasing power loss since 1973. Create ~$1.27T balance sheet windfall. Signal official recognition of gold's monetary importance.
+**Background:** US Treasury values gold reserves at statutory $42.22/oz (set 1973). 261.5 million ounces (8,133 tonnes). Book value: approximately $11 billion. Market value at approximately $4,900/oz: approximately $1.28 trillion.
 
 **Treasury Secretary Bessent (March 2025):** "I can say today we're not revaluing the gold."
 
-**If it occurred:** Markets would interpret as admission of dollar failure. Estimated immediate dollar devaluation: ~40% (consistent with the 25-35% minimum derived independently in Part 12 for managed recovery; the gold revaluation figure is derived from the 99.1% purchasing power loss since 1973 implying a specific repricing of dollar-denominated assets). Other central banks forced to revalue. Potential end of post-1971 fiat system.
+**If it occurred:** Markets would interpret as admission of dollar failure. Estimated immediate dollar devaluation: approximately 40%. Other central banks forced to revalue. Potential end of post-1971 fiat system.
 
 | Finding | Probability | Confidence |
 |---------|-------------|------------|
 | US formally revalues gold reserves | **Unlikely (15–25%)** | Moderate |
 | If revaluation occurs, dollar immediately devalues ~40% | **Highly Likely (65–90%)** | High |
-| If revaluation occurs, triggers global monetary realignment | **Highly Likely (65–90%)** | High |
 
 ---
 
@@ -666,16 +675,14 @@ Each subsequent window has lower survival probability because conditions worsen.
 
 ### 11.1 Structural Entanglement
 
-**Reframed (Round 4, Attack 4):** The original assessment asked "can the UK decouple?" The correct question is "how deep is the drag?" The UK cannot decouple from US decline — the structural entanglement is too deep. The assessment must quantify exposure depth, not decoupling probability.
-
-**UK-US entanglement runs through four channels:**
+*Reframed (Round 4): The correct question is not "can the UK decouple?" but "how deep is the drag?"*
 
 | Channel | Exposure | Scale |
 |---------|----------|-------|
-| **Financial** | UK pension funds hold US equities. London is world's largest offshore dollar clearing centre. UK banking sector deeply interposed in dollar markets. | ~$500B+ UK institutional holdings in US equities |
+| **Financial** | UK pension funds hold US equities. London is world's largest offshore dollar clearing centre. | ~$500B+ UK institutional holdings in US equities |
 | **Trade** | US is UK's largest single-country trading partner | ~£250B bilateral |
 | **Intelligence/Military** | Five Eyes, NATO, nuclear deterrent (Trident warheads US-serviced) | Strategic dependency |
-| **Technology** | UK public and private sector runs on US cloud infrastructure (AWS, Azure, Google Cloud) | Near-total dependency for digital services |
+| **Technology** | UK public and private sector runs on US cloud infrastructure | Near-total dependency for digital services |
 
 ### 11.2 Mitigating Factors
 
@@ -689,10 +696,7 @@ Each subsequent window has lower survival probability because conditions worsen.
 - UK GDP growth 0.1% Q4 2025. Stagnation.
 - UK unemployment 5.2% and rising.
 - UK debt-to-GDP ~100%. Own fiscal problems.
-- £17.3B defence spending must be funded — borrowed money.
-- JEF is 10,000 personnel rapid reaction, not strategic deterrent.
-- Wero is euro-based; UK is not a core Wero economy.
-- AI employment displacement (Pathway 6) hits the UK on the same timeline as the US — this is a global crisis, not a US-specific one. The UK has no more institutional capacity to manage 20%+ white-collar unemployment than the US does.
+- AI employment displacement (Pathway 6) hits the UK on the same timeline.
 
 ### 11.4 Assessment
 
@@ -702,7 +706,6 @@ Each subsequent window has lower survival probability because conditions worsen.
 | UK suffers proportionate recession if US crashes >30% | **Likely (50–65%)** | Moderate |
 | UK defence spending provides domestic stimulus | **Highly Likely (65–90%)** | High |
 | UK mitigating factors reduce severity (not prevent impact) | **Realistic Possibility (25–50%)** | Low-Moderate |
-| AI displacement hits UK on similar timeline to US | **Likely (50–65%)** | Moderate |
 
 ---
 
@@ -710,159 +713,106 @@ Each subsequent window has lower survival probability because conditions worsen.
 
 **Finding:** No credible benign exit pathway identified above Remote (<5%). The exit *is* the crisis.
 
-**Structural impossibility of managed recovery (Round 4, Attack 8):** Any recovery pathway requires intentional dollar devaluation. The required magnitude depends on the objective:
-
-| Objective | Required Devaluation | Derivation |
-|-----------|---------------------|------------|
-| Restore PPP equilibrium | 15-25% | Big Mac Index / IMF REER overvaluation estimates |
-| Halve trade deficit (~$1.1T) | 25-35% | Marshall-Lerner condition: ~15-20% trade deficit improvement per 10% real effective devaluation |
-| Reduce debt-to-GDP below 100% | ~30-35% | Partial pass-through (30-50%) from devaluation to nominal GDP via import prices and domestic inflation |
-| Close trade deficit entirely | 50-70% | Marshall-Lerner extrapolation (non-linear at this scale) |
-| Reduce debt-to-GDP to 60% (IMF threshold) | Not achievable via devaluation alone | Requires fiscal consolidation alongside; pass-through is non-linear |
-
-**The minimum "enough to matter" devaluation (halving trade deficit, reducing debt-to-GDP below 100%) is ~25-35%.** The gold revaluation figure of ~40% (Part 10) sits at the upper end of this range, derived from different logic but broadly consistent.
-
-**The specific figure is irrelevant to the structural argument.** At any level above ~15-20%, the cascade mechanisms activate: foreign holders take meaningful haircuts (Pathway 4 fund divestment), import prices spike visibly (stagflation), the S&P repriced in real terms drops even if nominal prices hold (Pathway 2 reflexive exit). The managed devaluation IS Cluster A, triggered by the Treasury rather than by the market. The blast radius is identical. Historical precedent: Plaza Accord (1985-87) achieved ~40% against DM/yen over 2 years; sterling post-Suez devalued 14.3% (1967); sterling post-2008 declined ~25%.
-
-Additionally, both major US parties operate within the neoliberal consensus (Democrats are centre-right by European standards), and 45 years of Mont Pelerin Society ideological conditioning (Volcker Fund, Chicago School) have rendered the electorate hostile to every component of the necessary cure: tax increases ("tax is theft"), defence cuts ("weak on defence"), social spending ("socialism"), dollar devaluation ("American decline"), and industrial policy ("government picking winners"). An FDR-scale reformer in 2029 would face Fox News, the Federalist Society, a 6-3 SCOTUS, and a population engineered over two generations to reject the remedy.
-
-**Exhaustive search conducted during adversarial review:**
-
 | Potential Exit | Why It Fails | Probability |
 |---------------|-------------|-------------|
 | Fiscal austerity | No political will or institutional capacity | Remote (<5%) |
-| Deliberate devaluation | Triggers the run it's trying to prevent. The cure IS the disease. | <2% |
-| AI productivity boom | Accelerates job displacement (Pathway 6). Makes crisis worse. | N/A — is a crisis pathway |
-| Peace dividend (Ukraine) | European defence locked in regardless. Russian collapse creates new instability. | Doesn't apply |
-| New Bretton Woods | No framework. No successor hegemon. US would resist. | Highly Unlikely (5-15%) |
-| China collapse restores flight-to-safety | Capital has alternatives. Delay not prevention. | Delay only |
+| Managed devaluation (Plaza model) | Requires allied cooperation that has been destroyed (Part 2.3) | Remote (<5%) |
+| AI productivity boom | Enters self-consuming dynamic (Part 4.3). Timeline and magnitude uncertain but directional. | N/A — is a crisis pathway |
+| Peace dividend (Ukraine) | European defence locked in regardless. | Doesn't apply |
+| New Bretton Woods | No framework. No successor hegemon. US would resist. | Highly Unlikely (5–15%) |
+| China collapse restores flight-to-safety | Capital has more alternatives than in 2008/2022. Delay not prevention. | Delay only |
 | Energy exports fund deficit | $300B vs $1T+. Arithmetic. | Remote (<5%) |
-| Technology moat maintains dominance | Moat IS the bubble. | Circular |
-| Political renewal | Would need fiscal austerity + military cuts + social restructuring. No candidate, no constituency, SCOTUS would block. | Remote (<5%) |
-| Muddle-through stabilises | Mathematically disproven. Worsens fundamentals each year. | Active deterioration |
-
-**Falsification indicators** (what would cause revision toward stability):
-- Treasury auction bid-to-cover ratios increasing
-- Dollar reserve share stabilising for 4+ consecutive quarters
-- Federal deficit narrowing
-- S&P 500 breadth widening (equal-weight outperforming cap-weight)
-- Real wage growth exceeding inflation for 4+ consecutive quarters
-- Congressional bipartisan fiscal framework agreement
-- Warsh demonstrating genuine Fed independence
-- Foreign central bank gold buying decelerating
-
-**None of these indicators are currently present. All trends are in the adverse direction.**
+| Technology moat maintains dominance | Moat does not address fiscal trajectory or institutional degradation. | Does not apply |
+| Political renewal | Would need fiscal austerity + military cuts + social restructuring + allied trust restoration. No candidate, no constituency. SCOTUS would block. | Remote (<5%) |
+| Muddle-through stabilises | Each year without correction worsens debt (+$2.3T), raises blended interest rate via maturity rollover, erodes privilege further. | Active deterioration |
 
 ---
 
-## PART 13: ADVERSARIAL REVIEW RECORD
+## PART 13: WHAT WE DON'T KNOW
 
-### Round 1 — Six Attacks
+*This section was added in v6 following Round 5 adversarial review. It identifies genuine unknowns that could invalidate the framework entirely — not challenge points to be rebutted, but gaps in knowledge that should inform the confidence level of the entire assessment.*
 
-| # | Attack | Strength | Result |
-|---|--------|----------|--------|
-| 1 | Survivorship bias in doom predictions | Strong | Accepted as caveat. ±10% uncertainty band applied. Core thesis not debunked. |
-| 2 | Reflexivity coupling overstated (2008/2022 precedent) | Very Strong initially | Reduced by counter: 2022 conditions (no alternatives) don't replicate in 2026. Coupling held at Likely, reduced from Highly Likely. |
-| 3 | Timeline is narrative not evidence | Strong initially | Three proposed circuit-breakers (peace dividend, AI delivers, China) all destroyed. Two reinforced doom thesis. Timeline strengthened. |
-| 4 | Gold not perfect hedge | Moderate | Reframed: personal risks vs systemic assessment. January crash proved physical thesis. |
-| 5 | UK decoupling wishful | Strong | Accepted. UK probability downgraded to Realistic Possibility (25-50%) lower end. |
-| 6 | 1981 start date post-hoc | Moderate | Defended as ideological inflection (Mont Pelerin/neoliberal inception). No significant alternative date between 1981 and present. |
+1. **AI productivity distribution.** If AI productivity gains distribute more broadly than the two-axis model predicts — creating new categories of economic value invisible from the current framework — the employment displacement timeline could be much longer or the dynamic could reverse. This has happened in every previous technological transition. The assessment cannot know whether it will happen again.
 
-### Round 2 — Seven Attacks
+2. **Speed of institutional recovery.** If a post-Trump administration restores institutional credibility faster than the assessment assumes — rebuilding allied trust, restoring Fed independence, re-establishing rule of law — the confidence variable (Part 2) could stabilise or reverse. The assessment assumes institutional damage is sticky. It might not be.
 
-| # | Attack | Strength | Result |
-|---|--------|----------|--------|
-| 7 | Direction ≠ magnitude (alternatives too small) | Strong initially | Rebutted: S-curve adoption, not linear. Pre-2020 rate irrelevant post-alternatives. Gold buying masks headline de-dollarisation rate. |
-| 8 | Bond market thermostat stabilises doom loop | Strong initially | **Destroyed by arithmetic.** 5% yield = $1.9T interest = half federal revenue. Thermostat kills patient. |
-| 9 | US adaptive capacity | Moderate-Strong initially | Rebutted: Each "adaptation" since 1981 increased debt and inequality. Ratchet, not resilience. Past point where Attlee could save. |
-| 10 | Compound probability maths wrong | Very Strong | **Accepted.** Recalculated using scenario model. Revised to Likely (55%) for 24 months. But then compounded over time: Highly Likely at 4 years, Almost Certain at 6 years. |
-| 11 | Bid-ask spread erodes hedge | Moderate | Reframed: personal cost, not systemic flaw. |
-| 12 | No successor hegemon breaks parallel | N/A | **Backfired.** Strengthened doom thesis — managed decline structurally impossible without external underwriter. |
-| 13 | Muddle-through / opportunity cost | Moderate-Strong initially | Rebutted: muddle-through worsens fundamentals. Mathematically converges to crisis. |
+3. **European defence trajectory.** If the European defence build creates a genuine security framework that reduces instability rather than increasing it, the security dimension of the analysis changes substantially. The assessment treats European rearmament as a response to US decline. It could also be a stabilising force.
 
-### Round 3 — Five Attacks
+4. **China's own fiscal crisis.** China's debt-to-GDP is approximately 300% including local government. A Chinese financial crisis could produce a flight *to* dollars rather than away from them — at least temporarily. The assessment acknowledges this as a delay mechanism but may underweight its potential duration and significance.
 
-| # | Attack | Strength | Result |
-|---|--------|----------|--------|
-| 14 | Energy blind spot | Moderate-Strong initially | Partially accepted: raises floor (not Venezuela). But fossil fuel moat in decarbonising world. $300B exports vs $1T+ deficit. Doesn't change trajectory. |
-| 15 | "Sell America" — where does money go? | Strong initially | Rebutted: multipolar fragmentation, not single replacement. Bancor concept in BRICS. Absorption is speed limit not barrier. Fragmentation worse for dollar than single replacement. |
-| 16 | US technology moat | Moderate initially | Substantially rebutted: ASML (Dutch/JEF) controls lithography. Tech stack IS the bubble. EU legislation creating friction. Moat drains when bubble pops. Counter-acknowledged: tech dependency means shared pain during transition — this is why US decline drags others down. |
-| 17 | Deliberate devaluation as strategic pivot | Moderate | Rebutted: would trigger the run. Politically inaccessible (<2%). Only viable exit but door closing. |
-| 18 | No falsification criteria | Strong | Accepted as methodological improvement. Falsification indicators listed. None currently present. No benign exit identified above Remote. |
+5. **The confidence lag duration.** The assessment argues that 2025 COFER data doesn't capture recent confidence shocks. This is a reasonable argument. But the lag could be shorter or longer than assumed, and the market's response to the confidence shocks could be more or less severe than the institutional analysis predicts. Markets do not always respond to political analysis the way analysts expect.
 
-### Net Result of Three Rounds
+6. **Black swans in both directions.** The framework models known pathways. An unforeseen event — a technological breakthrough that restructures energy economics, a pandemic, a natural disaster, a political event with no current precedent — could accelerate or reverse the trajectory in ways no scenario framework can capture.
+
+7. **The unfalsifiability problem.** The framework as constructed absorbs many outcomes as confirmation: markets up means bubble inflating, markets down means correction, rates up means kill zone, rates down means confidence erosion, muddle-through means deterioration. The falsification criteria in Part 6.3 are designed to address this, but the reader should remain alert to the possibility that the framework is finding a pattern and fitting everything to it. The convergence of multiple analytical axes on the same conclusion is either evidence that the analysis has identified something real, or evidence of motivated reasoning. The reader must judge which.
+
+---
+
+## PART 14: ADVERSARIAL REVIEW RECORD
+
+### Rounds 1–4: Summary
+
+(Full detail in v5 document. Key movements only.)
 
 **Attacks that landed (required assessment modification):**
-- Survivorship bias → ±10% uncertainty band (moderate impact)
-- Reflexivity downgrade → Likely not Highly Likely (moderate impact)
-- Compound maths → corrected methodology (significant impact on 24-month figure, minimal on longer horizons)
-- UK decoupling → downgraded (moderate impact)
+- Survivorship bias → ±10% uncertainty band
+- Reflexivity downgrade → Likely not Highly Likely
+- Compound probability methodology corrected (independence assumption invalid)
+- UK reframed from decoupling to exposure depth
+- Compound probability multipliers need derivation and wider uncertainty bands
 
 **Attacks that failed or backfired:**
 - Bond thermostat → destroyed by arithmetic
 - US adaptive capacity → reframed as ratchet
 - No successor hegemon → strengthened doom thesis
 - AI delivers → identified as additional crisis pathway
-- Peace dividend → no mechanism
-- China collapse → delay not prevention
-- All three Round 3 structural attacks → partially or fully rebutted
+- Fed improvisation → every tool self-defeats for reserve currency crisis
+- Triffin's Dilemma → strengthened thesis by identifying structural precondition
 
-**Core thesis after three rounds:** NOT DEBUNKABLE WITH AVAILABLE EVIDENCE.
+### Round 5: Eight Challenges (independently administered via Claude, with empirical research)
 
-### Round 4 — Eight Attacks (independently administered via Claude)
+| # | Challenge | Strength | Result |
+|---|----------|----------|--------|
+| 1 | AI circular revenue overstated — Azure $75B+ revenue is majority non-AI enterprise workloads; Mag 7 is 32.6% not 37%; legitimate enterprise revenue provides a floor | **Very Strong** | **Landed.** AI section rewritten. Revenue amplification framing replaces circular fraud framing. Correction probabilities downgraded. Legitimate enterprise floor acknowledged. |
+| 2 | COFER exchange-rate-adjusted data shows only 0.12pp active de-dollarisation per quarter; Fed's 2025 assessment says dollar share "basically unchanged since 2022" | **Strong** | **Partially landed.** Reserve erosion rate downgraded from Likely to Realistic Possibility. Document now presents both headline and adjusted figures. However, gold substitution and confidence lag arguments limit the impact — adjusted COFER doesn't capture the full picture. |
+| 3 | Central bank gold buying decelerated to 863t in 2025 from 1,000+ in prior three years; WGC attributes slowdown to price sensitivity | **Moderate** | **Landed.** "Price-inelastic" claim corrected. Buying is strategically motivated but operationally price-responsive. |
+| 4 | Plaza Accord achieved ~40% devaluation without reserve currency crisis — directly contradicts "managed devaluation IS the crisis" | **Strong initially** | **Redirected.** Plaza proves managed devaluation *can* work — under conditions of allied trust and institutional credibility that no longer exist. Section added (Part 2.3) making this argument explicitly. Net effect: strengthens thesis by demonstrating what the US has forfeited. |
+| 5 | Treasury auction bid-to-cover ratios remain stable around 2.5 — document's own falsification indicator not triggered | **Moderate** | **Acknowledged.** Bid-to-cover is a trailing indicator that doesn't yet capture recent confidence shocks. Falsification criteria made more specific (Part 6.3) — eight consecutive quarters above 2.3 plus COFER stabilisation required. |
+| 6 | Compound probability tables create false precision; step-down multipliers are estimates presented as producing meaningful specific percentages | **Very Strong** | **Landed.** Compound probability tables removed entirely. Replaced with scenario-based framework (Part 6.3) distinguishing slow grind (8–15 years), accelerating (3–8 years), acute trigger (months) and recovery (Remote). |
+| 7 | Confidence variable underweighted — institutional degradation is the accelerant that determines whether fiscal deterioration produces slow decline or compressed crisis | **Very Strong** | **Landed.** Confidence variable elevated to standalone section (Part 2). Reframes the entire assessment: fiscal arithmetic alone produces slow grind; fiscal arithmetic combined with institutional destruction compresses the timeline. |
+| 8 | Rolling maturity mechanism — 5% kill zone doesn't arrive via instantaneous repricing but via composition shift as new issues carry higher risk premium | **Strong** | **Landed.** Part 3.3 rewritten with maturity rollover trajectory table. Noted as more dangerous than instantaneous repricing because it's harder to identify a crisis point. |
 
-| # | Attack | Strength | Result |
-|---|--------|----------|--------|
-| 1 | Speed governor on reflexivity (hedging, settlement lag, central bank intervention slows exit) | Moderate | Minor impact. Hedging infrastructure degrades under crisis conditions (counterparty risk, volatility repricing, correlation breaking the model). Crisis shape is grinding-fast (3-6 months) not instantaneous. Timeline holds. |
-| 2 | Compound probability multipliers assumed not derived | Strong | **Landed.** Multipliers need derivation from debt arithmetic (~$2.3T/year, ~$77B additional interest). Uncertainty bands widened: ±10% at 2yr, ±15% at 4yr, ±20% at 6yr. Headline categories mostly hold. Precision was overstated. |
-| 3 | Fifth quadrant — two-axis framework too reductive (accountability, legitimacy, presence) | Moderate initially | Fully defeated. Accountability, legitimacy, and presence are constraints on *deployment* not *capability*. Framework describes capability space. All work fits on two axes. Deployment constraints erode over time as in all previous quadrants. |
-| 4 | Institutional failure is universal not US-specific | Moderate | **Redirected.** UK section reframed from "can we decouple?" to "how deep is the drag?" UK structural entanglement (financial, trade, military, technology) makes decoupling impossible. Strengthens SEBE case. |
-| 5 | Fed improvisation extends timeline (capital controls, YCC, swap lines, coordinated intervention) | Strong initially | Fully defeated. Every intervention tool destroys reserve currency confidence. Capital controls announce non-convertibility. YCC admits bonds can't sell at market. Swap lines require destroyed cooperation. Coordinated intervention delays 12-18 months then resumes from worse position. Coerced cooperation is the single most effective accelerant for de-dollarisation. Using the tools confirms the thesis. |
-| 6 | AI circular revenue less circular than presented (real economic activity, diversified buyers) | Strong initially | Fully defeated when loop widened to all Mag 7 participants (Google $75B, Amazon $100B, Meta $40B, Oracle, Tesla — all making the same bet). Concentration dressed as diversification. Self-consuming market identified: AI destroys its own customer base by eliminating the employees whose productivity generates subscription revenue. |
-| 7 | 1981 too late — Triffin's Dilemma dates structural flaw to 1945 | N/A | **Backfired.** Strengthened thesis by identifying structural precondition (Bretton Woods loaded the gun, Mont Pelerin aimed it, Reagan pulled the trigger). Recovery requires replacing reserve currency architecture, not policy change within it. |
-| 8 | Managed contraction under future reform administration (FDR/Attlee pattern) | Moderate initially | Fully defeated. The cure IS the disease: managed 40% devaluation triggers the same triple cascade as unmanaged crisis. Both major parties are neoliberal. 45 years of MPS ideological conditioning has made the electorate hostile to every component of the necessary remedy. No candidate, no constituency, no institutional capacity. |
+### Net Result of Five Rounds
 
-### Net Result of Four Rounds
-
-**Attacks that landed (required assessment modification):**
-- Rounds 1-3: Survivorship bias, reflexivity downgrade, compound maths correction, UK downgrade
-- Round 4: Compound probability multipliers need derivation and wider uncertainty bands (Attack 2). UK section reframed as exposure depth (Attack 4).
-
-**Attacks that failed or backfired:**
-- Rounds 1-3: Bond thermostat, adaptive capacity, successor hegemon, AI delivers, peace dividend, China collapse, Round 3 structural attacks
-- Round 4: Speed governor (insufficient), fifth quadrant (destroyed), Fed improvisation (every tool self-defeats), AI circularity (strengthened when widened), Triffin (strengthened thesis), managed contraction (cure is disease)
-
-**Core thesis after four rounds:** NOT DEBUNKABLE WITH AVAILABLE EVIDENCE. Strengthened on Fed trap completeness and exit impossibility.
+**Core thesis after five rounds:** Strengthened on institutional confidence mechanism and maturity rollover dynamics. Weakened on AI circularity, reserve erosion pace, gold buying pace and displacement timeline. Net effect: the *direction* of the thesis is more robustly supported; the *timeline and magnitude* are less certain than v5 claimed. The scenario-based framework (Scenario A vs B vs C) replaces the false precision of compound probability tables.
 
 ---
 
-## PART 14: FINAL CONSOLIDATED ASSESSMENT
+## PART 15: FINAL CONSOLIDATED ASSESSMENT
 
 ### Headline Probabilities
 
 | Assessment | Final Probability | Confidence | Moved During Review? |
 |-----------|------------------|------------|---------------------|
 | US fiscal trajectory unsustainable | **Almost Certain (>90%)** | High | No |
-| AI revenue loop circular (widened to all Mag 7) | **Almost Certain (>90%)** | High | Strengthened R4 — loop widened, self-consuming market identified |
-| S&P 500 overstates corporate health | **Almost Certain (>90%)** | High | No |
-| 5% yield = effective insolvency | **Almost Certain (>90%)** | Arithmetic | No |
-| Muddle-through worsens fundamentals | **Almost Certain (>90%)** | High | No (identified R2) |
+| Institutional confidence is the primary accelerant | **Almost Certain (>90%)** | High | New finding R5 |
+| Confidence erosion underway, not yet captured in data | **Highly Likely (65–90%)** | High | New finding R5 |
+| S&P 500 concentration at historically extreme levels | **Almost Certain (>90%)** | High | No |
+| AI capex includes substantial revenue amplification | **Highly Likely (65–90%)** | High | Reframed R5 — from "circular fraud" to "revenue amplification" |
+| Legitimate enterprise revenue provides a floor below current valuations | **Highly Likely (65–90%)** | High | New finding R5 |
+| Blended 5% yield = effective insolvency (via maturity rollover) | **Almost Certain (>90%)** | Arithmetic | Mechanism corrected R5 |
+| Muddle-through worsens fundamentals | **Almost Certain (>90%)** | High | No |
 | Exorbitant privilege eroding | **Highly Likely (65–90%)** | High | No |
-| Erosion accelerating (masked by measurement) | **Likely (50–65%)** | Moderate | Established R2 |
-| S&P/dollar reflexively coupled | **Likely (50–65%)** | Moderate | Yes — down from Highly Likely (R1). Speed governor minor, hedging degrades under stress (R4). |
+| Erosion rate accelerating | **Realistic Possibility (25–50%)** | Moderate | Down from Likely (R5) — adjusted COFER data |
+| S&P/dollar reflexively coupled | **Likely (50–65%)** | Moderate | No change from R1 downgrade |
 | US decline disorderly not managed | **Highly Likely (65–90%)** | High | No |
-| No managed transition possible (cure IS the disease) | **Highly Likely (65–90%)** | High | Strengthened R3, R4 — exit triggers the crisis it tries to prevent |
-| Fed intervention toolkit self-defeating | **Highly Likely (65–90%)** | High | New finding R4 — every tool destroys reserve currency confidence |
-| Trump/Warsh accelerate via rate cuts and borrowing | **Highly Likely (65–90%)** | High | Yes — up from Realistic Possibility |
-| Significant disruption within 2 years | **Likely (50–65%)** | Moderate | ±10% band. Yes — down from Almost Certain |
-| Significant disruption within 4 years | **Highly Likely (65–90%)** | High | ±15% band. Established R2 |
-| Significant disruption within 6 years | **Highly Likely to Almost Certain (74–100%)** | High | ±20% band. Widened R4 |
-| Recovery without unforeseen intervention | **Remote (<5%)** | High | No — strengthened R4 (structural impossibility via Triffin) |
-| Authoritarian institutional capture underway | **Likely (50–65%)** | High | No |
-| UK dragged down by US decline | **Highly Likely (65–90%)** | High | Reframed R4 — from decoupling to exposure depth |
-| UK mitigating factors reduce severity | **Realistic Possibility (25–50%)** | Low-Moderate | Reframed R4 |
-| Energy provides floor above collapse | **Highly Likely (65–90%)** | High | Identified R3 |
-| Energy changes trajectory | **Unlikely (15–25%)** | High | Identified R3 |
+| Managed devaluation available (Plaza model) | **Remote (<5%)** | High | New finding R5 — conditions destroyed |
+| Fed intervention toolkit self-defeating | **Highly Likely (65–90%)** | High | No |
+| Trump/Warsh accelerate via rate cuts | **Highly Likely (65–90%)** | High | No |
+| US currently on Scenario B (3–8 year window) | **Likely (50–65%)** | Moderate | New framework R5 — replaces compound tables |
+| Recovery without unforeseen intervention | **Remote (<5%)** | High | No |
+| UK dragged down by US decline | **Highly Likely (65–90%)** | High | No |
+| Energy provides floor above collapse | **Highly Likely (65–90%)** | High | No |
 
 ---
 
@@ -870,39 +820,40 @@ Additionally, both major US parties operate within the neoliberal consensus (Dem
 
 ### Known Biases
 
-1. **Conversation anchoring:** Progressive adversarial dialogue pulled assessments toward the doom thesis through four rounds. Rounds 1-3 were self-administered (same conversation); Round 4 was independently administered (Claude). The independent round strengthened rather than weakened the thesis, but this could reflect model agreement rather than genuine validation. All probabilities carry uncertainty bands (±10% at 2yr, ±15% at 4yr, ±20% at 6yr).
+1. **Conversation anchoring:** Progressive adversarial dialogue pulled assessments toward the doom thesis through five rounds. Rounds 1–3 were self-administered (same conversation); Rounds 4 and 5 were independently administered (Claude). The independent rounds both strengthened *and* weakened specific elements — strengthening the institutional confidence thesis while weakening the AI circularity, reserve erosion pace and displacement timeline claims. All probabilities carry inherent uncertainty.
 2. **Survivorship bias:** Doom predictions have a poor historical track record. This assessment may be early or wrong on timing even if directionally correct.
 3. **Reflexivity assumption untested:** The S&P/dollar coupling is logically sound but has never been tested in current conditions. This is the assessment's key analytical risk.
-4. **UK perspective bias:** Assessment may overweight UK resilience and underweight UK vulnerabilities. Round 4 reframing (exposure depth rather than decoupling) partially addresses this.
-5. **Compound probability precision:** Step-down multipliers (40%, 35%, 30%) are anchored to debt accumulation arithmetic but are estimates, not precise derivations. The directional trend (worsening per period) is well-supported; the exact magnitudes carry uncertainty.
+4. **UK perspective bias:** Assessment may overweight UK resilience and underweight UK vulnerabilities.
+5. **Confidence lag uncertainty:** The argument that 2025 data doesn't capture recent confidence shocks is reasonable but the lag duration is uncertain. If the lag is very long (years rather than quarters), the slow grind scenario (A) may be more likely than assessed.
+6. **Unfalsifiability risk:** The framework absorbs many outcomes as confirmation. The falsification criteria in Part 6.3 are designed to address this but cannot fully resolve it. The reader should maintain independent judgement about whether the framework is identifying a real pattern or constructing one.
 
 ### What Would Change the Assessment
 
-**Toward stability (reduce crisis probability):**
-- Treasury bid-to-cover ratios increasing
-- Dollar reserve share stabilising 4+ quarters
-- Federal deficit narrowing
-- S&P breadth widening
-- Real wages exceeding inflation 4+ quarters
-- Bipartisan fiscal framework
-- Warsh demonstrating genuine independence
-- Central bank gold buying decelerating
+**Toward Scenario A (slow grind) or stability:**
+- Treasury bid-to-cover ratios above 2.3 for eight consecutive quarters
+- Dollar exchange-rate-adjusted COFER share stabilises within 0.5pp for two years
+- Term premium on 10-year Treasuries declining for four consecutive quarters
+- Congressional bipartisan fiscal framework agreement
+- Warsh demonstrates genuine Fed independence
+- Federal deficit narrows for two consecutive fiscal years
+- Allied nations increase Treasury holdings for four consecutive quarters
+- Central bank gold buying decelerates below 500 tonnes annually
 
-**Toward crisis (increase probability / compress timeline):**
-- Treasury auction bid-to-cover falling below 2.0
-- Dollar reserve share decline accelerating
-- ICE-related civilian casualties increasing
-- Blue state formal resistance legislation
+**Toward Scenario C (acute trigger):**
+- Treasury auction bid-to-cover falls below 2.0 on 10-year or 30-year issues
 - Major fund public divestment announcement
 - Greenland formal annexation attempt
-- Nvidia/Big Tech earnings miss triggering >10% S&P decline
-- Fed deploys capital controls or yield curve control (confirms thesis)
-- Any Mag 7 company signals AI capex reduction
+- Insurrection Act invocation
+- Failed or severely tailed Treasury auction
+- Fed deploys capital controls or yield curve control
+- Any Mag 7 company signals significant AI capex reduction
 
 **None of the stability indicators are currently present. Multiple crisis indicators are active or emerging.**
 
 ---
 
-*This assessment is based on open-source intelligence and represents analytical opinion developed through structured adversarial review. All probability assessments carry inherent uncertainty (±10% band) and should be regularly reviewed against the falsification indicators listed above.*
+*This assessment is based on open-source intelligence and represents analytical opinion developed through structured adversarial review. All probability assessments carry inherent uncertainty and should be regularly reviewed against the falsification indicators listed above.*
 
-*Prepared 17 February 2026. v5 — post four rounds of adversarial review (Rounds 1-3 via Gemini, Round 4 via Claude), cleaned for systemic focus.*
+*Prepared 4 March 2026. v6 — post five rounds of adversarial review (Rounds 1–3 via Gemini, Rounds 4–5 via Claude). Round 5 included empirical research against primary sources (IMF COFER, Federal Reserve, CBO, World Gold Council, Treasury auction data, Microsoft earnings, S&P Dow Jones Indices). Major structural changes from v5: confidence variable elevated to standalone section; AI section reframed from circular fraud to revenue amplification with enterprise floor; compound probability tables replaced with scenario framework; Plaza Accord case study added; maturity rollover mechanism corrected; COFER data presented with exchange-rate adjustment; gold buying price sensitivity acknowledged; falsification criteria made specific and measurable; "what we don't know" section added.*
+
+*Copyright 2026 Jason Huxley. Licensed under CC-BY 4.0.*
