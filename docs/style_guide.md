@@ -22,7 +22,10 @@ rules.
   "energy, bandwidth, and data".
 - **Numbers:** Spell out one to nine in prose. Use figures for 10 and above,
   all monetary amounts, all percentages, and all technical quantities.
-  Write "three components" but "£31 billion" and "12 TWh".
+  **Consistency rule:** if any number in a group or range requires figures,
+  all numbers in that group use figures. Write "7 to 10 days" not
+  "seven to 10 days". Write "three components" but "£31 billion" and
+  "12 TWh".
 
 ---
 

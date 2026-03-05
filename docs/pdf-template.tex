@@ -1,0 +1,145 @@
+% SEBE PDF template - clean modern layout
+\documentclass[11pt,a4paper]{article}
+
+% Fonts - Source family (clean, modern, professional)
+\usepackage[T1]{fontenc}
+\usepackage{sourceserifpro}
+\usepackage[default]{sourcesanspro}
+\usepackage{sourcecodepro}
+
+% Page geometry
+\usepackage[
+  top=30mm,
+  bottom=30mm,
+  left=28mm,
+  right=28mm,
+  headheight=15pt
+]{geometry}
+
+% Colours
+\usepackage[dvipsnames]{xcolor}
+\definecolor{sebe-green}{HTML}{2D6A4F}
+\definecolor{sebe-dark}{HTML}{1B1B1B}
+\definecolor{sebe-grey}{HTML}{6B7280}
+\definecolor{sebe-light}{HTML}{F0F4F0}
+\definecolor{sebe-rule}{HTML}{D1D5DB}
+
+% Headers and footers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{sebe-grey}\textsf{SEBE Policy Submission}}
+\fancyhead[R]{\small\color{sebe-grey}\textsf{v4.0 — February 2026}}
+\fancyfoot[C]{\small\color{sebe-grey}\textsf{\thepage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{sebe-rule}\leaders\hrule height \headrulewidth\hfill}}
+\renewcommand{\footrulewidth}{0pt}
+
+% Section styling
+\usepackage{titlesec}
+\titleformat{\section}
+  {\Large\bfseries\sffamily\color{sebe-green}}
+  {\thesection.}{0.5em}{}
+  [\vspace{-0.5em}{\color{sebe-rule}\rule{\textwidth}{0.4pt}}]
+\titleformat{\subsection}
+  {\large\bfseries\sffamily\color{sebe-dark}}
+  {\thesubsection}{0.5em}{}
+\titleformat{\subsubsection}
+  {\normalsize\bfseries\sffamily\color{sebe-dark}}
+  {\thesubsubsection}{0.5em}{}
+
+\titlespacing*{\section}{0pt}{2em}{1em}
+\titlespacing*{\subsection}{0pt}{1.5em}{0.5em}
+\titlespacing*{\subsubsection}{0pt}{1em}{0.3em}
+
+% Tables
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\renewcommand{\arraystretch}{1.3}
+
+% Lists
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=1.5em, itemsep=0.3em, parsep=0em}
+\setlist[enumerate]{leftmargin=1.5em, itemsep=0.3em, parsep=0em}
+
+% Code blocks
+\usepackage{listings}
+\lstset{
+  basicstyle=\small\ttfamily,
+  backgroundcolor=\color{sebe-light},
+  frame=single,
+  rulecolor=\color{sebe-rule},
+  breaklines=true,
+  xleftmargin=1em,
+  framexleftmargin=0.5em
+}
+
+% Links
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=sebe-green,
+  urlcolor=sebe-green,
+  citecolor=sebe-green,
+  pdfauthor={Jason Huxley},
+  pdftitle={Sovereign Energy \& Bandwidth Excise (SEBE) - Green Party Policy Submission}
+}
+
+% Paragraph spacing (no indent, space between)
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.6em}
+
+% Horizontal rules - make them thinner and coloured
+\renewcommand{\rule}[2]{\textcolor{sebe-rule}{\vrule width #1 height #2}}
+
+% Tight list support for pandoc
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0.3em}\setlength{\parskip}{0pt}}
+
+$if(title)$
+% Custom title page
+\renewcommand{\maketitle}{%
+  \begin{titlepage}
+    \newgeometry{top=60mm,bottom=40mm,left=28mm,right=28mm}
+    \begin{flushleft}
+      {\fontsize{28}{34}\selectfont\bfseries\sffamily\color{sebe-green}$title$\par}
+      \vspace{1em}
+      $if(subtitle)$
+      {\Large\sffamily\color{sebe-dark}$subtitle$\par}
+      \vspace{1.5em}
+      $endif$
+      {\color{sebe-rule}\rule{\textwidth}{1pt}\par}
+      \vspace{1.5em}
+      $for(author)$
+      {\large\sffamily\color{sebe-dark}$author$\par}
+      $endfor$
+      \vspace{0.5em}
+      $if(date)$
+      {\normalsize\sffamily\color{sebe-grey}$date$\par}
+      $endif$
+      $if(version)$
+      {\normalsize\sffamily\color{sebe-grey}Version $version$\par}
+      $endif$
+      $if(target)$
+      \vspace{0.5em}
+      {\normalsize\sffamily\color{sebe-grey}$target$\par}
+      $endif$
+    \end{flushleft}
+    \vfill
+    {\small\sffamily\color{sebe-grey}\textcopyright\ 2026 Jason Huxley. Licensed under CC-BY 4.0\par}
+    \restoregeometry
+  \end{titlepage}
+}
+$endif$
+
+\begin{document}
+$if(title)$
+\maketitle
+$endif$
+$if(toc)$
+\tableofcontents
+\newpage
+$endif$
+$body$
+\end{document}
