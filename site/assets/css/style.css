@@ -45,8 +45,9 @@
   --mono: 'JetBrains Mono', 'Consolas', monospace;
 }
 
+/* Dark mode: system preference OR manual override */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --ink: #d4d0c8;
     --paper: #1a1a1a;
     --accent: #5cb176;
@@ -55,6 +56,17 @@
     --border: #333;
     --highlight: #c9a227;
   }
+}
+
+/* Manual dark override (light system preference) */
+:root[data-theme="dark"] {
+  --ink: #d4d0c8;
+  --paper: #1a1a1a;
+  --accent: #5cb176;
+  --accent-light: #1a2e1a;
+  --muted: #999;
+  --border: #333;
+  --highlight: #c9a227;
 }
 
 /* ========== RESET ========== */
@@ -106,6 +118,25 @@ nav .nav-links a {
 }
 
 nav .nav-links a:hover { color: var(--ink); }
+
+/* Theme toggle */
+.theme-toggle {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 0.2rem 0.5rem;
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--muted);
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+  line-height: 1;
+}
+
+.theme-toggle:hover {
+  color: var(--ink);
+  border-color: var(--ink);
+}
 
 /* ========== MAIN ========== */
 
@@ -225,8 +256,9 @@ main {
 }
 
 @media (prefers-color-scheme: dark) {
-  .prose th { background: rgba(255,255,255,0.05); }
+  :root:not([data-theme="light"]) .prose th { background: rgba(255,255,255,0.05); }
 }
+:root[data-theme="dark"] .prose th { background: rgba(255,255,255,0.05); }
 
 /* ========== HERO (landing page) ========== */
 
@@ -377,9 +409,12 @@ main {
 }
 
 @media (prefers-color-scheme: dark) {
-  .pathway-card:hover {
+  :root:not([data-theme="light"]) .pathway-card:hover {
     box-shadow: 0 2px 12px rgba(0,0,0,0.3);
   }
+}
+:root[data-theme="dark"] .pathway-card:hover {
+  box-shadow: 0 2px 12px rgba(0,0,0,0.3);
 }
 
 .pathway-card .card-label {

@@ -14,6 +14,13 @@
   <meta property="og:url" content="{{ page.url | absolute_url }}">
 
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <script>
+    // Apply saved theme before paint to prevent flash
+    (function() {
+      var t = localStorage.getItem('theme');
+      if (t) document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
 </head>
 <body>
 
@@ -24,6 +31,7 @@
     <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
     <li><a href="{{ '/docs/' | relative_url }}">Documents</a></li>
     <li><a href="https://github.com/djarid/SEBE">GitHub</a></li>
+    <li><button class="theme-toggle" aria-label="Toggle dark mode">dark</button></li>
   </ul>
 </nav>
 
@@ -36,5 +44,37 @@
   <span><a href="https://github.com/djarid/SEBE">Source</a></span>
 </footer>
 
+<script>
+(function() {
+  var html = document.documentElement;
+  var btn = document.querySelector('.theme-toggle');
+  function isDark() {
+    var attr = html.getAttribute('data-theme');
+    if (attr === 'dark') return true;
+    if (attr === 'light') return false;
+    return window.matchMedia('(prefers-color-scheme: dark)').matches;
+  }
+
+  function updateLabel() {
+    btn.textContent = isDark() ? 'light' : 'dark';
+  }
+
+  updateLabel();
+
+  btn.addEventListener('click', function() {
+    if (isDark()) {
+      html.setAttribute('data-theme', 'light');
+      localStorage.setItem('theme', 'light');
+    } else {
+      html.setAttribute('data-theme', 'dark');
+      localStorage.setItem('theme', 'dark');
+    }
+    updateLabel();
+  });
+
+  // Update if system preference changes
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateLabel);
+})();
+</script>
 </body>
 </html>
