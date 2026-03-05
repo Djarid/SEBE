@@ -36,8 +36,12 @@ VALID_TASK_PRIORITIES = ["low", "medium", "high", "critical"]
 
 # Valid contact statuses
 VALID_CONTACT_STATUSES = [
-    "not_contacted", "contacted", "responded",
-    "meeting_scheduled", "active", "dormant"
+    "not_contacted",
+    "contacted",
+    "responded",
+    "meeting_scheduled",
+    "active",
+    "dormant",
 ]
 
 # Valid interaction channels
@@ -51,3 +55,12 @@ DEFAULT_LOG_DAYS = 2
 
 # Default minimum importance for DB entries loaded at session start
 DEFAULT_MIN_IMPORTANCE = 5
+
+# Containers to start at session open (podman start, not compose up).
+# Order matters: dependencies first.
+SESSION_CONTAINERS = [
+    "sebe-proton-bridge",
+    "sebe-signal-cli",
+    "sebe-searxng",
+    "sebe-social-mcp",
+]

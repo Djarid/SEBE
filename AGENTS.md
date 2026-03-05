@@ -25,7 +25,10 @@ python -m tools.memory.reader
 ```
 
 Run from `automation_framework/`. This loads MEMORY.md, recent daily logs,
-pending tasks, and contacts awaiting follow-up.
+pending tasks, and contacts awaiting follow-up. It also starts
+session-critical containers (Proton Bridge, signal-cli, SearXNG, social
+MCP) via `podman start`. Container status is printed at the top of the
+output. To skip container startup: `python -m tools.memory.reader --no-containers`
 
 If the venv doesn't exist: `python3 -m venv .venv && pip install -r requirements.txt`
 

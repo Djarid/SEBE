@@ -19,13 +19,19 @@ Usage (CLI):
 import json
 import sys
 import argparse
+import subprocess
 from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Optional, List, Dict, Any
 
 from .config import (
-    MEMORY_FILE, LOGS_DIR, PROJECT_CONTEXT, AUTHOR_CONTEXT,
-    DEFAULT_LOG_DAYS, DEFAULT_MIN_IMPORTANCE,
+    MEMORY_FILE,
+    LOGS_DIR,
+    PROJECT_CONTEXT,
+    AUTHOR_CONTEXT,
+    DEFAULT_LOG_DAYS,
+    DEFAULT_MIN_IMPORTANCE,
+    SESSION_CONTAINERS,
 )
 from .db import list_memory, list_tasks, list_contacts, get_stats
 
@@ -55,7 +61,9 @@ def read_memory_file() -> Dict[str, Any]:
         "success": True,
         "content": content,
         "sections": list(sections.keys()),
-        "last_modified": datetime.fromtimestamp(MEMORY_FILE.stat().st_mtime).isoformat(),
+        "last_modified": datetime.fromtimestamp(
+            MEMORY_FILE.stat().st_mtime
+        ).isoformat(),
     }
 
 
@@ -77,7 +85,57 @@ def read_daily_log(date: str) -> Dict[str, Any]:
 def read_recent_logs(days: int = DEFAULT_LOG_DAYS) -> List[Dict[str, Any]]:
     """Read the most recent daily logs."""
     today = datetime.now().date()
-    return [read_daily_log((today - timedelta(days=i)).isoformat()) for i in range(days)]
+    return [
+        read_daily_log((today - timedelta(days=i)).isoformat()) for i in range(days)
+    ]
+
+
+def ensure_containers() -> Dict[str, Any]:
+    """Start session-critical containers if not already running.
+
+    Uses 'podman start' (not compose up) so existing stopped containers
+    are resumed without rebuilding images. Safe to call repeatedly:
+    already-running containers are unaffected.
+    """
+    results = {}
+
+    for name in SESSION_CONTAINERS:
+        try:
+            # Check current state
+            check = subprocess.run(
+                ["podman", "inspect", "--format", "{{.State.Status}}", name],
+                capture_output=True,
+                text=True,
+                timeout=10,
+            )
+            if check.returncode != 0:
+                results[name] = "not found"
+                continue
+
+            status = check.stdout.strip()
+            if status == "running":
+                results[name] = "running"
+                continue
+
+            # Start it
+            start = subprocess.run(
+                ["podman", "start", name],
+                capture_output=True,
+                text=True,
+                timeout=30,
+            )
+            if start.returncode == 0:
+                results[name] = "started"
+            else:
+                results[name] = f"failed: {start.stderr.strip()}"
+
+        except FileNotFoundError:
+            results[name] = "podman not available"
+            break
+        except subprocess.TimeoutExpired:
+            results[name] = "timeout"
+
+    return {"success": True, "containers": results}
 
 
 def load_session_context(
@@ -112,7 +170,9 @@ def load_session_context(
 
     if include_db:
         db_result = list_memory(min_importance=min_importance, limit=50)
-        result["db_entries"] = db_result.get("entries", []) if db_result.get("success") else []
+        result["db_entries"] = (
+            db_result.get("entries", []) if db_result.get("success") else []
+        )
 
     if include_tasks:
         # Get all non-completed tasks
@@ -154,7 +214,9 @@ def format_as_markdown(ctx: Dict[str, Any]) -> str:
     if tasks:
         parts.append("## Pending Tasks\n")
         for t in tasks:
-            status_icon = {"in_progress": "🔄", "pending": "⏳", "blocked": "🚫"}.get(t["status"], "•")
+            status_icon = {"in_progress": "🔄", "pending": "⏳", "blocked": "🚫"}.get(
+                t["status"], "•"
+            )
             priority_tag = f" [{t['priority']}]" if t["priority"] != "medium" else ""
             due = f" (due {t['due_date']})" if t.get("due_date") else ""
             parts.append(f"- {status_icon} {t['title']}{priority_tag}{due}")
@@ -168,7 +230,11 @@ def format_as_markdown(ctx: Dict[str, Any]) -> str:
         parts.append("## Contacts Awaiting Follow-up\n")
         for c in contacts:
             org = f" ({c['organisation']})" if c.get("organisation") else ""
-            last = f" — last contacted {c['last_contacted']}" if c.get("last_contacted") else ""
+            last = (
+                f" — last contacted {c['last_contacted']}"
+                if c.get("last_contacted")
+                else ""
+            )
             parts.append(f"- {c['name']}{org}{last}")
         parts.append("")
 
@@ -184,40 +250,77 @@ def format_as_markdown(ctx: Dict[str, Any]) -> str:
 
 
 def main():
-    parser = argparse.ArgumentParser(description="SEBE Memory Reader — Load session context")
-    parser.add_argument("--memory-only", action="store_true", help="Only load MEMORY.md")
-    parser.add_argument("--tasks-only", action="store_true", help="Only load pending tasks")
+    parser = argparse.ArgumentParser(
+        description="SEBE Memory Reader — Load session context"
+    )
+    parser.add_argument(
+        "--memory-only", action="store_true", help="Only load MEMORY.md"
+    )
+    parser.add_argument(
+        "--tasks-only", action="store_true", help="Only load pending tasks"
+    )
     parser.add_argument("--logs-only", action="store_true", help="Only load daily logs")
-    parser.add_argument("--days", type=int, default=DEFAULT_LOG_DAYS, help="Days of logs to include")
+    parser.add_argument(
+        "--days", type=int, default=DEFAULT_LOG_DAYS, help="Days of logs to include"
+    )
     parser.add_argument("--min-importance", type=int, default=DEFAULT_MIN_IMPORTANCE)
     parser.add_argument("--format", choices=["markdown", "json"], default="markdown")
+    parser.add_argument(
+        "--no-containers", action="store_true", help="Skip container startup"
+    )
 
     args = parser.parse_args()
 
+    # Start session containers before loading context
+    container_status = None
+    if not args.no_containers:
+        container_status = ensure_containers()
+
     if args.memory_only:
         ctx = load_session_context(
-            include_logs=False, include_db=False,
-            include_tasks=False, include_contacts=False,
+            include_logs=False,
+            include_db=False,
+            include_tasks=False,
+            include_contacts=False,
         )
     elif args.tasks_only:
         ctx = load_session_context(
-            include_memory=False, include_logs=False,
-            include_db=False, include_contacts=False,
+            include_memory=False,
+            include_logs=False,
+            include_db=False,
+            include_contacts=False,
         )
     elif args.logs_only:
         ctx = load_session_context(
-            include_memory=False, include_db=False,
-            include_tasks=False, include_contacts=False,
+            include_memory=False,
+            include_db=False,
+            include_tasks=False,
+            include_contacts=False,
             log_days=args.days,
         )
     else:
         ctx = load_session_context(
-            log_days=args.days, min_importance=args.min_importance,
+            log_days=args.days,
+            min_importance=args.min_importance,
         )
 
     if args.format == "markdown":
+        # Print container status first
+        if container_status and container_status.get("containers"):
+            print("## Containers\n")
+            for name, state in container_status["containers"].items():
+                icon = {
+                    "running": "✓",
+                    "started": "▶",
+                    "not found": "✗",
+                    "timeout": "⏱",
+                }.get(state, "⚠")
+                print(f"  {icon} {name}: {state}")
+            print()
         print(format_as_markdown(ctx))
     else:
+        if container_status:
+            ctx["containers"] = container_status
         print(json.dumps(ctx, indent=2, default=str))
 
 
