@@ -79,10 +79,19 @@
 
 body {
   font-family: var(--sans);
+  font-size: 1.125rem;
   background: var(--paper);
   color: var(--ink);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+}
+
+/* Scale up for high-DPI displays at native resolution */
+@media (min-resolution: 144dpi) {
+  body { font-size: 1.35rem; }
+}
+@media (min-resolution: 192dpi) {
+  body { font-size: 1.5rem; }
 }
 
 /* ========== NAV ========== */
