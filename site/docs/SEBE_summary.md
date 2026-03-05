@@ -115,7 +115,7 @@ One illustrative use: a modest UBI starting at roughly £650 per adult per year 
 
 ## Full proposal
 
-The full proposal, including revenue model derived from first principles, cost model, distribution model and academic brief, is open-source:
+The full proposal, including [revenue model]({{ site.baseurl }}/docs/revenue_model.html) derived from first principles, [cost model]({{ site.baseurl }}/docs/cost_model.html), [distribution model]({{ site.baseurl }}/docs/distribution_model.html) and [academic brief]({{ site.baseurl }}/docs/academic_brief.html), is open-source:
 
 **[github.com/djarid/SEBE](https://github.com/djarid/SEBE)**
 

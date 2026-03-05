@@ -35,7 +35,7 @@ Sovereign wealth funds are a serious idea, but they need revenue to capitalise t
 
 Korinek and Lockwood offer a binary: tax consumption or tax capital. SEBE does neither. It taxes the physical inputs to production (energy and cross-border data) at infrastructure that already exists (power meters, internet exchange points). It is not a capital tax because it does not penalise ownership. It is not a consumption tax because it does not depend on downstream spending. It sits in a category the paper's framework does not contain, which is why they cannot find it.
 
-SEBE generates an estimated £34-46 billion at launch in 2030 (2026 prices), growing to £93 billion by 2040 as automation scales. The revenue model is published with rates, tiers, source data and methodology. The consumption tax alternative has no revenue estimate, no rate structure and no growth model.
+SEBE generates an estimated £34-46 billion at launch in 2030 (2026 prices), growing to £93 billion by 2040 as automation scales. The [revenue model]({{ site.baseurl }}/docs/revenue_model.html) is published with rates, tiers, source data and methodology. The consumption tax alternative has no revenue estimate, no rate structure and no growth model.
 
 ## The question they asked, the answer they missed
 

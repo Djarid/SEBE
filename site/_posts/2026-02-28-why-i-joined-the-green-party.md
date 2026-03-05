@@ -41,7 +41,7 @@ At launch in 2030, SEBE could generate £34–46 billion a year (in 2026 prices)
 
 The model is deliberately cautious. At launch, SEBE could fund a Universal Basic Income starting at roughly £650 per adult per year (not life-changing, but universal and unconditional). As automation grows and SEBE revenue grows with it, the payment ratchets upward automatically toward a full Universal Living Income matching median take-home pay. The mechanism tracks the problem: the more jobs automation destroys, the more revenue it generates to support the people displaced.
 
-The full workings, every assumption and every calculation, are open-source on GitHub.
+The full workings, every assumption and every calculation, are [on this site]({{ site.baseurl }}/docs/) and open-source on GitHub.
 
 ## Why the Green Party
 
@@ -60,11 +60,11 @@ I am not an economist. I am not an academic. I have no institutional backing. Wh
 The full proposal is on GitHub: [github.com/djarid/SEBE](https://github.com/djarid/SEBE)
 
 It includes:
-- A Green Party policy submission (aligned to their existing framework)
-- An academic brief (for think tanks and researchers)
-- A public explainer (plain language)
-- A revenue model (full workings, sensitivity analysis, cited sources)
-- A distribution model (illustrative UBI to Universal Living Income transition)
+- A [Green Party policy submission]({{ site.baseurl }}/docs/green_party_submission.html) (aligned to their existing framework)
+- An [academic brief]({{ site.baseurl }}/docs/academic_brief.html) (for think tanks and researchers)
+- A [public explainer]({{ site.baseurl }}/docs/public_explainer.html) (plain language)
+- A [revenue model]({{ site.baseurl }}/docs/revenue_model.html) (full workings, sensitivity analysis, cited sources)
+- A [distribution model]({{ site.baseurl }}/docs/distribution_model.html) (illustrative UBI to Universal Living Income transition)
 
 Everything is licensed CC-BY 4.0. Use it. Adapt it. Argue with it.
 

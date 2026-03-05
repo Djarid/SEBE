@@ -40,7 +40,7 @@ Revenue grows automatically with automation:
 - 2040: £93 billion
 - 2045: £159 billion
 
-All figures in 2026 real prices, CPI-indexed. These are derived from first principles using DESNZ energy consumption data, Ofcom bandwidth figures and current cloud provider pricing. The full revenue model, with sensitivity analysis, is open-source.
+All figures in 2026 real prices, CPI-indexed. These are derived from first principles using DESNZ energy consumption data, Ofcom bandwidth figures and current cloud provider pricing. The full [revenue model]({{ site.baseurl }}/docs/revenue_model.html), with sensitivity analysis, is open-source.
 
 By 2040, SEBE approaches Corporation Tax scale. By 2045, it approaches National Insurance. It is the only UK tax whose revenue grows with the thing that is destroying the income tax base.
 
@@ -74,7 +74,7 @@ The mechanism tracks the problem. That is the point.
 
 ## What happens next
 
-I have submitted SEBE as a policy proposal to the Green Party, which is the only UK party whose fiscal philosophy (MMT-informed, anti-austerity, pro-investment) is compatible with this kind of structural tax reform. The full proposal, including revenue model, cost model, distribution model and academic brief, is open-source and available for anyone to read, critique or build upon:
+I have submitted SEBE as a policy proposal to the Green Party, which is the only UK party whose fiscal philosophy (MMT-informed, anti-austerity, pro-investment) is compatible with this kind of structural tax reform. The full proposal, including [revenue model]({{ site.baseurl }}/docs/revenue_model.html), [cost model]({{ site.baseurl }}/docs/cost_model.html), [distribution model]({{ site.baseurl }}/docs/distribution_model.html) and [academic brief]({{ site.baseurl }}/docs/academic_brief.html), is open-source and available for anyone to read, critique or build upon:
 
 **[github.com/djarid/SEBE](https://github.com/djarid/SEBE)**
 
