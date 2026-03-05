@@ -1,0 +1,116 @@
+---
+layout: default
+title: Home
+description: "A fiscal framework for the post-employment economy. Tax automation infrastructure, not workers."
+---
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Tax the energy. Not the workers.</h1>
+  <p class="subtitle">
+    The UK raises £420 billion a year from taxing wages. Automation is destroying those jobs.
+    SEBE taxes the physical infrastructure of automation (electricity consumption and
+    cross-border data) instead of the workers being replaced.
+  </p>
+  <div class="headline-number">
+    £34–46 billion at launch · Growing every year machines replace workers
+  </div>
+</section>
+
+<!-- AUTHOR -->
+<section class="author-line">
+  <strong>Jason Huxley</strong>. Infrastructure and automation engineer, 30+ years.
+  Former Royal Signals. Green Party member. This proposal is open source,
+  published under CC-BY 4.0, and seeking economic scrutiny.
+</section>
+
+<!-- NUMBERS -->
+<section class="numbers">
+  <h2>Revenue trajectory</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="big-num">£38B</div>
+      <div class="num-label">2030 launch</div>
+    </div>
+    <div class="timeline-item">
+      <div class="big-num">£57B</div>
+      <div class="num-label">2035</div>
+    </div>
+    <div class="timeline-item">
+      <div class="big-num">£93B</div>
+      <div class="num-label">2040</div>
+    </div>
+    <div class="timeline-item">
+      <div class="big-num">£159B</div>
+      <div class="num-label">2045</div>
+    </div>
+  </div>
+</section>
+
+<!-- PATHWAYS -->
+<section class="pathways">
+  <h2>Start here</h2>
+  <div class="pathway-grid">
+
+    <div class="pathway-card">
+      <div class="card-label">Policymaker</div>
+      <h3>I need the case, fast</h3>
+      <p>Four-page summary with the problem, mechanism, revenue projections and the ask.</p>
+      <ul class="card-links">
+        <li><a href="{{ '/docs/SEBE_summary.html' | relative_url }}">SEBE summary (4 pages)</a></li>
+        <li><a href="{{ '/docs/green_party_submission.html' | relative_url }}">Green Party submission</a></li>
+      </ul>
+    </div>
+
+    <div class="pathway-card">
+      <div class="card-label">Researcher</div>
+      <h3>I want to stress-test it</h3>
+      <p>Full academic brief, revenue model with workings, sensitivity analysis and cost model.</p>
+      <ul class="card-links">
+        <li><a href="{{ '/docs/academic_brief.html' | relative_url }}">Academic brief</a></li>
+        <li><a href="{{ '/docs/revenue_model.html' | relative_url }}">Revenue model</a></li>
+        <li><a href="{{ '/docs/cost_model.html' | relative_url }}">Cost model</a></li>
+      </ul>
+    </div>
+
+    <div class="pathway-card">
+      <div class="card-label">Everyone</div>
+      <h3>Explain it simply</h3>
+      <p>Plain language guide. No jargon. What it is, who pays, what you get.</p>
+      <ul class="card-links">
+        <li><a href="{{ '/docs/public_explainer.html' | relative_url }}">Public explainer</a></li>
+        <li><a href="{{ '/docs/distribution_model.html' | relative_url }}">Distribution model</a></li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- BLOG -->
+<section class="blog-section">
+  <h2>Latest</h2>
+  {% for post in site.posts limit:3 %}
+  <div class="blog-entry">
+    <span class="blog-date">{{ post.date | date: "%e %B %Y" }}</span>
+    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+    {% if post.description %}<p class="blog-excerpt">{{ post.description }}</p>{% endif %}
+  </div>
+  {% endfor %}
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <h2>This needs challenge</h2>
+  <p>
+    SEBE has been through four rounds of adversarial review but has not had professional
+    fiscal scrutiny. The revenue model is published with rates, tiers, source data and
+    methodology. It is being submitted to the
+    <a href="https://greenparty.org.uk">Green Party</a> policy process, to
+    <a href="https://www.ippr.org">IPPR</a>, the
+    <a href="https://www.resolutionfoundation.org">Resolution Foundation</a>,
+    and HM Treasury.
+    If you are an economist, policy researcher or fiscal analyst,
+    <a href="https://github.com/djarid/SEBE">the work is open</a>.
+    Break it or back it.
+  </p>
+</section>

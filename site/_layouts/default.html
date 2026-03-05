@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
+  <title>{% if page.title and page.title != "Home" %}{{ page.title }} — {% endif %}{{ site.title }}</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
   <meta name="author" content="{{ site.author }}">
 
@@ -16,20 +16,25 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="{{ '/' | relative_url }}">Home</a>
-      <a href="{{ '/blog/' | relative_url }}">Blog</a>
-      <a href="https://github.com/djarid/SEBE">GitHub</a>
-    </nav>
-  </header>
 
-  <main>
-    {{ content }}
-  </main>
+<nav>
+  <a href="{{ '/' | relative_url }}" class="site-name">SEBE</a>
+  <ul class="nav-links">
+    <li><a href="{{ '/docs/SEBE_summary.html' | relative_url }}">Summary</a></li>
+    <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
+    <li><a href="{{ '/docs/' | relative_url }}">Documents</a></li>
+    <li><a href="https://github.com/djarid/SEBE">GitHub</a></li>
+  </ul>
+</nav>
 
-  <footer>
-    <p>&copy; 2026 Jason Huxley. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>.</p>
-  </footer>
+<main>
+  {{ content }}
+</main>
+
+<footer>
+  <span>&copy; 2026 Jason Huxley &middot; <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a></span>
+  <span><a href="https://github.com/djarid/SEBE">Source</a></span>
+</footer>
+
 </body>
 </html>
