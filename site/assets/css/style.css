@@ -55,6 +55,8 @@
     --muted: #999;
     --border: #333;
     --highlight: #c9a227;
+    --card-bg: #222220;
+    --timeline-opacity: 0.5;
   }
 }
 
@@ -67,6 +69,8 @@
   --muted: #999;
   --border: #333;
   --highlight: #c9a227;
+  --card-bg: #222220;
+  --timeline-opacity: 0.5;
 }
 
 /* ========== RESET ========== */
@@ -339,7 +343,7 @@ main {
   right: 0;
   height: 2px;
   background: var(--accent);
-  opacity: 0.3;
+  opacity: var(--timeline-opacity, 0.3);
 }
 
 .timeline-item {
@@ -399,7 +403,7 @@ main {
 .pathway-card {
   padding: 1.5rem;
   border: 1px solid var(--border);
-  background: var(--paper);
+  background: var(--card-bg, var(--paper));
   transition: border-color 0.2s, box-shadow 0.2s;
 }
 
