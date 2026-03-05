@@ -182,7 +182,7 @@ CPI-indexed ULI barely rises in nominal terms but purchasing power
 This creates a favourable fiscal dynamic: SEBE revenue grows (driven
 by compute base expansion, not inflation) while ULI costs grow slowly
 (driven by CPI, which is dampened by automation). The gap widens in
-the exchequer's favour. See `academic_brief.md` Section 6.5 for
+the exchequer's favour. See the [Academic Brief, Section 6.5](academic_brief.html#65-cpi-behaviour-under-automation) for
 further analysis.
 
 ---

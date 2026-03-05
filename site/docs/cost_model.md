@@ -15,14 +15,14 @@ to the current tax system, what could it replace, and what could it fund?
 It bridges the revenue model (how SEBE raises money) and the distribution
 model (one illustrative use of the revenue).
 
-- **Revenue derivation:** `revenue_model.md` (source of truth for all SEBE figures)
-- **Distribution workings:** `distribution_model.md` (UBI/ULI/UBS detail)
+- **Revenue derivation:** [Revenue Model](revenue_model.html) (source of truth for all SEBE figures)
+- **Distribution workings:** [Distribution Model](distribution_model.html) (UBI/ULI/UBS detail)
 
 ---
 
 ## 2. SEBE Revenue Summary
 
-From `revenue_model.md` (derived from first principles):
+From the [Revenue Model](revenue_model.html) (derived from first principles):
 
 All figures in 2026 real prices. All rates CPI-indexed annually.
 
@@ -103,7 +103,7 @@ money at a scale that moves the fiscal needle.
 
 ### 4.3 The Two-Stage Distribution Model (One Option)
 
-The accompanying `distribution_model.md` works through a specific
+The accompanying [Distribution Model](distribution_model.html) works through a specific
 scenario in detail:
 
 - **Stage 1:** UBI starting at ~£650/adult/year (2030 launch, 58.8M adults), ramping with SEBE growth.
@@ -176,7 +176,7 @@ SEBE revenue range reflects uncertainty in:
 - Behavioural response (efficiency investment reduces consumption)
 - Enforcement effectiveness
 
-Full sensitivity analysis in `revenue_model.md` Sections 8.1-8.3.
+Full sensitivity analysis in the Revenue Model: [SEE Sensitivity](revenue_model.html#81-see-revenue-sensitivity), [DCD Sensitivity](revenue_model.html#82-dcd-revenue-sensitivity), and [Growth Sensitivity](revenue_model.html#83-growth-sensitivity).
 
 ### 6.2 What If SEBE Underperforms?
 

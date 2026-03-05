@@ -427,7 +427,7 @@ Revenue is allocated first to UBS commitments, then the remainder funds
 UBI. UBI grows automatically as revenue exceeds UBS costs.
 
 All figures in 2026 real prices. Adult populations from ONS 2022-based
-projections (see `distribution_model.md` Section 3.2).
+projections (see the [Distribution Model, Section 3.2](distribution_model.html#32-population-projections-ons-2022-based-npps)).
 
 | Year | Adults | SEE | DCD | Feedback | Total | UBS Cost | Available | Adult UBI | Monthly |
 |---|---|---|---|---|---|---|---|---|---|

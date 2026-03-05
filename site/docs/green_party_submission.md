@@ -147,7 +147,7 @@ industrial operations, and automated warehouses.
 
 **Year 1 revenue estimate:** £24-28 billion/year at launch, growing to £83
 billion by 2040 as automation infrastructure expands (data centres, automated
-warehouses, robotic manufacturing). Full derivation in `revenue_model.md`.
+warehouses, robotic manufacturing). Full derivation in the [Revenue Model](revenue_model.html).
 
 **Notes:**
 - Drives energy efficiency (EC200)
@@ -235,7 +235,7 @@ The following illustrates scale, not prescriptive policy.
 ### 4.3 Illustrative Distribution Model
 
 One detailed scenario is worked through in the accompanying
-`distribution_model.md`. In summary:
+[Distribution Model](distribution_model.html). In summary:
 
 - **Stage 1:** UBI starting at ~£650/adult/year (2030 launch), ramping with SEBE
   growth. Universal Basic Services (free transport, energy, broadband)

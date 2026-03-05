@@ -371,9 +371,9 @@ everyone, or just for the people who own them?**
 
 ---
 
-*For technical details, see the full policy paper (`green_party_submission.md`
-or `academic_brief.md`). For revenue derivation, see `revenue_model.md`. For
-distribution workings, see `distribution_model.md`. For questions, contact
+*For technical details, see the full policy paper ([Green Party Submission](green_party_submission.html)
+or [Academic Brief](academic_brief.html)). For revenue derivation, see the [Revenue Model](revenue_model.html). For
+distribution workings, see the [Distribution Model](distribution_model.html). For questions, contact
 [your details].*
 
 *This is a citizen proposal. It needs your support to become reality.*

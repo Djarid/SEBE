@@ -225,7 +225,7 @@ SEBE generates £34-46 billion at launch in 2030 (2026 prices), growing
 to £93 billion by 2040 and £159 billion by 2045 as automation scales.
 All rates are CPI-indexed. All projections are in 2026 real prices.
 The full revenue model is published with source data and methodology
-(`revenue_model.md`).
+(the [Revenue Model](revenue_model.html)).
 
 The consumption tax alternative has no published revenue estimate, no
 rate structure, no implementation timeline and no growth model. It is
