@@ -49,8 +49,7 @@ class EmailChannel(BaseChannel):
                 self._imap = None
 
         logger.debug(
-            "Connecting to IMAP %s:%d",
-            self.config.imap_host, self.config.imap_port
+            "Connecting to IMAP %s:%d", self.config.imap_host, self.config.imap_port
         )
 
         ctx = ssl.create_default_context()
@@ -96,9 +95,7 @@ class EmailChannel(BaseChannel):
                     continue
 
                 msg_nums = data[0].split()
-                logger.info(
-                    "Found %d unseen messages in %s", len(msg_nums), folder
-                )
+                logger.info("Found %d unseen messages in %s", len(msg_nums), folder)
 
                 for num in msg_nums:
                     try:
@@ -106,12 +103,60 @@ class EmailChannel(BaseChannel):
                         if msg is not None:
                             messages.append(msg)
                     except Exception as e:
-                        logger.error(
-                            "Error fetching message %s: %s", num, e
-                        )
+                        logger.error("Error fetching message %s: %s", num, e)
 
             except Exception as e:
                 logger.error("Error polling folder %s: %s", folder, e)
+
+        return messages
+
+    def search_by_date(
+        self,
+        folder: str,
+        since_date: str,
+        mark_seen: bool = False,
+    ) -> list[InboundMessage]:
+        """Search a folder for all messages since a date (YYYY-MM-DD).
+
+        Unlike poll(), this searches by date (not UNSEEN) and opens the
+        folder in readonly mode by default so message flags are untouched.
+        """
+        messages = []
+        try:
+            imap = self._connect_imap()
+        except Exception as e:
+            logger.error("IMAP connection failed: %s", e)
+            return messages
+
+        try:
+            status, _ = imap.select(folder, readonly=not mark_seen)
+            if status != "OK":
+                logger.warning("Could not select folder: %s", folder)
+                return messages
+
+            # IMAP SINCE uses DD-Mon-YYYY format
+            dt = datetime.strptime(since_date, "%Y-%m-%d")
+            imap_date = dt.strftime("%d-%b-%Y")
+
+            status, data = imap.search(None, f"SINCE {imap_date}")
+            if status != "OK" or not data[0]:
+                return messages
+
+            msg_nums = data[0].split()
+            logger.info(
+                "Found %d messages in %s since %s", len(msg_nums), folder, since_date
+            )
+
+            for num in msg_nums:
+                try:
+                    msg = self._fetch_message(imap, num)
+                    if msg is not None:
+                        messages.append(msg)
+                except Exception as e:
+                    logger.error("Error fetching message %s: %s", num, e)
+
+        except Exception as e:
+            logger.error("Error searching folder %s: %s", folder, e)
 
         return messages
 
@@ -199,16 +244,12 @@ class EmailChannel(BaseChannel):
             ctx.check_hostname = False
             ctx.verify_mode = ssl.CERT_NONE
 
-            with smtplib.SMTP(
-                self.config.smtp_host, self.config.smtp_port
-            ) as smtp:
+            with smtplib.SMTP(self.config.smtp_host, self.config.smtp_port) as smtp:
                 smtp.starttls(context=ctx)
                 smtp.login(self.config.username, self.config.password)
                 smtp.send_message(msg)
 
-            logger.info(
-                "Email sent to %s: %s", message.recipient, message.subject
-            )
+            logger.info("Email sent to %s: %s", message.recipient, message.subject)
             return True
 
         except Exception as e:
@@ -250,13 +291,12 @@ class EmailChannel(BaseChannel):
             if status == "OK":
                 logger.info(
                     "Draft saved for %s: %s",
-                    message.recipient, message.subject,
+                    message.recipient,
+                    message.subject,
                 )
                 return True
             else:
-                logger.error(
-                    "IMAP APPEND to Drafts failed (status=%s)", status
-                )
+                logger.error("IMAP APPEND to Drafts failed (status=%s)", status)
                 return False
 
         except Exception as e:
