@@ -55,7 +55,6 @@
     --muted: #999;
     --border: #333;
     --highlight: #c9a227;
-    --card-bg: #222220;
     --timeline-opacity: 0.5;
   }
 }
@@ -69,7 +68,6 @@
   --muted: #999;
   --border: #333;
   --highlight: #c9a227;
-  --card-bg: #222220;
   --timeline-opacity: 0.5;
 }
 
@@ -403,7 +401,8 @@ main {
 .pathway-card {
   padding: 1.5rem;
   border: 1px solid var(--border);
-  background: var(--card-bg, var(--paper));
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
   transition: border-color 0.2s, box-shadow 0.2s;
 }
 
@@ -413,9 +412,17 @@ main {
 }
 
 @media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .pathway-card {
+    background: #222220;
+    box-shadow: none;
+  }
   :root:not([data-theme="light"]) .pathway-card:hover {
     box-shadow: 0 2px 12px rgba(0,0,0,0.3);
   }
+}
+:root[data-theme="dark"] .pathway-card {
+  background: #222220;
+  box-shadow: none;
 }
 :root[data-theme="dark"] .pathway-card:hover {
   box-shadow: 0 2px 12px rgba(0,0,0,0.3);
