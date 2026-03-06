@@ -61,6 +61,16 @@
 
   updateLabel();
 
+  function setGiscusTheme(dark) {
+    var iframe = document.querySelector('iframe.giscus-frame');
+    if (iframe) {
+      iframe.contentWindow.postMessage(
+        { giscus: { setConfig: { theme: dark ? 'dark' : 'light' } } },
+        'https://giscus.app'
+      );
+    }
+  }
+
   btn.addEventListener('click', function() {
     if (isDark()) {
       html.setAttribute('data-theme', 'light');
@@ -70,6 +80,7 @@
       localStorage.setItem('theme', 'dark');
     }
     updateLabel();
+    setGiscusTheme(isDark());
   });
 
   // Update if system preference changes

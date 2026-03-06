@@ -700,6 +700,14 @@ article time {
   color: var(--muted);
 }
 
+/* ========== GISCUS COMMENTS ========== */
+
+.giscus-container {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
 /* ========== FOOTER ========== */
 
 footer {
