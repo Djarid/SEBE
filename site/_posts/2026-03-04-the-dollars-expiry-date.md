@@ -7,6 +7,8 @@ description: "The dollar reserve system is ending, not as prediction but as stru
 
 The dollar-based international order is ending. Not as a prediction but as the structural consequence of choices made in 1944, accelerated in 1971 and triggered in 2022. The question is not whether it ends but how fast and whether countries build sufficient independence before the terminal condition arrives. This is the short version. The full strategic analysis, with sources, challenge points and adversarial testing, is [here]({{ site.baseurl }}/docs/global_transition.html).
 
+![The Dollar's Expiry Date]({{ site.baseurl }}/assets/images/dollar-demise.jpg)
+
 ## 1944: the original choice
 
 At Bretton Woods, Keynes proposed the Bancor. A neutral supranational unit of account managed by an International Clearing Union that would prevent any single nation from accumulating the structural advantages and vulnerabilities of reserve currency status. The United States, holding overwhelming economic and military dominance, overrode Keynes. The dollar became the global reserve currency. National advantage over systemic stability. Every subsequent problem flows from that choice.
