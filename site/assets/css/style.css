@@ -631,6 +631,24 @@ article time {
   font-style: italic;
 }
 
+.post-figure {
+  margin: 1.5rem 0;
+}
+
+.post-figure img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.post-figure figcaption {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--muted);
+  margin-top: 0.4rem;
+  letter-spacing: 0.03em;
+}
+
 /* ========== POST TAGS ========== */
 
 .post-tags {
