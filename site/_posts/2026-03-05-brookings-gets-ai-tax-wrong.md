@@ -6,6 +6,8 @@ description: "The most prestigious think tank in Washington published a framewor
 image: /assets/images/brookings_header.jpeg
 ---
 
+*The most prestigious think tank in Washington published a framework for taxing AI. It has a hole in it you could drive a data centre through.*
+
 ![Why Brookings Gets AI Taxation Wrong]({{ site.baseurl }}/assets/images/brookings_header.jpeg)
 
 In January 2026, Anton Korinek and Lee Lockwood published "The Future of Tax Policy: A Public Finance Framework for the Age of AI" through the Brookings Institution. It is a careful, well-argued paper. It diagnoses the right problem: AI-driven automation will erode employment-linked taxation, which accounts for over 42% of UK tax receipts and roughly three quarters of US federal revenue. On the diagnosis, they are correct.
