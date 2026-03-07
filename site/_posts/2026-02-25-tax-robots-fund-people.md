@@ -7,6 +7,8 @@ description: "A new tax on automation infrastructure that starts at £34-46 bill
 
 The UK government raises £420 billion a year from taxing workers' wages. Income Tax brings in £250 billion. National Insurance adds another £170 billion. Together, that is 42% of all government revenue. Every pound of it depends on people having jobs.
 
+![The march of progress, from ape to office worker to server rack]({{ site.baseurl }}/assets/images/evolution-to-automation.png)
+
 Automation is destroying those jobs. Not in some distant future. Now. Machine learning systems already outperform human diagnosticians, human traders, human translators and human customer service agents. Large language models handle legal research, code review, financial analysis and content production at a fraction of the cost of a salaried employee. Every AI system deployed is a salary that disappears from the tax base.
 
 The fiscal arithmetic is simple and brutal. As employment falls, income tax and National Insurance revenue fall with it. Meanwhile, the people who lost those jobs need more support, not less. Revenue shrinks. Costs grow. The scissors close.
