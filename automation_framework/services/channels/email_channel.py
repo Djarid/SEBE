@@ -223,7 +223,11 @@ class EmailChannel(BaseChannel):
             message_id=message_id,
             reply_to=reply_to or None,
             thread_id=thread_id or None,
-            raw={"from_name": sender_name, "to": msg.get("To", "")},
+            raw={
+                "from_name": sender_name,
+                "to": msg.get("To", ""),
+                "cc": msg.get("Cc", ""),
+            },
         )
 
     def send(self, message: OutboundMessage) -> bool:

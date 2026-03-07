@@ -171,6 +171,7 @@ def format_message_dict(msg, direction: str) -> dict:
         "timestamp": msg.timestamp.isoformat() if msg.timestamp else None,
         "sender": msg.sender,
         "to": msg.raw.get("to", "") if msg.raw else "",
+        "cc": msg.raw.get("cc", "") if msg.raw else "",
         "subject": decode_subject(msg.subject),
         "body": clean_body(msg.body),
         "message_id": msg.message_id,

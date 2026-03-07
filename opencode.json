@@ -11,6 +11,14 @@
       "type": "remote",
       "url": "http://localhost:8090/sse",
       "enabled": true
+    },
+    "browser": {
+      "type": "local",
+      "command": [
+        "automation_framework/.venv/bin/python3",
+        "automation_framework/tools/browser_cdp.py"
+      ],
+      "enabled": true
     }
   },
   "agent": {
