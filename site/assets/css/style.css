@@ -649,6 +649,7 @@ article time {
   padding-top: 0.4rem;
   border-top: 1px solid var(--border);
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 /* ========== POST TAGS ========== */
