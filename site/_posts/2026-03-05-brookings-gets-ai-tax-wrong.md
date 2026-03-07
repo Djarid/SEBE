@@ -4,6 +4,7 @@ title: "Why Brookings Gets AI Taxation Wrong"
 date: 2026-03-05
 description: "The most prestigious think tank in Washington published a framework for taxing AI. It has a hole in it you could drive a data centre through."
 image: /assets/images/brookings_header.jpeg
+tags: [policy, economics, rebuttal, intermediate]
 ---
 
 *The most prestigious think tank in Washington published a framework for taxing AI. It has a hole in it you could drive a data centre through.*

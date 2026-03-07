@@ -3,6 +3,7 @@ layout: post
 title: "Tax Robots, Fund People"
 date: 2026-02-25
 description: "A new tax on automation infrastructure that starts at £34-46 billion and grows every year machines replace workers."
+tags: [policy, economics, accessible]
 ---
 
 The UK government raises £420 billion a year from taxing workers' wages. Income Tax brings in £250 billion. National Insurance adds another £170 billion. Together, that is 42% of all government revenue. Every pound of it depends on people having jobs.

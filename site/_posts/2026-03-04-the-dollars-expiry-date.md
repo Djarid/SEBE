@@ -3,6 +3,7 @@ layout: post
 title: "The Dollar's Expiry Date"
 date: 2026-03-04
 description: "The dollar reserve system is ending, not as prediction but as structural consequence of choices made in 1944 and accelerated in 1971."
+tags: [macroeconomics, geopolitics, advanced]
 ---
 
 The dollar-based international order is ending. Not as a prediction but as the structural consequence of choices made in 1944, accelerated in 1971 and triggered in 2022. The question is not whether it ends but how fast and whether countries build sufficient independence before the terminal condition arrives. This is the short version. The full strategic analysis, with sources, challenge points and adversarial testing, is [here]({{ site.baseurl }}/docs/global_transition.html).

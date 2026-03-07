@@ -3,6 +3,7 @@ layout: post
 title: "Why I Joined the Green Party and Built a Tax Framework for the Post-Employment Economy"
 date: 2026-02-28
 description: "I'm a 55-year-old infrastructure engineer who spent 30 years building the systems that are replacing workers. Here's why I joined the Green Party and what I've been building."
+tags: [personal, accessible]
 ---
 
 I am a 55-year-old infrastructure engineer from Bedford. I spent eleven years in the Royal Corps of Signals, the Gulf War, South Armagh and two tours in Bosnia (UNPROFOR and IFOR). I left the Army in 1997 and spent the next three decades building and securing large-scale computer systems: Active Directory forests spanning 360,000 users, big data security platforms processing a quarter of a million events per second, red team operations against financial infrastructure. I have spent my entire adult life inside the machinery that runs things.
