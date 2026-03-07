@@ -645,7 +645,9 @@ article time {
   font-family: var(--mono);
   font-size: 0.72rem;
   color: var(--muted);
-  margin-top: 0.4rem;
+  margin-top: 0;
+  padding-top: 0.4rem;
+  border-top: 1px solid var(--border);
   letter-spacing: 0.03em;
 }
 
