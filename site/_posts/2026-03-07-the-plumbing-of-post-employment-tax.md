@@ -30,6 +30,7 @@ The UK government is the issuer of the pound. It does not need to collect pounds
 ## The bathtub
 
 ![The Plumbing of Post-Employment Tax]({{ site.baseurl }}/assets/images/sebe-bathtub.png)
+*The intuitive version.*
 
 Picture a bathtub. The tap is government spending. The drain is taxation. The water level is the money supply in the economy.
 
