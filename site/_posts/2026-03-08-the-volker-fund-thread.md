@@ -9,9 +9,9 @@ tags: [economics, history, accessible]
 
 You did not arrive at your political opinions by accident. Neither did the people who built the system you are reacting to.
 
-![The Volker Fund Thread]({{ site.baseurl }}/assets/images/volker-fund-thread.png)
-
 There is an intellectual supply chain that runs from a charitable fund in 1940s Kansas City to the economic rules governing your life today. Every link is documented. Every actor is identifiable. Every think tank's funding is traceable. This is not conspiracy. It is public record that most people have never been shown as a connected sequence.
+
+![The Volker Fund Thread]({{ site.baseurl }}/assets/images/volker-fund-thread.png)
 
 **TL;DR:** One charity fund in 1940s Kansas City financed Hayek, Friedman and the Mont Pelerin Society. That society's members founded the IEA, Heritage Foundation, Cato Institute and Atlas Network. Those think tanks staffed Thatcher and Reagan's governments. Their programme removed the constraints on US dollar creation (1971), misdiagnosed the resulting crisis as Keynesian failure, and installed the fiscal rules that now prevent any Western government from responding to the consequences. The ideas lying around in 1971 are now the walls of the room, and the room is shrinking.
 
