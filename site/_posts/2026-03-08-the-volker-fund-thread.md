@@ -67,7 +67,7 @@ Thatcher arrived with IEA briefings and Hayek's *The Constitution of Liberty* as
 
 Reagan arrived in 1981 with Heritage Foundation policy papers and 22 Mont Pelerin members among his 76 economic advisers.
 
-The prescriptions that had been pre-positioned over two decades were implemented: monetarism, central bank independence as institutional design, fiscal rules that constrained what elected governments could spend. Gordon Brown granted the Bank of England operational independence in May 1997, locking the framework into British institutional architecture.
+The solutions that had been pre-positioned over two decades were implemented: monetarism, central bank independence as institutional design, fiscal rules that constrained what elected governments could spend. Gordon Brown granted the Bank of England operational independence in May 1997, locking the framework into British institutional architecture.
 
 The ideas that had been "lying around" were now load-bearing walls in the structure of Western economic governance.
 
