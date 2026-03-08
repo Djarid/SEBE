@@ -10,8 +10,10 @@ are flagged as SEEN so they aren't re-processed on the next poll.
 
 import email
 import email.utils
+import html.parser
 import imaplib
 import logging
+import re
 import smtplib
 import ssl
 from datetime import datetime
@@ -26,8 +28,98 @@ from .base import (
     OutboundMessage,
 )
 from ..config import EmailConfig
+from tools.url_sanitise import defang_url, defang_urls
 
 logger = logging.getLogger(__name__)
+
+
+class _HTMLTextExtractor(html.parser.HTMLParser):
+    """Stdlib HTML-to-text converter for email bodies.
+
+    Preserves hyperlink URLs by appending the href after the link text
+    in defanged form:  ``Link text (hxxps://example[.]com/path)``
+
+    URLs are defanged at extraction time as a defence-in-depth measure
+    to prevent accidental navigation via browser automation tools.
+    """
+
+    _BLOCK_TAGS = frozenset(
+        (
+            "br",
+            "p",
+            "div",
+            "tr",
+            "li",
+            "h1",
+            "h2",
+            "h3",
+            "h4",
+            "h5",
+            "h6",
+            "blockquote",
+            "pre",
+            "hr",
+            "table",
+            "thead",
+            "tbody",
+        )
+    )
+    _SKIP_TAGS = frozenset(("style", "script", "head"))
+
+    def __init__(self) -> None:
+        super().__init__()
+        self._parts: list[str] = []
+        self._skip_depth: int = 0
+        # Stack of (href, text_start_index) for nested <a> tags
+        self._link_stack: list[tuple[str, int]] = []
+
+    def handle_starttag(self, tag: str, attrs: list) -> None:
+        if tag in self._SKIP_TAGS:
+            self._skip_depth += 1
+        if tag in self._BLOCK_TAGS:
+            self._parts.append("\n")
+        if tag == "a":
+            href = dict(attrs).get("href", "")
+            self._link_stack.append((href, len(self._parts)))
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag in self._SKIP_TAGS:
+            self._skip_depth = max(0, self._skip_depth - 1)
+        if tag in self._BLOCK_TAGS:
+            self._parts.append("\n")
+        if tag == "a" and self._link_stack:
+            href, text_start = self._link_stack.pop()
+            if href and re.match(r"https?://", href, re.IGNORECASE):
+                # Extract the visible link text accumulated since <a>
+                link_text = "".join(self._parts[text_start:]).strip()
+                # Avoid redundant output when link text IS the URL
+                if link_text.rstrip("/") != href.rstrip("/"):
+                    self._parts.append(f" ({defang_url(href)})")
+                else:
+                    # Replace the bare URL text with defanged version
+                    self._parts[text_start:] = [defang_url(href)]
+
+    def handle_data(self, data: str) -> None:
+        if self._skip_depth == 0:
+            self._parts.append(data)
+
+    def get_text(self) -> str:
+        text = "".join(self._parts)
+        text = re.sub(r"[ \t]+", " ", text)
+        text = re.sub(r"\n{3,}", "\n\n", text)
+        return text.strip()
+
+
+def _html_to_text(html_str: str) -> str:
+    """Convert HTML email body to readable plain text. Stdlib only.
+
+    URLs are defanged in two passes:
+    1. <a> href URLs are defanged by _HTMLTextExtractor during parsing.
+    2. Any remaining bare URLs in the text output are caught here.
+    """
+    parser = _HTMLTextExtractor()
+    parser.feed(html_str)
+    return defang_urls(parser.get_text())
 
 
 class EmailChannel(BaseChannel):
@@ -171,7 +263,9 @@ class EmailChannel(BaseChannel):
         raw_email = data[0][1]
         msg = email.message_from_bytes(raw_email)
 
-        # Extract body (prefer plain text)
+        # Extract body (prefer plain text).
+        # All URLs are defanged regardless of content type to prevent
+        # accidental navigation via browser automation tools.
         body = ""
         if msg.is_multipart():
             for part in msg.walk():
@@ -179,7 +273,7 @@ class EmailChannel(BaseChannel):
                 if content_type == "text/plain":
                     payload = part.get_payload(decode=True)
                     if payload:
-                        body = payload.decode("utf-8", errors="replace")
+                        body = defang_urls(payload.decode("utf-8", errors="replace"))
                     break
             # Fallback to HTML if no plain text
             if not body:
@@ -187,12 +281,18 @@ class EmailChannel(BaseChannel):
                     if part.get_content_type() == "text/html":
                         payload = part.get_payload(decode=True)
                         if payload:
-                            body = payload.decode("utf-8", errors="replace")
+                            body = _html_to_text(
+                                payload.decode("utf-8", errors="replace")
+                            )
                         break
         else:
             payload = msg.get_payload(decode=True)
             if payload:
                 body = payload.decode("utf-8", errors="replace")
+                if msg.get_content_type() == "text/html":
+                    body = _html_to_text(body)
+                else:
+                    body = defang_urls(body)
 
         # Parse timestamp
         date_str = msg.get("Date", "")
