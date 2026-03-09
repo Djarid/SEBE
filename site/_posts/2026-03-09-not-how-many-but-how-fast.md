@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "It's Not How Many But How Fast"
+title: "How Fast, Not How Many"
 date: 2026-03-09
 description: "The rising tide of automation displacement"
 tags: [policy, economics, automation, beginner]
@@ -8,6 +8,8 @@ image: /assets/images/rising-tide.png
 ---
 
 *The rising tide of automation displacement*
+
+![How Fast, Not How Many]({{ site.baseurl }}/assets/images/rising-tide.png)
 
 The current level of AI models is already driving worker displacement. Not just because the AI is getting smarter. Because human ingenuity, fuelled by AI assistance, is constantly improving the tooling built around it. If AI development stopped tomorrow, this disruption would continue. PlayStation games got dramatically better over the life of each console, not because the hardware changed but because developers learned to exploit what was already there. The same dynamic is playing out with AI, except the thing being optimised away is headcount.
 
