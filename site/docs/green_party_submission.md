@@ -3,7 +3,7 @@ layout: doc
 title: "SEBE: Green Party Policy Submission"
 description: "Policy submission to the Green Party Policy Development Committee"
 doc_author: Jason Huxley
-version: "4.0"
+version: "4.1"
 doc_date: February 2026
 permalink: /docs/green_party_submission.html
 ---
@@ -26,8 +26,8 @@ self-scaling: every new data centre, automated warehouse, or AI cluster
 increases the tax base. All rates are CPI-indexed annually.
 
 The revenue is general-purpose. It could fund UBI (as proposed in EC730),
-reduce the deficit, replace National Insurance, expand the NHS, or any
-combination. An illustrative distribution model (UBI starting at
+increase real fiscal space for net government spending, replace National
+Insurance, expand the NHS, or any combination. An illustrative distribution model (UBI starting at
 ~£650/adult/year at 2030 launch, ramping with automation) is included as an appendix,
 but SEBE's value is the revenue mechanism itself.
 
@@ -213,38 +213,12 @@ that grows with the thing that causes the employment crisis it addresses.
 ## 4. What SEBE Revenue Could Fund
 
 SEBE revenue is general-purpose. How it is spent is a political decision.
-The following illustrates scale, not prescriptive policy.
 
-### 4.1 At Launch (£34-46B, 2030)
+Redeeming this predicted nominal tax will release a level of real resources
+and increase the real fiscal space available for public provision.
 
-| Use | Cost | Notes |
-|---|---|---|
-| Modest UBI (~£650/adult/year) | ~£38B | Universal supplement (EC730) |
-| Free public transport | ~£14B | Fares replacement (ORR 2024/25) |
-| NHS waiting list reduction | ~£10-15B | Capital + staffing |
-| National Insurance cut | £38B = ~2p off NI | Pro-employment option |
-
-### 4.2 At Maturity (£93B by 2040)
-
-| Use | Cost | Notes |
-|---|---|---|
-| UBI at £1,000/adult/year | ~£55B | Meaningful supplement |
-| Full NI replacement | £170B | Achievable by ~2043 |
-| Deficit elimination | £93B | More than covers current borrowing |
-
-### 4.3 Illustrative Distribution Model
-
-One detailed scenario is worked through in the accompanying
-[Distribution Model](distribution_model.html). In summary:
-
-- **Stage 1:** UBI starting at ~£650/adult/year (2030 launch), ramping with SEBE
-  growth. Universal Basic Services (free transport, energy, broadband)
-  phase in over years. Children's supplements at £3,500-5,000/year.
-- **Stage 2:** UBI ratchets toward Universal Living Income
-  (£29,000/adult/year, matching median take-home pay) as automation
-  displaces employment.
-
-This is one option. SEBE works regardless of distribution model.
+One detailed distribution scenario is worked through in the accompanying
+[Distribution Model](distribution_model.html).
 
 **Alignment:** EC730 (UBI as right), EC201 (zero/negative growth compatible)
 
@@ -282,7 +256,7 @@ This is one option. SEBE works regardless of distribution model.
 - **Digital border enforcement** (BGP/SNI at IXPs)
 - **International coordination** (EU/OECD minimum rates)
 
-**This prevents race to bottom while maintaining UK competitiveness**
+**This prevents the race to the bottom while maintaining UK competitiveness**
 
 ---
 
@@ -338,14 +312,14 @@ Revenue grows automatically thereafter.
 - "Not aspiration, detailed technical specification"
 - "Stage 1 UBI launches immediately, grows automatically with automation"
 
-### 12.2 Potential Allies
+### 7.2 Potential Allies
 
 **Labour progressives:** Post-neoliberal economics, MMT-aware
 **Tech sector:** Prefer automation tax to income tax (aligns with transition)
 **Energy companies:** Predictable framework for renewable transition
 **Unions:** Protects workers during automation transition
 
-### 12.3 Opposition
+### 7.3 Opposition
 
 **Neoliberals:** "Kills competitiveness" (counter: offshore rate addresses)
 **Tech monopolies:** "Stifles innovation" (counter: UK companies benefit from onshore advantage)
@@ -355,17 +329,17 @@ Revenue grows automatically thereafter.
 
 ---
 
-## 13. Addressing Anticipated Critiques
+## 8. Addressing Anticipated Critiques
 
-### 13.1 "Companies will relocate offshore"
+### 8.1 "Companies will relocate offshore"
 
 **Response:**
-- Datacenters physically located in UK (can't just move them)
+- Data centres physically located in UK (can't just move them)
 - Offshore compute taxed at 2x (cheaper to stay)
-- UK becomes attractive for datacenter investment (clear tax framework)
+- UK becomes attractive for data centre investment (clear tax framework)
 - Energy cost + SEBE still competitive vs relocating
 
-### 13.2 "Measurement is impossible"
+### 8.2 "Measurement is impossible"
 
 **Response:**
 - UK already meters commercial energy (smart meters deployed)
@@ -373,7 +347,7 @@ Revenue grows automatically thereafter.
 - Hardware Root of Trust prevents tampering
 - Simpler than current tax system (single physical measurement vs complex accounting)
 
-### 13.3 "Inflation will eat UBI"
+### 8.3 "Inflation will eat UBI"
 
 **Response:**
 - Any initial UBI is modest (~£650/year at launch, minimal demand shock)
@@ -387,7 +361,7 @@ Revenue grows automatically thereafter.
   The tax captures a share of productivity gains that are themselves
   deflationary
 
-### 13.4 "Why not tax FLOPS (compute operations) directly?"
+### 8.4 "Why not tax FLOPS (compute operations) directly?"
 
 **Response:**
 - **FLOPS is not a standard unit.** FP64, FP32, FP16, INT8, INT4 all
@@ -411,7 +385,7 @@ Revenue grows automatically thereafter.
   quantum, neuromorphic) consumes energy. Energy metering is deployed,
   tamper-resistant, architecture-neutral, and rewards efficiency.
 
-### 13.5 "Creates surveillance state"
+### 8.5 "Creates surveillance state"
 
 **Response:**
 - Meters measure total consumption only (not individual behaviour)
@@ -421,9 +395,9 @@ Revenue grows automatically thereafter.
 
 ---
 
-## 14. Recommendations
+## 9. Recommendations
 
-### 14.1 Immediate Actions (Policy Development Committee)
+### 9.1 Immediate Actions (Policy Development Committee)
 
 1. **Adopt SEBE** as core UBI funding mechanism for next manifesto
 2. **Commission economic modelling** (partner with academic institution)
@@ -431,7 +405,7 @@ Revenue grows automatically thereafter.
 4. **Draft legislation** (work with parliamentary researchers)
 5. **Public consultation** (build support among tech workers, unions)
 
-### 14.2 Coalition Preparation
+### 9.2 Coalition Preparation
 
 **Position SEBE as:**
 - Non-negotiable for Green coalition participation
@@ -439,7 +413,7 @@ Revenue grows automatically thereafter.
 - Technical specification ready for immediate implementation
 - Stage 1 deliverable within first parliament
 
-### 14.3 Timeline to Implementation
+### 9.3 Timeline to Implementation
 
 **2026:** Policy adoption, economic modelling
 **2027-2028:** Manifesto inclusion, public campaign
@@ -450,7 +424,7 @@ Revenue grows automatically thereafter.
 
 ---
 
-## 15. Conclusion
+## 10. Conclusion
 
 The Sovereign Energy and Bandwidth Excise solves the income tax
 replacement problem. By taxing the physical infrastructure of automated
