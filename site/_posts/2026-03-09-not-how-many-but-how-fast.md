@@ -4,6 +4,7 @@ title: "It's Not How Many But How Fast"
 date: 2026-03-09
 description: "The rising tide of automation displacement"
 tags: [policy, economics, automation, beginner]
+image: /assets/images/rising-tide.png
 ---
 
 *The rising tide of automation displacement*
