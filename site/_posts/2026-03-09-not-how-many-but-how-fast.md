@@ -9,9 +9,9 @@ image: /assets/images/rising-tide.png
 
 *The rising tide of automation displacement*
 
-![How Fast, Not How Many]({{ site.baseurl }}/assets/images/rising-tide.png)
-
 The current level of AI models is already driving worker displacement. Not just because the AI is getting smarter. Because human ingenuity, fuelled by AI assistance, is constantly improving the tooling built around it. If AI development stopped tomorrow, this disruption would continue. PlayStation games got dramatically better over the life of each console, not because the hardware changed but because developers learned to exploit what was already there. The same dynamic is playing out with AI, except the thing being optimised away is headcount.
+
+![How Fast, Not How Many]({{ site.baseurl }}/assets/images/rising-tide.png)
 
 The debate about automation and employment usually asks the wrong question. It asks whether machines will replace human workers. Optimists point to two centuries of evidence: the loom displaced weavers but created loom operators, the tractor displaced farm hands but created mechanics and logistics workers, the computer displaced typists but created an entire digital economy. Technology has always created more jobs than it destroyed. Why would this time be different?
 
