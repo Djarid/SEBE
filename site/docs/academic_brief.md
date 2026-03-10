@@ -1,13 +1,12 @@
 ---
 layout: doc
-title: "Infrastructure-Based Taxation for the Post-Employment Economy"
-description: "SEBE academic analysis for think tanks and researchers"
+title: Infrastructure-Based Taxation for the Post-Employment Economy
+description: SEBE academic analysis for think tanks and researchers
 doc_author: Jason Huxley
-version: "3.0"
-doc_date: February 2026
 permalink: /docs/academic_brief.html
+version: 3.0
+doc_date: February 2026
 ---
-
 ## Abstract
 
 As automation achieves parity with human productive capacity,
@@ -154,12 +153,12 @@ SEE = PoL - (PoS_final - PoS_initial) x Efficiency_Allowance
 DCD is set so that offshoring compute is always more expensive than
 operating domestically (where the operator pays SEE). This incentivises
 building UK data centres. The rate is derived from the SEE-equivalent
-cost per unit of border-crossing data (see the [Revenue Model, Section 4](revenue_model.html#4-dcd-revenue-derivation)
+cost per unit of border-crossing data (see [SEBE Revenue Model](revenue_model.html) Section 4
 for full derivation).
 
 ### 3.3 Rate Structures
 
-**Energy (derived from DESNZ consumption data, see the [Revenue Model](revenue_model.html#3-see-revenue-derivation)):**
+**Energy (derived from DESNZ consumption data, see [SEBE Revenue Model](revenue_model.html)):**
 
 | Bracket | Rate (£/kWh) | Taxable TWh | Annual Revenue |
 |---|---|---|---|
@@ -176,7 +175,7 @@ remainder falls below the exemption. Non-compute commercial energy
 ~60 TWh at lower weighted rates. Revenue grows with automation (see
 growth projections below).
 
-**Bandwidth (derived from data centre economics, see the [Revenue Model](revenue_model.html#4-dcd-revenue-derivation)):**
+**Bandwidth (derived from data centre economics, see [SEBE Revenue Model](revenue_model.html)):**
 
 | Type | Rate | Annual Revenue |
 |---|---|---|
@@ -271,7 +270,7 @@ annum, tracking compute capacity), the crossover occurs in the 2040s.
 ### 5.2 Illustrative Distribution Model
 
 One possible use of SEBE revenue is universal income provision. An
-accompanying working paper (the [Distribution Model](distribution_model.html)) details a two-stage
+accompanying working paper ([SEBE Distribution Model](distribution_model.html)) details a two-stage
 model:
 
 - **Stage 1:** UBI starting at ~£650/adult/year from launch revenue (2030),
@@ -474,7 +473,8 @@ the cost level.
 **ULI definition:** For this reason, ULI is defined as the median
 full-time take-home pay at the point of implementation (currently
 £31,627, ASHE 2025), CPI-adjusted annually thereafter. It is not a
-permanently fixed nominal figure. See the [Distribution Model, Section 4.4](distribution_model.html#44-uli-target-definition) for derivation and rationale.
+permanently fixed nominal figure. See [SEBE Distribution Model](distribution_model.html)
+Section 4.4 for derivation and rationale.
 
 ---
 
@@ -788,7 +788,7 @@ This paper does **not** provide:
 - Fiscal foundation for universal income provision at meaningful levels
 - UK demonstrates feasibility for other nations
 
-See the [Distribution Model](distribution_model.html) for one detailed illustrative model of how
+See [SEBE Distribution Model](distribution_model.html) for one detailed illustrative model of how
 SEBE revenue could fund a two-stage universal income transition.
 
 ---
@@ -929,7 +929,7 @@ with automation, providing increasing fiscal capacity for redistribution
 without requiring politically impossible fiscal expansions at launch.
 Further research is essential to refine parameters and validate assumptions,
 but the core mechanism is sound and implementable. An accompanying working
-paper (the [Distribution Model](distribution_model.html)) presents one detailed illustrative model
+paper ([SEBE Distribution Model](distribution_model.html)) presents one detailed illustrative model
 for how SEBE revenue could fund universal income provision.
 
 ---
@@ -996,11 +996,11 @@ and current work in quantitative research infrastructure.
 **Central estimate:** £38B (2026 prices, CPI-indexed rates)
 **2040 range:** £70B (low growth) to £135B (high growth)
 
-Full derivation in the [Revenue Model](revenue_model.html).
+Full derivation in [SEBE Revenue Model](revenue_model.html).
 
 ### Appendix C: Cost Model Summary
 
-Full working available in the [Cost Model](cost_model.html), including:
+Full working available in [SEBE Cost Model](cost_model.html), including:
 - Population breakdown and assumptions
 - Tax burden calculations on median earnings
 - UBS component costing with transport demand elasticity

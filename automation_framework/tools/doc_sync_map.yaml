@@ -1,0 +1,107 @@
+# Document sync mapping
+#
+# Single source of truth for docs/ -> site/docs/ generation.
+# Adding a new document: add an entry here, create the file in docs/.
+# The build script (doc_sync.py) reads this to generate site/docs/.
+#
+# Fields:
+#   title:             Jekyll page title (used in front matter and index)
+#   description:       Jekyll meta description
+#   group:             Index group (must match a key in 'groups')
+#   difficulty:        accessible | intermediate | advanced
+#   index_description: Short text shown on the documents index page
+#   order:             Sort order within group (lower = first)
+#   doc_date:          Override date (otherwise extracted from source header)
+#   extra_front_matter: Additional YAML keys to add to front matter (optional)
+
+groups:
+  policy:
+    heading: "Policy"
+    order: 1
+  model:
+    heading: "Models & Evidence"
+    order: 2
+  analysis:
+    heading: "Analysis"
+    order: 3
+
+documents:
+  SEBE_summary:
+    title: "Tax Robots, Fund People"
+    description: "A new tax on automation infrastructure that starts at £38 billion and grows every year machines replace workers."
+    group: policy
+    difficulty: accessible
+    index_description: "Four-page overview: the problem, the mechanism, the revenue, the ask."
+    order: 1
+
+  green_party_submission:
+    title: "SEBE: Green Party Policy Submission"
+    description: "Policy submission to the Green Party Policy Development Committee"
+    group: policy
+    difficulty: intermediate
+    index_description: "Policy submission to the Green Party Policy Development Committee, aligned to EC framework."
+    order: 2
+
+  academic_brief:
+    title: "Infrastructure-Based Taxation for the Post-Employment Economy"
+    description: "SEBE academic analysis for think tanks and researchers"
+    group: policy
+    difficulty: advanced
+    index_description: "Full academic analysis for think tanks and researchers. Technical feasibility, rate derivation, research agenda."
+    order: 3
+
+  public_explainer:
+    title: "Tax Robots, Fund People"
+    description: "A simple guide to the Sovereign Energy and Bandwidth Excise"
+    group: policy
+    difficulty: accessible
+    index_description: "Plain language guide. No jargon. What it is, who pays, what you get."
+    order: 4
+
+  revenue_model:
+    title: "SEBE Revenue Model"
+    description: "Revenue derivation from first principles with sensitivity analysis"
+    group: model
+    difficulty: advanced
+    index_description: "Source of truth for all SEBE revenue figures. First-principles derivation from DESNZ and Ofcom data."
+    order: 1
+
+  cost_model:
+    title: "SEBE Cost Model"
+    description: "Revenue scale and economic context"
+    group: model
+    difficulty: intermediate
+    index_description: "SEBE revenue in context: scale relative to existing taxes, what it could replace, what it could fund."
+    order: 2
+
+  distribution_model:
+    title: "SEBE Distribution Model"
+    description: "Illustrative two-stage UBI to Universal Living Income model"
+    group: model
+    difficulty: intermediate
+    index_description: "Illustrative two-stage UBI to Universal Living Income transition. Full costing and sensitivity analysis."
+    order: 3
+
+  brookings_rebuttal:
+    title: "Why Brookings Gets AI Taxation Wrong"
+    description: "A SEBE response to Korinek and Lockwood (January 2026)"
+    group: analysis
+    difficulty: intermediate
+    index_description: "Detailed response to Korinek and Lockwood's AI taxation framework (January 2026)."
+    order: 1
+
+  agentic_fluency_trap:
+    title: "The Agentic Fluency Trap"
+    description: "Why AI capability freezes will not stop workforce displacement, and what that means for fiscal policy"
+    group: analysis
+    difficulty: intermediate
+    index_description: "Why AI doesn't need to improve for displacement to accelerate. The compounding fluency curve and METR time horizon data."
+    order: 2
+
+  global_transition:
+    title: "Strategic Analysis: Global Order in Transition"
+    description: "Analysis of dollar-system erosion and UK strategic implications"
+    group: analysis
+    difficulty: advanced
+    index_description: "Strategic analysis of dollar-system erosion, with UK implications and four trajectory scenarios."
+    order: 3

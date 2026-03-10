@@ -1,10 +1,13 @@
 ---
 layout: doc
-title: "Tax Robots, Fund People"
-description: "A simple guide to the Sovereign Energy and Bandwidth Excise"
+title: Tax Robots, Fund People
+description: A simple guide to the Sovereign Energy and Bandwidth Excise
 doc_author: Jason Huxley
 permalink: /docs/public_explainer.html
+version: 1.0
+doc_date: February 2026
 ---
+**What is SEBE?**
 
 A new way of funding society that taxes the energy and internet bandwidth
 used by automated systems (AI, datacenters, robots) instead of taxing
@@ -371,9 +374,9 @@ everyone, or just for the people who own them?**
 
 ---
 
-*For technical details, see the full policy paper ([Green Party Submission](green_party_submission.html)
-or [Academic Brief](academic_brief.html)). For revenue derivation, see the [Revenue Model](revenue_model.html). For
-distribution workings, see the [Distribution Model](distribution_model.html). For questions, contact
+*For technical details, see the full policy paper ([SEBE: Green Party Policy Submission](green_party_submission.html)
+or [Infrastructure-Based Taxation for the Post-Employment Economy](academic_brief.html)). For revenue derivation, see [SEBE Revenue Model](revenue_model.html). For
+distribution workings, see [SEBE Distribution Model](distribution_model.html). For questions, contact
 [your details].*
 
 *This is a citizen proposal. It needs your support to become reality.*

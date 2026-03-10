@@ -244,7 +244,22 @@ python -m tools.web_search "automation jobs UK" --categories news
 
 Requires SearXNG running on localhost:8888 (`podman start sebe-searxng`).
 
-No other build/lint/test tools. Policy documents are Markdown only.
+**Document sync (run from `automation_framework/`):**
+
+```bash
+# Validate doc headers conform to standard
+python -m tools.doc_lint
+
+# Generate site/docs/ from docs/ source files
+python -m tools.doc_sync --sync
+
+# Check if site/docs/ is stale (exit non-zero if so)
+python -m tools.doc_sync --check
+```
+
+Pre-commit hook runs both checks automatically when `docs/*.md` files are
+staged. To add a new document: create the file in `docs/` with a conforming
+header, add an entry to `tools/doc_sync_map.yaml`, run `--sync`.
 
 ## Document Style Guidelines
 

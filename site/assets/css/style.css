@@ -773,6 +773,59 @@ article time {
   color: var(--muted);
 }
 
+/* ========== DOCUMENT FILTER ========== */
+
+.doc-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.doc-filter-pill {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.8rem;
+  border-radius: 3px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.doc-filter-pill:hover {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+.doc-filter-pill.active {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--bg);
+}
+
+.doc-group-heading {
+  font-family: var(--serif);
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--ink);
+}
+
+/* Inline tags on doc index */
+.doc-list .post-tags {
+  display: inline-flex;
+  margin-bottom: 0;
+  margin-left: 0.5rem;
+  vertical-align: baseline;
+}
+
 /* ========== GISCUS COMMENTS ========== */
 
 .giscus-container {

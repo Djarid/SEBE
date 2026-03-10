@@ -473,6 +473,8 @@ powering it.
 
 ---
 
+The full SEBE summary is available at `SEBE_summary.md`.
+
 *Jason Huxley is an infrastructure and automation engineer with 30 years'
 experience in large-scale enterprise systems. He is a member of the Green
 Party of England and Wales. The full SEBE proposal is open-source at

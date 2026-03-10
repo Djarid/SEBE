@@ -1,13 +1,12 @@
 ---
 layout: doc
-title: "SEBE Cost Model"
-description: "Revenue scale and economic context"
+title: SEBE Cost Model
+description: Revenue scale and economic context
 doc_author: Jason Huxley
-version: "2.0"
-doc_date: February 2026
 permalink: /docs/cost_model.html
+version: 2.0
+doc_date: February 2026
 ---
-
 ## 1. Purpose
 
 This document places SEBE revenue in context: how large is it relative
@@ -15,14 +14,14 @@ to the current tax system, what could it replace, and what could it fund?
 It bridges the revenue model (how SEBE raises money) and the distribution
 model (one illustrative use of the revenue).
 
-- **Revenue derivation:** [Revenue Model](revenue_model.html) (source of truth for all SEBE figures)
-- **Distribution workings:** [Distribution Model](distribution_model.html) (UBI/ULI/UBS detail)
+- **Revenue derivation:** [SEBE Revenue Model](revenue_model.html) (source of truth for all SEBE figures)
+- **Distribution workings:** [SEBE Distribution Model](distribution_model.html) (UBI/ULI/UBS detail)
 
 ---
 
 ## 2. SEBE Revenue Summary
 
-From the [Revenue Model](revenue_model.html) (derived from first principles):
+From [SEBE Revenue Model](revenue_model.html) (derived from first principles):
 
 All figures in 2026 real prices. All rates CPI-indexed annually.
 
@@ -103,7 +102,7 @@ money at a scale that moves the fiscal needle.
 
 ### 4.3 The Two-Stage Distribution Model (One Option)
 
-The accompanying [Distribution Model](distribution_model.html) works through a specific
+The accompanying [SEBE Distribution Model](distribution_model.html) works through a specific
 scenario in detail:
 
 - **Stage 1:** UBI starting at ~£650/adult/year (2030 launch, 58.8M adults), ramping with SEBE growth.
@@ -176,7 +175,7 @@ SEBE revenue range reflects uncertainty in:
 - Behavioural response (efficiency investment reduces consumption)
 - Enforcement effectiveness
 
-Full sensitivity analysis in the Revenue Model: [SEE Sensitivity](revenue_model.html#81-see-revenue-sensitivity), [DCD Sensitivity](revenue_model.html#82-dcd-revenue-sensitivity), and [Growth Sensitivity](revenue_model.html#83-growth-sensitivity).
+Full sensitivity analysis in [SEBE Revenue Model](revenue_model.html) Sections 8.1-8.3.
 
 ### 6.2 What If SEBE Underperforms?
 

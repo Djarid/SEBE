@@ -1,13 +1,12 @@
 ---
 layout: doc
 title: "SEBE: Green Party Policy Submission"
-description: "Policy submission to the Green Party Policy Development Committee"
+description: Policy submission to the Green Party Policy Development Committee
 doc_author: Jason Huxley
-version: "4.1"
-doc_date: February 2026
 permalink: /docs/green_party_submission.html
+version: 4.1
+doc_date: February 2026
 ---
-
 ## Executive Summary
 
 Automation is eroding the UK income tax base. Income Tax (£250B) and
@@ -147,7 +146,7 @@ industrial operations, and automated warehouses.
 
 **Year 1 revenue estimate:** £24-28 billion/year at launch, growing to £83
 billion by 2040 as automation infrastructure expands (data centres, automated
-warehouses, robotic manufacturing). Full derivation in the [Revenue Model](revenue_model.html).
+warehouses, robotic manufacturing). Full derivation in [SEBE Revenue Model](revenue_model.html).
 
 **Notes:**
 - Drives energy efficiency (EC200)
@@ -218,7 +217,7 @@ Redeeming this predicted nominal tax will release a level of real resources
 and increase the real fiscal space available for public provision.
 
 One detailed distribution scenario is worked through in the accompanying
-[Distribution Model](distribution_model.html).
+[SEBE Distribution Model](distribution_model.html).
 
 **Alignment:** EC730 (UBI as right), EC201 (zero/negative growth compatible)
 

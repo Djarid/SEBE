@@ -1,13 +1,12 @@
 ---
 layout: doc
-title: "SEBE Distribution Model"
-description: "Illustrative two-stage UBI to Universal Living Income model"
+title: SEBE Distribution Model
+description: Illustrative two-stage UBI to Universal Living Income model
 doc_author: Jason Huxley
-version: "2.0"
-doc_date: February 2026
 permalink: /docs/distribution_model.html
+version: 2.0
+doc_date: February 2026
 ---
-
 ## 1. Purpose
 
 This document explores what SEBE revenue could fund. It is deliberately
@@ -182,7 +181,7 @@ CPI-indexed ULI barely rises in nominal terms but purchasing power
 This creates a favourable fiscal dynamic: SEBE revenue grows (driven
 by compute base expansion, not inflation) while ULI costs grow slowly
 (driven by CPI, which is dampened by automation). The gap widens in
-the exchequer's favour. See the [Academic Brief, Section 6.5](academic_brief.html#65-cpi-behaviour-under-automation) for
+the exchequer's favour. See [Infrastructure-Based Taxation for the Post-Employment Economy](academic_brief.html) Section 6.5 for
 further analysis.
 
 ---

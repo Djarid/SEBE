@@ -2,6 +2,12 @@
 
 ## A Simple Guide to the Sovereign Energy and Bandwidth Excise
 
+**Author:** Jason Huxley
+**Date:** February 2026
+**Version:** 1.0
+
+---
+
 **What is SEBE?**
 
 A new way of funding society that taxes the energy and internet bandwidth

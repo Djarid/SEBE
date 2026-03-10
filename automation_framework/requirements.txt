@@ -2,7 +2,7 @@
 # No external deps required for core memory system (stdlib only).
 # Below are optional, for future use:
 
-# pyyaml>=6.0          # If args/ YAML parsing is needed
+pyyaml>=6.0            # doc_sync/doc_lint YAML mapping
 # python-dotenv>=1.0   # If .env loading is needed for API keys
 
 # MCP server (social agent sandbox)

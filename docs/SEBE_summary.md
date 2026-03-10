@@ -1,12 +1,13 @@
+# Tax Robots, Fund People
+
+## SEBE Summary
+
+**Author:** Jason Huxley
+**Date:** February 2026
+**Version:** 1.0
+
 ---
-layout: doc
-title: Tax Robots, Fund People
-description: A new tax on automation infrastructure that starts at £38 billion and grows every year machines replace workers.
-doc_author: Jason Huxley
-permalink: /docs/SEBE_summary.html
-version: 1.0
-doc_date: February 2026
----
+
 The UK government raises £420 billion a year from taxing workers' wages. Income Tax brings in £250 billion. National Insurance adds another £170 billion. Together, that is 42% of all government revenue. Every pound of it depends on people having jobs.
 
 Automation is destroying those jobs. Not in some distant future. Now. Machine learning systems already outperform human diagnosticians, human traders, human translators and human customer service agents. Large language models handle legal research, code review, financial analysis and content production at a fraction of the cost of a salaried employee. Every AI system deployed is a salary that disappears from the tax base.
@@ -115,7 +116,7 @@ One illustrative use: a modest UBI starting at roughly £650 per adult per year 
 
 ## Full proposal
 
-The full proposal, including [SEBE Revenue Model](revenue_model.html) derived from first principles, [SEBE Cost Model](cost_model.html), [SEBE Distribution Model](distribution_model.html) and [Infrastructure-Based Taxation for the Post-Employment Economy](academic_brief.html), is open-source:
+The full proposal, including `revenue_model.md` derived from first principles, `cost_model.md`, `distribution_model.md` and `academic_brief.md`, is open-source:
 
 **[github.com/djarid/SEBE](https://github.com/djarid/SEBE)**
 

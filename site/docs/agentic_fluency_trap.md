@@ -1,16 +1,12 @@
 ---
 layout: doc
-title: "The Agentic Fluency Trap"
-description: "Why AI capability freezes will not stop workforce displacement, and what that means for fiscal policy"
+title: The Agentic Fluency Trap
+description: Why AI capability freezes will not stop workforce displacement, and what that means for fiscal policy
 doc_author: Jason Huxley
-version: "1.0"
-doc_date: March 2026
 permalink: /docs/agentic_fluency_trap.html
+version: 1.0
+doc_date: March 2026
 ---
-
-*Why AI capability freezes will not stop workforce displacement, and what
-that means for fiscal policy*
-
 ## 1. The Wrong Question
 
 The debate about automation and employment asks whether machines will
@@ -474,11 +470,12 @@ powering it.
 
 ---
 
+The full SEBE summary is available at [Tax Robots, Fund People](SEBE_summary.html).
+
 *Jason Huxley is an infrastructure and automation engineer with 30 years'
 experience in large-scale enterprise systems. He is a member of the Green
 Party of England and Wales. The full SEBE proposal is open-source at
-[github.com/djarid/SEBE](https://github.com/djarid/SEBE) under CC-BY 4.0.
-The full SEBE summary is available [here]({{ site.baseurl }}/docs/SEBE_summary.html).*
+[github.com/djarid/SEBE](https://github.com/djarid/SEBE) under CC-BY 4.0.*
 
 ---
 

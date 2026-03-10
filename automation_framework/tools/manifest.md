@@ -65,6 +65,28 @@ python -m tools.web_search "SEBE tax" --limit 5 --json
 python -m tools.web_search "automation jobs UK" --categories news
 ```
 
+### doc_lint
+
+Validates document header conformance for all files in `doc_sync_map.yaml`.
+Checks for required metadata (Author, Date, Version) and separator.
+
+```bash
+python -m tools.doc_lint
+```
+
+### doc_sync
+
+Generates `site/docs/` from `docs/` source files. Strips markdown headers,
+prepends Jekyll front matter from YAML mapping, transforms backtick `.md`
+references to HTML links, generates grouped index page with JS filtering.
+
+```bash
+python -m tools.doc_sync --sync     # Generate site/docs/
+python -m tools.doc_sync --check    # Dry-run, exit non-zero if stale
+```
+
+Configuration: `tools/doc_sync_map.yaml`
+
 ---
 
 *Update this file when adding or retiring tools.*

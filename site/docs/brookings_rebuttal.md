@@ -1,13 +1,12 @@
 ---
 layout: doc
-title: "Why Brookings Gets AI Taxation Wrong"
-description: "A SEBE response to Korinek and Lockwood (January 2026)"
+title: Why Brookings Gets AI Taxation Wrong
+description: A SEBE response to Korinek and Lockwood (January 2026)
 doc_author: Jason Huxley
-version: "1.0"
-doc_date: March 2026
 permalink: /docs/brookings_rebuttal.html
+version: 1.0
+doc_date: March 2026
 ---
-
 ## 1. Introduction
 
 In January 2026, Anton Korinek and Lee Lockwood published "The Future
@@ -225,7 +224,7 @@ SEBE generates £34-46 billion at launch in 2030 (2026 prices), growing
 to £93 billion by 2040 and £159 billion by 2045 as automation scales.
 All rates are CPI-indexed. All projections are in 2026 real prices.
 The full revenue model is published with source data and methodology
-(the [Revenue Model](revenue_model.html)).
+([SEBE Revenue Model](revenue_model.html)).
 
 The consumption tax alternative has no published revenue estimate, no
 rate structure, no implementation timeline and no growth model. It is

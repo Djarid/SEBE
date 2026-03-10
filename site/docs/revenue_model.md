@@ -1,13 +1,12 @@
 ---
 layout: doc
-title: "SEBE Revenue Model"
-description: "Revenue derivation from first principles with sensitivity analysis"
+title: SEBE Revenue Model
+description: Revenue derivation from first principles with sensitivity analysis
 doc_author: Jason Huxley
-version: "2.0"
-doc_date: February 2026
 permalink: /docs/revenue_model.html
+version: 2.0
+doc_date: February 2026
 ---
-
 ## 1. Purpose
 
 This document derives SEBE revenue estimates from real data: UK energy
@@ -427,7 +426,7 @@ Revenue is allocated first to UBS commitments, then the remainder funds
 UBI. UBI grows automatically as revenue exceeds UBS costs.
 
 All figures in 2026 real prices. Adult populations from ONS 2022-based
-projections (see the [Distribution Model, Section 3.2](distribution_model.html#32-population-projections-ons-2022-based-npps)).
+projections (see [SEBE Distribution Model](distribution_model.html) Section 3.2).
 
 | Year | Adults | SEE | DCD | Feedback | Total | UBS Cost | Available | Adult UBI | Monthly |
 |---|---|---|---|---|---|---|---|---|---|

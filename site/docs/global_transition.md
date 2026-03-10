@@ -1,23 +1,12 @@
 ---
 layout: doc
 title: "Strategic Analysis: Global Order in Transition"
-description: "Analysis of dollar-system erosion and UK strategic implications"
+description: Analysis of dollar-system erosion and UK strategic implications
 doc_author: Jason Huxley
-version: "1.0"
-doc_date: February 2026
 permalink: /docs/global_transition.html
+version: 1.0
+doc_date: February 2026
 ---
-
-## A Framework for Adversarial Challenge
-
-*Prepared for independent verification and challenge. All assertions are
-provisional. This analysis carries a specific UK-centric bias that should
-be explicitly tested. The author brings direct professional experience in
-signals intelligence (1986-97) which informs the intelligence culture
-assessment, a bias acknowledged, not concealed.*
-
----
-
 ## THE THESIS
 
 The post-1944 dollar-centric international order has a designed terminal
