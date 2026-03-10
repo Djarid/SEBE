@@ -3,7 +3,7 @@ layout: post
 title: "How Fast, Not How Many"
 date: 2026-03-09
 description: "The rising tide of automation displacement"
-tags: [policy, economics, automation, beginner]
+tags: [policy, economics, automation, accessible]
 image: /assets/images/rising-tide.png
 ---
 
