@@ -63,14 +63,23 @@ SEBE/
 ├── technical/                             # Future specs/code
 └── automation_framework/
     ├── goals/                             # Process definitions
-    │   └── manifest.md                    # Index of goals
+    │   ├── manifest.md                    # Index of goals
+    │   └── pdf_generation.md              # PDF generation workflow
     ├── tools/                             # Deterministic scripts
     │   ├── git_remote.py                  # Git remote ops (push/pull/status)
     │   ├── pdf_reader.py                  # PDF text extraction (local/URL)
+    │   ├── pdf_writer.py                  # Markdown to styled PDF (pandoc + pdflatex)
     │   ├── fiscal_calc.py                 # Fiscal calculator (tax/distribution/offsets)
     │   ├── web_search.py                  # SearXNG web search client
-    │   └── memory/                        # Memory system (Python)
-    │       ├── config.py, db.py, reader.py, writer.py, export.py
+    │   ├── memory/                        # Memory system (Python)
+    │   │   ├── config.py, db.py, reader.py, writer.py, export.py
+    │   │   └── __init__.py
+    │   └── conversations/                 # Conversation archive system
+    │       ├── config.py                  # Paths, enums, validation constants
+    │       ├── db.py                      # SQLite + FTS5 operations, CLI
+    │       ├── parser.py                  # WhatsApp/Discord chat parsers
+    │       ├── importer.py                # Import orchestrator + participant resolution
+    │       ├── exporter.py                # Export (full/anonymised/summary)
     │       └── __init__.py
     ├── context/                           # Domain knowledge
     │   ├── project_context.md             # SEBE policy context (tracked)
@@ -260,6 +269,127 @@ python -m tools.doc_sync --check
 Pre-commit hook runs both checks automatically when `docs/*.md` files are
 staged. To add a new document: create the file in `docs/` with a conforming
 header, add an entry to `tools/doc_sync_map.yaml`, run `--sync`.
+
+**PDF generation (run from `automation_framework/`):**
+
+```bash
+# Generate PDF from a single markdown file
+python -m tools.pdf_writer --file ../../docs/academic_brief.md
+
+# Generate with table of contents (recommended for 10+ page docs)
+python -m tools.pdf_writer --file ../../docs/academic_brief.md --toc
+
+# Custom output path
+python -m tools.pdf_writer --file ../../drafts/nhs_palantir_v2.md -o out.pdf
+
+# Batch process all docs
+python -m tools.pdf_writer --batch ../../docs/
+
+# Dry run (show what would be generated)
+python -m tools.pdf_writer --batch ../../docs/ --dry-run
+
+# Override metadata
+python -m tools.pdf_writer --file doc.md --title "Custom Title" --author "A. Person"
+
+# Skip copyright footer
+python -m tools.pdf_writer --file doc.md --no-copyright
+
+# Strip editorial notes from output
+python -m tools.pdf_writer --file doc.md --no-notes
+```
+
+Requires pandoc and texlive (pdflatex + ebgaramond). Output: A4 PDF with
+EB Garamond font, dark blue headings, running headers, editorial note boxes,
+CC-BY 4.0 footer. See `goals/pdf_generation.md` for full details.
+
+**DOCX generation (run from `automation_framework/`):**
+
+```bash
+# Generate DOCX from a single markdown file
+python -m tools.docx_writer --file ../../docs/academic_brief.md
+
+# Generate with table of contents (recommended for 10+ page docs)
+python -m tools.docx_writer --file ../../docs/academic_brief.md --toc
+
+# Custom output path
+python -m tools.docx_writer --file ../../drafts/gpew_platform_dpia.md -o dpia.docx
+
+# Batch process all docs
+python -m tools.docx_writer --batch ../../docs/
+
+# Dry run (show what would be generated)
+python -m tools.docx_writer --batch ../../docs/ --dry-run
+
+# Override metadata
+python -m tools.docx_writer --file doc.md --title "Custom Title" --author "A. Person"
+
+# Skip copyright footer
+python -m tools.docx_writer --file doc.md --no-copyright
+
+# Strip editorial notes from output
+python -m tools.docx_writer --file doc.md --no-notes
+```
+
+Requires pandoc (3.0+). No texlive needed. Output: A4 DOCX with Cambria font,
+dark blue headings, clean tables. Uses `tools/reference.docx` as style
+template. Shared preprocessing with PDF writer via `tools/_doc_common.py`.
+See `goals/docx_generation.md` for full details.
+
+**Conversation archive (run from `automation_framework/`):**
+
+```bash
+# Import a WhatsApp thread
+python -m tools.conversations.importer \
+  --platform whatsapp \
+  --file ~/sebe-data/imports/whatsapp/chat.txt \
+  --campaign "Sci Tech AI Task" \
+  --subject "AI Policy Framing" \
+  --type group
+
+# Import with contact linking (maps sender names/numbers to memory.db contact IDs)
+python -m tools.conversations.importer \
+  --platform whatsapp \
+  --file chat.txt \
+  --campaign "Name" \
+  --contact-map '{"Jason Huxley": 1, "+44 7984 820767": 5}'
+
+# Reimport (deletes existing conversation with same campaign first)
+python -m tools.conversations.importer --platform whatsapp --file chat.txt --campaign "Name" --force
+
+# Import a Discord thread (copy-paste format)
+python -m tools.conversations.importer --platform discord --file thread.txt --campaign "Economy PWG JG Debate"
+
+# Full-text search across all conversations
+python -m tools.conversations.db --action search --query "metering"
+
+# Search within a specific campaign
+python -m tools.conversations.db --action search --query "metering" --campaign "Sci Tech SEBE Review"
+
+# List all conversations
+python -m tools.conversations.db --action list-conversations
+
+# List messages in a conversation
+python -m tools.conversations.db --action list-messages --conversation-id 1
+
+# Tag a message (claim, concession, evidence, action_item, decision, etc.)
+python -m tools.conversations.db --action tag-message --message-id 42 --tag-type claim --tag-value "SEBE will raise £34-46B"
+
+# Export full transcript as markdown
+python -m tools.conversations.exporter --conversation-id 1 --format markdown -o export.md
+
+# Export anonymised (Chatham House Rule: pseudonymised names, redacted numbers)
+python -m tools.conversations.exporter --conversation-id 1 --format anonymised
+
+# Export summary (metadata + participant stats + tag counts, no message content)
+python -m tools.conversations.exporter --conversation-id 1 --format summary
+
+# Stats
+python -m tools.conversations.db --action stats
+```
+
+Database stored at `~/sebe-data/conversations.db` (outside git repo for privacy).
+Supports WhatsApp (.txt export) and Discord (copy-paste). See
+`goals/conversation_archive.md` for full details.
 
 ## Document Style Guidelines
 
