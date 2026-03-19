@@ -36,10 +36,10 @@ documents:
 
   green_party_submission:
     title: "SEBE: Green Party Policy Submission"
-    description: "Policy submission to the Green Party Policy Development Committee"
+    description: "Policy submission using the Now / Likely Future / Wanted Future framework"
     group: policy
     difficulty: intermediate
-    index_description: "Policy submission to the Green Party Policy Development Committee, aligned to EC framework."
+    index_description: "Policy submission to PDC and Economy PWG. Three-framing structure: present harms, trajectory, desired outcome. MMT-framed."
     order: 2
 
   academic_brief:
@@ -49,6 +49,14 @@ documents:
     difficulty: advanced
     index_description: "Full academic analysis for think tanks and researchers. Technical feasibility, rate derivation, research agenda."
     order: 3
+
+  academic_brief_mmt:
+    title: "Inflation Control for the Post-Employment Economy"
+    description: "SEBE as automatic stabiliser within the MMT fiscal framework"
+    group: policy
+    difficulty: advanced
+    index_description: "MMT-framed analysis. SEBE as inflation control instrument, anchor migration from labour to energy, self-balancing fiscal design."
+    order: 4
 
   public_explainer:
     title: "Tax Robots, Fund People"

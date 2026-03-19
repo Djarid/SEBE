@@ -1,485 +1,533 @@
 ---
 layout: doc
 title: "SEBE: Green Party Policy Submission"
-description: Policy submission to the Green Party Policy Development Committee
+description: Policy submission using the Now / Likely Future / Wanted Future framework
 doc_author: Jason Huxley
 permalink: /docs/green_party_submission.html
-version: 4.1
-doc_date: February 2026
+version: 5.0
+doc_date: March 2026
 ---
-## Executive Summary
+## Purpose
 
-Automation is eroding the UK income tax base. Income Tax (£329B) and
-National Insurance (£205B) together provide 42% of government revenue,
-and both depend on employment. As automation displaces workers, this
-revenue shrinks while welfare costs grow. No existing tax replaces it.
+This proposal introduces the Sovereign Energy and Bandwidth Excise
+(SEBE): a tax on the physical infrastructure of automated production.
+SEBE taxes commercial energy consumption (kWh) and cross-border
+commercial data (TB). It generates £34-46 billion at launch in 2030
+(2026 prices), growing automatically with automation to £93 billion
+by 2040 and £159 billion by 2045.
 
-The Sovereign Energy and Bandwidth Excise (SEBE) does. SEBE taxes the
-physical infrastructure of automated production: **energy consumption
-(kWh)** and **cross-border commercial data (TB)**. It is the only UK tax
-that grows with the thing causing the employment crisis.
-
-**SEBE generates £34-46 billion at launch (2030, in 2026 real prices),
-growing to £93 billion by 2040 and £159 billion by 2045.** Revenue is
-self-scaling: every new data centre, automated warehouse, or AI cluster
-increases the tax base. All rates are CPI-indexed annually.
-
-The revenue is general-purpose. It could fund UBI (as proposed in EC730),
-increase real fiscal space for net government spending, replace National
-Insurance, expand the NHS, or any combination. An illustrative distribution model (UBI starting at
-~£650/adult/year at 2030 launch, ramping with automation) is included as an appendix,
-but SEBE's value is the revenue mechanism itself.
-
-SEBE directly supports:
-- **EC730** (Universal Basic Income funding mechanism)
-- **EC100/EC310** (moving beyond GDP/labour-dependent indicators)
-- **EC200** (ecological sustainability through energy taxation)
-- **EC650** (corporate accountability for automation externalities)
-- **EC661** (money as common resource, MMT-compatible fiscal expansion)
+The proposal follows the three-framing structure: what is happening
+now, where things are heading, and where we want them to go. Each
+section identifies the harms and positives, then sets out what SEBE
+does about them.
 
 ---
 
-## 1. The Automation Crisis and Tax Base Collapse
+## 1. Now
 
-### 1.1 The Employment Decay
+### 1.1 Harms That Need Addressing
 
-Current UK tax system depends on employment:
-- **Income Tax:** £329B (26% of revenue)
-- **National Insurance:** £205B (16% of revenue)
-- **Combined:** £534B (42% of total revenue)
+**The tax base is coupled to employment, and employment is eroding.**
 
-As automation eliminates employment:
-- **Tax revenue falls** (fewer wages to tax)
-- **Welfare costs rise** (more unemployed)
-- **Fiscal crisis** (revenue collapse meets expenditure explosion)
+Income Tax (£329B) and National Insurance (£205B) together provide
+42% of UK government revenue (OBR November 2025 EFO, updated February
+2026). Both depend on people being in paid work. As automation
+displaces workers, this revenue shrinks while welfare costs grow. No
+existing UK tax grows with automation.
 
-### 1.2 The Value Migration
+**Automation is displacing workers now, not in a distant future.**
 
-Economic value is shifting from:
-- **Human labour** to **Machine computation**
-- **Taxed (income tax)** to **Untaxed (corporate profits, offshore)**
+AI systems already outperform humans in diagnostics, translation, legal
+research, code review, financial analysis and customer service. Block
+cut 40% of staff citing AI. Salesforce eliminated 4,000 support roles
+after AI deployment. Over 25,000 AI-linked layoffs were announced in
+the first quarter of 2026 alone. Youth unemployment is 16.1%, the
+highest in over a decade (ONS, February 2026). 946,000 young people
+are NEET.
 
-Result: **Productive capacity increases while tax revenue decreases**
+**The gains from automation are concentrating in capital owners.**
 
-### 1.3 The SEBE Solution
+Returns to automation accrue to those who own the infrastructure
+(hyperscalers, tech monopolies, shareholders), not to those displaced
+by it. UK Corporation Tax receipts from the tech sector are well below
+headline rates because profits are routed through Ireland, Luxembourg
+and the Netherlands. The productive gains of automation are real. Their
+distribution is not.
 
-Tax the **actual inputs** to production:
-- **Energy (kWh):** Powers all computation and manufacturing
-- **Bandwidth (Mbps):** Enables all digital economic activity
+**UK compute infrastructure depends on foreign operators.**
 
-These are:
-- **Measurable** (hardware infrastructure)
-- **Unavoidable** (physical bottlenecks)
-- **Fair** (scales with actual resource consumption)
-- **Future-proof** (captures automation dividend)
+Approximately 38% of UK commercial compute runs offshore (AWS Ireland,
+Azure Netherlands, GCP Belgium). Revenue from this economic activity
+escapes UK taxation entirely. The UK has no fiscal mechanism for
+taxing the productive value of offshore compute serving the UK market.
+
+### 1.2 Positives Worth Protecting and Building On
+
+**Automation is increasing productive capacity.**
+
+Manufacturing output per worker is rising. AI inference outperforms
+humans in pattern recognition, diagnostics and materials science.
+Robotic process automation eliminates repetitive tasks. Unit costs are
+falling across automated sectors. This is not a harm. It is a
+structural gain that should be welcomed and harnessed.
+
+**The green transition is accelerating.**
+
+AI optimises energy grids, accelerates materials science research and
+improves building efficiency. Renewable energy costs have fallen ~90%
+in a decade. Computing costs fall ~30% annually. These trends, properly
+directed, can decarbonise the economy faster than any human-managed
+programme.
+
+**UK data centre investment is growing.**
+
+Hyperscalers are investing billions in UK data centre capacity (London,
+Slough, Manchester). This is productive infrastructure. A policy
+framework that incentivises further domestic investment (rather than
+offshoring to Ireland or the Netherlands) strengthens the UK's compute
+sovereignty and its tax base simultaneously.
+
+### 1.3 What SEBE Does Now
+
+SEBE addresses the harms while strengthening the positives:
+
+- **Replaces eroding employment tax revenue** with a source that grows
+  as automation grows. At launch, SEBE withdraws £34-46 billion from
+  the corporate sector, creating fiscal space for the government to
+  maintain aggregate demand.
+
+- **Taxes physical resource consumption, not accounting constructs.**
+  A multinational can declare zero profit in the UK through transfer
+  pricing. It cannot route its electricity consumption through Ireland.
+  The meter reads what it reads.
+
+- **Incentivises domestic compute investment.** The Digital Customs
+  Duty (DCD) sets offshore compute at a permanent price disadvantage.
+  Companies that repatriate compute to the UK pay the Sovereign Energy
+  Excise (SEE) instead, which is cheaper. The result is more UK data
+  centres, more UK jobs in construction and operations, and a stronger
+  domestic tax base.
+
+- **Rewards energy efficiency.** SEE taxes energy consumption per kWh.
+  A facility that achieves the same output with less energy pays less
+  tax. This is the correct incentive: automate well, not wastefully.
+
+- **Exempts consumers and small businesses.** The 500kW threshold
+  means no household, shop, restaurant or office pays SEBE. This is a
+  tax on commercial automation infrastructure, not on people.
 
 ---
 
-## 2. Technical Implementation
+## 2. Likely Future
 
-### 2.1 Sovereign Energy Excise (SEE)
+### 2.1 Where Things Are Heading Without Intervention
 
-**Coverage:** Commercial facilities with IT load >500kW
+**Employment-linked revenue will continue to erode.**
 
-**Metering Architecture (Hardware Root of Trust):**
+The Anthropic CEO has warned that AI could displace 50% of entry-level
+white-collar jobs within 1-5 years. The OBR worst case projects 500,000
+additional unemployed with no growth uplift and £9 billion extra
+government borrowing. The Bank of England is war-gaming a full AI shock
+scenario for inclusion in banking stress tests (Bloomberg/ResultSense,
+March 2026). This is no longer a speculative risk. It is being modelled
+by central banks.
 
-Three measurement points:
-1. **Point of Generation (PoG):** Captures all incoming energy (grid, private SMRs, renewables)
-2. **Point of Storage (PoS):** Monitors battery systems (prevents temporal arbitrage)
-3. **Point of Load (PoL):** Measures actual consumption at compute infrastructure
+Each displaced worker removes a salary from the Income Tax and NI base
+and adds a claim to Universal Credit. Revenue shrinks; costs grow. The
+fiscal scissors close.
 
-**Reconciliation Formula:**
-```
-SEE Liability = PoL - (PoS_final - PoS_initial) x RTE_allowance
-```
+**Corporation Tax will not fill the gap.**
 
-Where RTE (Round-Trip Efficiency) allowance = 5% variance for battery losses
+Multinational firms structure their affairs to declare minimal UK
+profit regardless of how much economic activity they conduct here.
+The effective rate on large tech firms is a fraction of the headline
+rate. Even with OECD Pillar Two (15% minimum), the additional revenue
+is modest (~£2-3B) and easily absorbed by new avoidance structures.
 
-**Purpose:** Prevents "dark compute" powered by unmetered generation
+**Energy demand from compute will grow substantially.**
 
-**Alignment:** EC513/EC654 (environmental auditing), EC200 (ecological sustainability)
+The IEA projects UK data centre electricity demand to triple by 2030
+(from ~10 TWh to ~30 TWh). AI training runs are becoming larger, not
+smaller. Automated warehouses, robotic logistics and AI inference
+clusters all draw power at scale. This energy consumption is currently
+untaxed (beyond the Climate Change Levy at £0.00775/kWh, which raises
+only £2B nationally).
 
-### 2.2 Digital Customs Duty (DCD)
+**Without a new fiscal mechanism, the trajectory leads to:**
 
-**Coverage:** Corporate data throughput (Net Neutrality protected for individuals)
+- A structural deficit that grows with automation
+- Austerity imposed on the population whose jobs were destroyed
+- Concentration of automation gains in a small number of firms
+- Increasing dependence on offshore compute infrastructure with no
+  UK fiscal capture
+- Political pressure for coercive responses (workfare, surveillance,
+  benefit conditionality) as the conventional fiscal framework fails
 
-**Implementation at Internet Exchange Points:**
+### 2.2 Is This a Direction We Want?
 
-**Role Margin Protocol:**
-- Baseline quota per Standard Industrial Classification (SIC) code
-- Flag throughput >1.5x standard deviation for sector
-- Tax excess as "imported labour" (offshore AI/compute services)
+No. The Green Party has long recognised that GDP growth is an
+inadequate measure of progress (EC100, EC310) and that ecological
+sustainability requires structural economic change (EC200). The party
+is committed to Universal Basic Income (EC730), to abolishing National
+Insurance (EC727, EC764) and to ensuring that taxation incorporates
+the real costs of resource consumption (ST334, EC776).
 
-**Traffic Analysis:**
-- Layer 4-7 inspection (SNI, flow symmetry)
-- BGP Community Tagging at Tier-1 gateways
-- Distinguishes commercial vs personal traffic
+None of these commitments can be met within a fiscal framework that
+depends on employment taxation. The party needs a mechanism that
+replaces the revenue (or, in MMT terms, the withdrawal capacity) that
+employment taxation currently provides.
 
-**Rate Structure:**
-- **Domestic compute:** Base rate
-- **Offshore compute:** 1.5-2x base rate (incentivises UK datacenter investment)
+### 2.3 What SEBE Does to Reshape the Trajectory
 
-**Purpose:** Capture value from offshore computation serving UK market
+SEBE creates a fiscal instrument whose capacity grows with automation
+rather than declining with employment:
 
-**Alignment:** EC921/EC947 (digital sovereignty), EC1052 (preventing profit extraction)
-
----
-
-## 3. Revenue Modelling
-
-### 3.1 Energy Component
-
-**UK commercial/industrial electricity:** ~150 TWh/year total, but only
-approximately **70 TWh in facilities above the 500kW threshold**. Most
-commercial electricity is used by small and medium enterprises (shops, offices,
-restaurants) that fall below 500kW. The threshold targets data centres, large
-industrial operations, and automated warehouses.
-
-**Proposed rate tiers:**
-
-| Consumption Bracket | Rate | Rationale |
+| Instrument | Linked to | As automation increases |
 |---|---|---|
-| 0-500 kW | Exempt | Small business protection |
-| 500 kW - 5 MW | £0.08/kWh | Progressive ramp |
-| 5 MW - 50 MW | £0.20/kWh | Standard commercial |
-| >50 MW | £0.45/kWh | Datacenter/heavy industrial |
+| Income Tax | Employment | Withdrawal capacity falls |
+| National Insurance | Employment | Withdrawal capacity falls |
+| Corporation Tax | Accounting profit | Withdrawal capacity gameable |
+| VAT | Consumer spending | Withdrawal capacity falls with demand |
+| **SEBE** | **Automation infrastructure** | **Withdrawal capacity grows** |
 
-**Year 1 revenue estimate:** £24-28 billion/year at launch, growing to £83
-billion by 2040 as automation infrastructure expands (data centres, automated
-warehouses, robotic manufacturing). Full derivation in [SEBE Revenue Model](revenue_model.html).
+**SEBE is the only UK fiscal instrument whose capacity scales with
+the force that creates the need for greater public spending.**
 
-**Notes:**
-- Drives energy efficiency (EC200)
-- Incentivises renewable transition
-- Larger operations pay proportionally more
-- Revenue automatically scales with automation deployment
+By 2040, SEBE withdrawal capacity reaches £93 billion. By 2045, £159
+billion (approaching NI scale). This is not a one-off revenue boost.
+It is a structurally growing tax base tied to the fastest-expanding
+sector of the economy.
 
-### 3.2 Bandwidth Component (Digital Customs Duty)
+---
 
-**DCD is a border tariff only**, taxing commercial data crossing the UK digital
-border in either direction. Consumers are exempt. Domestic data centre traffic
-is exempt (pays SEE on energy instead).
+## 3. Wanted Future
 
-**Who pays:**
-- UK businesses using offshore cloud providers (AWS Ireland, Azure Netherlands)
-- UK businesses calling offshore APIs (OpenAI, Anthropic, etc.)
-- UK companies using offshore SaaS platforms
-- Any UK commercial entity whose data crosses the digital border
+### 3.1 What the World We Want Looks Like
 
-**Proposed tiered rate structure:**
+A society where:
 
-| Annual border traffic | DCD Rate | Target |
+- **Automation serves everyone, not just capital owners.** The
+  productivity gains from AI, robotics and automated production are
+  distributed through unconditional income and universal public
+  services.
+
+- **Nobody is compelled to work in order to survive.** A Universal
+  Living Income (ULI), funded by SEBE and complementary instruments,
+  provides a floor high enough that employment is a choice, not a
+  condition of survival.
+
+- **The tax base tracks the economy as it actually is.** Taxation is
+  levied on the physical inputs to production (energy, data) rather
+  than on the increasingly marginal human contribution. The fiscal
+  architecture matches the productive architecture.
+
+- **The UK is a compute sovereign.** Domestic data centre investment
+  is incentivised by policy. UK businesses run on UK infrastructure.
+  The tax base, the skills, the supply chain and the strategic
+  independence all reside within UK jurisdiction.
+
+- **Energy efficiency is rewarded.** SEBE taxes energy consumption,
+  not output. Companies that produce more with less energy pay less
+  tax. The incentive is to innovate, not to avoid automation.
+
+### 3.2 What Policies Move Us There
+
+**SEBE is the fiscal mechanism.** It provides the withdrawal capacity
+that creates space for the government to spend on redistribution, public
+services and infrastructure without inflationary pressure. The spending
+decisions (UBI, UBS, NHS, green investment) are political choices. SEBE
+provides the fiscal foundation.
+
+**The two-stage transition:**
+
+**Stage 1 (from 2030 launch):** SEBE revenue funds an initial UBI
+starting at ~£650 per adult per year (58.8 million adults, ONS 2030
+projection). Not life-changing in year one, but universal, unconditional
+and self-scaling. As automation grows and SEBE revenue grows, the
+payment ratchets upward automatically toward a target of £2,500 per
+adult per year. Universal Basic Services (free transport, energy,
+broadband, mobile) phase in as revenue permits.
+
+**Stage 2 (as automation matures):** UBI ratchets toward Universal
+Living Income: £29,000 per adult per year (matching median take-home
+pay of £31,627 minus £2,500 UBS value). This requires SEBE at maturity
+plus complementary instruments (wealth tax, land value tax, financial
+transaction tax). Stage 2 is achievable if, and only if, automation
+delivers the productivity gains that expand the economy's real
+productive capacity. The two-stage design allows observation and
+adjustment: Stage 1 provides real-world data before Stage 2 is
+attempted.
+
+**SEBE operationalises existing Green Party policy:**
+
+| Policy | Commitment | SEBE Connection |
 |---|---|---|
-| < 10 PB | £200/TB | Small/medium offshore use |
-| 10-100 PB | £400/TB | Large enterprise offshore |
-| > 100 PB | £800/TB | Hyperscaler-equivalent |
-
-**Year 1 revenue estimate:** £7-10 billion/year at launch. Revenue remains
-roughly stable (repatriation offsets volume growth) as the deterrent effect
-drives compute back to UK facilities where SEE applies.
-
-**Notes:**
-- Captures value from offshore computation serving UK market
-- DCD rate set above SEE-equivalent to incentivise domestic data centre investment
-- Creates genuine economic advantage for UK-based compute infrastructure
-- Revenue secondary to SEE but critical as enforcement mechanism
-
-### 3.3 Total SEBE Revenue
-
-**Year 1 (2030 launch):** **£34-46 billion/year** (2026 prices)
-
-**Growth trajectory:**
-- 2030: £38 billion
-- 2035: £57 billion
-- 2040: £93 billion
-- 2045: £159 billion (mid scenario)
-
-**As proportion of current tax revenue (£1 trillion):** 3.4-4.6% at launch,
-growing to approximately 9% by 2040.
-
-**Comparison to existing taxes at launch:**
-- Comparable to Inheritance Tax (£7B) + Stamp Duty (£15B) + Climate Change Levy (£2B) + Tobacco Duty (£10B) combined
-- Smaller than Corporation Tax (£100B) or VAT (£160B)
-- Becomes a major revenue source as automation grows
-
-**Key characteristic: SEBE is self-scaling.** Revenue automatically tracks
-automation deployment. As machines replace workers, the tax on machine
-infrastructure funds workers' replacement income. This is the only UK tax
-that grows with the thing that causes the employment crisis it addresses.
+| EC661 | Money as common resource (MMT framework) | SEBE's theoretical foundation |
+| EC730 | Universal Basic Income | SEBE creates fiscal space for UBI |
+| EC727/EC764 | Abolish employee and employer NI | SEBE replaces the ~£205B NI withdrawal capacity |
+| ST334 | Taxation must incorporate real costs of resources | SEE taxes the energy externality of automation |
+| EC776 | Eco-taxes on those responsible for environmental costs | SEE is an eco-tax on commercial energy consumption |
+| EC779 | Import duties reflecting ecological/social impact | DCD is a border tariff on offshore commercial compute |
+| EN110 | Border tariffs on high embodied energy imports | DCD captures the embodied energy of offshore compute |
+| EC1050/EC1052 | Electronic transactions escape taxation in country of origin | DCD addresses the offshore compute problem these policies identified |
 
 ---
 
-## 4. What SEBE Revenue Could Fund
+## 4. The Mechanism
 
-SEBE revenue is general-purpose. How it is spent is a political decision.
+### 4.1 Sovereign Energy Excise (SEE)
 
-Redeeming this predicted nominal tax will release a level of real resources
-and increase the real fiscal space available for public provision.
+**What it taxes:** Commercial electricity consumption at facilities
+with IT load above 500kW.
 
-One detailed distribution scenario is worked through in the accompanying
-[SEBE Distribution Model](distribution_model.html).
+**Who pays:** Data centres, automated warehouses, large-scale
+manufacturing, AI training facilities.
 
-**Alignment:** EC730 (UBI as right), EC201 (zero/negative growth compatible)
+**Who does not pay:** Households, small businesses, shops, restaurants,
+offices below 500kW.
 
----
+**Rate structure (2026 prices, CPI-indexed annually):**
 
-## 5. Enforcement Framework
+| Consumption Bracket | Rate (£/kWh) |
+|---|---|
+| 0-500kW | Exempt |
+| 500kW-5MW | £0.08 |
+| 5MW-50MW | £0.20 |
+| >50MW | £0.45 |
 
-### 5.1 Tiered Compliance System
+**Revenue at launch (2030):** £24-28 billion (2026 prices). For
+context: the Climate Change Levy raises £2 billion at £0.00775/kWh.
+SEE at a weighted average of £0.16/kWh is a step change, but comparable
+in scale to fuel duty (£25 billion).
 
-**Tier 1: Technical Remediation**
-- Discrepancies <10% from metering variance
-- Mandatory audit by National Telemetry Agency
-- Administrative penalties for late adjustment
-- **Standard tax collection procedure**
+**Metering:** Hardware Root of Trust at three points (generation,
+storage, load). Tamper-evident, cryptographically attested. The meter
+reads what it reads.
 
-**Tier 2: Systematic Evasion**
-- HRoT tampering or unmetered compute nodes
-- Commercial bandwidth permit suspension
-- Court-ordered receivership (like bankruptcy proceedings)
-- Asset liquidation to cover liability
+### 4.2 Digital Customs Duty (DCD)
 
-**Tier 3: Capital Flight Prevention**
-- Exit tax on realised gains (standard practice)
-- Strategic de-listing from UK digital infrastructure
-- Asset seizure under existing fraud/tax evasion law
+**What it taxes:** Commercial data crossing the UK digital border (both
+directions).
 
-**Alignment:** EC650 (corporate accountability), EC981 (preventing capital flight), EC797 (tax haven prevention)
+**Who pays:** UK businesses using offshore cloud providers (AWS Ireland,
+Azure Netherlands, GCP Belgium), UK businesses calling offshore APIs
+(OpenAI US, Anthropic US), UK financial firms with offshore compute.
 
-### 5.2 Progressive Revenue Protection
+**Who does not pay:** UK consumers (exempt), UK businesses using
+UK-based data centres (they pay SEE instead), educational and research
+institutions, NHS and emergency services.
 
-**Problem:** Companies relocate to low-tax jurisdictions
+**Rate structure:**
 
-**Solutions:**
-- **Offshore compute tax** (2x domestic rate) = penalises relocation
-- **Digital border enforcement** (BGP/SNI at IXPs)
-- **International coordination** (EU/OECD minimum rates)
+| Annual Border Traffic | Rate |
+|---|---|
+| < 10 PB/year | £200/TB |
+| 10-100 PB/year | £400/TB |
+| > 100 PB/year | £800/TB |
 
-**This prevents the race to the bottom while maintaining UK competitiveness**
+**Revenue at launch:** £7-10 billion (2026 prices). Revenue remains
+roughly stable as the deterrent effect repatriates compute to UK
+facilities.
 
----
+**Enforcement:** At Internet Exchange Point (IXP) level. Aggregate
+commercial throughput measured at the point where the cable meets UK
+jurisdiction. No individual traffic is inspected. Weighing the
+container, not opening it.
 
-## 6. Implementation Roadmap
+### 4.3 Why Energy, Not Compute
 
-### Phase 1: Legislation and Infrastructure (2029-2030)
-- SEBE legislation enacted following election
-- National Telemetry API development
-- Sovereign Metering Standard (open-source, TPM-secured)
-- Pilot with 10-20 largest datacenters
+Proposals to tax FLOPS (floating-point operations), individual robots
+or AI models all fail on measurement:
 
-### Phase 2: Rollout (2030-2031)
-- Mandatory installation for >50MW facilities
-- Digital border infrastructure at major IXPs
-- Revenue collection begins (£34-46B at launch, 2026 prices)
-- Revenue allocation decision (UBI, NI reduction, or combination)
+- FLOPS is not a standardised unit (FP64, FP32, FP16, INT8 produce
+  different counts for the same work)
+- No physical meter exists for compute operations (hardware counters
+  are trivially spoofable)
+- Evasion is architectural (switch hardware type, change precision,
+  use neuromorphic compute)
+- A FLOPS tax punishes efficiency (newer hardware doing the same work
+  in fewer operations pays less)
 
-### Phase 3: Expansion (2031-2032)
-- Extension to >5MW facilities
-- International coordination (EU alignment)
-- Revenue growing with automation deployment
+Energy is architecture-neutral, physically measurable, tamper-resistant
+and efficiency-rewarding. Every computation, regardless of hardware,
+consumes energy. It is the correct proxy.
 
-### Phase 4: Maturity (2033+)
-- >500kW facilities included
-- Full SEBE coverage operational
-- Revenue at £57B+ by 2035, £93B+ by 2040 (2026 prices)
+### 4.4 Revenue and Growth
 
-**Total timeline:** 3-5 years from legislation to full SEBE coverage.
-Revenue grows automatically thereafter.
+All figures in 2026 real prices. All rates CPI-indexed annually.
 
----
+| Year | SEE | DCD | Total SEBE |
+|---|---|---|---|
+| 2030 (launch) | £30B | £8B | **£38B** |
+| 2033 | £40B | £8B | **£48B** |
+| 2035 | £50B | £7B | **£57B** |
+| 2040 | £83B | £10B | **£93B** |
+| 2045 | £140B | £19B | **£159B** |
 
-## 7. Why SEBE Enables Green Coalition Government
-
-### 7.1 The Coalition Arithmetic (Post-2028 Election)
-
-**Likely scenario:**
-- Reform UK plurality (not majority)
-- Labour-Green-Lib Dem coalition possible
-- **Green demands:** Wealth tax, PR, **UBI funding**
-
-**Current problem:** UBI unfunded (no viable mechanism)
-
-**SEBE solution:**
-- £34-46B revenue at launch (2030, 2026 prices), growing to £93B by 2040
-- Revenue funds EC730 UBI from day one (modest start, grows with automation)
-- Politically viable (taxes corporations not workers)
-- Technically feasible (infrastructure exists)
-- Self-scaling: the only tax that grows with the thing replacing workers
-
-**Coalition negotiation strength:**
-- "We have UBI funding mechanism ready to implement"
-- "Not aspiration, detailed technical specification"
-- "Stage 1 UBI launches immediately, grows automatically with automation"
-
-### 7.2 Potential Allies
-
-**Labour progressives:** Post-neoliberal economics, MMT-aware
-**Tech sector:** Prefer automation tax to income tax (aligns with transition)
-**Energy companies:** Predictable framework for renewable transition
-**Unions:** Protects workers during automation transition
-
-### 7.3 Opposition
-
-**Neoliberals:** "Kills competitiveness" (counter: offshore rate addresses)
-**Tech monopolies:** "Stifles innovation" (counter: UK companies benefit from onshore advantage)
-**Conservatives:** "Big government" (counter: replaces welfare bureaucracy with simple UBI)
-
-**Victory condition:** Coalition with 40%+ vote share, Green Party holding balance
+Full derivation from first principles (UK energy consumption data,
+data centre capacity, wholesale bandwidth pricing, LLM token
+economics) in the companion document [SEBE Revenue Model](revenue_model.html).
 
 ---
 
-## 8. Addressing Anticipated Critiques
+## 5. The MMT Framework
 
-### 8.1 "Companies will relocate offshore"
+For members familiar with Modern Monetary Theory (and consistent with
+EC661), SEBE fits naturally within the MMT fiscal framework.
 
-**Response:**
-- Data centres physically located in UK (can't just move them)
-- Offshore compute taxed at 2x (cheaper to stay)
-- UK becomes attractive for data centre investment (clear tax framework)
-- Energy cost + SEBE still competitive vs relocating
+**The UK government does not need SEBE revenue to spend.** A sovereign
+currency issuer creates money when it spends and destroys it when it
+taxes. The real constraint is inflation, not revenue.
 
-### 8.2 "Measurement is impossible"
+**SEBE's function is inflation control.** It withdraws purchasing power
+from the corporate sector (specifically, from automation-intensive
+operations) to create fiscal space for government spending without
+exceeding productive capacity.
 
-**Response:**
-- UK already meters commercial energy (smart meters deployed)
-- ISPs already measure bandwidth (peering agreements, CDN contracts)
-- Hardware Root of Trust prevents tampering
-- Simpler than current tax system (single physical measurement vs complex accounting)
+**The withdrawal instrument scales with the spending need.** As
+automation grows, more workers are displaced (the government must spend
+more) and more energy and bandwidth are consumed (SEBE withdrawal
+capacity grows). The drain matches the tap.
 
-### 8.3 "Inflation will eat UBI"
+**Automation expands productive capacity.** More goods and services
+can be produced with fewer inputs. This widens the fiscal space. SEBE
+taxes the infrastructure of the process that widens it. The tax and
+the capacity expansion are structurally linked.
 
-**Response:**
-- Any initial UBI is modest (~£650/year at launch, minimal demand shock)
-- SEBE rates are CPI-indexed annually (like alcohol and tobacco duty)
-- SEBE withdraws purchasing power from corporations (anti-inflationary)
-- UBS directly reduces household costs (deflationary for recipients)
-- Real constraint is productive capacity, not money supply
-- **Crucially:** the automation SEBE taxes simultaneously reduces the real
-  cost of producing goods and services. Unit costs of manufacturing,
-  logistics, energy, and service delivery all fall as automation scales.
-  The tax captures a share of productivity gains that are themselves
-  deflationary
+**SEBE is not hypothecated.** Revenue is general-purpose. The
+government allocates spending through democratic processes, responding
+to economic conditions. This is consistent with both MMT principles
+and Green Party fiscal policy.
 
-### 8.4 "Why not tax FLOPS (compute operations) directly?"
-
-**Response:**
-- **FLOPS is not a standard unit.** FP64, FP32, FP16, INT8, INT4 all
-  count differently. A GPU rated at 1,000 TFLOPS in FP16 gives a
-  completely different number in FP32. There is no "one FLOP" that maps
-  to a unit of economic work.
-- **No physical measurement point.** Energy has meters. FLOPS has nothing
-  except software-readable hardware counters (trivially spoofable) or
-  self-declaration (obvious gaming incentive).
-- **Evasion is architectural.** Switch from GPU to ASIC, use lower
-  precision, use neuromorphic compute, run I/O-bound workloads. All
-  legitimate engineering choices that reduce FLOPS without reducing
-  economic output.
-- **Punishes efficiency.** A newer GPU that finishes a task in fewer
-  FLOPS pays less than an older, power-hungry GPU. This incentivises
-  keeping wasteful hardware running.
-- **Can't meter offshore.** You cannot count FLOPS in a Virginia data
-  centre from London. SEBE's DCD taxes the data crossing the border
-  instead (measurable at IXPs).
-- **Energy is the correct proxy.** Every computation (GPU, TPU, ASIC,
-  quantum, neuromorphic) consumes energy. Energy metering is deployed,
-  tamper-resistant, architecture-neutral, and rewards efficiency.
-
-### 8.5 "Creates surveillance state"
-
-**Response:**
-- Meters measure total consumption only (not individual behaviour)
-- Net Neutrality protected (individual traffic never inspected)
-- Commercial traffic metadata only (encrypted content not examined)
-- Less intrusive than current tax system (HMRC monitors all transactions)
+For readers who prefer the intuitive framing: SEBE taxes automation
+infrastructure and uses the revenue to fund public spending. Both
+framings describe the same mechanism. The MMT framing is more precise
+about why it works.
 
 ---
 
-## 9. Recommendations
+## 6. Addressing Objections
 
-### 9.1 Immediate Actions (Policy Development Committee)
+### 6.1 "This will drive businesses offshore"
 
-1. **Adopt SEBE** as core UBI funding mechanism for next manifesto
-2. **Commission economic modelling** (partner with academic institution)
-3. **Engage technical experts** (infrastructure, energy, networking)
-4. **Draft legislation** (work with parliamentary researchers)
-5. **Public consultation** (build support among tech workers, unions)
+DCD ensures offshore compute is always more expensive than domestic.
+A company that moves its data centre to Ireland pays DCD on every byte
+of cross-border traffic. A company that operates in the UK pays SEE,
+which is set below DCD. The incentive is to invest domestically.
 
-### 9.2 Coalition Preparation
+### 6.2 "Energy taxes will harm the green transition"
 
-**Position SEBE as:**
-- Non-negotiable for Green coalition participation
-- "Funded UBI or no deal"
-- Technical specification ready for immediate implementation
-- Stage 1 deliverable within first parliament
+SEBE taxes energy consumption, not energy source. A renewable-powered
+data centre pays the same SEE rates but benefits from lower energy
+input costs. The combination of SEE and cheap renewables creates a
+strong incentive to build green compute infrastructure. AI research
+that accelerates the green transition is not penalised.
 
-### 9.3 Timeline to Implementation
+The carbon levy (EC777, EN080) and SEE tax different externalities:
+emissions vs labour displacement. They are complementary.
 
-**2026:** Policy adoption, economic modelling
-**2027-2028:** Manifesto inclusion, public campaign
-**2028-2029:** Election, coalition negotiation
-**2029-2030:** Legislation passed, metering infrastructure deployed
-**2030-2033:** Phased implementation (Stage 1 UBI from day one of SEBE revenue)
-**2033+:** UBI ratchets toward ULI as automation grows
+### 6.3 "Consumers will pay through higher prices"
 
----
+SEE applies only to facilities above 500kW. No household or small
+business pays. Some cost pass-through to consumers is possible (as
+with any tax on production), but the magnitude is limited:
 
-## 10. Conclusion
+- Energy is 15-25% of data centre operating costs
+- Hyperscaler operating margins are 30-65%
+- SEE at the lowest tier (£0.08/kWh) is modest relative to commercial
+  electricity costs (£0.22-0.28/kWh)
 
-The Sovereign Energy and Bandwidth Excise solves the income tax
-replacement problem. By taxing the physical infrastructure of automated
-production rather than human labour, SEBE:
+Significant pass-through would require operators to sacrifice
+competitive position. In a market with multiple providers, the
+pressure is to absorb or efficiency-reduce, not to pass through.
 
-- **Replaces eroding employment tax revenue** (£34-46B at launch, £93B by 2040, £159B by 2045, CPI-indexed, 2026 prices)
-- **Self-scales:** the only UK tax that grows with the thing replacing workers
-- **Funds EC730 UBI** from day one of revenue collection
-- **Drives energy efficiency** and UK datacenter investment (EC200)
-- **Prevents offshore profit shifting** (can't move physical energy consumption)
-- **Aligns with Green values** (environmental, social justice, fiscal sovereignty)
+### 6.4 "You cannot tax what you cannot measure"
 
-**SEBE gives the Green Party a costed, implementable, self-scaling revenue
-mechanism** for the post-employment transition. The distribution question
-(UBI rate, UBS scope, transition speed) is a separate political decision.
-The revenue mechanism is the hard part, and this paper provides it.
+SEBE taxes two of the most measurable things in the economy. Energy
+consumption is already metered at every commercial facility. Data
+throughput is already counted at every Internet Exchange Point. ISPs
+already meter aggregate commercial throughput for billing purposes.
 
-As automation eliminates employment, the state must choose:
-- **Neoliberal path:** Tax base collapses, austerity, social breakdown
-- **SEBE path:** New revenue from automation, universal income, thriving society
+Hardware Root of Trust metering (tamper-evident, cryptographically
+attested) closes evasion routes. One physical measurement replaces
+thousands of pages of corporate accounting.
 
-**The choice defines the next decade of British politics.**
+### 6.5 "Inflation will eat UBI"
 
-This paper provides the technical and political framework for the SEBE path.
+Stage 1 UBI starts at ~£650 per adult per year (~£54/month). This is
+a rounding error relative to median income. Demand-pull inflation from
+this injection is negligible.
 
----
+SEBE simultaneously withdraws £34-46B from corporate balance sheets
+(anti-inflationary). The automation SEBE taxes also reduces production
+costs (deflationary at the unit level). The net inflation risk at
+Stage 1 is low.
 
-## Appendices
-
-### Appendix A: Technical Specifications
-- Hardware Root of Trust meter specifications
-- BGP Community Tag implementation
-- SNI filtering protocols
-- National Telemetry API architecture
-- (Full technical specs available on request)
-
-### Appendix B: EC Policy Concordance
-[Full mapping of SEBE to existing Green Party policy codes EC100-EC1053]
-
-### Appendix C: Revenue and Distribution Models
-- `docs/revenue_model.md`: Full SEBE revenue derivation from first principles
-- `docs/cost_model.md`: Revenue scale comparisons and economic context
-- `docs/distribution_model.md`: Illustrative UBI/ULI/UBS distribution workings
-
-### Appendix D: International Examples
-- Norway: Energy-based sovereign wealth fund
-- Luxembourg: Free public transport (since 2020)
-- Singapore: Digital services tax
-- EU: Digital Services Act precedent
+Stage 2 (full ULI) depends on productivity gains from automation
+expanding the economy's real productive capacity. The two-stage design
+allows observation and adjustment before any large fiscal expansion
+is attempted.
 
 ---
 
-**Contact:** [Your details]
-**Further information:** Available to present to Policy Development Committee or Economy Working Group
+## 7. Implementation Approach
 
-© 2026 Jason Huxley
-Licensed under CC-BY 4.0
-You may use, adapt, and distribute this work
-provided you credit the original author.
+### 7.1 Phased Deployment
+
+| Phase | Timeline | Action |
+|---|---|---|
+| 1 | 2027-2028 | Legislation: Energy Act and Finance Act amendments |
+| 2 | 2028-2030 | Metering rollout: HRoT at facilities >500kW, IXP monitoring |
+| 3 | 2030 | Launch: SEE and DCD live, monthly corporate invoicing |
+| 4 | 2032 | Review: rates, thresholds and inflation impact assessed |
+
+### 7.2 Administrative Simplicity
+
+SEBE is simpler to administer than income tax. Meter readings replace
+corporate accounts. No deductions, allowances or exemptions to
+negotiate. Estimated administrative cost: less than 1% of revenue.
+
+### 7.3 Expert Consultation Needed
+
+The 500kW threshold, tiered rates and specific values in this proposal
+are worked examples based on current data. They are a starting point
+for consultation, not fixed policy. Expert input from the energy
+sector, network engineering and tax administration should inform the
+final design.
+
+---
+
+## 8. Recommended Next Steps
+
+1. **Economy PWG review:** Assess SEBE within the MMT fiscal framework
+   and Green Party economic policy (EC661, EC730, EC727/EC764)
+2. **Science & Technology PWG review:** Assess technical feasibility
+   of SEE metering and DCD enforcement
+3. **Expert consultation:** Commission independent review of rate
+   structures, threshold calibration and revenue projections
+4. **Formal modelling:** CGE or SFC analysis of SEBE macroeconomic
+   effects, in partnership with a research institution (IPPR, NEF or
+   university)
+5. **Pilot programme design:** Voluntary trial with 10-20 large
+   facilities to validate projections and compliance costs
+6. **Conference motion:** Prepare policy motion for Autumn 2026
+   conference, supported by modelling results and consultation feedback
+
+---
+
+## Companion Documents
+
+| Document | Contents |
+|---|---|
+| [SEBE Revenue Model](revenue_model.html) | SEBE revenue derivation from first principles |
+| [SEBE Cost Model](cost_model.html) | Revenue in context, scale comparison |
+| [SEBE Distribution Model](distribution_model.html) | Two-stage UBI to ULI illustrative model |
+| [Infrastructure-Based Taxation for the Post-Employment Economy](academic_brief.html) | Full technical paper (orthodox framing) |
+| [Inflation Control for the Post-Employment Economy](academic_brief_mmt.html) | Full technical paper (MMT framing) |
+
+All documents are open-source, licensed CC-BY 4.0, and available at
+github.com/Djarid/SEBE.
+
+---
+
+(c) 2026 Jason Huxley. Licensed under CC-BY 4.0.

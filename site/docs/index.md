@@ -24,11 +24,15 @@ permalink: /docs/
   </li>
   <li data-tags="policy intermediate">
     <a href="{{ '/docs/green_party_submission.html' | relative_url }}">SEBE: Green Party Policy Submission</a> <span class="post-tags"><span class="post-tag post-tag-intermediate">INTERMEDIATE</span></span>
-    <p class="doc-desc">Policy submission to the Green Party Policy Development Committee, aligned to EC framework.</p>
+    <p class="doc-desc">Policy submission to PDC and Economy PWG. Three-framing structure: present harms, trajectory, desired outcome. MMT-framed.</p>
   </li>
   <li data-tags="policy advanced">
     <a href="{{ '/docs/academic_brief.html' | relative_url }}">Infrastructure-Based Taxation for the Post-Employment Economy</a> <span class="post-tags"><span class="post-tag post-tag-advanced">ADVANCED</span></span>
     <p class="doc-desc">Full academic analysis for think tanks and researchers. Technical feasibility, rate derivation, research agenda.</p>
+  </li>
+  <li data-tags="policy advanced">
+    <a href="{{ '/docs/academic_brief_mmt.html' | relative_url }}">Inflation Control for the Post-Employment Economy</a> <span class="post-tags"><span class="post-tag post-tag-advanced">ADVANCED</span></span>
+    <p class="doc-desc">MMT-framed analysis. SEBE as inflation control instrument, anchor migration from labour to energy, self-balancing fiscal design.</p>
   </li>
   <li data-tags="policy accessible">
     <a href="{{ '/docs/public_explainer.html' | relative_url }}">Tax Robots, Fund People</a> <span class="post-tags"><span class="post-tag post-tag-accessible">ACCESSIBLE</span></span>
