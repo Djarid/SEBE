@@ -13,12 +13,15 @@ import email.utils
 import html.parser
 import imaplib
 import logging
+import mimetypes
 import re
 import smtplib
 import ssl
 from datetime import datetime
+from email.mime.base import MIMEBase
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+from pathlib import Path
 from typing import Optional
 
 from .base import (

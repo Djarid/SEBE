@@ -87,6 +87,74 @@ python -m tools.doc_sync --check    # Dry-run, exit non-zero if stale
 
 Configuration: `tools/doc_sync_map.yaml`
 
+### docx_reader
+
+DOCX to SEBE-format markdown converter. Converts `.docx` files to markdown
+compatible with `pdf_writer`. Cleans pandoc output, promotes bold headers to
+ATX headings, extracts metadata, and normalises tables. Requires pandoc.
+
+```bash
+python -m tools.docx_reader --file document.docx              # Convert to .md
+python -m tools.docx_reader --file document.docx -o output.md # Custom output
+python -m tools.docx_reader --file document.docx --action info # Show metadata
+python -m tools.docx_reader --file document.docx --raw         # Output to stdout
+```
+
+### conversations
+
+Multi-platform conversation archive. Imports WhatsApp exports, stores in
+external SQLite database (`~/sebe-data/conversations.db`), provides
+full-text search, tagging, and anonymised export.
+
+```bash
+# Import WhatsApp conversation
+python -m tools.conversations.importer --platform whatsapp --file chat.txt --campaign "Sci Tech SEBE Review"
+
+# Search messages
+python -m tools.conversations.db --action search --query "metering"
+
+# List conversations
+python -m tools.conversations.db --action list-conversations
+
+# Tag a message
+python -m tools.conversations.db --action tag-message --id 42 --tag-type claim --value "text"
+
+# Export (full, anonymised, or summary)
+python -m tools.conversations.exporter --conversation-id 1 --format markdown
+python -m tools.conversations.exporter --conversation-id 1 --format anonymised
+
+# Stats
+python -m tools.conversations.db --action stats
+```
+
+### klaxxon
+
+Klaxxon reminder system client. Creates, lists, acknowledges and manages
+reminders and recurring schedules via the Klaxxon API. Reads credentials
+from `.env` at repo root (`KLAXXON_API_URL`, `KLAXXON_API_TOKEN`).
+
+```bash
+# Health check
+python -m tools.klaxxon health
+
+# Reminders
+python -m tools.klaxxon create --title "AI Strategy" --starts-at "2026-03-17T19:30:00Z" --link "https://meet.google.com/abc"
+python -m tools.klaxxon list
+python -m tools.klaxxon list --state pending
+python -m tools.klaxxon get --id 37
+python -m tools.klaxxon ack --id 37
+python -m tools.klaxxon skip --id 37
+python -m tools.klaxxon delete --id 37
+
+# Schedules
+python -m tools.klaxxon create-schedule --title "Standup" --time "09:00" --recurrence weekly --days mon,wed,fri
+python -m tools.klaxxon list-schedules
+python -m tools.klaxxon get-schedule --id 1
+
+# JSON output
+python -m tools.klaxxon list --json
+```
+
 ---
 
 *Update this file when adding or retiring tools.*

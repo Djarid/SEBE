@@ -180,6 +180,36 @@ python -m tools.git_remote --action sync
 Credentials read from `.env` at repo root (GITHUB_TOKEN, GITHUB_USER, GITHUB_REPO).
 Tokens are never displayed in output.
 
+**Klaxxon reminders (run from `automation_framework/`):**
+
+```bash
+# Health check
+python -m tools.klaxxon health
+
+# Create a reminder
+python -m tools.klaxxon create --title "AI Strategy" --starts-at "2026-03-17T19:30:00Z" --duration 30 --link "https://meet.google.com/abc"
+
+# List reminders (optionally filter by state)
+python -m tools.klaxxon list
+python -m tools.klaxxon list --state pending
+
+# Get, acknowledge, skip, delete
+python -m tools.klaxxon get --id 37
+python -m tools.klaxxon ack --id 37
+python -m tools.klaxxon skip --id 37
+python -m tools.klaxxon delete --id 37
+
+# Schedules
+python -m tools.klaxxon create-schedule --title "Standup" --time "09:00" --recurrence weekly --days mon,wed,fri
+python -m tools.klaxxon list-schedules
+
+# JSON output
+python -m tools.klaxxon list --json
+```
+
+Credentials read from `.env` at repo root (KLAXXON_API_URL, KLAXXON_API_TOKEN).
+Tokens are never displayed in output.
+
 **Fiscal calculator (run from `automation_framework/`):**
 
 ```bash
