@@ -8,7 +8,7 @@
 
 ---
 
-The UK government raises £420 billion a year from taxing workers' wages. Income Tax brings in £250 billion. National Insurance adds another £170 billion. Together, that is 42% of all government revenue. Every pound of it depends on people having jobs.
+The UK government raises £534 billion a year from taxing workers' wages. Income Tax brings in £329 billion. National Insurance adds another £205 billion. Together, that is 42% of all government revenue. Every pound of it depends on people having jobs.
 
 Automation is destroying those jobs. Not in some distant future. Now. Machine learning systems already outperform human diagnosticians, human traders, human translators and human customer service agents. Large language models handle legal research, code review, financial analysis and content production at a fraction of the cost of a salaried employee. Every AI system deployed is a salary that disappears from the tax base.
 
@@ -75,7 +75,7 @@ The **Digital Customs Duty (DCD)** is a border tariff on commercial data crossin
 | Stamp Duty | 15 | Exceeds at launch |
 | IHT + SD + CCL + Tobacco | ~34 | Comparable at launch |
 | Corporation Tax | 100 | ~2038 |
-| National Insurance | 170 | ~2043 |
+| National Insurance | 205 | ~2047 |
 
 Revenue is self-scaling: as automation replaces human labour, the tax on automation infrastructure grows automatically.
 
@@ -97,14 +97,14 @@ Hardware Root of Trust metering (tamper-evident, cryptographically attested, bid
 
 ## The income tax replacement argument
 
-Current employment-linked revenue (£420 billion) represents 42% of government revenue. As automation erodes employment, this shrinks. SEBE grows in the opposite direction.
+Current employment-linked revenue (£534 billion) represents 42% of government revenue. As automation erodes employment, this shrinks. SEBE grows in the opposite direction.
 
-| Year | SEBE | As % of Income Tax (£250B) |
+| Year | SEBE | As % of Income Tax (£329B) |
 |---|---|---|
-| 2030 | £38B | 15% |
-| 2035 | £57B | 23% |
-| 2040 | £93B | 37% |
-| 2045 | £159B | 64% |
+| 2030 | £38B | 12% |
+| 2035 | £57B | 17% |
+| 2040 | £93B | 28% |
+| 2045 | £159B | 48% |
 
 SEBE does not need to replace all of income tax immediately. It needs to grow faster than income tax shrinks. If automation erodes income tax at 2-3% per year and SEBE grows at 10-15% per year (tracking compute capacity growth), the crossover occurs in the 2040s.
 

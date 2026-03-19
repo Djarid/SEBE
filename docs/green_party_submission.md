@@ -11,8 +11,8 @@
 
 ## Executive Summary
 
-Automation is eroding the UK income tax base. Income Tax (£250B) and
-National Insurance (£170B) together provide 42% of government revenue,
+Automation is eroding the UK income tax base. Income Tax (£329B) and
+National Insurance (£205B) together provide 42% of government revenue,
 and both depend on employment. As automation displaces workers, this
 revenue shrinks while welfare costs grow. No existing tax replaces it.
 
@@ -46,9 +46,9 @@ SEBE directly supports:
 ### 1.1 The Employment Decay
 
 Current UK tax system depends on employment:
-- **Income Tax:** £250B (25% of revenue)
-- **National Insurance:** £170B (17% of revenue)
-- **Combined:** £420B (42% of total revenue)
+- **Income Tax:** £329B (26% of revenue)
+- **National Insurance:** £205B (16% of revenue)
+- **Combined:** £534B (42% of total revenue)
 
 As automation eliminates employment:
 - **Tax revenue falls** (fewer wages to tax)

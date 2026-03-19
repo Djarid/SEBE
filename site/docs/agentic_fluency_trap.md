@@ -399,7 +399,7 @@ structural damage is years old.
 ## 8. The Fiscal Implication
 
 The UK tax system's primary tools for managing aggregate demand depend on
-employment. Income Tax (£250B) and National Insurance (£170B) together
+employment. Income Tax (£329B) and National Insurance (£205B) together
 withdraw 42% of government spending from the economy. Both are levied on
 wages. As automation displaces workers, less purchasing power is withdrawn
 while transfer payments grow. The state loses its main mechanism for

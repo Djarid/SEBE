@@ -45,7 +45,7 @@ automated warehouse, or AI inference cluster increases the tax base.
 Scale comparison (year 1):
 - Inheritance Tax + Stamp Duty + CCL + Tobacco: ~£34B (SEBE comparable)
 - Corporation Tax: £100B (SEBE reaches this by ~2038)
-- National Insurance: £170B (SEBE reaches this by ~2043)
+- National Insurance: £205B (SEBE reaches this by ~2047)
 
 **SEBE becomes a major revenue source within 10-15 years, tracking automation growth.**
 

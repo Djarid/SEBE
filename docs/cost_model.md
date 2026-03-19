@@ -52,8 +52,8 @@ on automation infrastructure grows automatically.
 | Tobacco Duty | 10 | SEBE exceeds at launch |
 | IHT + SD + CCL + Tobacco combined | ~34 | SEBE comparable at launch |
 | Corporation Tax | 100 | SEBE reaches by ~2038 |
-| National Insurance | 170 | SEBE reaches by ~2043 |
-| Income Tax | 250 | SEBE reaches by ~2050 |
+| National Insurance | 205 | SEBE reaches by ~2047 |
+| Income Tax | 329 | SEBE reaches by ~2055 |
 
 **SEBE at launch is a mid-tier tax.** It becomes a major revenue source
 within 10-15 years, tracking automation growth.
@@ -61,11 +61,11 @@ within 10-15 years, tracking automation growth.
 ### 3.2 SEBE vs the Employment Tax Gap
 
 Current employment-linked revenue:
-- Income Tax: £250B
-- National Insurance: £170B
-- **Total: £420B (42% of government revenue)**
+- Income Tax: £329B
+- National Insurance: £205B
+- **Total: £534B (42% of government revenue)**
 
-As automation erodes employment, this £420B shrinks. SEBE grows in the
+As automation erodes employment, this £534B shrinks. SEBE grows in the
 opposite direction. By 2040, SEBE at £93B replaces approximately 22% of
 the employment tax base. By 2050, at projected growth rates, SEBE could
 replace 50% or more.
@@ -99,8 +99,8 @@ money at a scale that moves the fiscal needle.
 |---|---|---|
 | UBI at £1,000/adult/year | ~£55B | Meaningful supplement |
 | UBI at £2,500/adult/year + UBS | ~£384B | Requires complementary taxes (at 2040 projected population) |
-| Full income tax replacement | £250B | SEBE alone insufficient; needs growth |
-| Full NI replacement | £170B | Achievable by ~2043 at projected rates |
+| Full income tax replacement | £329B | SEBE alone insufficient; needs growth |
+| Full NI replacement | £205B | Achievable by ~2047 at projected rates |
 
 ### 4.3 The Two-Stage Distribution Model (One Option)
 
@@ -122,7 +122,7 @@ This is illustrative. SEBE works regardless of distribution model chosen.
 
 ### 5.1 The Problem
 
-Employment taxation (£420B) is structurally coupled to employment levels.
+Employment taxation (£534B) is structurally coupled to employment levels.
 Automation reduces employment. Therefore automation reduces revenue.
 Meanwhile, displaced workers increase welfare costs. The fiscal scissors
 close.
@@ -151,13 +151,13 @@ generate SEBE revenue instead.
 
 All figures in 2026 real prices.
 
-| Year | SEBE | As % of Current Income Tax (£250B) |
+| Year | SEBE | As % of Current Income Tax (£329B) |
 |---|---|---|
-| 2030 (launch) | £38B | 15% |
-| 2033 | £48B | 19% |
-| 2035 | £57B | 23% |
-| 2040 | £93B | 37% |
-| 2045 | £159B | 64% |
+| 2030 (launch) | £38B | 12% |
+| 2033 | £48B | 15% |
+| 2035 | £57B | 17% |
+| 2040 | £93B | 28% |
+| 2045 | £159B | 48% |
 
 SEBE does not need to replace all of income tax immediately. It needs
 to grow faster than income tax shrinks. If automation erodes income tax

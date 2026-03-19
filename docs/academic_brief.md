@@ -45,11 +45,11 @@ UK fiscal model depends critically on employment taxation:
 
 | Tax Source | Revenue (£B) | % of Total | Employment-Linked |
 |---|---|---|---|
-| Income Tax | 250 | 25% | Yes |
-| National Insurance | 170 | 17% | Yes |
-| Corporation Tax | 100 | 10% | Partially |
-| VAT | 160 | 16% | Indirectly |
-| **Total Employment-Linked** | **420+** | **42%+** | **Direct dependency** |
+| Income Tax | 329 | 26% | Yes |
+| National Insurance | 205 | 16% | Yes |
+| Corporation Tax | 100 | 8% | Partially |
+| VAT | 160 | 13% | Indirectly |
+| **Total Employment-Linked** | **534+** | **42%+** | **Direct dependency** |
 
 As employment decreases, this revenue base erodes.
 
@@ -258,12 +258,12 @@ SEBE's primary function is replacing the employment-linked tax revenue
 that automation erodes. This is not a welfare proposal; it is a fiscal
 sustainability mechanism.
 
-| Year | SEBE Revenue (2026 prices) | As % of Income Tax (£250B) |
+| Year | SEBE Revenue (2026 prices) | As % of Income Tax (£329B) |
 |---|---|---|
-| 2030 (launch) | £34-46B | 14-18% |
-| 2035 | £57-80B | 23-32% |
-| 2040 | £93-135B | 37-54% |
-| 2045 | £159B+ | 64%+ |
+| 2030 (launch) | £34-46B | 10-14% |
+| 2035 | £57-80B | 17-24% |
+| 2040 | £93-135B | 28-41% |
+| 2045 | £159B+ | 48%+ |
 
 SEBE does not need to replace income tax immediately. It needs to grow
 faster than income tax shrinks. At projected growth rates (10-15% per

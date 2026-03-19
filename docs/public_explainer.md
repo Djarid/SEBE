@@ -26,11 +26,11 @@ a new way to raise revenue.
 
 ### Right now, the government gets money mainly from:
 
-1. **Income Tax** (taxes on your wages): £250 billion/year
-2. **National Insurance** (more taxes on wages): £170 billion/year
+1. **Income Tax** (taxes on your wages): £329 billion/year
+2. **National Insurance** (more taxes on wages): £205 billion/year
 3. **VAT** (tax when you buy things): £160 billion/year
 
-**Total from workers: £420 billion. That's 42% of all government money.**
+**Total from workers: £534 billion. That's 42% of all government money.**
 
 ### But what happens when robots do the work?
 

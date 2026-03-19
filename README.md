@@ -8,7 +8,7 @@ Author: Jason Huxley | Licence: [CC-BY 4.0](LICENCE) | Status: Active, targeting
 
 ## The Problem
 
-The UK raises £420 billion/year from taxing workers' wages. As automation replaces jobs, that revenue disappears, but the need for public spending doesn't. The tax base is collapsing precisely when society is most productive.
+The UK raises £534 billion/year from taxing workers' wages. As automation replaces jobs, that revenue disappears, but the need for public spending doesn't. The tax base is collapsing precisely when society is most productive.
 
 ## The Proposal
 

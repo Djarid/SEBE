@@ -27,9 +27,9 @@
 
 ### The three numbers:
 
-- **£250 billion** from Income Tax. Requires people to have jobs.
-- **£170 billion** from National Insurance. Requires people to have jobs.
-- **£420 billion total** — 42% of all tax revenue — dependent on employment.
+- **£329 billion** from Income Tax. Requires people to have jobs.
+- **£205 billion** from National Insurance. Requires people to have jobs.
+- **£534 billion total** — 42% of all tax revenue — dependent on employment.
 
 ### The automation reality:
 
@@ -279,7 +279,7 @@ These are the questions you'll get. Have the answers ready. **Keep each answer t
 
 | Time | Section | Core Point |
 |------|---------|------------|
-| **0:00–2:00** | **THE PROBLEM** | £420bn tax base depends on jobs. AI killing jobs. Revenue falls, welfare rises. Death spiral. |
+| **0:00–2:00** | **THE PROBLEM** | £534bn tax base depends on jobs. AI killing jobs. Revenue falls, welfare rises. Death spiral. |
 | **2:00–5:00** | **THE MECHANISM** | SEE: tax commercial energy (>500kW). Households exempt. Banded rates: £0.08/£0.20/£0.45 per kWh. DCD: tax offshore compute at 2×. Incentivises UK data centres. Key line: *"You can't transfer-price a kilowatt-hour to Dublin."* |
 | **5:00–7:00** | **THE REVENUE** | £34–46bn launch. £93bn by 2040. £159bn by 2045. Self-scaling. Carbon tax: £80bn but disappears if it works. SEBE: grows forever. |
 | **7:00–8:00** | **WHAT IT FUNDS** | EC730 UBI. £650/person/year at launch. Rises automatically. Political choice how to spend. |

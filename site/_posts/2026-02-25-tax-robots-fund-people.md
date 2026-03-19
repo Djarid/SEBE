@@ -6,7 +6,7 @@ description: "A new tax on automation infrastructure that starts at £34-46 bill
 tags: [policy, economics, accessible]
 ---
 
-The UK government raises £420 billion a year from taxing workers' wages. Income Tax brings in £250 billion. National Insurance adds another £170 billion. Together, that is 42% of all government revenue. Every pound of it depends on people having jobs.
+The UK government raises £534 billion a year from taxing workers' wages. Income Tax brings in £329 billion. National Insurance adds another £205 billion. Together, that is 42% of all government revenue. Every pound of it depends on people having jobs.
 
 ![The march of progress, from ape to office worker to server rack]({{ site.baseurl }}/assets/images/evolution-to-automation.png)
 
