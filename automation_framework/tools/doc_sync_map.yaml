@@ -58,6 +58,14 @@ documents:
     index_description: "MMT-framed analysis. SEBE as inflation control instrument, anchor migration from labour to energy, self-balancing fiscal design."
     order: 4
 
+  green_party_submission_appendix_a:
+    title: "Appendix A: Metering, Enforcement and Billing"
+    description: "Technical feasibility of SEE and DCD metering, enforcement and billing"
+    group: policy
+    difficulty: advanced
+    index_description: "Technical appendix to the policy submission. How SEE and DCD are metered using existing infrastructure, enforced at physical chokepoints, and billed monthly."
+    order: 6
+
   public_explainer:
     title: "Tax Robots, Fund People"
     description: "A simple guide to the Sovereign Energy and Bandwidth Excise"
@@ -98,13 +106,29 @@ documents:
     index_description: "Detailed response to Korinek and Lockwood's AI taxation framework (January 2026)."
     order: 1
 
+  automation_risk:
+    title: "The Asymmetry of Automation Risk"
+    description: "Withdrawal capacity erosion analysis framed through MMT"
+    group: analysis
+    difficulty: advanced
+    index_description: "Six automation waves, four structural breaks, one asymmetric risk. MMT framing: withdrawal capacity, bathtub model, sectoral balances, EC661 alignment."
+    order: 2
+
+  automation_risk_orthodox:
+    title: "The Asymmetry of Automation Risk (Orthodox Framing)"
+    description: "Why fiscal preparation is justified regardless of displacement forecasts"
+    group: analysis
+    difficulty: intermediate
+    index_description: "Orthodox variant. Same historical evidence, framed through revenue and tax base erosion rather than MMT withdrawal capacity."
+    order: 3
+
   agentic_fluency_trap:
     title: "The Agentic Fluency Trap"
     description: "Why AI capability freezes will not stop workforce displacement, and what that means for fiscal policy"
     group: analysis
     difficulty: intermediate
     index_description: "Why AI doesn't need to improve for displacement to accelerate. The compounding fluency curve and METR time horizon data."
-    order: 2
+    order: 4
 
   global_transition:
     title: "Strategic Analysis: Global Order in Transition"

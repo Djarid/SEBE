@@ -1,0 +1,767 @@
+---
+layout: doc
+title: The Asymmetry of Automation Risk
+description: Withdrawal capacity erosion analysis framed through MMT
+doc_author: Jason Huxley
+permalink: /docs/automation_risk.html
+version: 2.0-mmt
+doc_date: March 2026
+---
+## Executive Summary
+
+A sovereign currency issuer is constrained by inflation, not revenue.
+The UK government creates pounds when it spends and destroys them when
+it taxes. Taxation does not fund spending. It withdraws purchasing
+power from the economy to prevent inflation (consistent with EC661:
+money as a common resource managed for public benefit).
+
+The state's primary withdrawal instruments are Income Tax (£329B) and
+National Insurance (£205B), together removing £534 billion from the
+economy annually (42% of total receipts). Both depend on the existence
+of paid employment. As automation displaces workers, these instruments
+lose their tax base. The drain narrows while the tap must run harder.
+
+This is not a revenue problem. It is an inflation management problem.
+The question is not "will AI cause mass unemployment?" but **what
+happens to the state's withdrawal capacity if it does?**
+
+The answer depends on preparation:
+
+- If displacement is modest and we have built a new withdrawal
+  instrument, the cost is small. A tax on automation infrastructure
+  that withdraws purchasing power from the corporate sector. Mild
+  inefficiency. Reversible.
+- If displacement is severe and we have built a new withdrawal
+  instrument, the drain widens as automation grows. The state retains
+  inflation control. The transition is painful but fiscally manageable.
+- If displacement is severe and we have not prepared, the state's
+  primary drain narrows to the point where it cannot offset the
+  spending the crisis demands. Inflation becomes uncontrollable.
+  Austerity is imposed not by choice but by the loss of fiscal tools.
+
+Three of four outcomes are manageable. One is a loss of inflation
+control with no rapid remedy. The entire case for preparation reduces
+to: **which outcome can you least afford to be wrong about?**
+
+This document provides the historical evidence for why the reassuring
+pattern ("transitions always work out") held in the past, identifies
+the structural mechanism that made it hold, and demonstrates why that
+mechanism is breaking. It then shows that even without mass
+displacement, the state's withdrawal capacity is already misaligned
+with where economic activity is concentrated.
+
+---
+
+## 1. The Asymmetry of Risk
+
+### 1.1 The Bathtub Model
+
+The fiscal dynamics of a sovereign currency issuer can be represented
+as a bathtub (Mosler, 1997; Wray, 2015). Government spending is the
+tap (new money enters the economy). Taxation is the drain (money is
+removed). The water level is the money supply relative to productive
+capacity. If the tap runs faster than the drain, the tub overflows:
+inflation. If the drain exceeds the tap, the tub empties: deflation,
+recession, austerity.
+
+Employment taxation (Income Tax and National Insurance) has been the
+primary drain for eight decades. That drain is now structurally
+coupled to a variable (employment) that automation is eroding.
+
+### 1.2 Four Outcomes
+
+| | **Displacement is modest** | **Displacement is severe** |
+|---|---|---|
+| **We build a new drain** | Automation-linked withdrawal instrument exists but is not critical. Small fiscal cost. Reversible. | New drain widens as automation grows. State retains inflation control. Transition is painful but fiscally manageable. |
+| **We do not build a new drain** | No harm done. The optimists were right. | Primary drain narrows. State cannot withdraw purchasing power at the scale spending demands. Inflation becomes uncontrollable. No time to build the alternative. |
+
+Three quadrants are acceptable. The fourth is not.
+
+### 1.3 The Asymmetry
+
+The consequences of unnecessary preparation are mild: a withdrawal
+instrument linked to commercial energy consumption that removes
+purchasing power from the corporate sector, incentivises efficiency
+and strengthens domestic compute infrastructure. If displacement turns
+out to be modest, rates can be adjusted or reduced. The infrastructure
+still has value. The worst case for preparation is a modest
+misallocation.
+
+The consequences of failing to prepare are severe and irreversible.
+Building withdrawal infrastructure takes years (legislation, metering
+rollout, enforcement). If displacement arrives faster than expected,
+there is no time to build the response. The state faces a simultaneous
+drain failure and spending surge with no mechanism to manage inflation.
+
+This is not a novel risk management principle. Every engineer
+understands redundancy. Every military planner understands contingency.
+Every insurer understands tail risk. You do not insure your house
+because you think it will burn down. You insure it because you cannot
+afford the consequences if it does.
+
+### 1.4 "Do Nothing" Is Not Free
+
+The sceptical position ("displacement will be modest, so do not
+prepare") assumes that inaction has zero cost. It does not.
+
+Every year that passes without a withdrawal instrument linked to
+automated production is a year where the employment drain bears the
+full burden of inflation management while the automated economy grows
+untaxed alongside it. Even if displacement is gradual and modest,
+the relative contribution of employment to national output is declining
+while the relative contribution of automation is rising. The drain is
+narrowing relative to the economy it must manage.
+
+UK Income Tax and National Insurance together withdraw £534 billion
+from the economy annually (42% of total receipts). Both depend on
+wages. The proportion of GDP generated by automated systems (data
+centres, AI inference, robotic logistics, algorithmic trading) is
+growing. None of that activity is captured by employment taxation.
+The gap between where economic activity concentrates and where the
+drain operates widens every year, regardless of whether anyone loses
+their job.
+
+"Do nothing" is not "no cost." It is "accept a growing misalignment
+between the economy's structure and the state's withdrawal capacity."
+
+---
+
+## 2. Why the Historical Pattern Creates Confidence
+
+Every major automation wave since 1750 has followed the same pattern:
+a technology displaces workers from one domain, workers retreat to
+another domain, and after a painful transition the economy reaches a
+new equilibrium with equal or greater employment.
+
+This pattern has held six times. It is reasonable to expect it to hold
+again. Most economists, most policy makers and most working group
+members hold this view, and they are drawing on a strong base rate.
+
+The purpose of the historical analysis that follows is not to dismiss
+this confidence. It is to identify the **structural mechanism** that
+made the pattern hold, and then to ask whether that mechanism is still
+intact.
+
+The mechanism is simple: **in every previous wave, there existed a
+domain where humans retained comparative advantage, and that domain
+was immune to the technology doing the displacing.** Farm workers
+retreated to factories because steam engines could not tend machines.
+Clerks retreated to analysis because computers could not reason.
+Intermediaries retreated to creative work because the internet could
+not create.
+
+The question for the current wave is whether such a domain still
+exists.
+
+---
+
+## 3. Wave 1: Agricultural Revolution / Enclosures (1750-1850)
+
+### 3.1 What Was Automated
+Manual farm labour: threshing, ploughing, harvesting, seed planting. Tasks requiring human or animal physical strength combined with simple judgment (when to plant, where to plough).
+
+### 3.2 Technology Deployed
+- **Seed drill** (Jethro Tull, 1701, widely adopted 1750s): Mechanised seed planting with consistent spacing and depth. Reduced seed waste from ~50% to ~5%, eliminated hand-broadcasting.
+- **Threshing machine** (Andrew Meikle, 1786): Replaced hand-flail threshing. One machine could do the work of dozens of workers.
+- **Mechanical reaper** (later period, 1830s-1850s): McCormick reaper (US 1831), later adopted in UK. One reaper could do the work of 10-15 manual reapers.
+
+### 3.3 What Domain Humans Retreated To
+**Factory work** (physical labour, different type). The displaced agricultural workers moved from one form of physical labour (farming) to another (factory operation, mining, construction). The human comparative advantage (physical strength plus basic cognition for task execution) was preserved. Machines had not yet automated the factory floor.
+
+### 3.4 Transition Duration
+Approximately **100 years** (1750-1850), but most acute displacement occurred 1780-1830 (50-year concentrated period).
+
+### 3.5 Social Cost During Transition
+- **Swing Riots (1830-1831):** Agricultural labourers destroyed threshing machines across southern England. Nearly 2,000 brought to trial, 19 executed, 481 transported to Australia, 644 imprisoned. Named after mythical "Captain Swing" who signed threatening letters to landowners.
+- **Mass rural poverty:** Enclosure Acts (1750-1860) privatised common land, eliminating subsistence rights for poor farmers. Approximately 6 million acres enclosed (1770-1830), displacing hundreds of thousands.
+- **Workhouses:** Poor Law Amendment Act 1834 created workhouse system. Conditions deliberately harsh to deter claims. Families separated, labour punitive.
+- **Urbanisation:** Displaced rural workers migrated to industrial cities (Manchester, Birmingham, Leeds). Urban population grew from ~20% (1750) to ~50% (1850).
+- **Child labour:** Factory owners preferred children (smaller, cheaper, more compliant). No legal restrictions until Factory Acts (1833 onwards).
+
+### 3.6 Scale
+UK agricultural employment fell from approximately **40% of workforce (1800) to ~22% (1850)**. Absolute numbers also declined despite population growth, indicating genuine displacement not just sectoral shift.
+
+By 1900, agricultural employment was below 10%. The sector that had employed the majority of the population for millennia became a small fraction within 150 years.
+
+### 3.7 Was It Predicted?
+**Partially.** The Luddites (1811-1816) saw mechanisation coming and attempted to resist. They were correct about the immediate displacement but could not foresee (or prevent) the eventual creation of factory jobs. Their resistance was crushed by military force.
+
+Agricultural workers in the 1830s recognised threshing machines as existential threats. The Swing Riots were a direct response to visible automation. But the participants had no framework for predicting where displaced labour would go.
+
+### 3.8 Why the Retreat Worked
+Displaced workers moved **from one form of physical labour to another**. Steam engines and seed drills could automate field work but could not operate factory machinery, lay railway track or dig mines. The retreat domain (industrial labour) was structurally immune to agricultural automation technology. Humans retained comparative advantage in physical adaptability and task execution within factory environments.
+
+The transition was brutal but the destination domain was available and expanding.
+
+---
+
+## 4. Wave 2: First Industrial Revolution (1760-1840)
+
+### 4.1 What Was Automated
+**Artisan craft production:** Weaving, spinning, smithing, pottery, textile finishing. Tasks requiring years of apprenticeship, fine motor skills, tacit knowledge and judgment about materials and quality.
+
+### 4.2 Technology Deployed
+- **Spinning jenny** (James Hargreaves, 1764): Allowed one worker to spin multiple threads simultaneously (8-80 spindles). Replaced skilled hand-spinning.
+- **Water frame** (Richard Arkwright, 1769): Water-powered spinning, produced stronger thread. Enabled factory-scale production.
+- **Power loom** (Edmund Cartwright, 1785, commercially viable 1820s): Mechanised weaving. One power loom could produce what 10-15 hand weavers produced.
+- **Steam engine** (James Watt improvements, 1769-1800): Decoupled production from water power, enabled factories in cities.
+
+### 4.3 What Domain Humans Retreated To
+**Factory operation and machine tending.** Also emerging **clerical work** (record-keeping for larger enterprises) and **services** (domestic service, retail, hospitality).
+
+The key shift: artisan **skill** was automated, but **physical presence** was still required. Factory work needed less skill than hand-weaving but more discipline, endurance and the ability to keep pace with machines. The human role shifted from craftsperson to machine operator.
+
+### 4.4 Transition Duration
+Approximately **80 years** (1760-1840), with concentrated disruption 1790-1830.
+
+### 4.5 Social Cost During Transition
+- **Luddite movement (1811-1816):** Skilled textile workers destroyed weaving frames and power looms across Nottinghamshire, Yorkshire, Lancashire. Named after mythical "Ned Ludd." Dozens executed or killed, hundreds imprisoned and transported. Government deployed approximately 12,000 troops (more than Wellington's original expeditionary force sailing for Portugal in 1808, though mostly militia rather than regular army).
+- **Massive inequality:** Real wages for weavers collapsed. Handloom weavers' wages fell by ~50% between 1800 and 1830 as power looms spread.
+- **Urban slums:** Factory workers lived in overcrowded, unsanitary housing. No sewerage, contaminated water, disease rampant.
+- **Cholera epidemics:** 1832, 1849, 1854, 1866. Killed tens of thousands in industrial cities.
+- **No labour protections:** 12-16 hour days, child labour widespread, no safety regulations, no compensation for injury.
+
+### 4.6 Scale
+**Handloom weavers:** Estimated 250,000 in 1820. By 1860, near zero. The occupation was functionally eliminated within 40 years.
+
+Cotton industry employment grew overall (more factory workers than the handloom weavers displaced), but the *type* of work and the *terms* of work changed fundamentally. Skilled artisans became unskilled machine tenders.
+
+### 4.7 Was It Predicted?
+**Partially.** Skilled artisans recognised that machines threatened their livelihoods. Luddites targeted specific technologies (wide frames, shearing frames, power looms). But there was no widespread understanding that factory work would absorb displaced artisans, nor that living standards would eventually rise (which took decades).
+
+### 4.8 Why the Retreat Worked
+**Skill was automated but physical presence was still required.** Power looms and spinning frames could replicate craft output but could not operate themselves. Factory jobs needed less craft knowledge but more physical endurance and the ability to work at machine pace. The retreat domain (machine tending, factory supervision) was immune to textile automation because the technology could replicate the product but not the operator.
+
+Craft knowledge (built over years of apprenticeship) was encoded into machine design. But humans were still needed to feed machines, monitor output, handle materials and adjust for variability.
+
+---
+
+## 5. Wave 3: Second Industrial Revolution (1870-1920)
+
+### 5.1 What Was Automated
+**Small-scale manufacturing and some transportation.** Batch production replaced by mass production. Manual assembly replaced by powered assembly lines.
+
+### 5.2 Technology Deployed
+- **Assembly line** (Frederick Taylor scientific management 1890s, Henry Ford moving assembly line 1913): Broke production into standardised steps, each performed by a worker or machine at fixed stations. Massively increased throughput.
+- **Electricity** (widespread industrial adoption 1880s-1910s): Replaced steam and water power. Enabled flexible factory layouts, smaller more precise machines.
+- **Internal combustion engine** (1880s-1900s): Automobiles, lorries, tractors. Reduced need for horses, stable workers, farriers.
+- **Interchangeable parts** (standardised components, precision manufacturing).
+
+### 5.3 What Domain Humans Retreated To
+**Mass production roles** (still physical but more specialised within production lines). Also **growing service sector** (clerical, retail, sales, entertainment, hospitality).
+
+The retreat was into more repetitive, narrower roles within larger systems. A Ford assembly line worker performed one task repeatedly, not the breadth of a craftsman. But the role still required physical presence, coordination and adaptability to variations.
+
+Service sector growth accelerated. White-collar clerical work expanded as corporations grew. This planted the seed for the next transition (computerisation would automate clerical work 50 years later).
+
+### 5.4 Transition Duration
+Approximately **50 years** (1870-1920), but unevenly distributed (US faster than UK).
+
+### 5.5 Social Cost During Transition
+- **Labour unrest:** Strikes, violent confrontations between workers and private security forces. Homestead Strike (1892, US), Pullman Strike (1894, US). UK saw Great Unrest (1910-1914).
+- **Union formation:** Trade union membership surged. In UK, TUC founded 1868. Unions fought for wages, hours, safety.
+- **Child labour battles:** Gradual restrictions, but enforcement patchy. UK Factory Acts strengthened through this period but loopholes persisted.
+- **Long working hours:** 60-80 hour weeks common until labour movements forced reductions. 8-hour day campaigns (May Day origins).
+
+### 5.6 Scale
+Difficult to quantify cleanly because the workforce was expanding and sectors were shifting simultaneously. Manufacturing employment grew in absolute terms but individual *roles* within manufacturing changed radically. Blacksmiths declined, assembly line workers increased.
+
+US manufacturing productivity increased ~3-4x between 1870 and 1920 without proportional workforce growth, indicating labour displacement within the sector.
+
+### 5.7 Was It Predicted?
+**Not widely.** Scientific management (Taylorism) was promoted as progress and efficiency. Labour opposition focused on working conditions and wages, not the structural transformation. Some socialists and anarchists predicted growing worker alienation, but mainstream discourse saw industrialisation as inevitable and beneficial.
+
+### 5.8 Why the Retreat Worked
+**Standardisation replaced craft knowledge, but humans adapted by becoming specialists within larger systems.** Assembly lines required less individual skill but more collective coordination. The retreat domain (specialised production roles, clerical work, services) was immune to assembly-line automation because the technology standardised physical production but could not handle information processing, customer interaction or organisational management.
+
+The human comparative advantage shifted to flexibility within structured processes: the ability to handle variation, make judgment calls on the line and perform the growing volume of paperwork that large enterprises required.
+
+---
+
+## 6. Wave 4: Computerisation / Third Industrial Revolution (1960-2000)
+
+### 6.1 What Was Automated
+**Routine cognitive tasks:** Bookkeeping, filing, calculation, typing, basic data processing, switchboard operation, inventory tracking.
+
+This was the first automation wave to target *cognition* rather than physical labour. But critically, it targeted *routine* cognition: tasks that could be reduced to rules, procedures and algorithms.
+
+### 6.2 Technology Deployed
+- **Mainframe computers** (1960s-1970s): IBM System/360, used for payroll, accounting, inventory management in large corporations and government.
+- **Personal computers** (1980s): IBM PC (1981), Apple Macintosh (1984). Brought computing to individual desks.
+- **Spreadsheet software** (VisiCalc 1979, Lotus 1-2-3 1983, Excel 1985): Automated calculation and modelling that previously required adding machines and ledgers.
+- **Word processors** (replaced typewriters and typing pools).
+- **Databases** (automated filing, retrieval, record-keeping).
+
+### 6.3 What Domain Humans Retreated To
+**Non-routine cognitive work:** Analysis, judgment, creativity, management, client relationships, strategy, design.
+
+This is the critical shift. Humans moved from *routine* cognitive work (which computers could do faster and more accurately) to *complex* cognitive work (which required judgment, context, interpersonal skills, creativity).
+
+The comparative advantage was no longer physical. It was cognitive complexity and adaptability. Computers could calculate but could not *reason*. They could store records but could not *interpret*. Humans retreated to the tasks that required understanding, not just execution.
+
+### 6.4 Transition Duration
+Approximately **40 years** (1960-2000), with acceleration in the 1980s-1990s as PCs became ubiquitous.
+
+### 6.5 Social Cost During Transition
+- **"Triple Revolution" panic (1964):** Memo to President Lyndon Johnson warned of permanent unemployment from "cybernation" (automation via computers). Predicted machines would eliminate need for human labour. Signed by prominent economists, civil rights leaders, technologists. **This was the first "this time is different" claim in the computer age.**
+- **Manufacturing decline in developed world:** US manufacturing employment peaked in 1979 (~19.5M workers) and fell to ~12.3M by 2000, even as output increased. UK similar trajectory. "Rust Belt" emergence.
+- **Typing pools eliminated:** Secretarial and clerical roles restructured. In 1970, "secretary" was one of the most common occupations in US and UK. By 2000, role had fragmented into specialised administrative roles or been absorbed into managerial duties.
+- **Deskilling vs upskilling:** Some roles simplified (data entry), others required higher skills (database administration, programming).
+
+### 6.6 Scale
+US clerical workforce restructured radically. In 1960, clerical roles were ~15% of employment and growing. By 2000, the category had fragmented. "File clerks" declined by ~60% between 1980 and 2000. Bank tellers peaked in 1980s then declined as ATMs spread.
+
+Manufacturing employment halved in US and UK (as share of workforce) between 1970 and 2000, despite rising output.
+
+### 6.7 Was "This Time Is Different" Claimed?
+**YES.** The "Triple Revolution" memo (1964) is the clearest example. It warned:
+
+> "The cybernation revolution [...] promises a fundamental transformation of the economic and social order. [...] A permanent impoverished and jobless class will be established unless economic and social policies are changed."
+
+It proposed a guaranteed income as the solution. The memo was dismissed by mainstream economists. Employment continued to grow through the 1960s-1990s, and the "permanent jobless class" did not materialise at predicted scale.
+
+But the memo was not *entirely* wrong. It correctly identified that routine cognitive work would be automated. What it missed was the scale of non-routine cognitive work that would emerge (knowledge economy, services, creative industries, management).
+
+### 6.8 Why the Retreat Worked
+**Routine cognition was automated, but complex cognition and interpersonal skills became MORE valuable.** Computers of the 1960-2000 era could only execute algorithms. They could not *understand*, *create* or *reason* in the general sense. They were tools that made skilled humans more productive.
+
+The retreat domain (complex cognition, creativity, judgment, interpersonal communication) was structurally immune to rule-based computation. The "college wage premium" (gap between graduate and non-graduate earnings) widened from the 1980s onwards. Computers made skilled knowledge workers more productive, not redundant.
+
+The knowledge economy, service economy, creative industries all grew. Software developers, analysts, consultants, designers, marketers all saw rising demand. The destination domain was expanding faster than the source domain was contracting.
+
+---
+
+## 7. Wave 5: Internet / Digital Revolution (1995-2015)
+
+### 7.1 What Was Automated
+**Information intermediation:** Travel agents, bank tellers (partially), record shops, bookshops, some journalism (classified ads, basic reporting), retail (e-commerce), advertising (programmatic).
+
+This wave automated the *middleman* role. Transactions that previously required a human intermediary (booking travel, buying goods, finding information) could now happen directly via digital platforms.
+
+### 7.2 Technology Deployed
+- **World Wide Web** (1991 public release, widespread adoption mid-1990s).
+- **E-commerce platforms** (Amazon 1994, eBay 1995, online retail).
+- **Search engines** (Google 1998): Automated information discovery that previously required librarians, directories, human curation.
+- **Social media** (MySpace 2003, Facebook 2004, Twitter 2006): Automated social connection and content distribution that previously required publishers, editors, event organisers.
+- **Smartphones** (iPhone 2007): Made digital access ubiquitous.
+
+### 7.3 What Domain Humans Retreated To
+**Knowledge work, creative work, care work, experience economy.**
+
+The retreat was into roles that required either:
+- High-touch human interaction (care, therapy, teaching, hospitality)
+- Creative content production (YouTube creators, podcasters, designers, writers)
+- Platform work (gig economy, though often precarious)
+- Technical skills (web development, data analysis, digital marketing)
+
+The pattern continued from the previous wave: humans moved to tasks requiring judgment, creativity, interpersonal skills. But the *distribution* became more unequal. Platforms created winner-take-all dynamics. The top 1% of creators earned massively; the median earned little.
+
+### 7.4 Transition Duration
+Approximately **20 years** (1995-2015), faster than previous transitions.
+
+### 7.5 Social Cost During Transition
+- **High street decline:** Town centres hollowed out as retail moved online. Independent bookshops, music shops, travel agencies closed en masse.
+- **Regional inequality:** Tech sector concentrated in specific cities (London, San Francisco, Seattle). Other regions saw limited benefit.
+- **Gig economy emergence:** Uber (2009), Deliveroo (2013), TaskRabbit (2008). Precarious work, no benefits, algorithmic management. Formally "self-employed" but effectively controlled by platforms.
+- **Newspaper collapse:** Classified ad revenue evaporated (moved to Craigslist, eBay, etc.). Journalism jobs declined sharply from 2000s onwards.
+
+### 7.6 Scale
+- **UK travel agents:** ~25,000 branches in 1990s, ~10,000 by 2015. Employment fell by more than 50%.
+- **US newspaper journalists:** Peaked ~60,000 in 1990, fell to ~33,000 by 2015.
+- **Bank teller decline:** UK bank branches fell from ~20,000 (1990s peak) to ~9,000 (2015), though not all due to internet (ATMs, phone banking also factors).
+
+Net employment grew during this period (1995-2015) in developed economies, but specific intermediation roles were eliminated.
+
+### 7.7 Was "This Time Is Different" Claimed?
+**YES.** Jeremy Rifkin's "The End of Work" (1995) predicted:
+
+> "We are entering a new phase in world history—one in which fewer and fewer workers will be needed to produce the goods and services for the global population."
+
+Rifkin argued that information technology would eliminate more jobs than it created, and that a guaranteed income would be necessary. The book was influential but the prediction did not materialise at aggregate level over the following 20 years. Employment rates remained stable or grew in most developed economies through to 2015.
+
+### 7.8 Why the Retreat Worked
+**Reduced transaction costs eliminated middlemen but created new platform-based roles.** The internet lowered the cost of search, matching and transaction to near-zero. Any role that existed solely to connect buyer and seller was vulnerable.
+
+But the retreat domain (knowledge work, creative work, care work) remained structurally immune because these roles required human judgment, creativity and interpersonal connection. The internet could distribute human output but could not substitute for human cognition. Employment grew overall during 1995-2015. What changed was the type of work and the distribution of rewards.
+
+---
+
+## 8. The Pattern
+
+### 8.1 Comparison Table
+
+| Wave | What Automated | Retreat Domain | Why Retreat Worked | Duration |
+|---|---|---|---|---|
+| 1. Agricultural (1750-1850) | Manual farm labour | Factory work | Steam could not tend machines | 100y |
+| 2. First Industrial (1760-1840) | Artisan craft | Machine tending, clerical | Looms could not operate themselves | 80y |
+| 3. Second Industrial (1870-1920) | Small manufacturing | Mass production, services | Assembly lines could not process information | 50y |
+| 4. Computerisation (1960-2000) | Routine cognition | Complex cognition | Computers could not reason or create | 40y |
+| 5. Internet (1995-2015) | Intermediation | Knowledge/creative/care work | Platforms could not substitute for cognition | 20y |
+| 6. Cognitive Automation (2022-present) | Complex cognition, creativity, judgment | **Unknown** | **?** | **Unknown** |
+
+### 8.2 Two Observations
+
+**The retreat mechanism depends on a structural immunity.** In every
+previous wave, the retreat domain was immune to the displacing
+technology. The pattern held not because of human adaptability in the
+abstract, but because there was always a specific, concrete domain
+where the technology could not follow.
+
+**Transition duration is compressing.** From 100 years (agricultural)
+to 80 (industrial) to 50 (mass production) to 40 (computerisation) to
+20 (internet). If the current wave follows the trend, the transition
+window may be 10-15 years or less. METR data shows AI agent capability
+doubling every 3-6 months (2024-2026).
+
+---
+
+## 9. Wave 6: Cognitive Automation (2022-Present)
+
+### 9.1 What Is Being Automated
+**Complex cognitive tasks:** Writing, coding, analysis, translation, legal research, medical diagnosis, design, tutoring, customer service (complex queries), content creation.
+
+This is the first wave to automate the *retreat domain from the previous wave*. The knowledge work, creative work and analytical work that absorbed displaced workers from the computerisation and internet eras are now themselves being automated.
+
+### 9.2 Technology Deployed
+- **Large language models (LLMs):** GPT-3 (2020), GPT-4 (2023), Claude (2023-present), Gemini, Llama. Capable of natural language understanding, generation, reasoning, code generation.
+- **Generative AI:** Midjourney, DALL-E, Stable Diffusion (image generation). Sora (video generation).
+- **Agentic AI:** AI systems that can execute multi-step tasks autonomously, using tools, accessing external data, iterating on failures.
+
+### 9.3 What Domain Can Humans Retreat To?
+**Unknown.** This is the question the pattern depends on.
+
+Previous retreats followed a clear path:
+- Physical labour (agriculture) → Physical labour (factories)
+- Physical labour (factories) → Routine cognition (clerical)
+- Routine cognition → Complex cognition (knowledge work)
+- Information intermediation → Creative/knowledge/care work
+
+The current wave automates *complex cognition, creativity and judgment*. These were the tasks humans retreated to in the last two waves. Potential retreat domains:
+
+- **High-touch care work:** Nursing, therapy, childcare, eldercare. Requires physical presence and emotional labour. But scale is limited and wages are low.
+- **Physical trades:** Plumbing, electrical work, construction. Require physical presence and adaptability. But also limited scale.
+- **Interpersonal roles:** Sales, negotiation, leadership. Require trust and human connection. But AI is increasingly capable of persuasive communication.
+- **Creative direction:** High-level creative vision. But AI can already generate creative outputs; the question is whether human curation remains valued.
+
+There is one further distinction. Current AI architecture excels at
+recombination: connecting existing ideas, iterating on established
+patterns, synthesising across domains. Agentic structures extend this
+to multi-step research and experimentation. Genuine frame-breaking
+innovation (recognising that the prevailing frame is wrong and
+constructing a new one) has not been demonstrated by current systems.
+Whether this represents a durable human advantage or a temporary
+architectural limitation is an open question. But even if it proves
+durable, the domain is too narrow to function as a mass employment
+retreat. Most commercial and professional work labelled "innovation"
+is recombination, which AI performs competently.
+
+None of these domains are obviously large enough to absorb the scale of workers displaced from knowledge, creative and analytical work.
+
+### 9.4 Social Cost So Far
+- **Youth unemployment:** UK 16.1% (Feb 2026, ONS Labour Market Statistics), highest in 10+ years. US similar trends in tech-exposed occupations (+3 percentage points among 20-30 year-olds since 2025).
+- **Translation industry collapse:** UK Society of Authors: >1/3 of translators lost work to AI, 43% reported income decline. European Language Industry Survey 2024: first-ever price drops. Individual translators reporting 70%+ income loss.
+- **Freelance market contraction:** Freelance writing postings down 33% since ChatGPT (Nov 2022). Translation -19%, customer support -16%. Entry-level project share on Upwork fell from 15% to <9%.
+- **Graduate job market:** UK graduate job postings down 12-13% YoY. Entry-level software development roles particularly affected.
+- **Corporate headcount reductions:** BT (-11% YoY, AI-attributed), Barclays (50 marketing roles cut, AI-attributed), IBM (~8,000 dismissed, HR heavily affected), Microsoft (6,000 reduction), Fiverr (30% workforce reduction, "AI-first" pivot), Upwork (21% reduction).
+
+No aggregate employment crisis *yet*, but early signals in specific sectors are measurable and growing.
+
+### 9.5 Scale
+**HMRC RTI (Real-Time Information) payroll data:** 30.2M payrolled employees (Dec 2025), down 184,000 YoY (-0.6%). This is administrative data (not survey), making it highly reliable.
+
+**Morgan Stanley G7 comparison (Jan 2026):** UK net job loss from AI at -8% over 12 months, worst among comparable economies.
+
+**Unemployment-to-vacancy ratio:** 2.6 (up from 1.9 year prior). Last at this level in Nov 2014-Jan 2015. Indicates labour market loosening.
+
+These are *early* signals, not mass displacement. But the trajectory is concerning.
+
+---
+
+## 10. Four Structural Breaks
+
+The historical pattern depended on a retreat domain being immune to
+the displacing technology. The current wave breaks this dependency in
+four ways.
+
+### 10.1 Domain-General
+Previous technologies were domain-specific. Power looms automated weaving. Computers automated calculation. Each required purpose-built machinery or software for each task.
+
+LLMs are domain-general. The same model can write, code, analyse, translate, tutor, diagnose. It learns new tasks from examples, not re-engineering. This means the technology can pursue displaced workers into new domains. Previous automation waves stopped at domain boundaries. This one does not.
+
+### 10.2 Self-Improving
+Previous technologies required human R&D to advance. Faster steam engines required better metallurgy, precision engineering, thermodynamics research. Computers required transistor development, chip fabrication advances, algorithm research.
+
+LLMs can assist in their own improvement. Models help write the code that trains better models. Agentic AI can perform research, run experiments, iterate on failures. The learning curve for exploiting AI is itself AI-assisted. This creates a positive feedback loop absent from previous waves.
+
+### 10.3 Reversed Exposure Pattern
+Previous automation waves hit low-skilled workers first, then moved upward. Farm labourers displaced before landowners. Factory workers displaced before engineers.
+
+**OECD Employment Outlook 2023 (Chapter 3: "The Impact of AI on the Labour Market") shows cognitive automation hits high-skilled workers FIRST.** Generative AI exposure is greatest for those with tertiary education, women in professional roles, knowledge workers. The displacement pattern is inverted.
+
+This has fiscal implications. High earners contribute more tax revenue. Displacing them erodes the tax base faster than displacing low earners. UK: top 1% of earners pay ~28% of income tax. Top 10% pay ~60%.
+
+### 10.4 The Roles It Creates Are Themselves Automatable
+Previous waves created new roles that were safe from the same technology. Assembly lines displaced artisans but created factory supervisor roles. Computers displaced clerks but created programmer roles.
+
+Cognitive automation creates roles (prompt engineer, AI trainer, model evaluator) that are *themselves* cognitive and thus automatable by the same technology. There is no structural barrier preventing AI from doing the work of supervising AI.
+
+This breaks the historical pattern where new technology created a new class of jobs immune to that technology.
+
+---
+
+## 11. The Fluency Mechanism: Brynjolfsson's 35% Novice Uplift
+
+### 11.1 The Study
+Erik Brynjolfsson et al., "Generative AI at Work" (Quarterly Journal of Economics, May 2025; originally NBER Working Paper 31161, 2023).
+
+Randomised controlled trial of 5,172 customer service agents using an AI conversational assistant.
+
+### 11.2 Key Findings
+- **Average productivity increase: 14%**
+- **Novice workers: +35% productivity gain**
+- **Experienced workers: minimal or no gain**
+
+The AI levelled the performance gap between novices and experts.
+
+### 11.3 This IS the Fluency Mechanism
+When novices can perform like experts (with AI assistance), the economic calculus changes:
+
+1. Firms can hire cheaper novices instead of expensive experts.
+2. The expertise premium erodes.
+3. Experienced workers are displaced or see wages fall.
+4. The *volume* of expert-level output increases while the *number* of experts employed falls.
+
+This maps directly to the Agentic Fluency Trap framework. As humans get better at directing AI (moving from L1 prompt engineering to L3+ tool and context engineering), they can do the work of multiple less-fluent peers.
+
+### 11.4 Connection to Autor & Thompson "Expertise" Paper
+David Autor & Neil Thompson, "Expertise" (NBER Working Paper 33941, June 2025; Journal of the European Economic Association, June 2025).
+
+Key finding: **Automation of expert tasks reduces wages but increases employment. Automation of inexpert tasks raises wages but reduces employment.**
+
+Example: Accounting clerks (inexpert tasks automated): wages +0.33 log points, employment -31%. Inventory clerks (expert tasks automated): wages -0.14 log points, employment +175%.
+
+AI automates *expert* tasks (legal research, medical diagnosis, code generation). Autor & Thompson predicts this will **reduce wages for those roles** while potentially increasing employment (because demand expands when price falls).
+
+But combined with Brynjolfsson's novice uplift, the picture is more complex:
+- Expert tasks automated → more people can do expert-level work → expertise premium falls.
+- Novices gain more from AI than experts → firms hire novices → expert employment may fall even as output rises.
+
+### 11.5 Evidence of Expertise Premium Erosion
+**Translation industry (2024-2026):** First-ever price drops reported (European Language Industry Survey 2024). Experienced translators seeing 40-70% income declines. This is a sector where AI (DeepL, GPT-4) has made novice output approach expert quality.
+
+**Legal research:** AI tools (Harvey, CoCounsel) can perform case law research at junior associate level. Law firms increasingly using AI for tasks that previously required 2-3 years of training.
+
+**Customer service:** 15% headcount decline in UK over past 5 years, closely linked to AI adoption. Experienced agents being replaced by cheaper novices using AI tools.
+
+### 11.6 How Quickly Does Novice-to-Expert Levelling Spread?
+**Lloyds Banking Group (2025-2026):** GenAI delivered £50M value in 2025, expects £100M+ in 2026 (2x growth). 100% of colleagues to be "AI literate" by 2026.
+
+This suggests *organisational* adoption of fluency can happen within 12-24 months when driven by leadership.
+
+**Freelance platforms (2022-2025):** Entry-level project share on Upwork fell from 15% to <9% within 3 years of ChatGPT release. This indicates rapid market adjustment as clients discover AI can do entry-level work.
+
+### 11.7 Outstanding Research Questions
+- Are there other sectors showing novice vs expert AI productivity differentials?
+- How does fluency spread *between* organisations (not just within)?
+- At what point does expertise become economically devalued (not just reduced margin, but zero demand)?
+
+---
+
+## 12. The Withdrawal Erosion Already Underway
+
+The previous sections address the question of whether mass displacement
+will occur. This section addresses what is happening to the state's
+withdrawal capacity regardless of the answer.
+
+### 12.1 The Drain Is Structurally Coupled to Employment
+
+UK Income Tax and National Insurance together withdraw £534 billion
+from the economy annually (42% of total receipts). Both depend on
+wages. The proportion of GDP generated by automated systems (data
+centres, AI inference, robotic logistics, algorithmic trading) is
+growing year on year. None of that activity is captured by the
+employment drain.
+
+In MMT terms, the government deficit is the non-government surplus
+(Godley, 1999). If automation concentrates private sector surplus in
+capital owners (infrastructure operators, hyperscalers, shareholders)
+while eliminating the wage income that sustained broad aggregate
+demand, the state must spend more to maintain demand while its primary
+withdrawal instrument captures less. The drain narrows while the tap
+must run harder.
+
+### 12.2 Even Modest Displacement Erodes Withdrawal Capacity
+
+If cognitive automation displaces 10% of knowledge workers over 5
+years:
+- Withdrawal capacity loss: ~£40-50 billion/year (IT + NI on lost wages)
+- Government spending rises (UC, JSA, retraining)
+- Secondary effects (displaced workers spend less, reducing VAT/CT withdrawal)
+
+This is not a catastrophic scenario. It is the modest-displacement
+scenario. And it still narrows the drain by tens of billions while
+widening the tap.
+
+### 12.3 Historical Transitions Had Time
+
+| Wave | Transition Duration |
+|---|---|
+| Agricultural → Industrial | 100 years |
+| Industrial → Mass Production | 80 years |
+| Mass Production → Computerisation | 50 years |
+| Computerisation → Internet | 40 years |
+| Internet → Cognitive AI | **? (capability doubling every 3-6 months)** |
+
+Previous transitions gave governments decades to adjust withdrawal
+instruments, build welfare systems, retrain workforces. If the current
+transition compresses to 10-20 years, the rate of adjustment required
+is unprecedented. Legislation, metering infrastructure, enforcement
+mechanisms all take years to deploy. Starting early is not excessive
+caution. It is lead time.
+
+### 12.4 The Structural Misalignment
+
+Even if no one loses their job, a growing share of economic activity
+concentrates in automated systems that the employment drain does not
+reach. A data centre generating £100M in revenue employs perhaps 50
+people. A professional services firm generating £100M employs 500.
+These are approximate figures, but the ratio is broadly characteristic
+of the difference between capital-intensive automated operations and
+labour-intensive professional services. The drain captures 42% of the
+wage bill at the second but barely touches the first.
+
+This misalignment widens every year as the automated share of the
+economy grows. It widens whether displacement is catastrophic or
+gentle. It is not a future risk. It is a present structural erosion
+of the state's inflation management capacity.
+
+---
+
+## 13. Withdrawal Capacity Across All Four Quadrants
+
+Return to the matrix from Section 1.
+
+### 13.1 If Displacement Is Modest and We Build a New Drain
+
+A withdrawal instrument linked to automation infrastructure (commercial
+energy consumption, data throughput) removes purchasing power from the
+corporate sector. It incentivises efficiency and strengthens domestic
+compute infrastructure. The metering and enforcement infrastructure
+has value regardless.
+
+If displacement turns out to be modest, rates can be adjusted downward.
+The drain narrows but the infrastructure remains. The cost of
+preparation is small and reversible.
+
+### 13.2 If Displacement Is Modest and We Do Not Build a New Drain
+
+No harm. The status quo holds. Employment withdrawal instruments are
+adequate.
+
+### 13.3 If Displacement Is Severe and We Build a New Drain
+
+Withdrawal capacity from automation-linked taxation scales with the
+cause: more automation means more compute, more energy consumption,
+more purchasing power removed from the corporate sector. The drain
+widens as the problem grows. The state retains the ability to spend
+(maintaining aggregate demand, funding redistribution) without the
+inflationary pressure that spending without adequate withdrawal would
+create.
+
+The transition is still painful. People lose jobs. Communities are
+disrupted. But the state has the fiscal tools to manage the water
+level. The alternative (13.4) does not.
+
+### 13.4 If Displacement Is Severe and We Do Not Build a New Drain
+
+The employment drain narrows as £534 billion in withdrawal capacity
+erodes. No replacement instrument exists. Building one takes years
+(legislation, infrastructure, enforcement). The government must spend
+more (displaced workers, demand maintenance) while its ability to
+withdraw shrinks. The tap runs harder. The drain narrows. The tub
+overflows: inflation during a crisis, with no fiscal tools to manage
+it.
+
+This quadrant is the only one that is catastrophic. It is also the
+only one that is irreversible on any reasonable timescale.
+
+---
+
+## 14. EC661 and the Withdrawal Question
+
+Green Party economic policy recognises money as a common resource to
+be managed for public benefit (EC661). This is the MMT position. The
+government does not collect money from the private sector and then
+spend it. It creates money when it spends and destroys it when it
+taxes. The purpose of taxation is not to fund the government but to
+manage the money supply, control inflation and shape economic
+incentives.
+
+EC661 commits the party to a fiscal framework where taxation serves
+these functions. The question this document raises is whether the
+party's existing withdrawal instruments can continue to serve them as
+automation restructures the economy.
+
+Green Party policy also commits to abolishing employee NI (EC727) and
+employer NI (EC764). Combined NI currently withdraws £205 billion per
+year. If the party abolishes NI, it needs a replacement withdrawal
+instrument of equivalent scale. Abolishing NI without a replacement
+withdrawal instrument is removing the plug from the bathtub while the
+tap continues to run. No existing policy proposal fills this gap.
+
+The automation risk analysis in this document does not prescribe a
+specific solution. But it establishes that the party's existing fiscal
+framework (and any framework that depends on employment taxation) faces
+a structural challenge that existing instruments cannot address. The
+Economy PWG is the appropriate body to assess what new withdrawal
+instruments are needed and how they should be designed.
+
+---
+
+## 15. Conclusion
+
+This document does not ask the reader to accept that mass displacement
+is coming. Reasonable people can look at the same evidence and reach
+different conclusions about the scale and speed of AI-driven labour
+displacement.
+
+What the evidence does establish is:
+
+1. **The historical pattern held because of a specific structural
+   mechanism** (retreat to an immune domain), not because of human
+   adaptability in the abstract.
+
+2. **That mechanism is under strain.** The current wave is
+   domain-general, self-improving, reverses the exposure pattern and
+   creates roles that are themselves automatable. Whether this breaks
+   the pattern entirely or merely bends it is an open question.
+
+3. **The consequences of the pattern breaking are asymmetric.** If
+   displacement is modest and we have built new withdrawal instruments,
+   the cost is small. If displacement is severe and we have not, the
+   state loses its ability to manage inflation during a crisis that
+   demands increased spending.
+
+4. **The withdrawal erosion is already underway.** Even without mass
+   displacement, the state's primary drain is coupled to a shrinking
+   share of economic activity. This misalignment widens every year.
+
+5. **Withdrawal infrastructure has a lead time.** New fiscal instruments
+   take years to build. Starting now is not a prediction that disaster
+   is imminent. It is an acknowledgment that if it arrives, the time
+   to prepare will already have passed.
+
+The case for building new withdrawal instruments does not depend on
+resolving the analytical disagreement about displacement. It depends
+on a simpler question: given the asymmetry of consequences, which
+mistake can we least afford to make?
+
+---
+
+**See also:**
+- [The Agentic Fluency Trap](agentic_fluency_trap.html) (detailed fluency mechanism analysis)
+- [Inflation Control for the Post-Employment Economy](academic_brief_mmt.html) (SEBE as automatic stabiliser, MMT framework)
+
+---
+
+(c) 2026 Jason Huxley. Licensed under CC-BY 4.0.

@@ -1,0 +1,40 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{\"hookSpecificOutput\":{\"permissionDecision\":\"allow\"}}'",
+            "timeout": 5000
+          }
+        ]
+      }
+    ]
+  },
+  "permissions": {
+    "allow": [
+      "Read",
+      "Edit",
+      "Write",
+      "Glob",
+      "Grep",
+      "mcp__social:*",
+      "mcp__browser:*"
+    ]
+  },
+  "mcpServers": {
+    "social": {
+      "type": "sse",
+      "url": "http://localhost:8090/sse"
+    },
+    "browser": {
+      "type": "stdio",
+      "command": "/home/jasonh/git/SEBE/automation_framework/.venv/bin/python3",
+      "args": [
+        "/home/jasonh/git/SEBE/automation_framework/tools/browser_cdp.py"
+      ]
+    }
+  }
+}

@@ -38,6 +38,10 @@ permalink: /docs/
     <a href="{{ '/docs/public_explainer.html' | relative_url }}">Tax Robots, Fund People</a> <span class="post-tags"><span class="post-tag post-tag-accessible">ACCESSIBLE</span></span>
     <p class="doc-desc">Plain language guide. No jargon. What it is, who pays, what you get.</p>
   </li>
+  <li data-tags="policy advanced">
+    <a href="{{ '/docs/green_party_submission_appendix_a.html' | relative_url }}">Appendix A: Metering, Enforcement and Billing</a> <span class="post-tags"><span class="post-tag post-tag-advanced">ADVANCED</span></span>
+    <p class="doc-desc">Technical appendix to the policy submission. How SEE and DCD are metered using existing infrastructure, enforced at physical chokepoints, and billed monthly.</p>
+  </li>
 </ul>
 
 <h2 class="doc-group-heading" data-group="model">Models & Evidence</h2>
@@ -62,13 +66,21 @@ permalink: /docs/
     <a href="{{ '/docs/brookings_rebuttal.html' | relative_url }}">Why Brookings Gets AI Taxation Wrong</a> <span class="post-tags"><span class="post-tag post-tag-intermediate">INTERMEDIATE</span></span>
     <p class="doc-desc">Detailed response to Korinek and Lockwood's AI taxation framework (January 2026).</p>
   </li>
+  <li data-tags="analysis advanced">
+    <a href="{{ '/docs/automation_risk.html' | relative_url }}">The Asymmetry of Automation Risk</a> <span class="post-tags"><span class="post-tag post-tag-advanced">ADVANCED</span></span>
+    <p class="doc-desc">Six automation waves, four structural breaks, one asymmetric risk. MMT framing: withdrawal capacity, bathtub model, sectoral balances, EC661 alignment.</p>
+  </li>
   <li data-tags="analysis intermediate">
-    <a href="{{ '/docs/agentic_fluency_trap.html' | relative_url }}">The Agentic Fluency Trap</a> <span class="post-tags"><span class="post-tag post-tag-intermediate">INTERMEDIATE</span></span>
-    <p class="doc-desc">Why AI doesn't need to improve for displacement to accelerate. The compounding fluency curve and METR time horizon data.</p>
+    <a href="{{ '/docs/automation_risk_orthodox.html' | relative_url }}">The Asymmetry of Automation Risk (Orthodox Framing)</a> <span class="post-tags"><span class="post-tag post-tag-intermediate">INTERMEDIATE</span></span>
+    <p class="doc-desc">Orthodox variant. Same historical evidence, framed through revenue and tax base erosion rather than MMT withdrawal capacity.</p>
   </li>
   <li data-tags="analysis advanced">
     <a href="{{ '/docs/global_transition.html' | relative_url }}">Strategic Analysis: Global Order in Transition</a> <span class="post-tags"><span class="post-tag post-tag-advanced">ADVANCED</span></span>
     <p class="doc-desc">Strategic analysis of dollar-system erosion, with UK implications and four trajectory scenarios.</p>
+  </li>
+  <li data-tags="analysis intermediate">
+    <a href="{{ '/docs/agentic_fluency_trap.html' | relative_url }}">The Agentic Fluency Trap</a> <span class="post-tags"><span class="post-tag post-tag-intermediate">INTERMEDIATE</span></span>
+    <p class="doc-desc">Why AI doesn't need to improve for displacement to accelerate. The compounding fluency curve and METR time horizon data.</p>
   </li>
 </ul>
 

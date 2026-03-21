@@ -44,6 +44,11 @@ If the venv doesn't exist: `python3 -m venv .venv && pip install -r requirements
 | `context/author_context.md` | Author background, communication style, key positions | **Gitignored** |
 | `context/convo_summary.md` | Conversation development history | **Gitignored** |
 
+## Environment
+- Shell: fish (but Claude Code bash commands work fine)
+- Python venv: activate with `source .venv/bin/activate` in bash (this works in Claude's bash context)
+- Prefer using absolute paths to Python: `/home/jasonh/git/SEBE/automation_framework/.venv/python` instead of activating the venv
+
 ## Repository Structure
 
 ```
